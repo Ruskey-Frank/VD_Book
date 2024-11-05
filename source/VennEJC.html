@@ -1,0 +1,198 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+
+<HTML>
+<HEAD>
+
+<TITLE>A Survey of Venn Diagrams</TITLE>
+
+<META NAME="resource-type" CONTENT="document">
+<META NAME="description" CONTENT="Venn Diagram Survey: combinatorial facts, beautiful figures, n=3 and beyond">
+<META NAME="keywords" CONTENT="Venn diagram, John Venn, hypercube">
+<META NAME="distribution" CONTENT="global">
+<META NAME="copyright" CONTENT="Frank Ruskey, Mark Weston.">
+<META HTTP-EQUIV="Reply-to" CONTENT="LastName_@_cs.uvic.ca (Frank Ruskey)">
+
+</HEAD>
+
+<BODY BGCOLOR=FFFFFF>
+
+<P align=right>
+<FONT SIZE="-1">
+<A HREF="http://www.combinatorics.org/">
+<FONT SIZE="-1">T</FONT>HE <FONT SIZE="-1">E</FONT>LECTRONIC
+<FONT SIZE="-1">J</FONT>OURNAL OF <FONT SIZE="-1">C</FONT>OMBINATORICS</A>
+(ed. June 2005), DS#5.
+</FONT>
+
+<P>
+<HR noshade>
+
+<P>
+<CENTER>
+<IMG ALIGN=TOP SRC="gifs/VictoriaIcon.gif" WIDTH=148 HEIGHT=149 ALT="">
+<IMG ALIGN=TOP SRC="gifs/VictoriaIcon.gif" WIDTH=148 HEIGHT=149 ALT="">
+<H1 ALIGN=CENTER>
+A Survey of Venn Diagrams 
+</H1>
+<A HREF="http://www.cs.UVic.CA/~ruskey">Frank Ruskey</A> 
+	and <a href="http://www.cs.UVic.CA/~mweston">Mark Weston</a><BR>
+Department of Computer Science<BR>
+University of Victoria<BR>
+Victoria, B.C. V8W 3P6<BR>
+CANADA
+</CENTER>
+<BR CLEAR=ALL>
+
+<P>
+<FONT COLOR=red>
+Note: This is an updated version of a survey
+that first appeared as a Dynamic Survey in February, 1997, and was 
+revised in 2001 and 2005.
+There is a <A HREF="VennChanges.html">summary of changes</A>.
+</FONT>
+</P>
+
+<P>
+<HR width="75%" noshade>
+
+<P>
+The purpose of these pages is to collect together various
+  facts and figures about Venn diagrams, particularly as they
+  relate to combinatorial and geometric properties of the diagrams.  
+<!--
+The page is currently under construction; comments, corrections,
+  compliments, and criticisms are welcome!
+-->
+<!-- It is best viewed with a browser, such as Netscape or Internet Explorer,
+  that supports tables, subscripts, and superscripts.
+  A color monitor will also greatly increase your viewing pleasure! -->
+Aperiodic updates are planned and comments and suggestions are most 
+  welcome.
+<!-- If you are looking for an in-print survey, then the survey article
+  [<A HREF="VennRefs.html#Ha98b">Ha98b</A>] of Peter Hamburger is
+  highly recommended. -->
+
+<H2>Organization</H2>
+
+<UL>
+	<LI><A HREF=VennJohnEJC.html>Who was John Venn?</A>
+	<ul>
+		<li> <font size=-1><a href="VennPaintEJC.html">A painting of John Venn</a></font>
+	</ul>
+<LI><A HREF=VennWhatEJC.html>What is a Venn diagram?</A>
+  <UL>
+	  <LI>Formal definition of Venn diagrams<br>
+	  <font size=-1><a href="VennBorromean.html">The Borromean Rings</a></font>
+  <LI>General constructions of Venn diagrams
+  </UL>
+<LI><A HREF=VennGraphEJC.html>Graphs associated with Venn diagrams</A>.
+  <UL>
+  <LI>The planar dual of a Venn diagram
+  <br><font size=-1><a href="VennGeneral.html">Venn dual graphs of Venn's construction</a></font>
+  <li>When are two Venn diagrams different?
+  <br><font size=-1><a href="VennSeparatingEJC.html">Separating vertices</a></font>
+  <LI>How many Venn diagrams are there?
+  <LI>Extending Venn diagrams
+  <br><font size=-1><a href="VennIrreducible.html">An irreducible diagram</a></font>
+  <LI>Minimum vertex Venn diagrams
+  <br><font size=-1><a href="VennMin5.html">Minimum 5-Venn diagrams</a></font>
+  <LI>Congruent Venn diagrams
+  </UL>
+
+<LI><A HREF=VennSymmEJC.html>Symmetric Venn diagrams</A>.
+  <UL>
+  <li>Rotational Symmetry
+  <br><a href="VennSymmExamples.html">Symmetric diagrams for small <I>n</I></a>
+  <ul>
+  <li><em>n</em> = 5
+  <li><em>n</em> = 7
+  <br><font size=-1><a href="VennAdelaide.html">Information on Adelaide</a></font>
+  <br><font size=-1><a href="VennSymmNonpolarEJC.html">Monotone non-polar symmetric non-polar 7-Venn diagrams</a></font>
+  <br><font size=-1><a href="VennMin7.html">Minimum 7-Venn diagrams</a></font>
+  <li><em>n</em> = 11
+  <br><font size=-1><a href="VennSymm11EJC.html">The first symmetric 11-Venn diagram</a></font>
+  </ul>
+  <li>A general construction for symmetric diagrams
+  <br><font size=-1><a href="VennNecklaceEJC.html">Symmetric diagrams and necklaces</a></font>
+  <br><a href="VennSymmVariants.html">Variants on Symmetry</a>
+  <ul>
+  <li>Symmetry for non-prime <i>n</i>
+  <LI>Venn diagrams and Gray codes
+  <br><font size=-1><a href="VennGray.html">Gray codes and Edwards' construction</a></font>
+	</ul>
+
+  </UL>
+  
+  <li><a HREF="VennGeometricEJC.html">Geometric Variations</a>.
+  <ul>
+
+<li>Convexity
+  <br><font size=-1><a href="VennTriangleEJC.html">Six triangles</a></font>
+  <li>Exposure
+  <li>Area-proportional diagrams
+  <br><font size=-1><a href="VennPoly67EJC.html">Poly-Venn diagrams for 6 and 7 sets</a></font>
+  </ul>
+
+<LI><A HREF="VennOtherEJC.html">Generalizations and Extensions of Venn diagrams</A>.
+  <UL>
+  <LI>Relaxations of parameters 
+  <br><font size=-1><a href="VennKfoldEJC.html"><i>k</i>-fold 2-Venn diagrams</a></font>
+  <LI>Generalizing symmetry 
+  <LI>Euler diagrams
+  </UL>
+<LI><A HREF="VennOpenEJC.html">Open problems</A>.
+<LI><A HREF="VennRefs.html">References</A>.
+<LI><A HREF="VennAckEJC.html">Acknowledgements</A>.
+<LI><A HREF="VennFootEJC.html">Footnotes</A>.
+</UL>
+
+<HR width="75%" noshade>
+
+<P>
+<A HREF="VennEJC.html">
+<IMG border=0 ALIGN=left SRC="gifs/smallV3plain.gif"></A>
+The icon to the left appears on all the following pages.  
+Clicking on it will bring you back to this page.
+<BR clear=all>
+
+<P>
+<HR width="75%" noshade>
+
+<P>
+The 7-fold rosette at the top of the page is a Venn diagram for
+<I>n</I> = 7, called "Victoria."  Find out more about it by going
+to the page on <a href="VennSymmExamples.html#n7">symmetric Venn diagrams for small <i>n</i></a>.
+
+<P>
+There are some Venn diagrams on the pages to follow that have not
+  appeared before in the literature, in particular, most of the
+  symmetric Venn diagrams for <I>n</I>=7.
+
+<P>
+All the Venn diagram figures to be found on the following pages, unless
+  otherwise noted, are &copy; the authors and are not to be used without
+  written permission from the authors.
+
+<P>
+<FONT SIZE="-1">
+Received: August 28, 1996.<BR>
+Previous editions: February 2 1997, March 15 2001.<BR>
+Current edition: June 18, 2005.<br>
+</FONT>
+
+<HR noshade>
+
+<TABLE width="100%">
+<TR><TD align=left>
+<IMG border=0 SRC="gifs/valid_html3.2.gif">
+<TD align=right><FONT SIZE="-1">
+<A HREF="http://www.combinatorics.org/">
+<FONT SIZE="-1">T</FONT>HE <FONT SIZE="-1">E</FONT>LECTRONIC
+<FONT SIZE="-1">J</FONT>OURNAL OF <FONT SIZE="-1">C</FONT>OMBINATORICS</A>
+(ed. June 2005), DS #5.
+</FONT>
+</TR></TABLE>
+ 
+</BODY>
+</HTML>
+

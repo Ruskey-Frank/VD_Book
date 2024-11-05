@@ -11,9 +11,15 @@
     <!-- Include frontmatter -->
     <xi:include href="./frontmatter.ptx" />
 
+    <p>Hi there!</p>
+
+    <xi:include href="./VennEJC.ptx" /> 
+    
     <!-- Include chapters -->
     <xi:include href="./ch-chapter-title.ptx" />
 
+    <!-- Include chapters -->
+    <xi:include href="./ch-chapter-title.ptx" />
 
     <!-- Include backmatter -->
     <xi:include href="./backmatter.ptx" />
