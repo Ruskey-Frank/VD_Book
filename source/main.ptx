@@ -13,10 +13,12 @@
 
     <p>Hi there!</p>
 
+    <!--
     <xi:include href="./VennEJC.ptx" /> 
+    -->
     
     <!-- Include chapters -->
-    <xi:include href="./ch-chapter-title.ptx" />
+    <xi:include href="./ch-WhoVenn.ptx" />
 
     <!-- Include chapters -->
     <xi:include href="./ch-chapter-title.ptx" />

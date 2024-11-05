@@ -7,6 +7,10 @@
     <p> Text before the first section.  Hi there.</p>
   </introduction>
 
+  <image source="gifs/VennPaint.gif">
+    <shortdescription>A painting of John Venn</shortdescription>
+  </image>
+
   <!-- include sections -->
   <xi:include href="sec-section-name.ptx" />
 
