@@ -11,7 +11,8 @@
     <shortdescription>A painting of John Venn</shortdescription>
   </image>
 
-  <!-- include sections -->
+  <!-- include sections
   <xi:include href="sec-section-name.ptx" />
+  -->
 
 </chapter>
