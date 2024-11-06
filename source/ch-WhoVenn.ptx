@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<chapter xml:id="ch-chapter-title" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Chapter Title</title>
+<chapter xml:id="ch-WhoVenn" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Who was John Venn?</title>
 
   <introduction>
-    <p> Text before the first section.  Hi there.</p>
+    <p>This chapter explains who John Venn was.</p>
   </introduction>
+
+  <image source="gifs/VictoriaIcon.gif">
+  </image>
+
+  <image source="pngs/2vennAa.png">
+  </image>
 
   <image source="gifs/VennPaint.gif">
     <shortdescription>A painting of John Venn</shortdescription>
