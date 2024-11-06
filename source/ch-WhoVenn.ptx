@@ -7,13 +7,13 @@
     <p>This chapter explains who John Venn was.</p>
   </introduction>
 
-  <image source="gifs/VictoriaIcon.gif">
+  <image source="/gifs/VictoriaIcon.gif">
   </image>
 
-  <image source="pngs/2vennAa.png">
+  <image source="/pngs/2vennAa.png">
   </image>
 
-  <image source="gifs/VennPaint.gif">
+  <image source="/gifs/VennPaint.gif">
     <shortdescription>A painting of John Venn</shortdescription>
   </image>
 
