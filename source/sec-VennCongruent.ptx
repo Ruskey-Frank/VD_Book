@@ -1,0 +1,172 @@
+<section>
+<title>Venn diagrams made from congruent curves</title>
+
+<introduction>
+<p>
+The first part of this section is more "geometric" than
+  "graph theoretic".
+We introduce congruent Venn diagrams here because the
+  examples are used to illustrate graph theoretic definitions.
+</p>
+</introduction>
+
+<subsection>
+<title>Congruent Venn Diagrams</title>
+
+<p>
+The general constructions of Venn and Edwards
+  outlined on the "What is a Venn Diagram?" page
+  do not share a nice property of the first two
+  figures on the same page
+  (made from circles and triangles),
+  namely, that they are constructed from
+  congruent<fn>Two figures in the plane are <term>congruent</term>
+  if one can be transformed into the other by rotations and translations in the plane.</fn> curves.
+Grünbaum
+  <xref ref="ref-Gr92b">[Gr92b]</xref>
+  defines a Venn diagram to be <term>nice</term>
+  if it is made from congruent curves, but we'll prefer to
+  call them <term>congruent</term> Venn diagrams.
+The first such diagrams were constructed by
+Grünbaum in the seminal paper [<A HREF="VennRefs.html#Gr75">Gr75</A>].
+In <xref ref="ref-Gr92b">[Gr92b]</xref>
+  he discussed examples of congruent diagrams for up to 8 curves; many symmetric examples can be
+  found in the <xref ref="ch-VennSymmetric"/>.
+</p>
+
+<image source="pngs/5VD-reducible.png" width="75%"></image>
+
+<p>
+Hamburger and Pippert <href ref="ref-HP97">[HP97]</href>
+proved that there are simple reducible Venn diagrams with
+5 congruent ellipses, in spite of the fact that Venn had stated
+that there are no such diagrams.
+In fact, there are two of them, but they are in the same class: one
+of their diagrams is shown to to the right.
+</p>
+
+<p>
+Below we show a redrawing of Grünbaum's
+beautiful congruent Venn diagram (from <href ref="ref-Gr75">[Gr75]</href>) made from 5
+  congruent ellipses which also has a rotational symmetry.
+The diagram on the left labels each region with the labels of all ellipses
+  that contain the region.
+On the right, the regions are colored
+  according to the number of ellipses in which they are
+  contained: white (the external region) = 0, yellow = 1,
+  red = 2, blue = 3, green = 4, and black = 5.
+Note that the number of regions colored with a given color corresponds to
+  the appropriate binomial coefficient: #(white) = #(black) = 1,
+  #(yellow) = #(green) = 5, and #(red) = #(blue) = 10.
+</p>
+
+<sidebyside width="25%">
+<figure xml:id="fig-5ellipse">
+<image source="gifs/5-VD-ellipses-labelled.gif"></image>
+</figure>
+<figure xml:id="fig-5ellipse-coloured">
+<image source="gifs/5-VD-ellipses-colour.gif"></image>
+</figure>
+<figure xml:id="fig-5ellipse-irreducible">
+<image source="pngs/irreduce.png"></image>
+</figure>
+</sidebyside>
+
+</subsection>
+
+<subsection>
+<title>Venn diagrams and "Revolving Door" lists</title>
+
+<p>
+Note that some of the blue regions in the ellipse diagram above are
+  "adjacent" in the sense that their boundary shares a common
+  point.
+The sets corresponding to these regions differ by one element.
+The point of intersection acts like a "revolving door"; one element
+  is removed from the subset, another element is added.
+Sometimes these adjacent regions form a "cycle", as in the diagram
+  above.
+Another way of looking at the cycle is as the subgraph of
+  the square<fn>The <term>square</term> of a graph <m>G</m>, denoted <m>G^2</m>, is
+  the graph obtained by adding to the edge set of <m>G</m> edges between vertices that are
+  at distance 2 in <m>G</m></fn>,
+  <m>D(\mathbf{C})^2</m>, of the Venn dual induced
+  by those vertices corresponding to <m>k</m>-subsets.
+These cycles give us revolving door listings of all the <I>k</I>-subsets
+  of <m>n</m>.
+Revolving door algorithms for listing various
+  classes of <m>k</m>-subsets have been developed by a variety of
+  researchers <xref ref="ref-NW">[NW]</xref>, <xref ref="ref-Kn">[Kn]</xref>.
+Below we list the subsets corresponding to the 1,2,3,4-subsets
+  (yellow, red, blue, green) in the above diagram in a counter-clockwise rotation.
+</p>
+
+<me>
+1,5,4,3,2 
+</me>
+<me>
+12,13,15,25,45,14,34,35,23,24
+</me>
+<me>
+123, 135, 125, 245, 145, 134, 345, 235, 234, 124
+</me>
+<me>
+1234, 1235, 1245, 1345, 2345
+</me>
+
+<!--
+<P>
+<CENTER>
+<TABLE BORDER=1 CELLPADDING=5 CELLSPACING=1><TR>
+<TD ALIGN=CENTER WIDTH=60>1
+<TD ALIGN=CENTER WIDTH=60>2
+<TD ALIGN=CENTER WIDTH=60>3
+<TD ALIGN=CENTER WIDTH=60>4
+<TD ALIGN=CENTER WIDTH=60>5
+</TABLE>
+<TABLE BORDER=1 CELLPADDING=5 CELLSPACING=1><TR>
+<TD ALIGN=CENTER WIDTH=40>12
+<TD ALIGN=CENTER WIDTH=40>13
+<TD ALIGN=CENTER WIDTH=40>15
+<TD ALIGN=CENTER WIDTH=40>25
+<TD ALIGN=CENTER WIDTH=40>45
+<TD ALIGN=CENTER WIDTH=40>14
+<TD ALIGN=CENTER WIDTH=40>34
+<TD ALIGN=CENTER WIDTH=40>35
+<TD ALIGN=CENTER WIDTH=40>23
+<TD ALIGN=CENTER WIDTH=40>24
+</TABLE>
+<TABLE BORDER=1 CELLPADDING=5 CELLSPACING=1><TR>
+<TD ALIGN=CENTER WIDTH=40>123
+<TD ALIGN=CENTER WIDTH=40>135
+<TD ALIGN=CENTER WIDTH=40>125
+<TD ALIGN=CENTER WIDTH=40>245
+<TD ALIGN=CENTER WIDTH=40>145
+<TD ALIGN=CENTER WIDTH=40>134
+<TD ALIGN=CENTER WIDTH=40>345
+<TD ALIGN=CENTER WIDTH=40>235
+<TD ALIGN=CENTER WIDTH=40>234
+<TD ALIGN=CENTER WIDTH=40>124
+</TABLE>
+<TABLE BORDER=1 CELLPADDING=5 CELLSPACING=1><TR>
+<TD ALIGN=CENTER WIDTH=60>1234
+<TD ALIGN=CENTER WIDTH=60>1235
+<TD ALIGN=CENTER WIDTH=60>1245
+<TD ALIGN=CENTER WIDTH=60>1345
+<TD ALIGN=CENTER WIDTH=60>2345
+</TABLE>
+</CENTER>
+-->
+
+<p>
+Because of the symmetry of the diagram,
+  these circular listings have the property that they remain invariant
+  when acted on by the cyclic permutation <m>(1\ 2\ 3\ 4\ 5)</m>.
+These listings are related to combinatorial Gray codes; since Gray codes
+  have many connections with symmetric diagrams we describe them further on the Variants
+  on Symmetry page, <xref ref="sec-SymmVariant"/>.
+</p>
+
+</subsection>
+
+</section>

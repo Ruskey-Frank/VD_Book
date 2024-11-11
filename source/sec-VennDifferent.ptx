@@ -1,0 +1,102 @@
+<section>
+<title>When are two Venn diagrams different?</title>
+
+<p>
+Answering this question is a bit subtle and depends on whether the diagrams is
+regarded as being embedded in the plane or on a sphere, whether the curves are coloured
+or not, and so on.  
+</p>
+
+<definition xml:id="def-isomorphic">
+Two Venn diagrams are <term>isomorphic</term> if, by a continuous
+  transformation of the plane, one of them can be changed into
+  the other or its mirror image.
+</definition>
+
+<definition xml:id="def-equivalent">
+Two Venn diagrams are <term>equivalent</term> if they are isomorphic
+  as plane graphs, ignoring the edge colors
+  (that is, isomorphic as planar graphs embedded in the plane).
+</definition>
+
+<p>
+Since curves meet transversally in simple Venn diagrams, two
+  simple Venn diagrams are isomorphic if and only if they are
+  equivalent.
+</p>
+
+<p>
+On the other hand, a Venn diagram may be embedded in the sphere
+  via stereographic projection.
+(Consider the standard basketball ball; it is the stereographic projection
+  of Edwards' general construction for <m>n=4</m>.)
+Sometimes it is more natural to look at Venn diagrams
+  as being embedded on the sphere.
+</p>
+
+<definition xml:id="def-class">
+Two Venn diagrams are <term>in the same class</term> if they can be
+  projected to the same spherical Venn diagram.
+</definition>
+
+<p>
+When considering non-simple Venn diagrams there is another elementary
+  operation that can sometimes be applied to one diagram to get another.
+</p>
+
+<definition>
+<title>[rigid diagram, seperable vertex]</title>
+<statement>
+A <term>vertex traversal</term> of a
+  vertex <m>v</m> in a Venn diagram is a circular
+  sequence <m>C_0, C_1, \ldots, C_m</m> of
+  the curves adjacent to <m>v</m>, when read in a clockwise rotation
+  around <m>v</m>.
+A vertex is said to be <term>separable</term>
+  if its vertex traversal has the property that for some <m>i</m>,
+  there is a <m>j</m> such that the intersection of
+  <m>\mathbf{A} = C_i, C_{i+1}, \ldots, C_{j-1}</m> and
+  <m>\mathbf{B} = C_j, C_{j+1}, \ldots, C_{i-1}</m> consists
+  of one curve, say <m>C</m>, and in addition, <m>|\mathbf{A}| &gt; 2</m>
+  and <m>|\mathbf{B}| &gt; 2</m>.
+In the example below the sets <m>\mathbf{A}</m>
+and <m>\mathbf{B}</m> are <m>\mathbf{A}</m> = { red, green, black, red, green} and
+<m>\mathbf{B}</m> = {blue, yellow, black, blue, yellow}, and the black curve is the curve <m>C</m>.
+A Venn diagram is said to be <term>rigid</term> if it has no separable vertices.
+The figures below illustrate the operation of <term>splitting</term>
+a separable vertex; <term>unsplitting</term> is defined as the inverse operation.
+</statement>
+</definition>
+
+<sidebyside width="40%">
+<figure xml:id="fig-seperable">
+<caption>A seperable vertex</caption>
+<image source="gifs/separable.gif"></image>
+</figure>
+<figure xml:id="fig-splitting">
+<caption>Splitting that vertex</caption>
+<image source="gifs/nonrigid.gif"></image>
+</figure>
+</sidebyside>
+
+<p>
+Note that the vertex of Figure <xref ref="fig-seperable"></xref> is
+  part of a Venn diagram if and only if the two vertices of Figure <xref ref="fig-splitting"></xref>
+  are part of a Venn diagram.
+Simple diagrams are in many ways the most pleasing of Venn diagrams.
+Rigid Venn diagrams are interesting because in the equivalence class
+  of diagrams under splitting and unsplitting of vertices, they are
+  the ones closest to being simple.
+</p>
+
+<p>
+FINISH THIS LATER
+<!--
+<a href="VennSeparatingEJC.html">This page</a> shows an
+  example of creating a simple symmetric diagram from a non-simple diagram by
+  splitting vertices in a symmetric fashion.
+-->
+</p>
+
+</section>
+

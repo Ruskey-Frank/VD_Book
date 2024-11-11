@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-VennGraphs" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Graphs Associated with Venn Diagrams</title>
+
+  <introduction>
+    <p>When reasoning about Venn diagrams, it is usually useful to think about their graph theoretic properties.
+    </p>
+  </introduction>
+
+<section>
+<title>The Planar Dual of a Venn Diagram</title>
+
+<p>
+An <m>n</m>-Venn diagram <m>\mathbf{C} = \{ C_1, C_2, \ldots, C_n \}</m>
+  may be regarded as a graph in two ways.
+The diagram itself can be thought of as an edge-colored
+  plane<fn>A <term>planar graph</term> is one that can be embedded in the plane without crossing edges. 
+    A <term>plane graph</term> is a planar graph that has been embedded in the plane.</fn> graph <m>V(\mathbf{C})</m>
+  whose vertices correspond to intersections of curves, and whose
+  edges correspond to the segments of curves
+  between intersections.
+Edges are colored according to the curve to which they belong.
+Following Chilakamarri, Hamburger, and Pippert
+  <xref ref="ref-CHP95">[CHP95]</xref>,
+  we overload the term and call this graph the <term>Venn diagram</term>.
+In an <term>unlabelled</term> Venn diagram we ignore the edge labels.
+As an example, the three circle Venn diagram
+  has 6 vertices (corresponding to the 6 intersections) and 12 edges.
+Recall Euler's formula <m>f = e - v + 2</m> relating
+  the number of faces, edges, and vertices of a graph
+  embedded in the plane.
+Assuming that no three curves intersect at a common point
+  (i.e., a simple Venn diagram), the graph is 4-regular and so we have <m>e = 2v</m>.
+By definition the number of faces is <m>f = 2^n</m>.
+It thus follows that <m>v = 2^n - 2</m> and
+  <m>e = 2^{n+1} - 4</m> for simple Venn diagrams.
+</p>
+
+<p>
+Two curves can meet at a point <term>transversally</term> or not, depending
+  on whether the two curves cross.
+A moment's reflection will convince you that the curves in a
+  simple Venn diagram must meet transversally.
+More generally, at any point of intersection in a Venn diagram,
+  there must be at least two curves that meet transversally.
+</p>
+
+<p>
+With each Venn diagram, <m>\mathbf{C}</m>, we may associate another plane graph
+  called the <term>Venn dual</term>, which is denoted <m>D(\mathbf{C})</m>,
+  the planar dual of the Venn diagram.
+  (Warning: Some authors use the term "Venn graph" to refer to the dual.)
+Its vertices are the connected open regions (faces) of <m>V(\mathbf{C})</m>.
+Two vertices are connected by an edge if they share a common boundary.
+By default the edges are colored (by the color of the corresponding
+  edge in the Venn diagram).
+At times it is also useful to
+  label the vertices with a length-<m>n</m> bitstring consisting of 0s and 1s;
+  if the curves are labelled 1 to <m>n</m> then we set bit <m>i</m> to
+  1 if the vertex is enclosed by curve <m>i</m>, 0 otherwise.    Labels
+  of adjacent vertices differ in exactly one bit position as one curve in the Venn diagram
+  is crossed by one edge in the Venn dual.
+For example, the Venn dual of the three circle Venn
+  diagram is a planar embedding of the 3-cube, <m>Q_3</m>.
+Clearly, every <m>n</m>-Venn dual is a planar spanning subgraph of the
+  <m>n</m>-cube, <m>Q_n</m>.
+If <m>\mathbf{C}</m> is a simple Venn diagram, then every face of <m>D(\mathbf{C})</m>
+  is a quadrilateral, and thus <m>D(\mathbf{C})</m> is a maximal
+  bipartite<fn>A <term>bipartite</term> graph is one in which the vertices can be 
+  partitioned into two sets <m>A</m> and <m>B</m> where every edge is incident with a vertex from <m>A</m> and a vertex from <m>B</m>. 
+  The <m>n</m>-cube is bipartite, and thus so is the Venn dual.</fn>
+  planar graph.
+</p>
+  
+<image source="gifs/VennGraph.gif"></image>
+
+<p>
+Above we illustrate these definitions.
+The following list contains links to illustrations of some
+  Venn duals.
+</p>
+
+<subsection xml:id="subsec-Duals">
+
+<title>The Venn Duals of Venn's Construction</title>
+
+<p>
+Here are the Venn dual graphs of Venn's general construction for
+  <m>n=3,4,5</m>, but without coloured edges for the corresponding to the curves.
+Here the red edges indicate the Hamilton cycle that is used in extending
+  to the next higher value of <m>n</m>.
+</p>
+
+<image source="gifs/VennGraphs.gif"></image>
+
+<p>
+How, in general, do you go from the dual graph <m>D</m> of
+  a Venn diagram, together with a  Hamilton cycle
+  <m>H</m> in <m>G</m>, and get a new planar
+  dual <m>D'</m> of a Venn diagram of the
+  next higher order?
+We now explain this process.
+Note that <m>H</m> is a simple closed curve with an interior
+  and an exterior.
+</p>
+
+<image source="gifs/VennExpand.gif"></image>
+
+<p>
+We illustrate the discussion with the expansion of <m>n=4</m>
+  to <m>n=5</m> as shown above.
+Color the edges of <m>H</m> red, edges on the interior blue,
+  and edges on the exterior black.
+</p>
+
+<ul>
+<li>Each (black) vertex of <m>D</m> is split into two vertices, one green
+  and one blue, in <m>D'</m>.
+The blue vertices are in the interior, the red edges in the exterior.
+</li>
+<li>Each blue edge in <m>D</m> becomes a blue edge in <m>D'</m>
+  connecting the corresponding blue vertices.
+</li>
+<li>Each black edge in <m>D</m> becomes a black edge in <m>D'</m>
+  connecting the corresponding green vertices.
+</li>
+<li>Each red edge in <m>D</m> becomes a 4-cycle of red edges in
+  <m>D'</m>, connecting either corresponding vertices or vertices
+  of the same color.
+</li>
+</ul>
+
+<p>
+Note that the red edges in <m>D'</m> give the prism of the Hamilton
+  cycle in <m>D</m>.
+</p>
+
+<p>
+Peter Winkler provides a similar discussion in
+<xref ref="ref-Wi">[Wi,pg. 271]</xref>.
+<!-- Comment added Sept. 15, 2004 -->
+</p>
+
+</subsection>
+
+</section>
+
+<xi:include href="./sec-VennDifferent.ptx" />
+
+<xi:include href="./sec-HowMany.ptx" />
+
+<xi:include href="./sec-VennExtend.ptx" />
+
+<xi:include href="./sec-VennCongruent.ptx" />
+  
+<section>
+<title>Extra Diagrams</title>
+<p>
+This section is a placeholder for certain ancillary diagrams that are referred to in other sections in this chapter.  
+The online reader is encouraged to simply ignore this section; in printed book form it might be useful.
+</p>
+
+<subsection>
+<title>The six Venn classes</title>
+
+<sidebyside width="40%">
+<figure xml:id="img-Class1">
+<caption>The two 3-Venn diagrams (#3.1,#3.2) in Class 1.</caption>
+<image source="gifs/venn3c-01-02.gif" width="50%">
+</image>
+</figure>
+
+<figure xml:id="img-CO-Class1">
+<caption>The two 3-Venn diagrams (#3.1,#3.2) in Class 1 with regions coloured.</caption>
+<image source="gifs/CO-venn3c-01-02.gif" width="50%">
+</image>
+</figure>
+
+</sidebyside>
+
+<sidebyside width="40%">
+<figure xml:id="img-Class2">
+<caption>The two 3-Venn diagrams (#3.3,#3.4) in Class 2.</caption>
+<image source="gifs/venn3c-03-04.gif" width="50%">
+</image>
+</figure>
+
+<figure xml:id="img-CO-Class2">
+<caption>The two 3-Venn diagrams (#3.3,#3.4) in Class 2 with regions coloured.</caption>
+<image source="gifs/CO-venn3c-03-04.gif" width="50%">
+</image>
+</figure>
+
+</sidebyside>
+
+<sidebyside width="40%">
+<figure xml:id="img-Class3">
+<caption>The two 3-Venn diagrams (#3.5,#3.6) in Class 3.</caption>
+<image source="gifs/venn3c-05-06.gif" width="50%">
+</image>
+</figure>
+
+<figure xml:id="img-CO-Class3">
+<caption>The two 3-Venn diagrams (#3.5,#3.6) in Class 3 with regions coloured.</caption>
+<image source="gifs/CO-venn3c-05-06.gif" width="50%">
+</image>
+</figure>
+
+</sidebyside>
+
+<sidebyside width="40%">
+<figure xml:id="img-Class4">
+<caption>The four 3-Venn diagrams (#3.7,#3.8,#3.9,#3.10) in Class 4.</caption>
+<image source="gifs/venn3c-07-08-09-10.gif" width="50%">
+</image>
+</figure>
+
+<figure xml:id="img-CO-Class4">
+<caption>The four 3-Venn diagrams (#3.7,#3.8,#3.9,#3.10) in Class 4 with regions coloured.</caption>
+<image source="gifs/CO-venn3c-07-08-09-10.gif" width="50%">
+</image>
+</figure>
+
+</sidebyside>
+
+<sidebyside width="40%">
+<figure xml:id="img-Class5">
+<caption>The three 3-Venn diagrams (#3.11,#3.12,#3.13) in Class 5.</caption>
+<image source="gifs/venn3c-11-12-13.gif" width="50%">
+</image>
+</figure>
+
+<figure xml:id="img-CO-Class5">
+<caption>The three 3-Venn diagrams (#3.11,#3.12,#3.13) in Class 5 with regions coloured.</caption>
+<image source="gifs/CO-venn3c-11-12-13.gif" width="50%">
+</image>
+</figure>
+
+</sidebyside>
+
+<p>
+There is only one Venn diagram in class 6, the three circle Venn diagram:
+<xref ref="fig-V3"/>, with regions coloured, <xref ref="fig-CO-V3"/>
+</p>
+</subsection>
+
+<subsection>
+<title>The radual graph construction</title>
+
+<figure xml:id="img-radual">
+<caption>Illustration of the proof of Theorem <xref ref="thm-extendible"/>.</caption>
+<image source="gifs/radual.gif"></image>
+</figure>
+
+</subsection>
+
+<subsection>
+<title>Minimum Venn diagram for <m>n = 5</m> curves</title>
+
+This diagram has 8 vertices.  It was discovered by Bette Bultena.
+
+<sidebyside width="40%">
+<figure xml:id="img-min5">
+<caption>A minimum 5-Venn diagram.</caption>
+<image source="pngs/betteMin5.png"></image>
+</figure>
+<figure xml:id="img-min5c">
+<caption>A minimum 5-Venn diagram, with regions coloured by size.</caption>
+<image source="pngs/colorBetteMin5.png"></image>
+</figure>
+</sidebyside>
+
+</subsection>
+
+<subsection>
+<title>Minimum Venn diagram for <m>n = 7</m> curves</title>
+
+These diagrams have 21 vertices, and are rotationally symmetric.
+The first two are polar symmetric, and the second two are symmetric, but not polar symmetric.
+From <href ref="ref-CR98">[CR98]</href>.
+
+<sidebyside width="40%">
+<figure xml:id="img-min7a">
+<caption>A minimum 7-Venn diagram.</caption>
+<image source="gifs/min7single20.gif"></image>
+</figure>
+<figure xml:id="img-min7aC">
+<caption>A minimum 7-Venn diagram, with regions coloured by size.</caption>
+<image source="gifs/min7color20.gif"></image>
+</figure>
+</sidebyside>
+
+<sidebyside>
+<figure xml:id="img-min7b">
+<caption>A minimum 7-Venn diagram. One curve is coloured green.</caption>
+<image source="pngs/min7single.png"></image>
+</figure>
+<figure xml:id="img-min7bC">
+<caption>A minimum 7-Venn diagram.</caption>
+<image source="pngs/min7.png"></image>
+</figure>
+</sidebyside>
+
+</subsection>
+
+
+</section>
+
+</chapter>

@@ -21,7 +21,19 @@
     <xi:include href="./ch-WhoVenn.ptx" />
 
     <!-- Include chapters -->
-    <xi:include href="./ch-chapter-title.ptx" />
+    <xi:include href="./ch-VennWhatIs.ptx" />
+
+    <!-- Include chapters -->
+    <xi:include href="./ch-VennGraphs.ptx" />
+
+    <!-- Include chapters -->
+    <xi:include href="./ch-VennSymmetric.ptx" />
+    
+    <!-- Include chapters -->
+    <xi:include href="./ch-VennGeometric.ptx" />    
+
+    <!-- Include chapters -->
+    <xi:include href="./ch-VennOpen.ptx" />
 
     <!-- Include chapters -->
     <xi:include href="./ch-VennRefs.ptx" />

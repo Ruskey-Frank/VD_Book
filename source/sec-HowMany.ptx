@@ -1,0 +1,161 @@
+<section>
+<title>How many are there?</title>
+
+<p>
+The precise number of Venn diagrams and Venn classes has been determined
+  by Chilakamarri, Hamburger and Pippert
+  <xref ref="ref-CHP96b">[CHP96b]</xref>,
+  <xref ref="ref-HP97">[HP97]</xref>,
+  <xref ref="ref-CHP00">[CHP00]</xref>
+  for <m>n = 1,2,3</m>,
+  and for simple diagrams and classes if <m>n = 4,5</m>.
+Clearly, for <m>n = 1,2</m> there is only one diagram but, perhaps surprisingly, things get
+  interesting for <m>n = 3</m>.
+</p>
+
+<subsection>
+<title>Diagrams with <m>n = 3</m> curves</title>
+
+<p>
+For <m>n = 3</m> there are six distinct Venn classes and fourteen distinct
+  Venn diagrams.  Only one of the diagrams is simple (Class 6).
+We denote the diagrams as #3.1, #3.2, ..., #3.14 in order to refer to them later.
+Each class has two corresponding Figures
+
+<ul>
+<li>
+  Class 1 (#3.1,#3.2): <xref ref="img-Class1"/>, <xref ref="img-CO-Class1"/>.
+</li>
+<li>
+  Class 2 (#3.3,#3.4): <xref ref="img-Class2"/>, <xref ref="img-CO-Class2"/>.
+</li>
+<li>
+  Class 3 (#3.5,#3.6): <xref ref="img-Class3"/>, <xref ref="img-CO-Class3"/>.
+</li>
+<li>
+  Class 4 (#3.7,#3.8,#3.9,#3.10): <xref ref="img-Class4"/>, <xref ref="img-CO-Class4"/>.
+</li>
+<li>
+  Class 5 (#3.11,#3.12,#3.13): <xref ref="img-Class5"/>, <xref ref="img-CO-Class5"/>.
+</li>
+<li>
+  Class 6 (#3.14): <xref ref="fig-V3"/>, <xref ref="fig-CO-V3"/>.
+</li>
+
+<!--
+<li>
+  <A HREF=gifs/venn3c-03-04.gif>Class 2</A> (diagrams #3.3,#3.4);
+  with <A HREF=gifs/CO-venn3c-03-04.gif>regions colored</A>.
+<LI><A HREF=gifs/venn3c-05-06.gif>Class 3</A> (diagrams #3.5,#3.6);
+  with <A HREF=gifs/CO-venn3c-05-06.gif>regions colored</A>.
+<LI><A HREF=gifs/venn3c-07-08-09-10.gif>Class 4</A>
+  (diagrams #3.7,#3.8,#3.9,#3.10);
+  with <A HREF=gifs/CO-venn3c-07-08-09-10.gif>regions colored</A>.
+<LI><A HREF=gifs/venn3c-11-12-13.gif>Class 5</A> (diagrams #3.11,#3.12,#3.13);
+  with <A HREF=gifs/CO-venn3c-11-12-13.gif>regions colored</A>.
+<LI><A HREF="VennWhatEJC.html#3circle">Class 6</A> (diagram #3.14
+  the three circle diagram shown on the "what is a Venn diagram?" page);
+  with <A HREF="VennWhatEJC.html#3circle">regions colored</A>.
+-->
+</ul>
+</p>
+
+<p>
+Note that classes 2 and 3 are equivalent but not isomorphic, as are
+  diagrams #3.3 &amp; #3.6 (and #3.4 &amp; #3.5).
+Diagram #3.3 appears also in
+  <xref ref="ref-ES">[ES]</xref> (showing that it is a convex ADD LINK diagram).
+The diagrams in Class 2 have the property that each pair of curves at
+  a point of intersection meet transversally;
+  the diagrams of Class 3 do not have this property.
+Aside from the simple diagram of Class 6, only Class 2 is rigid; the
+  other classes are non-rigid.
+</p>
+
+</subsection>
+
+<subsection>
+<title>Diagrams with <m>n = 4</m> curves</title>
+
+<p>
+For <m>n = 4</m> there are two distinct simple Venn diagrams
+  and one distinct simple Venn class (this was first observed by
+  Grünbaum <xref ref="ref-Gr92a">[Gr92a,p.8]</xref>
+  and proven in <xref ref="ref-CHP96b">[CHP96b]</xref>).
+Drawings of these two are shown in Figures 4 (a) and (b) in
+  <xref ref="ref-Gr92a">[Gr92a,p.7]</xref>, and are redrawn here:
+</p>
+
+<image source="pngs/4-VDs-simple.png"></image>
+
+</subsection>
+
+<subsection>
+<title>Diagrams with <m>n = 5</m> curves</title>
+
+<p>
+For <m>n = 5</m>, there are 11 distinct, reducible,
+  simple Venn classes and 12 distinct, reducible, simple
+  Venn diagrams.
+Drawings of these may be found in
+  <xref ref="ref-HP97">[HP97]</xref>.
+There are 8 distinct simple, irreducible Venn classes
+  (<xref ref="ref-CHP00">[CHP00]</xref>).
+Five of them have one convex drawing in the plane
+  (and four of these were discovered by Grünbaum).
+All five can be drawn with five congruent ellipses.
+Thus, in total, there are 19 simple Venn classes
+  for <m>n = 5</m>.
+</p>
+
+<p>
+In proving these results several theorems of independent interest were proven:
+</p>
+
+<theorem>
+<statement>
+A simple Venn diagram for <m>n &gt; 2</m> is 3-connected.
+</statement>
+</theorem>
+
+<p>
+A theorem of Whitney <xref ref="ref-Wh">[Wh]</xref> states that
+  a plane embedding of a 3-connected planar graph is unique, once the
+  outer face has been identified.
+Thus, to determine whether two Venn diagrams are in the same class, we need
+  only try all possible embeddings of one of them with each of its faces
+  as the outer region and observe whether any of these embeddings is
+  isomorphic to the other diagram.
+</p>
+
+<theorem>
+<statement>
+A simple Venn dual for <m>n &gt; 2</m> is 3-connected.
+</statement>
+</theorem>
+
+<theorem>
+<statement>
+No two edges in a face in a Venn diagram belong to the same curve.
+</statement>
+</theorem>
+
+</subsection>
+
+<subsection>
+<title>Diagrams with <m>n = 6</m> curves</title>
+
+<p>
+The total number of Venn diagrams for <m>n = 6</m> is not known.
+As part of his search for 6-Venn triangles, Carroll
+  <xref ref="ref-Ca99">[Ca99]</xref> reports that
+  there are 1833 non-isomorphic simple monotone 6-Venn diagrams with the
+  additional property that there are no more than 6 crossings
+  between any pair of curves.
+</p>
+
+</subsection>
+
+</section>
+
+

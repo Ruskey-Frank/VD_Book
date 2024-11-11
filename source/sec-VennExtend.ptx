@@ -1,0 +1,131 @@
+<section>
+<title>Extending Venn Diagrams</title>
+
+<p>
+In this section we are concerned with trying to use an existing <m>n</m>-Venn diagram to produce a Venn diagram with more
+than <m>n</m> curves.
+</p>
+
+<definition>
+<statement>
+A <m>n</m>-Venn diagram is <term>reducible</term> if the removal of one of its
+  <m>n</m> curves results in a Venn diagram with <m>n-1</m> curves.
+A Venn diagram that is not reducible is <term>irreducible</term>.
+</statement>
+</definition>
+
+<p>
+The two general constructions, by their nature, both yield reducible diagrams.
+The symmetric ellipse diagram shown in <xref ref="fig-5ellipse-irreducible"/> is irreducible.
+Removing curve 4 results in an independent family in which
+  the region corresponding to the set {1} is disconnected
+  (the cyan shaded region of the figure).
+Since the diagram is symmetric, no matter what curve is removed,
+  the result is not a Venn diagram.
+</p>
+
+<p>
+For a long time it was not known whether a reducible Venn diagram
+  whose curves are ellipses existed or not;
+  such a diagram was discovered by Hamburger and Pippert
+  <xref ref="ref-HP00">[HP00]</xref> and is shown below.   WHERE IS IT???
+</p>
+
+<definition>
+<statement>
+A <m>n</m>-Venn diagram <m>\mathbf{C}</m> is <term>extendible</term> if
+  there is a curve that can be added to it to make an <m>(n+1)</m>-Venn diagram,
+  <m>\mathbf{C}'</m>.
+Diagram <m>\mathbf{C}'</m> is said to be an <term>extension</term> of <m>\mathbf{C}</m>.
+</statement>
+</definition>
+
+<p>
+Winkler <xref ref="ref-Wi">[Wi]</xref> makes the following two
+  observations:
+</p>
+
+<theorem xml:id="thm-A">
+<statement>
+For <m>n &gt; 1</m>, a simple <m>n</m>-Venn
+  diagram <m>\mathbf{C}</m> is extendible to a simple <m>(n+1)</m>-Venn diagram if
+  and only if its Venn dual <m>D(\mathbf{C})</m> is Hamiltonian.
+</statement>
+</theorem>
+
+<theorem xml:id="thm-B">
+<statement>
+If the <m>n</m>-Venn diagram <m>\mathbf{C}</m> is an extension
+  of an <m>(n-1)</m>-Venn diagram, then <m>\mathbf{C}</m> is extendible to an
+  <m>(n+1)</m>-Venn diagram.
+</statement>
+</theorem>
+
+<p>
+To prove the latter theorem, let <B>B</B> be the diagram whose extension is
+  <B>C</B>.
+By <xref ref="thm-A"/>, The curve <m>H</m> added to <m>\mathbf{B}</m> to get <m>\mathbf{C}</m>
+  corresponds to a Hamiltonian cycle in D(<B>B</B>).
+In D(<B>C</B>), curve <m>H</m> becomes the
+  prism<fn>The prism of a graph <m>G</m> is formed by taking two copies of <m>G</m> and adding a perfect matching whose edges join corresponding copies of vertices.</fn>,
+  <m>P</m>, of a cycle of length <m>2^n</m>.
+Since the prism of a cycle is Hamiltonian, <m>\mathbf{C}</m> is extendible.
+</p>
+
+<p>
+Edwards' general construction is a manifestation of this proof of
+  <xref ref="thm-B"/>, where the Hamilton cycle in <m>P</m> is the one that alternates
+  back and forth between the two copies of the cycle, two vertices at
+  a time from each cycle.
+Venn's general construction is related but different since it uses
+  non-prism edges (see <xref ref="subsec-Duals"/>).
+</p>
+
+<subsection>
+<title>Winkler's Conjecture</title>
+
+<p>
+Winkler <xref ref="ref-Wi">[Wi]</xref> conjectured that every
+  simple Venn diagram of <m>n</m> curves can be extended to a
+  simple Venn diagram of <m>n+1</m> curves by the addition of a suitable curve.
+This conjecture was modified by Grünbaum
+  <xref ref="ref-Gr92b">[Gr92b]</xref> by removing the restriction
+  of simplicity; i.e., his conjecture was that every Venn diagram
+  is extendible.
+Grünbaum's version was proven by Chilakamarri, Hamburger, and Pippert
+  <xref ref="ref-CHP96a">[CHP96a]</xref>, but Winkler's original
+  conjecture remains unsettled.
+</p>
+
+<p>
+The proof of
+  <xref ref="ref-CHP96a">[CHP96a]</xref>
+  introduces the <term>radual graph</term>, <m>R(\mathbf{C})</m> of the
+  Venn diagram, which, for an arbitrary plane graph,
+  is the union of the radial graph and the dual graph (Ore
+  <xref ref="ref-Or">[Or]</xref> has more information on
+  the radial and dual graphs).
+A simple example, using Venn diagram #3.4, is shown
+  in Figure <xref ref="img-radual"/>.
+The strategy of their proof is first to show that <m>R(\mathbf{C})</m> is
+  a simple triangulation without separating triangles
+  and then invoke a theorem of Whitney
+  <xref ref="ref-Wh">[Wh]</xref> that
+  any such graph is Hamiltonian.
+It is then easy to see that the Hamilton cycle in the radual graph can be
+  used as the additional curve.
+This sufficient condition is also necessary as stated in this
+  analogue of <xref ref="thm-A"/>.
+</p>
+
+<theorem xml:id="thm-extendible">
+<statement>
+For <m>n &gt; 1</m>, a <m>n</m>-Venn
+  diagram <m>\mathbf{C}</m> is extendible to a <m>(n+1)</m>-Venn diagram if
+  and only if its radual graph <m>R(\mathbf{C})</m> is Hamiltonian.
+</statement>
+</theorem>
+
+</subsection>
+
+</section>

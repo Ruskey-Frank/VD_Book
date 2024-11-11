@@ -4,99 +4,291 @@
   <title>References to Venn Diagrams</title>
 
   <introduction>
-    <p>This chapter contains references to Venn Diagrams.</p>
+    <p>This chapter contains references to Venn Diagrams.  Probably need to move this into the "Backmatter"!</p>
   </introduction>
 
-  <image source="/gifs/VictoriaIcon.gif">
-  </image>
-
-  <image source="/pngs/2vennAa.png">
-  </image>
-
-  <image source="/gifs/VennPaint.gif">
-    <shortdescription>A painting of John Venn</shortdescription>
-  </image>
-
-  <!-- include sections
-  <xi:include href="sec-section-name.ptx" />
-  -->
-
-  <P>
-
-  [AC] Daniel E. Anderson and Frank L. Cleaver, Venn-type diagrams for arguments of n terms, J. Symbolic Logic, 30 (1965) 113-118.
+<section>
+<title>Print References</title>
+  <p xml:id="ref-AC">
+  <B>[AC]</B> Daniel E. Anderson and Frank L. Cleaver, Venn-type diagrams for arguments of <m>n</m> terms, J. Symbolic Logic, 30 (1965) 113-118.
+  </p>
+  <p>  
   [An] J. Anusiak, On Set-theoretically Independent Collections of Balls, Colloquium Mathematicum, 13 (1965) 223-233.
+  </p>
+  <p>
   [Bak] M. J. C. Baker, All swans are white: some remarks on the diagrams of Euler and Venn, Australian Math. Soc. Gaz., 17 (1990) 161-167.
+  </p>
+  <p>
   [Bar] Margaret E. Baron, A note on the historical development of logic diagrams: Leibniz, Euler, and Venn, Mathematical Gazette, 53 (1969) 113-125.
-  [Be] E. C. Berkeley, Boolean algebra (the technique for manipulating "and", "or", "not" and conditions) and applications to insurance, The Record, American Institute of Actuaries, 26 (1937) 373-414. [According to [Grün75], this paper contains a general Venn diagram construction].
+  </p>
+  <p xml:id="ref-Be">
+  [Be] E. C. Berkeley, Boolean algebra (the technique for manipulating "and", "or", "not" and conditions) and applications to insurance, 
+  The Record, American Institute of Actuaries, 26 (1937) 373-414.
+  <fn>[According to <xref ref="ref-Gr75">[Grün75]</xref>, this paper contains a general Venn diagram construction].</fn> 
+  </p>
+  <p>
   [Boy] A. V. Boyd, Venn diagram of rectangles, Mathematics Magazine, 58 (1985) 251.
-  [Bow] L. J. Bowles, Logic diagrams for up to n classes, Mathematical Gazette, 55 (1971) 370-373.
+  </p>
+  <p>
+  [Bow] L. J. Bowles, Logic diagrams for up to <m>n</m> classes, Mathematical Gazette, 55 (1971) 370-373.
+  </p>
+  <p xml:id="ref-BR">
   [BR] Bette Bultena and Frank Ruskey, Venn Diagrams with Few Vertices, Electronic Journal of Combinatorics, Volume 5, #R44, (1998).
+  </p>
+  <p xml:id="ref-BGR">
   [BGR] Bette Bultena, Branko Grünbaum, and Frank Ruskey, Convex Drawings of Intersecting Families of Simple Closed Curves, 11th Canadian Conference on Computational Geometry, (1999) 18-21.
-  [Cao] Tao Cao, Computing all the simple symmetric monotone Venn diagrams on seven curves, Master's thesis, University of Victoria (2001).
-  [Car99] J. Carroll, personal communication, December 1999.
-  [Car00] J. Carroll, Drawing Venn triangles, Technical Report HPL-2000-73, HP Labs (2000).
-  [Car05] J. Carroll, personal communication, May 2005.
+  </p>
+  <p xml:id="ref-Ca">
+  [Ca] Tao Cao, Computing all the simple symmetric monotone Venn diagrams on seven curves, Master's thesis, University of Victoria (2001).
+  </p>
+  <p xml:id="ref-Ca99">
+  [Ca99] J. Carroll, personal communication, December 1999.
+  </p>
+  <p xml:id="ref-Ca00">
+  [Ca00] J. Carroll, Drawing Venn triangles, Technical Report HPL-2000-73, HP Labs (2000).
+  </p>
+  <p xml:id="ref-Ca05">
+  [Ca05] J. Carroll, personal communication, May 2005.
+  </p>
+  <p xml:id="ref-CHP95">
   [CHP95] K. B. Chilakamarri, P. Hamburger, and R. E. Pippert, Venn diagrams: announcement of some new results, Geombinatorics, 4 (1995) 129-137.
+  </p>
+  <p xml:id="ref-CHP96a">
   [CHP96a] K. B. Chilakamarri, P. Hamburger, and R. E. Pippert, Hamilton Cycles in Planar Graphs and Venn Diagrams, Journal of Combinatorial Theory (Series B), 67 (1996) 296-303.
+  </p>
+  <p xml:id="ref-CHP96b">
   [CHP96b] Kiran B. Chilakamarri, Peter Hamburger and Raymond E. Pippert, Venn diagrams and planar graphs, Geometriae Dedicata, 62 (1996) 73-91.
+  </p>
+  <p xml:id="ref-CHP00">
   [CHP00] Kiran B. Chilakamarri, Peter Hamburger and Raymond E. Pippert, Analysis of Venn diagrams using cycles in graphs, Geometriae Dedicata, 82 (2000) 193-223.
+  </p>
+  <p>
   [CR98] S. Chow and F. Ruskey, Searching for symmetric Venn diagrams, extended abstract, (1998).
+  </p>
+  <p>
   [CR03] S. Chow and F. Ruskey, Drawing Area-Proportional Venn and Euler Diagrams, 11th International Symposium on Graph Drawing, Perugia, Italy, Lecture Notes in Computer Science, 2912 (2003) 466-477.
+  </p>
+  <p>
   [CR05] S. Chow and F. Ruskey, Drawing minimum area Venn diagrams using polyominoes, manuscript, submitted (2005), 11 pages.
+  </p>
+  <p>
   [Ci03] Barry Cipra, Diagram masters cry 'Venn-i, Vidi, Vici', Science, 299 (January 2003) 651.
+  </p>
+  <p>
   [Ci04] Barry Cipra, Venn Meets Boole in Symmetric Proof, SIAM News, 37 no. 1 (January/February 2004).
+  </p>
+  <p xml:id="ref-Ed89a">
   [Ed89a] Anthony W. F. Edwards, Venn diagrams for many sets, Bulletin of the International Statistical Institute, 47th Session, Paris (1989). Contributed papers, Book 1, 311-312.
+  </p>
+  <p xml:id="ref-Ed89b">
   [Ed89b] Anthony W. F. Edwards, Venn diagrams for many sets, New Scientist, 7 (January 1989) 51-56.
+  </p>
+  <p>
   [Ed92] Anthony W. F. Edwards, Rotatable Venn Diagrams, Mathematics Review, 2 (February 1992) 19-21.
+  </p>
+  <p>
   [Ed96] Anthony W. F. Edwards, Seven-set Venn diagrams with rotational and polar symmetry, Combinatorics, Probability, and Computing, 7 (1998) 149-152.
+  </p>
+  <p xml:id="ref-Ed04">
   [Ed04] Anthony W. F. Edwards, Cogwheels of the Mind: The Story of Venn Diagrams, The John Hopkins University Press, Baltimore, Maryland (2004).
+  </p>
+  <p>
   [EE] Anthony W. F. Edwards and J. H. Edwards, Metrical Venn diagrams, Annals of Human Genetics 56 (1992), 71-75. Also reprinted in Cogwheels of the Mind ([Ed04]).
+  </p>
+  <p xml:id="ref-ES">
   [ES] Anthony W. F. Edwards and C. A. B. Smith, New 3-set Venn diagram, Nature, (Scientific Correspondence), 339 (1989) 263.
-  [Eu] Leonard Euler, Lettres à une Princesse d'Allemagne, St. Petersburg, (1768). (Translated by Sir David Brewster, Edinburgh, W & C Tait, and Longman et al., 1823, Vol. 1. See in particular letters CII - CVIII on pages 337-366.)
+  </p>
+  <p>
+  [Eu] Leonard Euler, Lettres à une Princesse d'Allemagne, St. Petersburg, (1768). 
+  <fn>(Translated by Sir David Brewster, Edinburgh, W &amp; C Tait, and Longman et al., 1823, Vol. 1. See in particular letters CII - CVIII on pages 337-366.)</fn>
+  </p>
+  <p xml:id="ref-FGK">
   [FGK] J. Chris Fisher, Branko Grünbaum, and E. L. Koh, Diagrams Venn and How, Mathematics Magazine, 61 (1988) 36-40.
+  </p>
+  <p>
   [Ga] Martin Gardner, Logic, Machines, and Diagrams, McGraw-Hill, New York, (1958).
+  </p>
+  <p>
   [GHKT] Joseph (Yossi) Gil, John Howse, Stuart Kent, and John Taylor, Projections in Venn-Euler Diagrams, in Proc. IEEE Symposium on Visual Languages, Seattle, Washington (2000) 119-126.
+  </p>
+  <p xml:id="ref-Gl">
   [Gl] Andrew Glassner, Venn and Now, IEEE Computer Graphics and Applications, Volume 23 (no. 4), (July/August 2003), 82-95.
-  [GKP] Ronald Graham, Donald Knuth, and Oren Patashnik, Concrete Mathematics, Addison-Wesley, (1989). [Exercises about Venn diagrams (1.5 and 1.22) may be found on pages 17 and 20, with corresponding solutions on pages 483 and 486.]
+  </p>
+  <p>
+  [GKP] Ronald Graham, Donald Knuth, and Oren Patashnik, Concrete Mathematics, Addison-Wesley, (1989). 
+  <fn>[Exercises about Venn diagrams (1.5 and 1.22) may be found on pages 17 and 20, with corresponding solutions on pages 483 and 486.]</fn>
+  </p>
+  <p xml:id="ref-GKS">
   [GKS] Jerrold Griggs, Charles E. Killian and Carla D. Savage, Venn Diagrams and Symmetric Chain Decompositions in the Boolean Lattice, Electronic Journal of Combinatorics, Volume 11 (no. 1), #R2, (2004).
-  [Gr75] Branko Grünbaum, Venn diagrams and Independent Families of Sets, Mathematics Magazine, 48 (Jan-Feb 1975) 12-23. [Grünbaum awarded the MAA Lester R. Ford prize for this paper in 1976 (see AMM, Aug-Sept. 1976, pg. 587).]
-  [Gr84a] Branko Grünbaum, The Construction of Venn Diagrams, The College Mathematics Journal, Vol. 15 No. 3 (1984) 238-247.
+  </p>
+  <p xml:id="ref-Gr75">
+  [Gr75] Branko Grünbaum, Venn diagrams and Independent Families of Sets, Mathematics Magazine, 48 (Jan-Feb 1975) 12-23.
+  <fn>[Grünbaum awarded the MAA Lester R. Ford prize for this paper in 1976 (see AMM, Aug-Sept. 1976, pg. 587).]</fn>
+  </p>
+  <p>
+  [Gr84a] Branko Grünbaum, <articletitle>The Construction of Venn Diagrams</articletitle>, The College Mathematics Journal, Vol. 15 No. 3 (1984) 238-247.
+  </p>
+  <p>
   [Gr84b] Branko Grünbaum, On Venn Diagrams and the Counting of Regions, The College Mathematics Journal, Vol. 15 No. 5 (1984) 433-435.
+  </p>
+  <p xml:id="ref-Gr92a">
   [Gr92a] Branko Grünbaum, Venn Diagrams I, Geombinatorics, Volume I, Issue 4, (1992) 5-12.
+  </p>
+  <p xml:id="ref-Gr92b">
   [Gr92b] Branko Grünbaum, Venn Diagrams II, Geombinatorics, Volume II, Issue 2, (1992) 25-32.
+  </p>
+  <p xml:id="ref-Gr99">
   [Gr99] Branko Grünbaum, The Search for Symmetric Venn Diagrams, Geombinatorics, 8 (1999) 104-109.
+  </p>
+  <p>
   [GW] Branko Grünbaum and Peter Winkler, A Simple Venn Diagram of Five Triangles, Mathematics Magazine, 55 no. 5 (1982) 311.
+  </p>
+  <p>
   [GLT] A. Gyárfás, J. Lehel, and Zs. Tuza, The structure of rectangle families dividing the plane into maximum number of atoms, Discrete Math. 52 (1984) 177-198. (MR 86g:05025)
+  </p>
+  <p>
   [Ha98a] Peter Hamburger, Constructing Venn diagrams using graphs, Matematikai Lapok, 4 (1994) no. 2-3 (1998) 1-70. In Hungarian, with English summary.
+  </p>
+  <p>
   [Ha98b] Peter Hamburger, A Graph-Theoretic Approach to Geometry, manuscript, 1998.
+  </p>
+  <p>
   [Ha02] Peter Hamburger, Doodles and doilies, non-simple symmetric Venn diagrams, Discrete Math., a Special Issue in Honor of the 65th Birthday of Daniel J. Kleitman, (2-3) 257 (2002) 423-439.
+  </p>
+  <p>
   [Ha02b] Peter Hamburger, Pretty drawings. More doodles and doilies, symmetric Venn diagrams, manuscript, (2002). [A shorter version (33 pages) will appear in Utilitas Mathematica]
+  </p>
+  <p>
   [HH] Peter Hamburger and Edit Hepp, Symmetric Venn diagrams in the Plane: The Art of Assigning a Binary Bit String Code to Planar Regions Using Curves, Leonardo, MIT Press, accepted for publication, (2005).
+  </p>
+  <p>
   [HPS] P. Hamburger, Gy. Petruska, and A. Sali, Saturated chain partitions in ranked partially ordered sets, and non-monotone symmetric 11-Venn diagrams, Studia Sci. Math. Hungar. 41 (2004) 147-191.
+  </p>
+  <p xml:id="ref-HP97">
   [HP97] P. Hamburger and R. E. Pippert, Simple, reducible Venn diagrams on five curves and Hamiltonian cycles, Geometriae Dedicata, (no. 3) 68 (1997) 245-262.
+  </p>
+  <p xml:id="ref-HP00">
   [HP00] P. Hamburger and R. E. Pippert, Venn said it couldn't be done, Mathematics Magazine, Vol. 73 No. 2 (April 2000) 105-110 .
+  </p>
+  <p>
   [HP03] P. Hamburger and R. E. Pippert, A symmetrical beauty. A non-simple 7-Venn diagram with a minimum vertex set, Ars Combin. 66 (2003) 129-137.
+  </p>
+  <p>
   [HS03] P. Hamburger and A. Sali, Symmetric 11-Venn diagrams with vertex sets 231, 242, ..., 352, Studia Sci. Math. Hungar., (1-2) 40 (2003) 121-143.
+  </p>
+  <p>
   [HS04] P. Hamburger and A. Sali, 11-Doilies with vertex sets 275, 286, ..., 462, AKCE International Journal of Graphs and Combinatorics, 1 (2004) 109-133.
+  </p>
+  <p xml:id="ref-He">
   [He] D. W. Henderson, Venn diagrams for more than four classes, American Mathematical Monthly, 70 (1963) 424-426.
+  </p>
+  <p>
   [Ji] Zongliang Jiang, Symmetric chain decompositions and independent families of curves, Master's thesis, Department of Computer Science, North Carolina State University, (2003).
-  [JP] D.S. Johnson and H.O. Pollack, Hypergraph Planarity and the Complexity of Drawing Venn Diagrams, Journal of Graph Theory, Vol. 3 No. 11 (1987) 309-325. [Earlier version appears in Colloquium on the Theory of Algorithms, North-Holland, 1985.]
+  </p>
+  <p>
+  [JP] D.S. Johnson and H.O. Pollack, Hypergraph Planarity and the Complexity of Drawing Venn Diagrams, Journal of Graph Theory, Vol. 3 No. 11 (1987) 309-325. 
+  <fn>[Earlier version appears in Colloquium on the Theory of Algorithms, North-Holland, 1985.]</fn>
+  </p>
+  <p>
   [KRSW] Charles E. Killian, Frank Ruskey, Carla D. Savage, and Mark Weston, Half-Simple Symmetric Venn Diagrams, Electronic Journal of Combinatorics, Volume 11 (no. 1), #R86, (2004).
+  </p>
+  <p>
   [LL] D.K.J. Lin and A.W. Lam, Connections Between Two-Level Factorials and Venn Diagrams , The American Statistician, 51 (1997) 49-51.
+  </p>
+  <p>
   [MC] Arnaud Maes and Corinne Cerf, A family of Brunnian links based on Edwards' construction of Venn diagrams, J. Knot Theory Ramifications, 10 no. 1, (2001) 97-107.
+  </p>
+  <p xml:id="ref-Mo">
   [Mo] Trenchard More, Jr. On the construction of Venn diagrams, J. Symbolic Logic, 24 (1959) 303-304.
-  [No] P. Nowicki, Koniczynko n-listna, [In Polish], Wiadom. Mat., 19 (1975) 11-18.
+  </p>
+  <p>
+  [No] P. Nowicki, Koniczynko <m>n</m>-listna, [In Polish], Wiadom. Mat., 19 (1975) 11-18.
+  </p>
+  <p>
   [Pa] Lewis Pakula, A note on Venn diagrams, American Mathematical Monthly, 96 (1989) 38-39. (MR 89k:51040)
+  </p>
+  <p>
   [PS] Vern S. Poythress and Hugo S. Sun, A method to construct convex, connected Venn diagrams for any finite number of sets, The Pentagon, 31 (Spring 1972) 80-83.
-  [RRS] A. Rényi, V. Rényi, and J. Surányi, Sur l'indépendance des domaines simples dans l'Espace Euclidien a n dimensions, Colloquium Mathematicum, 2 (1951) 130-135. [Some erroneous statements made in this paper are corrected in [Gr75]]
+  </p>
+  <p xml:id="ref-RRS">
+  [RRS] A. Rényi, V. Rényi, and J. Surányi, Sur l'indépendance des domaines simples dans l'Espace Euclidien a n dimensions, Colloquium Mathematicum, 2 (1951) 130-135. 
+  <fn>[Some erroneous statements made in this paper are corrected in <xref ref="ref-Gr75">[Gr75]</xref>]</fn>
+  </p>
+  <p>
   [RW] Frank Ruskey and Mark Weston, More fun with symmetric Venn diagrams, in Proceedings of Third International Conference on FUN with Algorithms, ed. P. Ferragina and R. Grossi, Tuscany, Italy, (2004), 235-246. [To appear in Theory of Computing Systems]
+  </p>
+  <p>
   [Sc] A. J. Schwenk, Venn diagram for five sets, Mathematics Magazine, 57 (1984) 297.
+  </p>
+  <p xml:id="ref-Sh">
   [Sh] Sun-Joo Shin, The logical status of diagrams, Cambridge University Press, (1994). (MR 95j:03014)
+  </p>
+  <p xml:id="Ve80">
   [Ve80] J. Venn, On the diagrammatic and mechanical representation of propositions and reasonings, The London, Edinburgh, and Dublin Philosophical Magazine and Journal of Science, 9 (1880) 1-18.
-  [Ve81] J. Venn, Symbolic Logic, MacMillan, London 1881, 2nd ed., (1894). Reprinted by Lenox Hill Pub. & Dist. Co. (Burt Franklin), 1971 (S.B.N. 8337-36264).
+  </p>
+  <p xml:id="Ve81">
+  [Ve81] J. Venn, Symbolic Logic, MacMillan, London 1881, 2nd ed., (1894). Reprinted by Lenox Hill Pub. &amp; Dist. Co. (Burt Franklin), 1971 (S.B.N. 8337-36264).
+  </p>
+  <p>
   [Weg] B. Weglorz, Nerves and Set-theoretical Independence, Colloquium Mathimaticum, 13 (1964) 17-19.
+  </p>
+  <p>
   [Wes] Mark Weston, On symmetry in Venn diagrams and independent families, Master's thesis, University of Victoria, (2003).
+  </p>
+  <p xml:id="ref-Wi">
   [Wi] Peter Winkler, Venn diagrams: Some observations and an open problem, Congressus Numerantium, 45 (1984) 267-274.
+  </p> 
+
+</section>
+
+<section>
+<title>Other References (not about Venn diagrams per se)</title>
+
+  <p xml:id="ref-Kn">
+  [Kn] D. Knuth, The Art of Computer Programming: Volume 4A, Combinatorial Algorithms, Addison-Wesley, 2011.
+  </p>
+  <p xml:id="ref-NW">
+  [NW] A. Nijenhuis and H. S. Wilf, Combinatorial Algorithms, 2nd. ed., Academic Press, New York, London, 1978. 
+  </p>
+  <p xml:id="ref-Or">
+  [Or] O. Ore, The Four-Color Problem, Academic Press, New York, London, 1967.
+  </p>
+  <p xml:id="ref-Wh">
+  [Wh] H. Whitney, A Theorem on Graphs, Annals of Math., 32 (1931) 378-390.
+  </p>
+  
+</section>
+
+
+<section>
+<title>Electronic References</title>
+
+<p>
+The following references are online and may disappear or change over time.
+<fn>The external sites listed below are not endorsed by The Electronic Journal of Combinatorics and do not form part of this article.</fn>
+</p>
+
+  <p xml:id="ref-MAC">
+  [MAC] The <url href="https://mathshistory.st-andrews.ac.uk/">MacTutor</url> site contains a 
+  <url href="https://mathshistory.st-andrews.ac.uk/Biographies/Venn/">biography of John Venn</url>.
+  </p>
+  <p xml:id="ref-KP">
+  [KP] Robert Scharein's <url href="https://knotplot.com/">KnotPlot site</url>. All figures with knots on this site were produced with KnotPlot.
+  </p>
+  <p xml:id="ref-SJ">
+  [SJ] Slavik Jablan's page <url href="https://vismath5.tripod.com/bor/index.html">"Are Borromean Links so Rare?"</url>
+  </p>
+  <p xml:id="ref-GC">
+  [GC] The <url href="http://www.geom.uiuc.edu/">Geometry Center</url> at the University of Minnesota.
+  </p>
+
+</section>
+
+
+
+  
+<P>
+<!--
   Obscure references (and not necessarily relevant).
 
   Other References Used
@@ -126,6 +318,7 @@
   [KM] Donald Knuth's online lectures are available at the Stanford Center for Professional Development.
   [KP] Robert Scharein's KnotPlot site. All pictures of knots on this site were produced with KnotPlot.
   [MT] Mark Thomson's page on Venn Polyominoes. 
+-->
 
   </P>
 

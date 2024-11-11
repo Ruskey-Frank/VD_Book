@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-VennSymmetric" xmlns:xi="http://www.w3.org/2001/XInclude">
+<title>Symmetric Venn Diagrams A</title>
+
+<introduction>
+<p>
+The main focus in this chapter are Venn diagrams that have rotational symmetry.
+There are general results for non-simple diagrams and results for small <m>n</m>
+  when the diagram is simple.
+In the final section we will consider diagrams embedded on the sphere.
+</p>
+</introduction>
+
+<section>
+<title>Test Section</title>
+
+</section>
+
+<xi:include href="./sec-SymmVariant.ptx" />
+
+<xi:include href="./sec-SymmSmall.ptx" />
+
+</chapter>

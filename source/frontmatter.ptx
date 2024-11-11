@@ -6,7 +6,7 @@
 <frontmatter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="frontmatter">
   <titlepage>
     <author>
-      <personname>Frank Ruskey</personname>
+      <personname>Frank Ruskey (and Mark Weston?)</personname>
       <department>Computer Science</department>
       <institution>University of Victoria</institution>
     </author>
@@ -18,12 +18,12 @@
   <colophon>
 
     <website>
-      <url href="https://pretextbook.org">My Website</url>
+      <url href="http://webhome.cs.uvic.ca/~ruskey/">Frank Ruskey's Homepage.</url>
     </website>
 
     <copyright>
       <year>20??<ndash />2024</year>
-      <holder>Frank Ruskey</holder>
+      <holder>Frank Ruskey (and Mark Weston?)</holder>
       <shortlicense> This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit <url href="http://creativecommons.org/licenses/by-sa/4.0/" visual="creativecommons.org/licenses/by-sa/4.0"> CreativeCommons.org</url>
       </shortlicense>
     </copyright>

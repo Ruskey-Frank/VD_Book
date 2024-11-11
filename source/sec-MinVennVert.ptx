@@ -1,0 +1,87 @@
+<section xml:id="minimum">
+<title>Minimum Venn diagrams</title>
+
+<sidebyside>
+<p>
+In a simple Venn diagram the number of vertices is exactly <m>2^n -2</m>.
+For non-simple Venn diagrams this number can be reduced, but a
+  lower bound of <m>\lceil (2^n-2)/(n-1) \rceil</m>
+  is readily derived from Euler's relation and the fact that at
+  most <m>n</m> curves can intersect at a point.
+  Diagrams achieving this lower bound are known for <m>n = 2,3,\ldots,7</m>,
+  and are said to be <term>minimum</term>.
+For <m>n=3</m> diagrams #3.1 and #3.2 achieve this lower bound.
+These are the Venn diagrams of Class 1 (see <xref ref="img-Class1"/>).
+For <m>n=4</m> the diagram shown here (discovered in collaboration with
+Peter Hamburger) achieves the lower bound.
+See <xref ref="img-min5"/> and <xref ref="img-min5c"/> for an example when <m>n=5</m> (from <xref ref="ref-BR">[BR]</xref>),
+and <xref ref="img-min7a"/>, <xref ref="img-min7aC"/>, <xref ref="img-min7b"/> and <xref ref="img-min7bC"/>
+  for examples when examples for <m>n=7</m> (discovered in collaboration with Stirling Chow).
+<td width=340>
+</p>
+<image source="gifs/betteMin4.gif"></image>
+</sidebyside>
+
+<definition xml:id="def-monotone">
+<statement>
+A Venn diagram is <term>monotone</term> if, for <m>0 &lt; k &lt n</m>,
+  every <m>k</m>-region is adjacent to both a <m>(k-1)</m>-region and
+  a <m>(k+1)</m>-region.
+</statement>
+</definition>
+
+<p>
+The general construction of Edwards is monotone; the general
+  construction of Venn is not.
+Examples of monotone and non-monotone Venn diagrams may be found on the
+  <xref ref="ch-VennSymmetric"/>, about symmetric Venn diagrams.
+The 3-Venn diagrams
+  #3.12 and #3.13, shown in <xref ref="img-Class5"/>,
+  both in the same class, show that
+  monotonicity is a property of Venn diagrams and not Venn classes,
+  since #3.12 is monotone and #3.13 is not.
+In a monotone Venn diagram the
+  <m>k</m>-regions, for any <m>0 &lt; k &lt n</m>,
+  form a "cycle", in the sense that every <m>k</m>-region touches
+  exactly two others, and they are connected together in a
+  cycle under this relation
+  <xref ref="ref-BR">[BR]</xref>.
+</p>
+
+<p>
+We can view monotonicity in another order-theoretic way.
+The Venn dual graph, <m>D(\mathbf{C})</m>, defined above, could have been
+  defined as a directed acyclic graph, with the direction indicating
+  whether one vertex is a subset of another.
+Let's call this the <term>directed Venn dual graph</term>.
+The directed Venn dual is a spanning subgraph of the Hasse
+  diagram (regarded as a directed graph) of the Boolean lattice.
+As shown in <xref ref="ref-BGR">[BGR]</xref>, a Venn diagram
+  is monotone if and only if the directed Venn
+  dual graph has a unique maximum element (a sink) and a unique minimum
+  element (a source).
+</p>
+
+<p>
+Bultena and Ruskey   <xref ref="ref-BR">[BR]</xref>
+  determined <m>M_n</m>,
+  the least number of vertices in a monotone <I>n</I>-Venn diagram.
+</p>
+
+<theorem>
+<statement>
+For all <m>n \ge 1</m>,
+<me>
+M_n = {n \choose \lfloor n/2 \rfloor}</m>.
+</me>
+</statement>
+</theorem>
+
+<p>
+As part of their proof they gave an inductive construction to show
+  that monotone Venn diagrams that achieve this bound exist for all <m>n &gt; 1</m>.
+A constructive proof with a different motivation is given in <xref ref="ref-GKS">[GKS]</xref>.
+</p>
+
+</section>
+

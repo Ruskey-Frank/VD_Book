@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-VennWhatIs" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>What is a Venn Diagram?</title>
+
+  <introduction>
+    <p>The first section of this chapter defines independent sets, and then Venn diagrams.  
+    We then show a couple of inductive constructions of Venn diagrams with <m>n</m> curves, for any integer <m>n</m>.
+    There also is a small section on the Borromean Rings.</p>
+  </introduction>
+
+  <image source="/gifs/VictoriaIcon.gif">
+  </image>
+
+  <!-- include sections
+  <xi:include href="sec-section-name.ptx" />
+  -->
+
+<section>
+<title>Definition of Venn Diagrams</title>
+
+<p>
+We follow Grünbaum <xref ref="ref-Gr75">[Gr75]</xref> in first
+  defining a more general concept, that of an independent family.
+Let <m>\mathbf{C} = \{ C_1, C_2, \ldots, C_n \}</m>
+  be a collection of simple closed curves drawn in the plane.
+The collection <m>\mathbf{C}</m> is said to be an <term>independent family</term>
+  if the <em>region</em> formed by the intersection of <m>X_1, X_2, \ldots, X_n</m>
+  is nonempty, where each <m>X_i</m> is either <m>int(C_i)</m>
+  (the interior of <m>C_i</m> ) or is <m>ext(C_i)</m>
+  (the exterior of <m>C_i</m> ).
+</p>
+
+<p>
+If, in addition, each such region is connected and there are only
+  finitely many points of intersection between curves, then <B>C</B> is a <term>Venn diagram</term>,
+  or an <m>n</m>-Venn diagram if we wish to
+  emphasize the number of curves in the diagram.
+The condition that there are only a finite number of intersection points
+is usually assumed in the literature, but often not stated explicitly.
+It rules out, e.g., segments of curves from intersecting.
+</p>
+
+<p>
+Since each region is either inside or outside of a given curve, and there are <m>n</m> curves,
+there must be exactly <m>2^n</m> regions in a Venn diagram (including the exterior,
+empty region, which is outside of all curves).
+Note that some authors refer to diagrams
+with <i>fewer</i> than <m>2^n</m> regions as Venn diagrams, but they are more properly termed
+<emph>Euler diagrams</emph>, after the mathematician Leonard Euler.  More on these important diagrams can be
+found on the page on <a href="VennOtherEJC.html#euler">Generalizations and Extensions</a>.
+We refer to a region enclosed by exactly <m>k</m> curves as a <m>k</m>-region or <m>k</m>-set.
+</p>
+
+  <sidebyside>
+  <figure xml:id="fig-V3">
+  <image source="/gifs/V3.gif" width="10%">
+  </image>
+  </figure>
+  <figure xml:id="fig-CO-V3">
+  <image source="/gifs/V3plain.gif" width="10%">
+  </image>
+  </figure>
+  <p>
+  On the left we show the most familiar of all Venn diagrams.
+In this case <m>n=3</m>, the simple closed curves are all circles,
+  and in the leftmost diagram the 8 regions have been labelled with
+  the interiors that are included in each intersection.
+The eighth region is the exterior region, corresponding to the empty set.
+The colored diagram has all 1-sets colored yellow, all 2-sets red,
+  and the 3-set blue.
+This diagram also occurs as a minimal projection of the
+  Borromean Rings, see <xref ref="sec-Borromean"/>.
+  </p>
+  </sidebyside>
+  
+<sidebyside>
+  <image source="/gifs/independent.gif" width="20%"></image>
+  <p>
+  On the left we show an example, for <m>n=4</m>,
+  of an independent family that is not a Venn diagram.
+  Here the simple closed curves are each congruent triangles, which
+  are colored red, blue, green, and gold.
+  Note that the intersection of the interiors of the red and
+  blue triangles with the exteriors of the green and gold
+  triangles gives a disconnected region, the two darkly shaded regions
+  in the figure.
+  </p>
+</sidebyside>
+
+  <p>
+  The figure below is a Venn diagram of 4 ellipses, originally found by Venn himself
+  <xref ref="Ve80">[Ve80]</xref>.  See also a <xref ref="img-ellipses">black-and-white</xref> version
+  and its <xref ref="img-Tutte4">Tutte embedding</xref>.
+  <image source="pngs/4-ellipses.png" width="50%"></image>
+  </p>
+
+<p>
+A <term>simple</term> Venn diagram is one in which
+no more than two curves intersect at a common point.  Simple diagrams
+are in some sense the "nicest" as they are easiest to draw and understand.
+All of the figures in this chapter are simple, but we will see many examples
+in other chapters of non-simple diagrams.
+Unless stated otherwise, we assume that Venn diagrams are simple.
+</p>
+
+<p>
+Finally, we note that the 3-circle diagram shown above, and the 2-circle diagram for 2 sets, appear often in
+the context of proving simple logical arguments.  Readers interested in the applications of Venn
+diagrams to logical arguments are referred to the excellent introductory article by Glassner <xref ref="ref-Gl">[Gl]</xref>, 
+the book by Shin <xref ref="ref-Sh">[Sh]</xref>, and many standard logic textbooks.
+</p>
+  
+</section>
+
+<section xml:id="sec-VennExist">
+<title>Constructions of Venn Diagrams</title>
+<p>
+Above we saw that Venn diagrams exist for <m>n = 3</m>, and it is
+  easy to see (for example, by removing circles) that Venn
+  diagrams exist for <m>n=0,1,2</m>.
+Diagrams exist for all larger values of <m>n</m> as well.
+There have been
+  several general constructions published (see <xref ref="ref-Be">[Be]</xref>,
+  <xref ref="ref-RRS">[RRS]</xref>, <xref ref="ref-Mo">[Mo]</xref>, <xref ref="ref-AC">[AC]</xref>, and
+  <xref ref="ref-FGK">[FGK]</xref>, for a sampling in chronological order); we explain two of them
+  below.  
+They both have the nice property that they produce simple diagrams and have easy to explain inductive constructions.
+In both cases, a new curve is added by drawing a new curve <m>C_n</m> that "follows" an existing curve <m>C_i</m>; in one case, 
+  <m>i=1</m> and in the other case <m>i=n-1</m>.
+</p>
+
+<subsection>
+<title>Venn's Construction</title>
+
+<sidebyside>
+<p>
+Venn's construction, outlined in his original paper
+  <xref ref="Ve80">[Ve80]</xref>, is best
+  explained by considering the figure to the right.
+Start with the 3 circle diagram.
+Curves are successively added, with the new curve tracing the
+  one last added and dividing each existing region in two.
+In the figure they are added in the order blue (4), red (5),
+  and green (6).
+It should be clear where the seventh curve would be drawn.
+</p>
+<image source="gifs/V3a.gif"></image>
+</sidebyside>
+</subsection>
+
+<subsection>
+<title>Edwards' Construction</title>
+
+<sidebyside>
+<image source="gifs/EdwardsCol6.gif"></image>
+<p>
+  Anthony Edwards <xref ref="ref-Ed89a">[Ed89a]</xref>,
+  <xref ref="ref-Ed89b">[Ed89b]</xref> developed another general
+  inductive construction that has several nice properties,
+  including some symmetry.
+It is also best explained by means of an example; refer to
+  the diagram on the left.
+For <m>n=2</m> the diagram consists of two perpendicular lines.
+(Strictly speaking we have to join the endpoints of these lines to make
+  them into simple closed curves.)
+For <m>n=3</m> a circle is added, centered at the point of intersection of the lines.
+Successive curves will all be added that follow this circle,
+  weaving back and forth along the circle, again dividing each
+  region in two.
+For <m>n = 4,5,6</m> the blue, red, and green curves are added,
+  in that order.
+</p>
+</sidebyside>
+
+<p>
+These diagrams have very attractive bipartite colourings as can be
+  seen below.
+The reason for calling these colourings "bipartite" is explained in 
+  <xref ref="ch-VennGraphs">Chapter</xref>, Graphs Associated with Venn
+  Diagrams.
+</p>
+
+<sidebyside>
+<ul>
+<li><xref ref="img-n2c"/> shows <m>n=2</m>.
+</li>
+<li><xref ref="img-n3c"/> shows <m>n=3</m>.
+</li>
+<li><xref ref="img-n4c"/> shows <m>n=4</m>.
+</li>
+<li><xref ref="img-n5c"/> shows <m>n=5</m>.
+</li>
+<li><xref ref="img-n6c"/> shows <m>n=6</m>.
+</li>
+<li><xref ref="img-n7c"/> shows <m>n=7</m>.
+</li>
+<!--
+<li><xref ref="img-n8c"><m>n=8</m></xref>
+</li>
+-->
+</ul>
+<image source="gifs/anim-nc.gif"></image>
+</sidebyside>
+</subsection>
+
+<subsection>
+<title>Venn Diagrams and Knots</title>
+
+<p>
+Every simple Venn diagram can be "woven" in to a
+  link<fn>A <term>link</term> is a finite collection of non-intersecting knots 
+  (where a <em>knot</em> is a closed, non-self-intersecting curve that is embedded in three dimensions.</fn>;
+  as one traverses any curve, the other curves
+  alternately go over and under.
+The reader will find it an interesting exercise to prove
+  that this is always possible for any collection of
+  simple closed curves in the plane.
+For example, below we show the link that arises (after
+  some smooth transformations in 3-space) from Venn's
+  general construction for <m>n=4</m>.
+This is clearly the same as the link that arises from
+  Edwards' general construction for <m>n=4</m>, although
+  the constructions give different links for <m>n \ge 5</m>.
+</p>
+
+<image source="gifs/knot/Venn4.jpg" width="50%"/>
+
+</subsection>
+
+</section>
+
+<!-- ================================================================================= -->
+  
+<section xml:id="sec-Borromean">
+<title>Borromean Rings</title>
+
+<p>
+The Borromean rings consists of three interlocking rings, with
+  the property that if any one of them is removed, then all
+  three separate.
+The name Borromean comes from the Borromeo family of Renaissance
+  Italy, who used them as their family "crest".
+Below we show the Borromean rings.
+The shadow, a minimal projection of the rings,
+  is the familiar 3-Venn diagram.
+By <term>minimal</term> projection of a knot or link onto the plane
+  we simply mean a projection that has the least number of
+  intersections.
+</p>
+
+<image source="gifs/BorRings.gif"></image>
+
+<p>
+Below are two other illustrations of the Borromean rings.
+The one on the left is not a minimal projection
+  (and isn't a Venn diagram).
+On the right is a rendering that has a great deal of symmetry as
+  an object in three dimensional space.
+</p>
+
+<sidebyside width="40%">
+<image source="gifs/brunnian3.gif"></image>
+<image source="gifs/Rings.gif"></image>
+</sidebyside>
+
+<p>
+The top diagram is by Toby Orloff and Delle Maxwell, 1990.
+Copyright by The Geometry Center
+  <xref ref="ref-GC">[GC]</xref>, University of Minnesota,
+used with permission.
+
+The left diagram of the second figure is courtesy of
+Robert Scharein and is from his wonderful
+  KnotPlot Site <xref ref="ref-KP">[KP]</xref>.
+</p>
+  
+<p>
+There is an interesting article on the Borromean rings in the
+  The Mathematical Intelligencer, Winter 1995, Vol 17, No. 1.
+(Should this go in references?)
+</p>
+
+<p>
+There is another interesting historical context in which the
+  rings arise.
+The diagram was found in picture-stones on Gotland, an island
+  in the Baltic sea off the southeast coast of Sweden.
+These are dated around the ninth century and are thought to
+  tell tales from the Norse myths.
+To the Norse people of Scandinavia, a drawing of the Borromean
+  rings using triangles is known as "Odin's triangle" of the
+  "Walknot" (or "valknut" -- the knot of the slain).
+The symbol was also carved on the bedposts used in their burials
+  at sea.
+</p>
+
+<p>
+For further information, particularly of a mathematical nature,
+  about Borromean rings and their generalizations, see the
+  web page <xref ref="ref-SJ">[SJ]</xref> of
+  Slavick Jablan.
+</p>
+
+
+
+</section>
+
+<!-- ================================================================================= -->
+  
+<section>
+<title>Extra Diagrams</title>
+<p>
+This section is a placeholder for certain ancillary diagrams that are referred to in other sections in this chapter.  
+The online reader is encouraged to simply ignore this section; in printed book form it might be useful.
+</p>
+
+<figure xml:id="img-ellipses">
+<caption>A 4-Venn diagram drawn with ellipses.  Created by Stuart Anderson.</caption>
+<image source="jpgs/venn4-bw.jpg" width="50%">
+</image>
+</figure>
+
+<figure xml:id="img-Tutte4">
+<caption>The Tutte embedding of the 4-Venn diagram.  Created by Stuart Anderson.</caption>
+<image source="jpgs/venn4-tutte.jpg" width="50%">
+</image>
+</figure>
+
+<sidebyside width="25%">
+<figure xml:id="img-n2c">
+<caption>Edwards construction for <m>n=2</m></caption>
+<image source="gifs/n2c.gif" width="50%">
+</image>
+</figure>
+
+<figure xml:id="img-n3c">
+<caption>Edwards construction for <m>n=3</m></caption>
+<image source="gifs/n3c.gif" width="50%">
+</image>
+</figure>
+
+<figure xml:id="img-n4c">
+<caption>Edwards construction for <m>n=4</m></caption>
+<image source="gifs/n4c.gif" width="50%">
+</image>
+</figure>
+</sidebyside>
+
+<sidebyside width="25%">
+<figure xml:id="img-n5c">
+<caption>Edwards construction for <m>n=5</m></caption>
+<image source="gifs/n5c.gif" width="50%">
+</image>
+</figure>
+
+<figure xml:id="img-n6c">
+<caption>Edwards construction for <m>n=6</m></caption>
+<image source="gifs/n6c.gif" width="50%">
+</image>
+</figure>
+
+<figure xml:id="img-n7c">
+<caption>Edwards construction for <m>n=7</m></caption>
+<image source="gifs/n7c.gif" width="50%">
+</image>
+</figure>
+</sidebyside>
+
+
+</section>
+
+</chapter>
