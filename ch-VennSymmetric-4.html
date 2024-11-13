@@ -8,7 +8,7 @@
 <html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Venn diagrams made from congruent curves</title>
+<title>Symmetric Diagrams for Small n</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta xmlns:pf="https://prefigure.org" property="og:type" content="book">
@@ -94,7 +94,7 @@ window.MathJax = {
 <body id="changeme" class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
 <a xmlns:pf="https://prefigure.org" id="logo-link" class="logo-link" target="_blank" href=""></a><div class="title-container">
-<h1 class="heading"><a href="my-great-book.html"><span class="title">Venn Diagrams:</span> <span class="subtitle">A Mathematical Survey</span></a></h1>
+<h1 class="heading"><a href="VD_Book.html"><span class="title">Venn Diagrams:</span> <span class="subtitle">A Mathematical Survey</span></a></h1>
 <p class="byline">Frank Ruskey (and Mark Weston?)</p>
 </div>
 </div></header><nav xmlns:pf="https://prefigure.org" id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
@@ -108,7 +108,7 @@ window.MathJax = {
 <ol id="searchresults" class="searchresults"></ol>
 </div>
 </div>
-<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="ch-VennSymmetric-3.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-VennSymmetric.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-SymmVariant.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div xmlns:pf="https://prefigure.org" id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
+<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="ch-VennSymmetric-3.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-VennSymmetric.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="ch-VennSymmetric-5.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div xmlns:pf="https://prefigure.org" id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -118,7 +118,13 @@ window.MathJax = {
 <div class="ptx-page">
 <div xmlns:pf="https://prefigure.org" id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2"><ul class="structural contains-active toc-item-list">
 <li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
-<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="ch-WhoVenn.html" class="internal"><span class="codenumber">1</span> <span class="title">Who was John Venn?</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-WhoVenn.html" class="internal"><span class="codenumber">1</span> <span class="title"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:5%;"><img src="external/gifs/littleJohnVenn.gif" class="contained"></div>
+<div class="sbspanel top" style="width:95%;"><div class="para" id="ch-WhoVenn-1-1-2">Who was John Venn?</div></div>
+</div></div></span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-WhoVenn-3.html" class="internal"><span class="codenumber">1.1</span> <span class="title">John Venn</span></a></div></li></ul>
+</li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="ch-VennWhatIs.html" class="internal"><span class="codenumber">2</span> <span class="title">What is a Venn Diagram?</span></a></div>
 <ul class="structural toc-item-list">
@@ -175,22 +181,30 @@ window.MathJax = {
 </ul>
 </li>
 <li class="toc-item toc-chapter contains-active">
-<div class="toc-title-box"><a href="ch-VennSymmetric.html" class="internal"><span class="codenumber">4</span> <span class="title">Symmetric Venn Diagrams A</span></a></div>
+<div class="toc-title-box"><a href="ch-VennSymmetric.html" class="internal"><span class="codenumber">4</span> <span class="title">Symmetric Venn Diagrams</span></a></div>
 <ul class="structural toc-item-list contains-active">
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-VennSymmetric-3.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Test Section</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-VennSymmetric-3.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Rotational Symmetry</span></a></div></li>
 <li class="toc-item toc-section active">
-<div class="toc-title-box"><a href="ch-VennSymmetric-4.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Venn diagrams made from congruent curves</span></a></div>
+<div class="toc-title-box"><a href="ch-VennSymmetric-4.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Symmetric Diagrams for Small <span class="process-math">\(n\)</span></span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennSymmetric-4.html#ch-VennSymmetric-4-3" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Congruent Venn Diagrams</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennSymmetric-4.html#ch-VennSymmetric-4-4" class="internal"><span class="codenumber">4.2.2</span> <span class="title">Venn diagrams and "Revolving Door" lists</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennSymmetric-4.html#ch-VennSymmetric-4-3" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Symmetric diagrams with <span class="process-math">\(n = 5\)</span> curves</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennSymmetric-4.html#ch-VennSymmetric-4-4" class="internal"><span class="codenumber">4.2.2</span> <span class="title">Symmetric diagrams with <span class="process-math">\(n = 7\)</span> curves</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennSymmetric-4.html#ch-VennSymmetric-4-6" class="internal"><span class="codenumber">4.2.3</span> <span class="title">Symmetric diagrams with <span class="process-math">\(n = 11\)</span> curves</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennSymmetric-4.html#ch-VennSymmetric-4-7" class="internal"><span class="codenumber">4.2.4</span> <span class="title">Symmetric diagrams with <span class="process-math">\(n = 13\)</span> curves</span></a></div></li>
 </ul>
 </li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-VennSymmetric-5.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Symmetric Diagrams for Small <span class="process-math">\(n\)</span></span></a></div></li>
 <li class="toc-item toc-section">
-<div class="toc-title-box"><a href="sec-SymmVariant.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Variants on Symmetry</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SymmVariant.html#subsec-Gray" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Venn Diagrams and Gray Codes</span></a></div></li></ul>
+<div class="toc-title-box"><a href="sec-SymmVariant.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Variants on Symmetry</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SymmVariant.html#subsec-Gray" class="internal"><span class="codenumber">4.4.1</span> <span class="title">Venn Diagrams and Gray Codes</span></a></div></li></ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-VennSymmetric-6.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Symmetric Diagrams for Small <span class="process-math">\(n\)</span></span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-VennSymmetric-7.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Fake</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch-VennSymmetric-7.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Extra Diagrams</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennSymmetric-7.html#ch-VennSymmetric-7-3" class="internal"><span class="codenumber">4.5.1</span> <span class="title">Diagrams with 5 curves</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennSymmetric-7.html#ch-VennSymmetric-7-4" class="internal"><span class="codenumber">4.5.2</span> <span class="title">Diagrams with 7 curves</span></a></div></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -198,11 +212,11 @@ window.MathJax = {
 <ul class="structural toc-item-list"><li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-VennGeometric-3.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Convexity</span></a></div></li></ul>
 </li>
 <li class="toc-item toc-chapter">
-<div class="toc-title-box"><a href="my-great-book-10.html" class="internal"><span class="codenumber">6</span> <span class="title">Open Problems about Venn Diagrams</span></a></div>
+<div class="toc-title-box"><a href="VD_Book-9.html" class="internal"><span class="codenumber">6</span> <span class="title">Open Problems about Venn Diagrams</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="my-great-book-10-2.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Combinatorial and existential problems</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="my-great-book-10-3.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Geometric problems</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="my-great-book-10-4.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Generalizations of Venn diagrams</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="VD_Book-9-2.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Combinatorial and existential problems</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="VD_Book-9-3.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Geometric problems</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="VD_Book-9-4.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Generalizations of Venn diagrams</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -216,47 +230,123 @@ window.MathJax = {
 <li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section xmlns:pf="https://prefigure.org" class="section" id="ch-VennSymmetric-4"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space"> </span><span class="codenumber">4.2</span><span class="space"> </span><span class="title">Venn diagrams made from congruent curves</span>
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">4.2</span><span class="space"> </span><span class="title">Symmetric Diagrams for Small <span class="process-math">\(n\)</span></span>
 </h2>
-<section class="introduction" id="ch-VennSymmetric-4-2"><div class="para" id="ch-VennSymmetric-4-2-1">The first part of this section is more "geometric" than "graph theoretic". We introduce congruent Venn diagrams here because the examples are used to illustrate graph theoretic definitions.</div></section><section class="subsection" id="ch-VennSymmetric-4-3"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">4.2.1</span><span class="space"> </span><span class="title">Congruent Venn Diagrams</span>
+<section class="introduction" id="ch-VennSymmetric-4-2"><div class="para" id="ch-VennSymmetric-4-2-1">On this page we show many examples of symmetric Venn diagrams for specific values of n. For n = 2, there is only one Venn diagram and it can be drawn to be polar symmetric. For n = 3, there are two symmetric diagrams. The classic three circle diagram is monotone, simple, and has polar symmetry. Diagram #3.1 (shown in <a href="ch-VennGraphs-8.html#img-Class1" class="xref" data-knowl="./knowl/xref/img-Class1.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 3.6.1">Figure 3.6.1</a>) is also a monotone polar symmetric diagram, but it is not simple, nor is it rigid.</div></section><section class="subsection" id="ch-VennSymmetric-4-3"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">4.2.1</span><span class="space"> </span><span class="title">Symmetric diagrams with <span class="process-math">\(n = 5\)</span> curves</span>
 </h3>
-<div class="para" id="ch-VennSymmetric-4-3-2">The general constructions of Venn and Edwards outlined on the "What is a Venn Diagram?" page do not share a nice property of the first two figures on the same page (made from circles and triangles), namely, that they are constructed from congruent<details class="ptx-footnote" aria-live="polite" id="ch-VennSymmetric-4-3-2-1"><summary class="ptx-footnote__number" title="Footnote 4.2.1"><sup> 1 </sup></summary><div class="ptx-footnote__contents" id="ch-VennSymmetric-4-3-2-1">Two figures in the plane are <dfn class="terminology">congruent</dfn> if one can be transformed into the other by rotations and translations in the plane.</div></details> curves. Grünbaum <a href="ch-VennRefs-3.html#ref-Gr92b" class="xref" data-knowl="./knowl/xref/ref-Gr92b.html" data-reveal-label="Reveal" data-close-label="Close" title="Paragraph">[Gr92b] </a> defines a Venn diagram to be <dfn class="terminology">nice</dfn> if it is made from congruent curves, but we’ll prefer to call them <dfn class="terminology">congruent</dfn> Venn diagrams. The first such diagrams were constructed by Grünbaum in the seminal paper [Gr75]. In <a href="ch-VennRefs-3.html#ref-Gr92b" class="xref" data-knowl="./knowl/xref/ref-Gr92b.html" data-reveal-label="Reveal" data-close-label="Close" title="Paragraph">[Gr92b] </a> he discussed examples of congruent diagrams for up to 8 curves; many symmetric examples can be found in the <a href="ch-VennSymmetric.html" class="internal" title="Chapter 4: Symmetric Venn Diagrams A">Chapter 4</a>.</div>
-<div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="external/pngs/5VD-reducible.png" class="contained"></div>
-<div class="para" id="ch-VennSymmetric-4-3-4">Hamburger and Pippert [HP97] proved that there are simple reducible Venn diagrams with 5 congruent ellipses, in spite of the fact that Venn had stated that there are no such diagrams. In fact, there are two of them, but they are in the same class: one of their diagrams is shown to to the right.</div>
-<div class="para" id="ch-VennSymmetric-4-3-5">Below we show a redrawing of Grünbaum’s beautiful congruent Venn diagram (from [Gr75]) made from 5 congruent ellipses which also has a rotational symmetry. The diagram on the left labels each region with the labels of all ellipses that contain the region. On the right, the regions are colored according to the number of ellipses in which they are contained: white (the external region) = 0, yellow = 1, red = 2, blue = 3, green = 4, and black = 5. Note that the number of regions colored with a given color corresponds to the appropriate binomial coefficient: #(white) = #(black) = 1, #(yellow) = #(green) = 5, and #(red) = #(blue) = 10.</div>
-<div class="sidebyside"><div class="sbsrow" style="margin-left:4.166666666666667%;margin-right:4.166666666666667%;">
-<div class="sbspanel top" style="width:27.2727272727273%;"><figure class="figure figure-like" id="fig-5ellipse"><img src="external/gifs/5-VD-ellipses-labelled.gif" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.2.1<span class="period">.</span></span><span class="space"> </span></figcaption></figure></div>
-<div class="sbspanel top" style="width:27.2727272727273%;"><figure class="figure figure-like" id="fig-5ellipse-coloured"><img src="external/gifs/5-VD-ellipses-colour.gif" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.2.2<span class="period">.</span></span><span class="space"> </span></figcaption></figure></div>
-<div class="sbspanel top" style="width:27.2727272727273%;"><figure class="figure figure-like" id="fig-5ellipse-irreducible"><img src="external/pngs/irreduce.png" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.2.3<span class="period">.</span></span><span class="space"> </span></figcaption></figure></div>
-</div></div></section><section class="subsection" id="ch-VennSymmetric-4-4"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">4.2.2</span><span class="space"> </span><span class="title">Venn diagrams and "Revolving Door" lists</span>
-</h3>
-<div class="para" id="ch-VennSymmetric-4-4-2">Note that some of the blue regions in the ellipse diagram above are "adjacent" in the sense that their boundary shares a common point. The sets corresponding to these regions differ by one element. The point of intersection acts like a "revolving door"; one element is removed from the subset, another element is added. Sometimes these adjacent regions form a "cycle", as in the diagram above. Another way of looking at the cycle is as the subgraph of the square<details class="ptx-footnote" aria-live="polite" id="ch-VennSymmetric-4-4-2-1"><summary class="ptx-footnote__number" title="Footnote 4.2.2"><sup> 2 </sup></summary><div class="ptx-footnote__contents" id="ch-VennSymmetric-4-4-2-1">The <dfn class="terminology">square</dfn> of a graph <span class="process-math">\(G\text{,}\)</span> denoted <span class="process-math">\(G^2\text{,}\)</span> is the graph obtained by adding to the edge set of <span class="process-math">\(G\)</span> edges between vertices that are at distance 2 in <span class="process-math">\(G\)</span>
-</div></details>, <span class="process-math">\(D(\mathbf{C})^2\text{,}\)</span> of the Venn dual induced by those vertices corresponding to <span class="process-math">\(k\)</span>-subsets. These cycles give us revolving door listings of all the k-subsets of <span class="process-math">\(n\text{.}\)</span> Revolving door algorithms for listing various classes of <span class="process-math">\(k\)</span>-subsets have been developed by a variety of researchers <a href="ch-VennRefs-4.html#ref-NW" class="xref" data-knowl="./knowl/xref/ref-NW.html" data-reveal-label="Reveal" data-close-label="Close" title="Paragraph">[NW] </a>, <a href="ch-VennRefs-4.html#ref-Kn" class="xref" data-knowl="./knowl/xref/ref-Kn.html" data-reveal-label="Reveal" data-close-label="Close" title="Paragraph">[Kn] </a>. Below we list the subsets corresponding to the 1,2,3,4-subsets (yellow, red, blue, green) in the above diagram in a counter-clockwise rotation.</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/ref-NW.html ./knowl/xref/ref-Kn.html ./knowl/xref/sec-SymmVariant.html">
-\begin{equation*}
-1,5,4,3,2 
-\end{equation*}
+<div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;">
+<div class="sbspanel top" style="width:44.4444444444444%;"><img src="external/gifs/5-VD-ellipses-colour.gif" class="contained"></div>
+<div class="sbspanel top" style="width:44.4444444444444%;"><div class="para" id="ch-VennSymmetric-4-3-2-2">The simple ellipse diagram shown to the left is from <a href="ch-VennRefs-3.html#ref-Gr75" class="xref" data-knowl="./knowl/xref/ref-Gr75.html" data-reveal-label="Reveal" data-close-label="Close" title="Paragraph">[Gr75] </a>, and has a 5-fold rotational symmetry. It is the only simple symmetric Venn diagram for n=5; in the list below, there are several different renderings of it:</div></div>
+</div></div>
+<ul class="disc" id="ch-VennSymmetric-4-3-3">
+<li id="ch-VennSymmetric-4-3-3-1"><div class="para" id="p-derived-ch-VennSymmetric-4-3-3-1">Rick Mabry observes that the link of five knots formed by weaving the Venn diagram shown above is a Brunnian link --- the removal of any knot causes the link to fall apart. Mabry has created a beautiful rendering of the link made from "ice cream cone curves", see <a href="ch-VennSymmetric-7.html#img-MabryIce" class="xref" data-knowl="./knowl/xref/img-MabryIce.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 4.5.1">Figure 4.5.1</a>.</div></li>
+<li id="ch-VennSymmetric-4-3-3-2"><div class="para" id="p-derived-ch-VennSymmetric-4-3-3-2">A version created by the author is can be see in <a href="ch-VennSymmetric-7.html#img-GrunEllipseKnot" class="xref" data-knowl="./knowl/xref/img-GrunEllipseKnot.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 4.5.2">Figure 4.5.2</a>; this diagram serves as an illustration of a symmetric Brunnian link7 of order 5. (The usual depiction of the Borromean rings (see <a href="sec-Borromean.html" class="internal" title="Section 2.3: Borromean Rings">Section 2.3</a>) is a symmetric Brunnian link of order 3.) This Brunnian link is attributed to C. van de Walle by Stewart <a href="ch-VennRefs-4.html#ref-St" class="xref" data-knowl="./knowl/xref/ref-St.html" data-reveal-label="Reveal" data-close-label="Close" title="Paragraph">[St, pg. 106] </a>.</div></li>
+<li id="ch-VennSymmetric-4-3-3-3"><div class="para" id="p-derived-ch-VennSymmetric-4-3-3-3">A rendering of the diagram using 5 equilateral triangles is given by Grünbaum in <a href="ch-VennRefs-3.html#ref-Gr92b" class="xref" data-knowl="./knowl/xref/ref-Gr92b.html" data-reveal-label="Reveal" data-close-label="Close" title="Paragraph">[Gr92b] </a> and redrawn here: <a href="ch-VennSymmetric-7.html#img-5-VD-triangles" class="xref" data-knowl="./knowl/xref/img-5-VD-triangles.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 4.5.3">Figure 4.5.3</a>.</div></li>
+<li id="ch-VennSymmetric-4-3-3-4"><div class="para" id="p-derived-ch-VennSymmetric-4-3-3-4">Stuart Anderson provided us with the labelled Tutte embedding of the diagram; one curve is highlighted, see <a href="ch-VennSymmetric-7.html#img-venn5-tutte" class="xref" data-knowl="./knowl/xref/img-venn5-tutte.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 4.5.4">Figure 4.5.4</a>.</div></li>
+</ul>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><div class="para" id="ch-VennSymmetric-4-3-4-1">There are many non-simple symmetric diagrams for <span class="process-math">\(n=5\text{.}\)</span> The one shown here is a play on the result that Venn diagrams cannot be constructed from "curves that are" circles for <span class="process-math">\(n &gt; 3\text{;}\)</span> a statement that is no longer true if the three words in quotation marks are removed.</div></div>
+<div class="sbspanel top" style="width:50%;"><img src="external/gifs/howcirc.gif" class="contained"></div>
+</div></div>
+<div class="para" id="ch-VennSymmetric-4-3-5">We have done an exhaustive computer search of all symmetric Venn diagrams for <span class="process-math">\(n=5\)</span> (first reported in the 1997 version of this survey). The number of symmetric Venn diagrams for <span class="process-math">\(n=5\)</span> is 243, and the table below shows the number possessing particular attributes. It is a often a trivial matter to construct non-simple diagrams from simple ones by "pinching together" simple intersections, but this operation does not produce an essentially different diagram. Thus we are particularly interested in rigid diagrams, of which there are <span class="process-math">\(12+13+2+4 = 31\text{.}\)</span>
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/ref-NW.html ./knowl/xref/ref-Kn.html ./knowl/xref/sec-SymmVariant.html">
-\begin{equation*}
-12,13,15,25,45,14,34,35,23,24
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/ref-NW.html ./knowl/xref/ref-Kn.html ./knowl/xref/sec-SymmVariant.html">
-\begin{equation*}
-123, 135, 125, 245, 145, 134, 345, 235, 234, 124
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/ref-NW.html ./knowl/xref/ref-Kn.html ./knowl/xref/sec-SymmVariant.html">
-\begin{equation*}
-1234, 1235, 1245, 1345, 2345
-\end{equation*}
-</div>
-<div class="para" id="ch-VennSymmetric-4-4-7">Because of the symmetry of the diagram, these circular listings have the property that they remain invariant when acted on by the cyclic permutation <span class="process-math">\((1\ 2\ 3\ 4\ 5)\text{.}\)</span> These listings are related to combinatorial Gray codes; since Gray codes have many connections with symmetric diagrams we describe them further on the Variants on Symmetry page, <a href="sec-SymmVariant.html" class="internal" title="Section 4.3: Variants on Symmetry">Section 4.3</a>.</div></section></section></div>
+<figure class="table table-like" id="ch-VennSymmetric-4-3-6"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">4.2.1<span class="period">.</span></span><span class="space"> </span>Classification of symmetric 5-Venn diagrams</figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b1 r0 l0 t0 lines">Polar</th>
+<th scope="col" class="c m b1 r0 l0 t0 lines">Rigid</th>
+<th scope="col" class="c m b1 r0 l0 t0 lines">Monotone</th>
+<th scope="col" class="c m b1 r0 l0 t0 lines">Count</th>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">No</td>
+<td class="c m b0 r0 l0 t0 lines">No</td>
+<td class="c m b0 r0 l0 t0 lines">No</td>
+<td class="c m b0 r0 l0 t0 lines">100</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">No</td>
+<td class="c m b0 r0 l0 t0 lines">No</td>
+<td class="c m b0 r0 l0 t0 lines">Yes</td>
+<td class="c m b0 r0 l0 t0 lines">89</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">No</td>
+<td class="c m b0 r0 l0 t0 lines">Yes</td>
+<td class="c m b0 r0 l0 t0 lines">No</td>
+<td class="c m b0 r0 l0 t0 lines">12</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">No</td>
+<td class="c m b0 r0 l0 t0 lines">Yes</td>
+<td class="c m b0 r0 l0 t0 lines">Yes</td>
+<td class="c m b0 r0 l0 t0 lines">13</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Yes</td>
+<td class="c m b0 r0 l0 t0 lines">No</td>
+<td class="c m b0 r0 l0 t0 lines">No</td>
+<td class="c m b0 r0 l0 t0 lines">5</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Yes</td>
+<td class="c m b0 r0 l0 t0 lines">No</td>
+<td class="c m b0 r0 l0 t0 lines">Yes</td>
+<td class="c m b0 r0 l0 t0 lines">18</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Yes</td>
+<td class="c m b0 r0 l0 t0 lines">Yes</td>
+<td class="c m b0 r0 l0 t0 lines">No</td>
+<td class="c m b0 r0 l0 t0 lines">2</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Yes</td>
+<td class="c m b0 r0 l0 t0 lines">Yes</td>
+<td class="c m b0 r0 l0 t0 lines">Yes</td>
+<td class="c m b0 r0 l0 t0 lines">4</td>
+</tr>
+</table></div></figure><div class="para" id="ch-VennSymmetric-4-3-7">For <span class="process-math">\(n=5\text{,}\)</span> a symmetric minimum Venn diagram must have at least 10 vertices. There are exactly six symmetric rigid 5-Venn diagrams with 10 vertices. One of them is shown below. Three others may be seen in <a href="ch-VennSymmetric-7.html#img-minsymm5a" class="xref" data-knowl="./knowl/xref/img-minsymm5a.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 4.5.5">Figure 4.5.5</a>, <a href="ch-VennSymmetric-7.html#img-minsymm5b" class="xref" data-knowl="./knowl/xref/img-minsymm5b.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 4.5.6">Figure 4.5.6</a>, and <a href="ch-VennSymmetric-7.html#img-minsymm5c" class="xref" data-knowl="./knowl/xref/img-minsymm5c.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 4.5.7">Figure 4.5.7</a>.</div>
+<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/gifs/min5b.gif" class="contained"></div>
+<div class="para" id="ch-VennSymmetric-4-3-9">The following table shows the number of symmetric diagrams classified according to the number of vertices and rigidity.</div>
+<figure class="table table-like" id="ch-VennSymmetric-4-3-10"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">4.2.2<span class="period">.</span></span><span class="space"> </span>Counts of symmetric 5-Venn diagrams</figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<th scope="row" class="l m b0 r0 l0 t0 lines">vertices</th>
+<td class="l m b0 r0 l0 t0 lines">10</td>
+<td class="l m b0 r0 l0 t0 lines">15</td>
+<td class="l m b0 r0 l0 t0 lines">20</td>
+<td class="l m b0 r0 l0 t0 lines">25</td>
+<td class="l m b0 r0 l0 t0 lines">30</td>
+</tr>
+<tr>
+<th scope="row" class="l m b0 r0 l0 t0 lines">total</th>
+<td class="l m b0 r0 l0 t0 lines">72</td>
+<td class="l m b0 r0 l0 t0 lines">111</td>
+<td class="l m b0 r0 l0 t0 lines">49</td>
+<td class="l m b0 r0 l0 t0 lines">10</td>
+<td class="l m b0 r0 l0 t0 lines">1</td>
+</tr>
+<tr>
+<th scope="row" class="l m b0 r0 l0 t0 lines">rigid</th>
+<td class="l m b0 r0 l0 t0 lines">6</td>
+<td class="l m b0 r0 l0 t0 lines">12</td>
+<td class="l m b0 r0 l0 t0 lines">12</td>
+<td class="l m b0 r0 l0 t0 lines">0</td>
+<td class="l m b0 r0 l0 t0 lines">1</td>
+</tr>
+</table></div></figure></section><section class="subsection" id="ch-VennSymmetric-4-4"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">4.2.2</span><span class="space"> </span><span class="title">Symmetric diagrams with <span class="process-math">\(n = 7\)</span> curves</span>
+</h3></section><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><img src="external/gifs/VicRed10.gif" class="contained"></div>
+<div class="sbspanel top" style="width:50%;"><div class="para" id="ch-VennSymmetric-4-5-2">Referring to the case <span class="process-math">\(n=7\text{,}\)</span> Grünbaum <a href="ch-VennRefs-3.html#ref-Gr75" class="xref" data-knowl="./knowl/xref/ref-Gr75.html" data-reveal-label="Reveal" data-close-label="Close" title="Paragraph">[Gr75,p.19] </a> wrote: "at present it seems likely that no such diagram exists." However, Grünbaum himself later found examples of such diagrams <a href="ch-VennRefs-3.html#ref-Gr92b" class="xref" data-knowl="./knowl/xref/ref-Gr92b.html" data-reveal-label="Reveal" data-close-label="Close" title="Paragraph">[Gr92b] </a> and in 1992 additional examples were also discovered by Anthony Edwards and independently by Carla Savage and Peter Winkler. One of Grünbaum’s examples is a remarkable non-monotone simple symmetric Venn diagram (see <a href="ch-VennSymmetric-7.html#img-GrunSymm7" class="xref" data-knowl="./knowl/xref/img-GrunSymm7.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 4.5.8">Figure 4.5.8</a> and <a href="ch-VennSymmetric-7.html#img-GrunSymm7color" class="xref" data-knowl="./knowl/xref/img-GrunSymm7color.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 4.5.9">Figure 4.5.9</a>).  Below we summarize what is know about symmetric 7-Venn diagrams.</div></div>
+</div></div>
+<section class="subsection" id="ch-VennSymmetric-4-6"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">4.2.3</span><span class="space"> </span><span class="title">Symmetric diagrams with <span class="process-math">\(n = 11\)</span> curves</span>
+</h3></section><section class="subsection" id="ch-VennSymmetric-4-7"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">4.2.4</span><span class="space"> </span><span class="title">Symmetric diagrams with <span class="process-math">\(n = 13\)</span> curves</span>
+</h3></section></section></div>
 <div class="ptx-content-footer">
-<a class="previous-button button" href="ch-VennSymmetric-3.html" title="Previous"><span xmlns:pf="https://prefigure.org" class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span xmlns:pf="https://prefigure.org" class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-SymmVariant.html" title="Next"><span class="name">Next</span><span xmlns:pf="https://prefigure.org" class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="ch-VennSymmetric-3.html" title="Previous"><span xmlns:pf="https://prefigure.org" class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span xmlns:pf="https://prefigure.org" class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ch-VennSymmetric-5.html" title="Next"><span class="name">Next</span><span xmlns:pf="https://prefigure.org" class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">
