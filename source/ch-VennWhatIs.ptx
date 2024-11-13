@@ -233,6 +233,7 @@ This is clearly the same as the link that arises from
 <!-- ================================================================================= -->
   
 <section xml:id="sec-Borromean">
+<idx>Borromean rings</idx>
 <title>Borromean Rings</title>
 
 <p>
@@ -316,7 +317,7 @@ The online reader is encouraged to simply ignore this section; in printed book f
 </p>
 
 <figure xml:id="img-ellipses">
-<caption>A 4-Venn diagram drawn with ellipses.  Created by Stuart Anderson.</caption>
+<caption>A 4-Venn diagram drawn with ellipses.  Image created by Stuart Anderson.</caption>
 <image source="jpgs/venn4-bw.jpg" width="50%">
 </image>
 </figure>

@@ -9,7 +9,7 @@ For non-simple Venn diagrams this number can be reduced, but a
   is readily derived from Euler's relation and the fact that at
   most <m>n</m> curves can intersect at a point.
   Diagrams achieving this lower bound are known for <m>n = 2,3,\ldots,7</m>,
-  and are said to be <term>minimum</term>.
+  and are said to be <term>minimum</term>.<idx><h>Venn diagram</h><h>minimum</h></idx>
 For <m>n=3</m> diagrams #3.1 and #3.2 achieve this lower bound.
 These are the Venn diagrams of Class 1 (see <xref ref="img-Class1"/>).
 For <m>n=4</m> the diagram shown here (discovered in collaboration with
@@ -17,20 +17,21 @@ Peter Hamburger) achieves the lower bound.
 See <xref ref="img-min5"/> and <xref ref="img-min5c"/> for an example when <m>n=5</m> (from <xref ref="ref-BR">[BR]</xref>),
 and <xref ref="img-min7a"/>, <xref ref="img-min7aC"/>, <xref ref="img-min7b"/> and <xref ref="img-min7bC"/>
   for examples when examples for <m>n=7</m> (discovered in collaboration with Stirling Chow).
-<td width=340>
 </p>
 <image source="gifs/betteMin4.gif"></image>
 </sidebyside>
 
 <definition xml:id="def-monotone">
+<idx>monotone</idx>
 <statement>
-A Venn diagram is <term>monotone</term> if, for <m>0 &lt; k &lt n</m>,
+A Venn diagram is <term>monotone</term> if, for <m>0 \lt k \lt n</m>,
   every <m>k</m>-region is adjacent to both a <m>(k-1)</m>-region and
   a <m>(k+1)</m>-region.
 </statement>
 </definition>
 
 <p>
+<idx>monotone</idx>
 The general construction of Edwards is monotone; the general
   construction of Venn is not.
 Examples of monotone and non-monotone Venn diagrams may be found on the
@@ -41,7 +42,7 @@ The 3-Venn diagrams
   monotonicity is a property of Venn diagrams and not Venn classes,
   since #3.12 is monotone and #3.13 is not.
 In a monotone Venn diagram the
-  <m>k</m>-regions, for any <m>0 &lt; k &lt n</m>,
+  <m>k</m>-regions, for any <m>0 \lt k \lt n</m>,
   form a "cycle", in the sense that every <m>k</m>-region touches
   exactly two others, and they are connected together in a
   cycle under this relation
@@ -49,6 +50,7 @@ In a monotone Venn diagram the
 </p>
 
 <p>
+<idx>monotone</idx>
 We can view monotonicity in another order-theoretic way.
 The Venn dual graph, <m>D(\mathbf{C})</m>, defined above, could have been
   defined as a directed acyclic graph, with the direction indicating
@@ -72,7 +74,7 @@ Bultena and Ruskey   <xref ref="ref-BR">[BR]</xref>
 <statement>
 For all <m>n \ge 1</m>,
 <me>
-M_n = {n \choose \lfloor n/2 \rfloor}</m>.
+M_n = {n \choose \lfloor n/2 \rfloor}.
 </me>
 </statement>
 </theorem>

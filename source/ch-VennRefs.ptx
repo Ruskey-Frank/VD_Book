@@ -77,6 +77,9 @@
   <p>
   [Ci04] Barry Cipra, Venn Meets Boole in Symmetric Proof, SIAM News, 37 no. 1 (January/February 2004).
   </p>
+  <p xml:id="ref-Cl">
+  Clewlow, Michelle, Intersecting Sets: John Venn, Church and University, 1834-1923. PhD thesis, 2007, The Open University.
+  </p>
   <p xml:id="ref-Ed89a">
   [Ed89a] Anthony W. F. Edwards, Venn diagrams for many sets, Bulletin of the International Statistical Institute, 47th Session, Paris (1989). Contributed papers, Book 1, 311-312.
   </p>
@@ -86,7 +89,7 @@
   <p xml:id="ref-Ed92">
   [Ed92] Anthony W. F. Edwards, Rotatable Venn Diagrams, Mathematics Review, 2 (February 1992) 19-21.
   </p>
-  <p xml:id="ref-Ed96">>
+  <p xml:id="ref-Ed96">
   [Ed96] Anthony W. F. Edwards, Seven-set Venn diagrams with rotational and polar symmetry, Combinatorics, Probability, and Computing, 7 (1998) 149-152.
   </p>
   <p xml:id="ref-Ed04">
@@ -228,6 +231,9 @@
   </p>
   <p xml:id="ref-Ve81">
   [Ve81] J. Venn, Symbolic Logic, MacMillan, London 1881, 2nd ed., (1894). Reprinted by Lenox Hill Pub. &amp; Dist. Co. (Burt Franklin), 1971 (S.B.N. 8337-36264).
+  </p>
+  <p xml:id="ref-WW">
+  Wagon, S., Webb, P. (2008). Venn Symmetry and Prime Numbers: A Seductive Proof Revisited. The American Mathematical Monthly, 115(7), 645–648. https://doi.org/10.1080/00029890.2008.11920574
   </p>
   <p>
   [Weg] B. Weglorz, Nerves and Set-theoretical Independence, Colloquium Mathimaticum, 13 (1964) 17-19.

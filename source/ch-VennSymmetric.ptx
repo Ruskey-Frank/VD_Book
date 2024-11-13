@@ -10,11 +10,92 @@ There are general results for non-simple diagrams and results for small <m>n</m>
   when the diagram is simple.
 In the final section we will consider diagrams embedded on the sphere.
 </p>
+
 </introduction>
 
 <section>
+
 <title>Rotational Symmetry</title>
 
+<sidebyside>
+<image source="gifs/5-VD-ellipses-colour.gif"></image>
+<p>
+Here we (re-)show a Venn diagram made from 5
+  congruent ellipses.
+The regions are colored according to the number
+  of ellipses in which they are contained: white (the external region) = 0, yellow = 1,
+  red = 2, blue = 3, green = 4, and black = 5.
+Note that the number of regions colored with a given color corresponds to
+  the appropriate binomial coefficient: #(white) = #(black) = 1,
+  #(yellow) = #(green) = 5, and #(red) = #(blue) = 10.
+</p>
+</sidebyside>
+ 
+<p>
+This diagram has a very a pleasing symmetry, namely
+  an <m>n</m>-fold rotational symmetry, where <m>n=5</m>.
+Such a diagram is said to be <term>symmetric</term>.
+This simply means that there is a point <m>x</m> about which
+  the diagram may be rotated by <m> 2 \pi i / n</m> radians
+  and remain invariant, for <m>i=0,1,\ldots,n-1</m>.
+Note that any symmetric Venn diagram must be made from congruent curves.
+Alternatively, we could have defined a symmetric diagram in terms of multiple
+  copies of a curve, rotated <m>n</m> times, by <m>2 \pi / n</m> radians, each time
+  about a central point <m>x</m>. 
+</p>
+
+<p> 
+The purpose of this section is to survey what is known about symmetric
+  diagrams.  
+Henderson first discussed the topic in his early
+  paper <xref ref="ref-He">[He]</xref>, and he proved a simple necessary condition for the existence
+  of symmetric Venn diagrams of <m>n</m> curves.
+</p>
+
+<theorem xml:id="thm-Henderson">
+<statement>
+A necessary condition for the existence of a symmetric <m>n</m>-Venn
+  diagram is that <m>n</m> be a prime number.
+</statement>
+</theorem>
+
+<p>
+To understand why the theorem is true, imagine the diagram to be split evenly
+  into <m>n</m> sectors (pieces of pie).
+The <m>{n \choose k}</m> 
+  different connected regions representing the <m>k</m>-subsets
+  must be evenly distributed in each of the <m>n</m> sectors.
+It thus follows that <m>n</m> divides <m>{n \choose k}</m>
+  for each <m>k = 1,2,\ldots,n-1</m>.
+This divisibility restriction implies that <m>n</m> must be prime,
+  via a theorem of Leibnitz. <!-- [<A HREF="VennRefs.html#He">He</a>, see also <A HREF="VennRefs.html#Ed96">Ed96</A>]. -->
+Wagon and Webb pointed out some subtle aspects necessary to make this proof correct
+  in <xref ref="ref-WW">[WW]</xref>.
+</p>
+
+<p>
+There is one other symmetry that we will consider for diagrams drawn
+  in the plane.
+A symmetric Venn diagram has <term>polar symmetry</term> if it is
+  invariant under "polar flips".<idx><h>Venn diagram</h><h>polar symmetry</h></idx>
+Think of the diagram as being projected stereographically onto a sphere
+  with the axis orthogonal to the plane running through the point of symmetry, and then project
+  the diagram back onto the plane from the antipodal point on the
+  axis.
+If the corresponding Venn dual graphs are isomorphic as plane graphs,
+  then the diagram has polar symmetry.
+The symmetric Venn diagram shown above has polar symmetry, although it
+  is perhaps not readily apparent.
+</p>
+
+<p>
+Many symmetric diagrams are known for <m>n = 2,3,5,7</m>, and a few beautifully complex examples for <m>n=11,13</m>.
+<!-- (the large figure that appears twice in the title section of these pages, 
+Victoria, is a simple polar symmetric 7-Venn diagram).  -->
+These diagrams, along with counting results establishing the number of symmetric diagrams with 
+different properties, can all be seen in the next section.
+</p>
+ 
 </section>
 
 <xi:include href="./sec-SymmSmall.ptx" />
@@ -82,6 +163,26 @@ The online reader is encouraged to simply ignore this section; in printed book f
 <image source="gifs/GrunSymm7color.gif"></image>
 </figure>
 </sidebyside>
+
+<subsubsection>
+<title>Adelaide (P1)</title>
+
+<sidebyside>
+<figure xml:id="img-Adelaide">
+<caption>Adelaide (P1).</caption>.
+<image source="gifs/Adelaide.gif"></image>
+</figure>
+<figure xml:id="img-AdelaideGreen">
+<caption>One curve coloured.</caption>.
+<image source="gifs/AdelaideGreen.gif"></image>
+</figure>
+<figure xml:id="img-AdelaideColor">
+<caption>Symmetricaly coloured version.</caption>.
+<image source="gifs/AdelaideColor.gif"></image>
+</figure>
+</sidebyside>
+
+</subsubsection>
 
 </subsection>
 

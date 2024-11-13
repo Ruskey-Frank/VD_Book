@@ -6,9 +6,9 @@
 <introduction>
 <p>
 On this page we show many examples of symmetric Venn diagrams for specific values of <I>n</I>.
-For <I>n</I> = 2, there is only one Venn diagram and it can be drawn
+For <m>n = 2</m>, there is only one Venn diagram and it can be drawn
   to be polar symmetric.
-For <I>n</I> = 3, there are two symmetric diagrams.
+For <m>n = 3</m>, there are two symmetric diagrams.
 The classic three circle diagram is monotone, simple, and has
   polar symmetry.
 Diagram #3.1 (shown in <xref ref="img-Class1"/>)
@@ -42,7 +42,13 @@ Mabry has created a beautiful rendering of the link made from
 A version created by the author is 
   can be see in <xref ref="img-GrunEllipseKnot"/>;
 this diagram serves as an illustration of a symmetric 
-  Brunnian link<sup><A HREF="VennFootEJC.html#brunnian">7</A></sup> 
+  Brunnian link<fn>A <term>link</term> is a finite collection of 
+  non-intersecting knots (where a knot is a closed, non-self-intersecting curve that is embedded in three dimensions;
+  the trivial knot is a simple loop).
+  A <term>Brunnian link</term> is a link which is non-trivial, 
+  yet every proper sub-collection is trivial.
+  A <term>trivial link</term> is one that can be projected to a collection of
+  non-intersecting circles in the plane.</fn>
   of order 5. 
   (The usual depiction of the Borromean rings (see <xref ref="sec-Borromean"/>)
   is a symmetric Brunnian link of order 3.)
@@ -89,7 +95,7 @@ Thus we are particularly interested in rigid diagrams,
 
 <table>
 <title>Classification of symmetric 5-Venn diagrams</title>
-<tabular halign="center">
+<tabular halign="right">
 <row header="yes" bottom="minor" >
 <cell>Polar</cell>
 <cell>Rigid</cell>
@@ -159,7 +165,7 @@ Three others may be seen in
   <xref ref="img-minsymm5c"/>.
 </p>
 
-<image source="gifs/min5b.gif" width="80%"></image>
+<image source="gifs/min5b.gif" width="60%"></image>
 
 <p>
 The following table shows the number of symmetric diagrams classified according
@@ -168,8 +174,8 @@ The following table shows the number of symmetric diagrams classified according
 
 <table>
 <title>Counts of symmetric 5-Venn diagrams</title>
-<tabular row-headers="yes">
-<row>
+<tabular row-headers="yes" halign="right">
+<row header="yes" bottom="minor" >
 <cell>vertices</cell>
 <cell>10</cell>
 <cell>15</cell>
@@ -202,7 +208,6 @@ The following table shows the number of symmetric diagrams classified according
 
 <subsection>
 <title>Symmetric diagrams with <m>n = 7</m> curves</title>
-</subsection>
 
 <sidebyside widths="30% 60%">
 <image source="gifs/VicRed10quarter.gif"></image>
@@ -223,6 +228,136 @@ Below we summarize what is know about symmetric 7-Venn diagrams.
 </p>
 </sidebyside>
 
+<subsubsection>
+<title>The Grünbaum encoding</title>
+
+<p>
+The Grünbaum encoding of a simple symmetric Venn diagram consists of four
+  <m>n</m>-ary strings, call them <m>\mathbf{w}</m>, <m>\mathbf{x}</m>,
+  <m>\mathbf{y}</m>, <m>\mathbf{z}</m>, each of length 
+  <m>(2^{n+1}-4)/n</m>.   
+String <m>\mathbf{w}</m> is obtained by first numbering the curves clockwise as
+  they appear on the outer face, and then following curve <m>n</m>,
+  recording its intersections with each of the other curves.
+The other strings are obtained by going counter-clockwise and/or  
+  starting with one of the innermost curves; in each case the curves
+  must be re-numbered first.
+For the 3 circle diagram <m>\mathbf{w}=\mathbf{x}=\mathbf{y}=\mathbf{z} = 1212</m>.
+For the 5 ellipse diagram at the top of this page, the strings of the 
+  Grünbaum encoding are
+</p>
+
+<md>
+  <mrow>
+  \amp w = z = 142413141324 \text{ and }
+  </mrow>
+  <mrow>
+  \amp x = y = 132414241314.
+  </mrow>
+</md>
+
+<p>
+Of course, we really only need two of the strings, one starting at the
+  inside and one at the outside, since <m>\mathbf{w}</m> can be inferred from
+  <m>\mathbf{x}</m>, and <m>\mathbf{y}</m> from <m>\mathbf{z}</m> -- but it's convenient to have
+  all four, particularly when checking a diagram by hand.
+How can <m>\mathbf{x}</m> be obtained from <m>\mathbf{w}</m> in general?
+Think of the strings as being indexed <m>i = 1,2,\ldots,M</m>.
+The rule is <m>\mathbf{x}[i] = n-\mathbf{w}[M-i+1]</m>.
+</p>
+
+<p>
+In fact, only one string is required, since string <m>\mathbf{y}</m> is a circular
+  rotation of <m>\mathbf{x}</m>. 
+The starting position of <m>\mathbf{y}</m> can be determined as the unique position
+  in <m>\mathbf{x}</m> where all curves have been encountered an odd number of times 
+  (thus implying that we're on the inside of all curves).
+In the 5 ellipse example, the starting position of <m>\mathbf{y}</m> is the rightmost
+  1 in <m>\mathbf{x}</m>. 
+If a single string is chosen to be the representative, then we take the
+  lexicographically least of all four.
+</p>
+
+<p>
+This encoding scheme has its parallels in other disciplines: topologists may 
+  recognise the Grünbaum encoding as being closely
+  related to the <term>Gauss code</term> of a knot<sup><a href="VennFootEJC.html#gauss_code">10</a></sup>.
+</p>
+
+<!-- <P>
+A closely related encoding is the <I>G-encoding</I> which is obtained
+  by following a curve from the interior/exterior face, numbering and
+  recording the curves in the order that they are encountered.
+Each string of the encoding is a restricted
+  growth string [<A HREF="VennRefs.html#COS">COS</A>],
+  meaning that each number is at most one greater than
+  the values that precede it, with the first value being 0 (except that
+  we take the first value to be 1).
+The four strings corresponding to the 5 ellipse example are:
+<blockquote>
+  <B>w</B> = <B>z</B> = 123214121432 and <BR>
+  <B>x</B> = <B>y</B> = 123414341214.
+</blockquote> -->
+
+<p>
+Tao Cao proved in <xref ref="ref-Ca">[Ca]</xref> that for simple 
+  symmetric monotone Venn diagrams, the Grünbaum encoding uniquely identifies the
+  diagram (up to isomorphism of plane graphs).  
+</p>
+
+</subsubsection>
+
+</subsection>
+
+<subsubsection>
+<title>Simple Symmetric 7-Venn Diagrams</title>
+
+<p>
+For <m>n=7</m>, all simple monotone symmetric Venn diagrams with polar symmetry 
+  are known; there are six of them, and they are listed below.
+The first five were discovered by Anthony Edwards using a program to generate
+  candidate diagrams and manual checking to eliminate those candidates that
+  were not Venn diagrams <xref ref="ref-Ed96">[Ed96]</xref>; however 
+  one, Hamilton, was first found constructed by hand by Edwards.  
+He named them after the cities in which they were discovered and we
+  follow his naming convention (but also number them P1-P6).
+Grünbaum <xref ref="ref-Gr92b">[Gr92b]</xref> also discovered "Adelaide".
+An exhaustive computer search by Frank Ruskey uncovered another, 
+  "Victoria", that had been overlooked in Edwards' manual checking.
+</p>
+
+<ul>
+<li><emph>Adelaide (P1):</emph>
+  <ul>
+  <li>
+  Black-and-white Adelaide, <xref ref="img-Adelaide"/>.
+  </li>
+  <li>
+  One curve coloured green, <xref ref="img-AdelaideGreen"/>.
+  </li>
+  <li>
+  One curve coloured green, <xref ref="img-AdelaideColor"/>.
+  </li>
+<!--
+  <li>
+  <A HREF=VennAdelaide.html>Info</A>,
+  <li>
+  <A HREF=gifs/AdelaideRain.gif>rainbow coloring</A>, 
+  <li>
+  <A HREF=gifs/AdelaideEdwards.gif>Edwards' rendering (149K)</A>,
+  <li>
+  <A HREF=gifs/p1.gif>Tutte embedding</A>,
+  <li>
+  <A HREF=gifs/p1c.gif>Tutte embedding (one curve colored)</A>,
+  <li>
+  <A HREF="gifs/knot/p1.jpg">link rendering</A>.
+-->
+  </ul>
+</li>
+</ul>
+
+  
+</subsubsection>
 <!-- ========================================================================================= -->
 
 <subsection>

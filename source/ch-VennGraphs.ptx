@@ -17,6 +17,7 @@ An <m>n</m>-Venn diagram <m>\mathbf{C} = \{ C_1, C_2, \ldots, C_n \}</m>
 The diagram itself can be thought of as an edge-colored
   plane<fn>A <term>planar graph</term> is one that can be embedded in the plane without crossing edges. 
     A <term>plane graph</term> is a planar graph that has been embedded in the plane.</fn> graph <m>V(\mathbf{C})</m>
+    <idx><h>graph</h><h>planar</h></idx><idx><h>graph</h><h>planar</h></idx>
   whose vertices correspond to intersections of curves, and whose
   edges correspond to the segments of curves
   between intersections.
@@ -39,7 +40,7 @@ It thus follows that <m>v = 2^n - 2</m> and
 
 <p>
 Two curves can meet at a point <term>transversally</term> or not, depending
-  on whether the two curves cross.
+  on whether the two curves cross.<idx>transversal intersection</idx>
 A moment's reflection will convince you that the curves in a
   simple Venn diagram must meet transversally.
 More generally, at any point of intersection in a Venn diagram,
@@ -47,6 +48,7 @@ More generally, at any point of intersection in a Venn diagram,
 </p>
 
 <p>
+<idx>Venn dual</idx>
 With each Venn diagram, <m>\mathbf{C}</m>, we may associate another plane graph
   called the <term>Venn dual</term>, which is denoted <m>D(\mathbf{C})</m>,
   the planar dual of the Venn diagram.
@@ -77,7 +79,7 @@ If <m>\mathbf{C}</m> is a simple Venn diagram, then every face of <m>D(\mathbf{C
 
 <p>
 Above we illustrate these definitions.
-The following list contains links to illustrations of some
+The following section contains illustrations of some
   Venn duals.
 </p>
 
@@ -132,6 +134,7 @@ The blue vertices are in the interior, the red edges in the exterior.
 </ul>
 
 <p>
+<idx><h>graph</h><h>prism of</h></idx>
 Note that the red edges in <m>D'</m> give the prism of the Hamilton
   cycle in <m>D</m>.
 </p>
@@ -151,6 +154,8 @@ Peter Winkler provides a similar discussion in
 <xi:include href="./sec-HowMany.ptx" />
 
 <xi:include href="./sec-VennExtend.ptx" />
+
+<xi:include href="./sec-MinVennVert.ptx" />
 
 <xi:include href="./sec-VennCongruent.ptx" />
   
