@@ -5,8 +5,234 @@
 
 <introduction>
 <p>
-Some introductory remarks.
+On this page we show many examples of symmetric Venn diagrams for specific values of <I>n</I>.
+For <I>n</I> = 2, there is only one Venn diagram and it can be drawn
+  to be polar symmetric.
+For <I>n</I> = 3, there are two symmetric diagrams.
+The classic three circle diagram is monotone, simple, and has
+  polar symmetry.
+Diagram #3.1 (shown in <xref ref="img-Class1"/>)
+  is also a monotone polar symmetric diagram, but it is not simple, nor is it rigid.
 </p>
 </introduction>
+
+<subsection>
+<title>Symmetric diagrams with <m>n = 5</m> curves</title>
+
+<sidebyside width="40%">
+<image source="gifs/5-VD-ellipses-colour.gif"></image>
+<p>
+The simple ellipse diagram shown to the left is from 
+<xref ref="ref-Gr75">[Gr75]</xref>, and has a 5-fold rotational symmetry.
+It is the only simple symmetric Venn diagram for <I>n</I>=5; in the list below, there are several 
+different renderings of it:
+</p>
+</sidebyside>
+
+<ul>
+<li>
+Rick Mabry observes that the link of five knots formed by
+  weaving the Venn diagram shown above is a Brunnian link ---
+  the removal of any knot causes the link to fall apart.
+Mabry has created a beautiful rendering of the link made from 
+  "ice cream cone curves",
+  see <xref ref="img-MabryIce"/>.
+</li>
+<li>
+A version created by the author is 
+  can be see in <xref ref="img-GrunEllipseKnot"/>;
+this diagram serves as an illustration of a symmetric 
+  Brunnian link<sup><A HREF="VennFootEJC.html#brunnian">7</A></sup> 
+  of order 5. 
+  (The usual depiction of the Borromean rings (see <xref ref="sec-Borromean"/>)
+  is a symmetric Brunnian link of order 3.)
+This Brunnian link is attributed to C. van de Walle by Stewart
+  <xref ref="ref-St">[St, pg. 106]</xref>.
+</li>
+<li>
+  A rendering of the diagram using 5 equilateral triangles
+  is given by Grünbaum in <xref ref="ref-Gr92b">[Gr92b]</xref> and 
+  redrawn here: <xref ref="img-5-VD-triangles"/>.
+</li>
+<li>
+  Stuart Anderson provided us with the labelled Tutte
+  embedding of the diagram; one curve is highlighted, see <xref ref="img-venn5-tutte"/>.
+</li>
+</ul>
+
+<sidebyside>
+<p>
+There are many non-simple symmetric diagrams for
+  <m>n=5</m>.  
+The one shown <A HREF="gifs/howcirc.gif">here</A> is a play
+  on the result that Venn diagrams cannot be constructed from
+  "curves that are" circles for <m>n &gt; 3</m>; a statement
+  that is no longer true if the three words in quotation marks 
+  are removed.  
+</p>
+<image source="gifs/howcirc.gif"></image>
+</sidebyside>
+
+<p>
+We have done an exhaustive computer search of all symmetric Venn
+  diagrams for <m>n=5</m> (first reported in the 1997 version of this survey).
+The number of symmetric Venn diagrams for <m>n=5</m> is 243,
+  and the table below shows the number possessing particular
+  attributes.
+It is a often a trivial matter to construct non-simple diagrams from
+  simple ones by "pinching together" simple intersections,
+  but this operation does not produce an essentially different
+  diagram.
+Thus we are particularly interested in rigid diagrams,
+  of which there are <m>12+13+2+4 = 31</m>.
+</p>
+
+<table>
+<title>Classification of symmetric 5-Venn diagrams</title>
+<tabular halign="center">
+<row header="yes" bottom="minor" >
+<cell>Polar</cell>
+<cell>Rigid</cell>
+<cell>Monotone</cell>
+<cell>Count</cell>
+</row>
+<row>
+<cell>No</cell>
+<cell>No</cell>
+<cell>No</cell>
+<cell>100</cell>
+</row>
+<row>
+<cell>No</cell>
+<cell>No</cell>
+<cell>Yes</cell>
+<cell>89</cell>
+</row>
+<row>
+<cell>No</cell>
+<cell>Yes</cell>
+<cell>No</cell>
+<cell>12</cell>
+</row>
+<row>
+<cell>No</cell>
+<cell>Yes</cell>
+<cell>Yes</cell>
+<cell>13</cell>
+</row>
+<row>
+<cell>Yes</cell>
+<cell>No</cell>
+<cell>No</cell>
+<cell>5</cell>
+</row>
+<row>
+<cell>Yes</cell>
+<cell>No</cell>
+<cell>Yes</cell>
+<cell>18</cell>
+</row>
+<row>
+<cell>Yes</cell>
+<cell>Yes</cell>
+<cell>No</cell>
+<cell>2</cell>
+</row>
+<row>
+<cell>Yes</cell>
+<cell>Yes</cell>
+<cell>Yes</cell>
+<cell>4</cell>
+</row>
+</tabular>
+</table>
+
+<p>
+For <m>n=5</m>, a symmetric minimum Venn diagram must have at
+  least 10 vertices.
+There are exactly six symmetric rigid 5-Venn diagrams with 10
+  vertices.
+One of them is shown below. 
+Three others may be seen in 
+  <xref ref="img-minsymm5a"/>,
+  <xref ref="img-minsymm5b"/>, and
+  <xref ref="img-minsymm5c"/>.
+</p>
+
+<image source="gifs/min5b.gif" width="80%"></image>
+
+<p>
+The following table shows the number of symmetric diagrams classified according
+  to the number of vertices and rigidity.
+</p>
+
+<table>
+<title>Counts of symmetric 5-Venn diagrams</title>
+<tabular row-headers="yes">
+<row>
+<cell>vertices</cell>
+<cell>10</cell>
+<cell>15</cell>
+<cell>20</cell>
+<cell>25</cell>
+<cell>30</cell>
+</row>
+<row>
+<cell>total</cell>
+<cell> 72</cell>
+<cell>111</cell>
+<cell> 49</cell>
+<cell> 10</cell>
+<cell>  1</cell>
+</row>
+<row>
+<cell>rigid</cell>
+<cell> 6</cell>
+<cell>12</cell>
+<cell>12</cell>
+<cell> 0</cell>
+<cell> 1</cell>
+</row>
+</tabular>
+</table>
+
+</subsection>
+
+<!-- ========================================================================================= -->
+
+<subsection>
+<title>Symmetric diagrams with <m>n = 7</m> curves</title>
+</subsection>
+
+<sidebyside widths="30% 60%">
+<image source="gifs/VicRed10quarter.gif"></image>
+<p>
+Referring to the case <m>n=7</m>, Grünbaum <xref ref="ref-Gr75">[Gr75,p.19]</xref> wrote:
+  "at present it seems likely that no such diagram exists."
+However, Grünbaum himself later found examples of such diagrams 
+  <xref ref="ref-Gr92b">[Gr92b]</xref> and
+  in 1992 additional examples were also discovered by Anthony 
+  Edwards and independently by Carla Savage and Peter Winkler.
+One of Grünbaum's examples is a remarkable 
+  non-monotone simple symmetric Venn diagram (see
+  <xref ref="img-GrunSymm7"/> and <xref ref="img-GrunSymm7color"/>).
+<!-- There are <A HREF="nonsymm7.html">23 simple monotone symmetric Venn 
+  diagrams</A> for <m>n=7</m>.
+-->
+Below we summarize what is know about symmetric 7-Venn diagrams.
+</p>
+</sidebyside>
+
+<!-- ========================================================================================= -->
+
+<subsection>
+<title>Symmetric diagrams with <m>n = 11</m> curves</title>
+</subsection>
+
+<!-- ========================================================================================= -->
+
+<subsection>
+<title>Symmetric diagrams with <m>n = 13</m> curves</title>
+</subsection>
 
 </section>

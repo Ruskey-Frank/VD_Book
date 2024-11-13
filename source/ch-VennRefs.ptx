@@ -15,10 +15,10 @@
   <p>  
   [An] J. Anusiak, On Set-theoretically Independent Collections of Balls, Colloquium Mathematicum, 13 (1965) 223-233.
   </p>
-  <p>
+  <p xml:id="ref-Bak">
   [Bak] M. J. C. Baker, All swans are white: some remarks on the diagrams of Euler and Venn, Australian Math. Soc. Gaz., 17 (1990) 161-167.
   </p>
-  <p>
+  <p xml:id="ref-Bar">
   [Bar] Margaret E. Baron, A note on the historical development of logic diagrams: Leibniz, Euler, and Venn, Mathematical Gazette, 53 (1969) 113-125.
   </p>
   <p xml:id="ref-Be">
@@ -83,10 +83,10 @@
   <p xml:id="ref-Ed89b">
   [Ed89b] Anthony W. F. Edwards, Venn diagrams for many sets, New Scientist, 7 (January 1989) 51-56.
   </p>
-  <p>
+  <p xml:id="ref-Ed92">
   [Ed92] Anthony W. F. Edwards, Rotatable Venn Diagrams, Mathematics Review, 2 (February 1992) 19-21.
   </p>
-  <p>
+  <p xml:id="ref-Ed96">>
   [Ed96] Anthony W. F. Edwards, Seven-set Venn diagrams with rotational and polar symmetry, Combinatorics, Probability, and Computing, 7 (1998) 149-152.
   </p>
   <p xml:id="ref-Ed04">
@@ -223,10 +223,10 @@
   <p xml:id="ref-Sh">
   [Sh] Sun-Joo Shin, The logical status of diagrams, Cambridge University Press, (1994). (MR 95j:03014)
   </p>
-  <p xml:id="Ve80">
+  <p xml:id="ref-Ve80">
   [Ve80] J. Venn, On the diagrammatic and mechanical representation of propositions and reasonings, The London, Edinburgh, and Dublin Philosophical Magazine and Journal of Science, 9 (1880) 1-18.
   </p>
-  <p xml:id="Ve81">
+  <p xml:id="ref-Ve81">
   [Ve81] J. Venn, Symbolic Logic, MacMillan, London 1881, 2nd ed., (1894). Reprinted by Lenox Hill Pub. &amp; Dist. Co. (Burt Franklin), 1971 (S.B.N. 8337-36264).
   </p>
   <p>
@@ -252,6 +252,9 @@
   </p>
   <p xml:id="ref-Or">
   [Or] O. Ore, The Four-Color Problem, Academic Press, New York, London, 1967.
+  </p>
+  <p xml:id="ref-St">
+  [St] Ian Stewart, Game, Set, and Math, Basil Blackwell, 1989.
   </p>
   <p xml:id="ref-Wh">
   [Wh] H. Whitney, A Theorem on Graphs, Annals of Math., 32 (1931) 378-390.

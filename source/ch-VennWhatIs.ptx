@@ -90,7 +90,7 @@ This diagram also occurs as a minimal projection of the
 
   <p>
   The figure below is a Venn diagram of 4 ellipses, originally found by Venn himself
-  <xref ref="Ve80">[Ve80]</xref>.  See also a <xref ref="img-ellipses">black-and-white</xref> version
+  <xref ref="ref-Ve80">[Ve80]</xref>.  See also a <xref ref="img-ellipses">black-and-white</xref> version
   and its <xref ref="img-Tutte4">Tutte embedding</xref>.
   <image source="pngs/4-ellipses.png" width="50%"></image>
   </p>
@@ -136,7 +136,7 @@ In both cases, a new curve is added by drawing a new curve <m>C_n</m> that "foll
 <sidebyside>
 <p>
 Venn's construction, outlined in his original paper
-  <xref ref="Ve80">[Ve80]</xref>, is best
+  <xref ref="ref-Ve80">[Ve80]</xref>, is best
   explained by considering the figure to the right.
 Start with the 3 circle diagram.
 Curves are successively added, with the new curve tracing the

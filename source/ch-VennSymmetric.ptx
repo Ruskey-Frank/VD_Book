@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <chapter xml:id="ch-VennSymmetric" xmlns:xi="http://www.w3.org/2001/XInclude">
-<title>Symmetric Venn Diagrams A</title>
+<title>Symmetric Venn Diagrams</title>
 
 <introduction>
 <p>
-The main focus in this chapter are Venn diagrams that have rotational symmetry.
+The main focus in this chapter are Venn diagrams that have rotational symmetry in the plane.
 There are general results for non-simple diagrams and results for small <m>n</m>
   when the diagram is simple.
 In the final section we will consider diagrams embedded on the sphere.
@@ -13,12 +13,78 @@ In the final section we will consider diagrams embedded on the sphere.
 </introduction>
 
 <section>
-<title>Test Section</title>
+<title>Rotational Symmetry</title>
 
 </section>
 
+<xi:include href="./sec-SymmSmall.ptx" />
+
+<xi:include href="./sec-SymmGeneral.ptx" />
+
 <xi:include href="./sec-SymmVariant.ptx" />
 
-<xi:include href="./sec-SymmSmall.ptx" />
+<section>
+<title>Extra Diagrams</title>
+<p>
+This section is a placeholder for certain ancillary diagrams that are referred to in other sections in this chapter.  
+The online reader is encouraged to simply ignore this section; in printed book form it might be useful.
+</p>
+
+<subsection>
+<title>Diagrams with 5 curves</title>
+
+<sidebyside>
+<figure xml:id="img-MabryIce">
+<caption>Rick Mabry's 5-Venn "ice cream cone curves"</caption>.
+<image source="/gifs/MabryIce.gif"></image>
+</figure>
+<figure xml:id="img-GrunEllipseKnot">
+<caption>The 5 ellipses rendered as a link.</caption>.
+<image source="/jpgs/knot/GrunEllipseKnot.jpg"></image>
+</figure>
+<figure xml:id="img-5-VD-triangles">
+<caption>The 5 ellipses rendered with equilateral triangles.</caption>.
+<image source="/gifs/5-VD-triangles.gif"></image>
+</figure>
+<figure xml:id="img-venn5-tutte">
+<caption>A Tutte embedding of the 5 ellipses.</caption>.
+<image source="/jpgs/venn5-tutte.jpg"></image>
+</figure>
+</sidebyside>
+
+<sidebyside>
+<figure xml:id="img-minsymm5a">
+<caption>Minimum vertex 5-Venn diagram (min5a).</caption>.
+<image source="gifs/min5a.gif"></image>
+</figure>
+<figure xml:id="img-minsymm5b">
+<caption>Minimum vertex 5-Venn diagram (min5b).</caption>.
+<image source="gifs/min5b.gif"></image>
+</figure>
+<figure xml:id="img-minsymm5c">
+<caption>Minimum vertex 5-Venn diagram (min5c).</caption>.
+<image source="gifs/min5c.gif"></image>
+</figure>
+</sidebyside>
+
+</subsection>
+
+<subsection>
+<title>Diagrams with 7 curves</title>
+
+<sidebyside>
+<figure xml:id="img-GrunSymm7">
+<caption>A simple non-monotone symmetric 7-Venn diagram.</caption>.
+<image source="gifs/GrunSymm7.gif"></image>
+</figure>
+<figure xml:id="img-GrunSymm7color">
+<caption>Coloured version.</caption>.
+<image source="gifs/GrunSymm7color.gif"></image>
+</figure>
+</sidebyside>
+
+</subsection>
+
+</section>
 
 </chapter>

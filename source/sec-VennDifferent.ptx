@@ -8,15 +8,19 @@ or not, and so on.
 </p>
 
 <definition xml:id="def-isomorphic">
+<statement>
 Two Venn diagrams are <term>isomorphic</term> if, by a continuous
   transformation of the plane, one of them can be changed into
   the other or its mirror image.
+</statement>
 </definition>
 
 <definition xml:id="def-equivalent">
+<statement>
 Two Venn diagrams are <term>equivalent</term> if they are isomorphic
   as plane graphs, ignoring the edge colors
   (that is, isomorphic as planar graphs embedded in the plane).
+</statement>
 </definition>
 
 <p>
@@ -26,7 +30,7 @@ Since curves meet transversally in simple Venn diagrams, two
 </p>
 
 <p>
-On the other hand, a Venn diagram may be embedded in the sphere
+On the other hand, a Venn diagram may be embedded on the surface of a sphere
   via stereographic projection.
 (Consider the standard basketball ball; it is the stereographic projection
   of Edwards' general construction for <m>n=4</m>.)
@@ -35,8 +39,10 @@ Sometimes it is more natural to look at Venn diagrams
 </p>
 
 <definition xml:id="def-class">
+<statement>
 Two Venn diagrams are <term>in the same class</term> if they can be
   projected to the same spherical Venn diagram.
+</statement>
 </definition>
 
 <p>
@@ -64,7 +70,7 @@ and <m>\mathbf{B}</m> are <m>\mathbf{A}</m> = { red, green, black, red, green} a
 <m>\mathbf{B}</m> = {blue, yellow, black, blue, yellow}, and the black curve is the curve <m>C</m>.
 A Venn diagram is said to be <term>rigid</term> if it has no separable vertices.
 The figures below illustrate the operation of <term>splitting</term>
-a separable vertex; <term>unsplitting</term> is defined as the inverse operation.
+a separable vertex; <term>unsplitting</term> (or <term>joining</term>)is defined as the inverse operation.
 </statement>
 </definition>
 
@@ -83,7 +89,7 @@ a separable vertex; <term>unsplitting</term> is defined as the inverse operation
 Note that the vertex of Figure <xref ref="fig-seperable"></xref> is
   part of a Venn diagram if and only if the two vertices of Figure <xref ref="fig-splitting"></xref>
   are part of a Venn diagram.
-Simple diagrams are in many ways the most pleasing of Venn diagrams.
+Simple diagrams are in many ways the most visually pleasing of Venn diagrams.
 Rigid Venn diagrams are interesting because in the equivalence class
   of diagrams under splitting and unsplitting of vertices, they are
   the ones closest to being simple.

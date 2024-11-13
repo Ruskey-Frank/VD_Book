@@ -1,24 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <chapter xml:id="ch-WhoVenn" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Who was John Venn?</title>
+  <title><sidebyside  widths="5% 95%"><image source="gifs/littleJohnVenn.gif"></image><p>Who was John Venn?</p></sidebyside></title>
 
   <introduction>
-    <p>This chapter explains who John Venn was.</p>
+    <p>This chapter gives a short biography of John Venn.</p>
   </introduction>
 
-  <image source="/gifs/VictoriaIcon.gif">
-  </image>
+<section>
+<title>John Venn</title>
 
-  <image source="/pngs/2vennAa.png">
-  </image>
+<p>
+Venn diagrams were introduced in 1880 by
+  John Venn (1834-1923), "M.A. Fellow and Lecturer in 
+  Moral Science, Caius College, Cambridge University",
+  in a paper entitled
+<em>On the Diagrammatic and Mechanical
+Representation of Propositions and Reasonings
+</em> which appeared in the Philosophical Magazine and Journal
+  of Science S. 5. Vol. 9. No. 59. July 1880, 
+  <xref ref="ref-Ve80">[Ve80]</xref>.
+</p>
 
-  <image source="/gifs/VennPaint.gif">
+<p>
+John Venn was born August 4, 1834 in Hull, Yorkshire, England and
+  died April 4, 1923 in Cambridge, England.<fn>Humberside changed to Yorkshire 
+  at the suggestion of Keith M. Briggs, "since Humberside did not exist until
+  the 1970's".</fn>
+He came from a Low Church Evangelical background and
+  in 1853 entered Gonville and Caius College of Cambridge University.
+In 1857 he was named a Fellow of the college.
+He was ordained a priest in 1859 and for a year was curate at Mortlake.
+</p>
+
+<p>
+He published his first book <em>Symbolic Logic</em> in 1881 and
+  <em>The Principles of Empirical Logic</em> in 1889.
+In 1883 John Venn was elected a Fellow of the Royal Society.
+</p>
+
+<p>
+Venn wrote a history of his college, <em>The Biographical History
+  of Gonville and Caius College 1349-1897</em> (1897),
+  and then began to compile a history of Cambridge University.
+He completed three volumes of the biographical history, and others continued the work,
+  with Volume 7 published in 1978, and 
+  with the eighth volume reportedly in preparation.
+</p>
+
+<figure>
+<caption>The stained glass in Caius Hall 
+  at Cambridge University commemorating John Venn.  
+  Images courtesy of Anthony W.F. Edwards.
+</caption>
+<sidebyside width="40%">
+<image source="gifs/VennStain.gif" width="30%"></image>
+<image source="gifs/VennStain2.gif" width="30%"></image>
+</sidebyside>
+</figure>
+
+<p>
+The use of diagrams in formal logic is not an easy history to trace,
+  but it is certain that the diagrams that are popularly associated 
+  with Venn, in fact, originated much earlier.  They are rightly associated with
+Venn, however, because he comprehensively surveyed and formalized
+their usage, and was the first to generalize them.  It is worth noting
+that his book <xref ref="ref-Ve80">[Ve80]</xref> is still in print.
+For more of the history of Venn diagrams the reader is referred to
+the articles by Baron <xref ref="ref-Bar">[Bar]</xref> and Hamburger and Pippert 
+  <xref ref="ref-HP00">[HP00]</xref>, and the recent book by Edwards
+  <xref ref="ref-Ed04">[Ed04]</xref>.
+The first use of the term <term>Venn diagram</term>, according to the
+  2nd edition of the Oxford English Dictionary, is in the book
+  "A Survey of Symbolic Logic" by Clarence Irving Lewis, 1918.
+</p> 
+
+<p>
+The small image of John Venn at the top of this page
+  is courtesy of the wonderful
+  "MacTutor History of Mathematics Archive"
+  <xref ref="ref-MAC">[MAC]</xref>.
+</p>
+
+<figure>
+  <caption>A painting of John Venn by Charles E. Brock. Photograph by Christopher Hurst, 
+  Hamilton-Kerr Institute, University of Cambridge. Reproduced by kind permission of the 
+  Master and Fellows of Gonville and Caius College.
+  </caption> 
+  <image source="/gifs/VennPaint.gif" width="50%">
     <shortdescription>A painting of John Venn</shortdescription>
   </image>
+</figure>
 
-  <!-- include sections
-  <xi:include href="sec-section-name.ptx" />
-  -->
+</section>
 
 </chapter>
