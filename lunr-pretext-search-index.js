@@ -10,6 +10,15 @@ var ptx_lunr_docs = [
   "body": ""
 },
 {
+  "id": "frontmatter-4",
+  "level": "1",
+  "url": "frontmatter-4.html",
+  "type": "Preface",
+  "number": "",
+  "title": "Preface",
+  "body": " Almost everyone has been exposed to Venn diagrams as part of their schooling. It is less well-known are that Venn diagrams exist for more than 3 categories or that interesting mathematics arises from their careful study.  Venn introduced his diagrams around 1880, but it wasn't until the pioneering papers of Branko Grunbaum, starting in 1975, that the mathematical study of Venn diagrams really took off.  Much of the material in this book first appeared in the \"Survey of Venn Diagrams\" that was published as a \"Dynamic Survey\", in the Electronic Journal of Combintorics as the fifth dynamic survey and the only one that was a collection of html pages and not a pdf document. The original survey was first published in 1997 and had updates in 2001 and 2005. The last update was co-authored with my former Ph.D. student, Mark Weston.  "
+},
+{
   "id": "ch-WhoVenn-3",
   "level": "1",
   "url": "ch-WhoVenn-3.html",
@@ -46,58 +55,103 @@ var ptx_lunr_docs = [
   "body": " A painting of John Venn by Charles E. Brock. Photograph by Christopher Hurst, Hamilton-Kerr Institute, University of Cambridge. Reproduced by kind permission of the Master and Fellows of Gonville and Caius College.   A painting of John Venn   "
 },
 {
-  "id": "ch-VennWhatIs-4",
+  "id": "sec-defs",
   "level": "1",
-  "url": "ch-VennWhatIs-4.html",
+  "url": "sec-defs.html",
   "type": "Section",
   "number": "2.1",
   "title": "Definition of Venn Diagrams",
-  "body": " Definition of Venn Diagrams  We follow Grünbaum [Gr75] in first defining a more general concept, that of an independent family. Let be a collection of simple closed curves drawn in the plane. The collection is said to be an independent family if the region formed by the intersection of is nonempty, where each is either (the interior of ) or is (the exterior of ).  If, in addition, each such region is connected and there are only finitely many points of intersection between curves, then C is a Venn diagram , or an -Venn diagram if we wish to emphasize the number of curves in the diagram. The condition that there are only a finite number of intersection points is usually assumed in the literature, but often not stated explicitly. It rules out, e.g., segments of curves from intersecting.  Since each region is either inside or outside of a given curve, and there are curves, there must be exactly regions in a Venn diagram (including the exterior, empty region, which is outside of all curves). Note that some authors refer to diagrams with fewer than regions as Venn diagrams, but they are more properly termed Euler diagrams , after the mathematician Leonard Euler. More on these important diagrams can be found on the page on Generalizations and Extensions . We refer to a region enclosed by exactly curves as a -region or -set.           On the left we show the most familiar of all Venn diagrams. In this case , the simple closed curves are all circles, and in the leftmost diagram the 8 regions have been labelled with the interiors that are included in each intersection. The eighth region is the exterior region, corresponding to the empty set. The colored diagram has all 1-sets colored yellow, all 2-sets red, and the 3-set blue. This diagram also occurs as a minimal projection of the Borromean Rings, see .     On the left we show an example, for , of an independent family that is not a Venn diagram. Here the simple closed curves are each congruent triangles, which are colored red, blue, green, and gold. Note that the intersection of the interiors of the red and blue triangles with the exteriors of the green and gold triangles gives a disconnected region, the two darkly shaded regions in the figure.   The figure below is a Venn diagram of 4 ellipses, originally found by Venn himself [Ve80] . See also a black-and-white version and its Tutte embedding .   A simple Venn diagram is one in which no more than two curves intersect at a common point. Simple diagrams are in some sense the \"nicest\" as they are easiest to draw and understand. All of the figures in this chapter are simple, but we will see many examples in other chapters of non-simple diagrams. Unless stated otherwise, we assume that Venn diagrams are simple.  Finally, we note that the 3-circle diagram shown above, and the 2-circle diagram for 2 sets, appear often in the context of proving simple logical arguments. Readers interested in the applications of Venn diagrams to logical arguments are referred to the excellent introductory article by Glassner [Gl] , the book by Shin [Sh] , and many standard logic textbooks.  "
+  "body": " Definition of Venn Diagrams  In a series of papers, starting with [Gr75] Branko Grünbaum, a well known geometer at the University of Washington, initiated the mathematical investigation of Venn diagrams. We will follow Grünbaum in first defining a more general concept, that of an independent family, and then move on to Venn diagrams. Both concepts are defined in terms of simple closed curves in the plane, which can be thought of as being drawn by starting at a point , and then drawing a non-intersecting curve that ends back at . The Jordan curve theorem proves that such a curve partitions the plane into , together with two disjoint open regions , the interior of , and , the (unbounded) exterior of .   independent family  Let be a collection of simple closed curves drawn in the plane. The collection is said to be an independent family if the region formed by the intersection of is non-empty, where each is either or is . If, in addition, each such intersection region is connected and there are only finitely many points of intersection between curves, then C is a Venn diagram , or an -Venn diagram if we wish to emphasize the number of curves in the diagram.   Note that the term region in the mathematical literature is often assumed to be connected; when discussing Venn diagrams no confusion should arise. Since there are 2 choices for each , there are non-empty disjoint regions that result from the different intersections in the definition. One region, the one arising from the intersection of all the exteriors, is unbounded and all of the other regions are bounded. In a Venn diagram all regions are required to be connected , meaning that there is a curve joining any two point in a region, a curve that is entirely contained in the region. The condition that there are only a finite number of intersection points is usually assumed in the literature, but sometimes not stated explicitly. It rules out, e.g., segments of curves from intersecting. We will relax this restriction in .   Euler diagram Note that some authors refer to diagrams with fewer than non-empty regions as Venn diagrams, but they are more properly termed Euler diagrams , after the mathematician Leonard Euler. More on these important diagrams can be found on the page on Generalizations and Extensions . We refer to a region enclosed by exactly curves as a -region or -set.    Regions labeled inclusion.      Regions colored by size.      Above we show the most familiar of all Venn diagrams. In this case , the simple closed curves are all circles, and in the 8 regions have been labelled with the interiors that are included in each intersection. The eighth region is the exterior region, corresponding to the empty set. The colored diagram has all 1-sets colored yellow, all 2-sets red, and the 3-set blue. The 3 circle Venn diagram also occurs as a minimal projection of the Borromean Rings, see .     independent family On the left we show an example, for , of an independent family that is not a Venn diagram. Here the simple closed curves are each congruent triangles, which are colored red, blue, green, and gold. Note that the intersection of the interiors of the red and blue triangles with the exteriors of the green and gold triangles gives a disconnected region, the two darkly shaded regions in the figure. For an example of intersecting closed curves that is not an independent family, consider the Olympic Rings.   The figure below is a Venn diagram of 4 ellipses, originally found by Venn himself [Ve80] . See also a black-and-white version and its Tutte embedding .    Venn diagram simple  A simple Venn diagram is one in which no more than two curves intersect at a common point.   Simple diagrams are in some sense the \"nicest\" as they are easiest to draw and understand. All of the figures in this chapter are simple, but we will see many examples in other chapters of non-simple diagrams. Unless stated otherwise, we assume that Venn diagrams are simple.  You often see 2, and 3 curve Venn diagrams drawn with circles, but all diagrams with 4 curves seem to have the wrong number of regions. In the next chapter we'll prove a little theorem that implies that a 4-Venn diagram can never be drawn with circles, even if they have varying diameters. The basic reason is that there are too many regions for the possible number of intersections. Below we make two observations. The reader is encouraged to try to figure out why these are true.   Suppose two curves intersect at a point . The curves can cross at , in which case we say that they intersect transversally . If they do not cross, then we say that they intersect non-transversally , or that they kiss . transversal intersection     In a simple Venn diagram, at every point of intersection, the two curves meet transversally. I.e., the two curves cross and do not meerly \"kiss\" each other. More generally, at any point of intersection in a Venn diagram, there must be at least two curves that meet transversally.   Suppose that curve kisses curve at point in Venn diagram . In a rotation about there are 4 regions, which we may denote , , , and . Unless and are connected we can not have a Venn diagram since these regions are in the same set of interiors and exteriors of curves. We will show that they are not connected, a contradiction which will prove the observation. Because is a Venn diagram, curves and must have at least two transverse intersections, for otherwise one curve would be contained in the other. Define a closed curve by following curve with region on its boundary until first encountering a transverse intersection with , and then follow back to . The curve might have points of kissing, but no transverse intersections. To finish the proof, observe that contains region but excludes region , and thus they are not connected. The more general statement may be proven by essentially the same proof.     At most curves pass through any point of intersection in a -Venn diagram.   Since the curves are simple closed Jordan curves, they do not self-intersect, and thus pass through any point at most once.     Finally, we note that the 3-circle diagram shown above, and the 2-circle diagram for 2 sets, appear often in the context of illustrating simple logical arguments. Readers interested in the applications of Venn diagrams to logical arguments are referred to the excellent introductory article by Glassner [Gl] , the book by Shin [Sh] , and many standard logic textbooks.  "
 },
 {
-  "id": "ch-VennWhatIs-4-2",
+  "id": "sec-defs-2",
   "level": "2",
-  "url": "ch-VennWhatIs-4.html#ch-VennWhatIs-4-2",
+  "url": "sec-defs.html#sec-defs-2",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
-  "body": "independent family "
+  "body": "simple closed curves interior "
 },
 {
-  "id": "ch-VennWhatIs-4-3",
+  "id": "def-IndependentFamily",
   "level": "2",
-  "url": "ch-VennWhatIs-4.html#ch-VennWhatIs-4-3",
+  "url": "sec-defs.html#def-IndependentFamily",
+  "type": "Definition",
+  "number": "2.1.1",
+  "title": "",
+  "body": " independent family  Let be a collection of simple closed curves drawn in the plane. The collection is said to be an independent family if the region formed by the intersection of is non-empty, where each is either or is . If, in addition, each such intersection region is connected and there are only finitely many points of intersection between curves, then C is a Venn diagram , or an -Venn diagram if we wish to emphasize the number of curves in the diagram.  "
+},
+{
+  "id": "sec-defs-4",
+  "level": "2",
+  "url": "sec-defs.html#sec-defs-4",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
-  "body": "Venn diagram "
+  "body": "region connected "
+},
+{
+  "id": "sec-defs-5",
+  "level": "2",
+  "url": "sec-defs.html#sec-defs-5",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Euler diagrams "
 },
 {
   "id": "fig-V3",
   "level": "2",
-  "url": "ch-VennWhatIs-4.html#fig-V3",
+  "url": "sec-defs.html#fig-V3",
   "type": "Figure",
-  "number": "2.1.1",
+  "number": "2.1.2",
   "title": "",
-  "body": "   "
+  "body": " Regions labeled inclusion.    "
 },
 {
   "id": "fig-CO-V3",
   "level": "2",
-  "url": "ch-VennWhatIs-4.html#fig-CO-V3",
+  "url": "sec-defs.html#fig-CO-V3",
   "type": "Figure",
-  "number": "2.1.2",
+  "number": "2.1.3",
   "title": "",
-  "body": "   "
+  "body": " Regions colored by size.    "
 },
 {
-  "id": "ch-VennWhatIs-4-8",
+  "id": "sec-defs-10",
   "level": "2",
-  "url": "ch-VennWhatIs-4.html#ch-VennWhatIs-4-8",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
+  "url": "sec-defs.html#sec-defs-10",
+  "type": "Definition",
+  "number": "2.1.4",
   "title": "",
-  "body": "simple "
+  "body": " Venn diagram simple  A simple Venn diagram is one in which no more than two curves intersect at a common point.  "
+},
+{
+  "id": "sec-defs-13",
+  "level": "2",
+  "url": "sec-defs.html#sec-defs-13",
+  "type": "Definition",
+  "number": "2.1.5",
+  "title": "",
+  "body": " Suppose two curves intersect at a point . The curves can cross at , in which case we say that they intersect transversally . If they do not cross, then we say that they intersect non-transversally , or that they kiss . transversal intersection   "
+},
+{
+  "id": "obs-transverse",
+  "level": "2",
+  "url": "sec-defs.html#obs-transverse",
+  "type": "Observation",
+  "number": "2.1.6",
+  "title": "",
+  "body": " In a simple Venn diagram, at every point of intersection, the two curves meet transversally. I.e., the two curves cross and do not meerly \"kiss\" each other. More generally, at any point of intersection in a Venn diagram, there must be at least two curves that meet transversally.   Suppose that curve kisses curve at point in Venn diagram . In a rotation about there are 4 regions, which we may denote , , , and . Unless and are connected we can not have a Venn diagram since these regions are in the same set of interiors and exteriors of curves. We will show that they are not connected, a contradiction which will prove the observation. Because is a Venn diagram, curves and must have at least two transverse intersections, for otherwise one curve would be contained in the other. Define a closed curve by following curve with region on its boundary until first encountering a transverse intersection with , and then follow back to . The curve might have points of kissing, but no transverse intersections. To finish the proof, observe that contains region but excludes region , and thus they are not connected. The more general statement may be proven by essentially the same proof.   "
+},
+{
+  "id": "obs-maxn",
+  "level": "2",
+  "url": "sec-defs.html#obs-maxn",
+  "type": "Observation",
+  "number": "2.1.7",
+  "title": "",
+  "body": " At most curves pass through any point of intersection in a -Venn diagram.   Since the curves are simple closed Jordan curves, they do not self-intersect, and thus pass through any point at most once.   "
 },
 {
   "id": "sec-VennExist",
@@ -106,7 +160,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.2",
   "title": "Constructions of Venn Diagrams",
-  "body": " Constructions of Venn Diagrams  Above we saw that Venn diagrams exist for , and it is easy to see (for example, by removing circles) that Venn diagrams exist for . Diagrams exist for all larger values of as well. There have been several general constructions published (see [Be] , [RRS] , [Mo] , [AC] , and [FGK] , for a sampling in chronological order); we explain two of them below. They both have the nice property that they produce simple diagrams and have easy to explain inductive constructions. In both cases, a new curve is added by drawing a new curve that \"follows\" an existing curve ; in one case, and in the other case .   Venn's Construction   Venn's construction, outlined in his original paper [Ve80] , is best explained by considering the figure to the right. Start with the 3 circle diagram. Curves are successively added, with the new curve tracing the one last added and dividing each existing region in two. In the figure they are added in the order blue (4), red (5), and green (6). It should be clear where the seventh curve would be drawn.      Edwards' Construction    Anthony Edwards [Ed89a] , [Ed89b] developed another general inductive construction that has several nice properties, including some symmetry. It is also best explained by means of an example; refer to the diagram on the left. For the diagram consists of two perpendicular lines. (Strictly speaking we have to join the endpoints of these lines to make them into simple closed curves.) For a circle is added, centered at the point of intersection of the lines. Successive curves will all be added that follow this circle, weaving back and forth along the circle, again dividing each region in two. For the blue, red, and green curves are added, in that order.   These diagrams have very attractive bipartite colourings as can be seen below. The reason for calling these colourings \"bipartite\" is explained in Chapter , Graphs Associated with Venn Diagrams.    shows .  shows .  shows .  shows .  shows .  shows .        Venn Diagrams and Knots  Every simple Venn diagram can be \"woven\" in to a link A link is a finite collection of non-intersecting knots (where a knot is a closed, non-self-intersecting curve that is embedded in three dimensions. ; as one traverses any curve, the other curves alternately go over and under. The reader will find it an interesting exercise to prove that this is always possible for any collection of simple closed curves in the plane. For example, below we show the link that arises (after some smooth transformations in 3-space) from Venn's general construction for . This is clearly the same as the link that arises from Edwards' general construction for , although the constructions give different links for .    "
+  "body": " Constructions of Venn Diagrams  Above we saw that Venn diagrams exist for , and it is easy to see (for example, by removing circles) that Venn diagrams exist for . Diagrams exist for all larger values of as well. There have been several general constructions published (see [Be] , [RRS] , [Mo] , [AC] , and [FGK] , for a sampling in chronological order); we explain two of them below. They both have the nice property that they produce simple diagrams and have easy to explain inductive constructions. In both cases, a new curve is added by drawing a new curve that \"follows\" an existing curve ; in one case, and in the other case .   Venn's Construction   Venn's construction, outlined in his original paper [Ve80] , is best explained by considering the figure to the right. Start with the 3 circle diagram. Curves are successively added, with the new curve tracing the one last added and dividing each existing region in two. In the figure they are added in the order blue (4), red (5), and green (6). It should be clear where the seventh curve would be drawn.      Edwards' Construction    Anthony Edwards [Ed89a] , [Ed89b] developed another general inductive construction that has several nice properties, including some symmetry. It is also best explained by means of an example; refer to the diagram on the left. For the diagram consists of two perpendicular lines. (Strictly speaking we have to join the endpoints of these lines to make them into simple closed curves.) For a circle is added, centered at the point of intersection of the lines. Successive curves will all be added that follow this circle, weaving back and forth along the circle, again dividing each region in two. For the blue, red, and green curves are added, in that order.   These diagrams have very attractive bipartite colourings as can be seen below. The reason for calling these colourings \"bipartite\" is explained in Chapter , Graphs Associated with Venn Diagrams.    shows .  shows .  shows .  shows .  shows .  shows .        Venn Diagrams and Knots  Every simple Venn diagram can be \"woven\" in to a link link A link is a finite collection of non-intersecting knots (where a knot is a closed, non-self-intersecting curve that is embedded in three dimensions. ; as one traverses any curve, the other curves alternately go over and under. The reader will find it an interesting exercise to prove that this is always possible for any collection of simple closed curves in the plane. For example, below we show the link that arises (after some smooth transformations in 3-space) from Venn's general construction for . This is clearly the same as the link that arises from Edwards' general construction for , although the constructions give different links for .    "
 },
 {
   "id": "sec-VennExist-5-2",
@@ -223,7 +277,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.1",
   "title": "The Planar Dual of a Venn Diagram",
-  "body": " The Planar Dual of a Venn Diagram  An -Venn diagram may be regarded as a graph in two ways. The diagram itself can be thought of as an edge-colored plane A planar graph is one that can be embedded in the plane without crossing edges. A plane graph is a planar graph that has been embedded in the plane. graph  graph planar graph planar whose vertices correspond to intersections of curves, and whose edges correspond to the segments of curves between intersections. Edges are colored according to the curve to which they belong. Following Chilakamarri, Hamburger, and Pippert [CHP95] , we overload the term and call this graph the Venn diagram . In an unlabelled Venn diagram we ignore the edge labels. As an example, the three circle Venn diagram has 6 vertices (corresponding to the 6 intersections) and 12 edges. Recall Euler's formula relating the number of faces, edges, and vertices of a graph embedded in the plane. Assuming that no three curves intersect at a common point (i.e., a simple Venn diagram), the graph is 4-regular and so we have . By definition the number of faces is . It thus follows that and for simple Venn diagrams.  Two curves can meet at a point transversally or not, depending on whether the two curves cross. transversal intersection A moment's reflection will convince you that the curves in a simple Venn diagram must meet transversally. More generally, at any point of intersection in a Venn diagram, there must be at least two curves that meet transversally.   Venn dual With each Venn diagram, , we may associate another plane graph called the Venn dual , which is denoted , the planar dual of the Venn diagram. (Warning: Some authors use the term \"Venn graph\" to refer to the dual.) Its vertices are the connected open regions (faces) of . Two vertices are connected by an edge if they share a common boundary. By default the edges are colored (by the color of the corresponding edge in the Venn diagram). At times it is also useful to label the vertices with a length- bitstring consisting of 0s and 1s; if the curves are labelled 1 to then we set bit to 1 if the vertex is enclosed by curve , 0 otherwise. Labels of adjacent vertices differ in exactly one bit position as one curve in the Venn diagram is crossed by one edge in the Venn dual. For example, the Venn dual of the three circle Venn diagram is a planar embedding of the 3-cube, . Clearly, every -Venn dual is a planar spanning subgraph of the -cube, . If is a simple Venn diagram, then every face of is a quadrilateral, and thus is a maximal bipartite A bipartite graph is one in which the vertices can be partitioned into two sets and where every edge is incident with a vertex from and a vertex from . The -cube is bipartite, and thus so is the Venn dual. planar graph.   Above we illustrate these definitions. The following section contains illustrations of some Venn duals.   The Venn Duals of Venn's Construction  Here are the Venn dual graphs of Venn's general construction for , but without coloured edges for the corresponding to the curves. Here the red edges indicate the Hamilton cycle that is used in extending to the next higher value of .   How, in general, do you go from the dual graph of a Venn diagram, together with a Hamilton cycle in , and get a new planar dual of a Venn diagram of the next higher order? We now explain this process. Note that is a simple closed curve with an interior and an exterior.   We illustrate the discussion with the expansion of to as shown above. Color the edges of red, edges on the interior blue, and edges on the exterior black.   Each (black) vertex of is split into two vertices, one green and one blue, in . The blue vertices are in the interior, the red edges in the exterior.  Each blue edge in becomes a blue edge in connecting the corresponding blue vertices.  Each black edge in becomes a black edge in connecting the corresponding green vertices.  Each red edge in becomes a 4-cycle of red edges in , connecting either corresponding vertices or vertices of the same color.    graph prism of Note that the red edges in give the prism of the Hamilton cycle in .  Peter Winkler provides a similar discussion in [Wi,pg. 271] .    "
+  "body": " The Planar Dual of a Venn Diagram  An -Venn diagram may be regarded as a graph in two ways. The diagram itself can be thought of as an edge-colored plane A planar graph is one that can be embedded in the plane without crossing edges. A plane graph is a planar graph that has been embedded in the plane. graph  graph planar graph planar whose vertices correspond to intersections of curves, and whose edges correspond to the segments of curves between intersections. Edges are colored according to the curve to which they belong. Following Chilakamarri, Hamburger, and Pippert [CHP95] , we overload the term and call this graph the Venn diagram . In an unlabelled Venn diagram we ignore the edge labels. As an example, the three circle Venn diagram has 6 vertices (corresponding to the 6 intersections) and 12 edges. Recall Euler's formula relating the number of faces, edges, and vertices of a graph embedded in the plane. Euler formula Assuming that no three curves intersect at a common point (i.e., a simple Venn diagram), the graph is 4-regular and so we have . By definition the number of faces is . It thus follows that and for simple Venn diagrams. By the maximum vertex degree is    Venn dual With each Venn diagram, , we may associate another plane graph called the Venn dual , which is denoted , the planar dual of the Venn diagram. (Warning: Some authors use the term \"Venn graph\" to refer to the dual.) Its vertices are the connected open regions (faces) of . Two vertices are connected by an edge if they share a common boundary. By default the edges are colored (by the color of the corresponding edge in the Venn diagram). At times it is also useful to label the vertices with a length- bitstring consisting of 0s and 1s; if the curves are labelled 1 to then we set bit to 1 if the vertex is enclosed by curve , 0 otherwise. Labels of adjacent vertices differ in exactly one bit position as one curve in the Venn diagram is crossed by one edge in the Venn dual. For example, the Venn dual of the three circle Venn diagram is a planar embedding of the 3-cube, . Clearly, every -Venn dual is a planar spanning subgraph of the -cube, . If is a simple Venn diagram, then every face of is a quadrilateral, and thus is a maximal bipartite A bipartite graph is one in which the vertices can be partitioned into two sets and where every edge is incident with a vertex from and a vertex from . The -cube is bipartite, and thus so is the Venn dual. planar graph.   Above we illustrate these definitions. The following section contains illustrations of some Venn duals.   The Venn Duals of Venn's Construction  Here are the Venn dual graphs of Venn's general construction for , but without coloured edges for the corresponding to the curves. Here the red edges indicate the Hamilton cycle that is used in extending to the next higher value of .   How, in general, do you go from the dual graph of a Venn diagram, together with a Hamilton cycle in , and get a new planar dual of a Venn diagram of the next higher order? We now explain this process. Note that is a simple closed curve with an interior and an exterior.   We illustrate the discussion with the expansion of to as shown above. Color the edges of red, edges on the interior blue, and edges on the exterior black.   Each (black) vertex of is split into two vertices, one green and one blue, in . The blue vertices are in the interior, the red edges in the exterior.  Each blue edge in becomes a blue edge in connecting the corresponding blue vertices.  Each black edge in becomes a black edge in connecting the corresponding green vertices.  Each red edge in becomes a 4-cycle of red edges in , connecting either corresponding vertices or vertices of the same color.    graph prism of Note that the red edges in give the prism of the Hamilton cycle in .  Peter Winkler provides a similar discussion in [Wi,pg. 271] .    "
 },
 {
   "id": "ch-VennGraphs-3-2",
@@ -241,15 +295,6 @@ var ptx_lunr_docs = [
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
-  "body": "transversally "
-},
-{
-  "id": "ch-VennGraphs-3-4",
-  "level": "2",
-  "url": "ch-VennGraphs-3.html#ch-VennGraphs-3-4",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
   "body": "Venn dual bipartite "
 },
 {
@@ -259,7 +304,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.2",
   "title": "When are two Venn diagrams different?",
-  "body": " When are two Venn diagrams different?  Answering this question is a bit subtle and depends on whether the diagrams is regarded as being embedded in the plane or on a sphere, whether the curves are coloured or not, and so on.   Two Venn diagrams are isomorphic if, by a continuous transformation of the plane, one of them can be changed into the other or its mirror image.    Two Venn diagrams are equivalent if they are isomorphic as plane graphs, ignoring the edge colors (that is, isomorphic as planar graphs embedded in the plane).   Since curves meet transversally in simple Venn diagrams, two simple Venn diagrams are isomorphic if and only if they are equivalent.  On the other hand, a Venn diagram may be embedded on the surface of a sphere via stereographic projection. (Consider the standard basketball ball; it is the stereographic projection of Edwards' general construction for .) Sometimes it is more natural to look at Venn diagrams as being embedded on the sphere.   Two Venn diagrams are in the same class if they can be projected to the same spherical Venn diagram.   When considering non-simple Venn diagrams there is another elementary operation that can sometimes be applied to one diagram to get another.   [rigid diagram, seperable vertex]  A vertex traversal of a vertex in a Venn diagram is a circular sequence of the curves adjacent to , when read in a clockwise rotation around . A vertex is said to be separable if its vertex traversal has the property that for some , there is a such that the intersection of and consists of one curve, say , and in addition, and . In the example below the sets and are = { red, green, black, red, green} and = {blue, yellow, black, blue, yellow}, and the black curve is the curve . A Venn diagram is said to be rigid if it has no separable vertices. The figures below illustrate the operation of splitting a separable vertex; unsplitting (or joining )is defined as the inverse operation.     A seperable vertex     Splitting that vertex     Note that the vertex of Figure is part of a Venn diagram if and only if the two vertices of Figure are part of a Venn diagram. Simple diagrams are in many ways the most visually pleasing of Venn diagrams. Rigid Venn diagrams are interesting because in the equivalence class of diagrams under splitting and unsplitting of vertices, they are the ones closest to being simple.  FINISH THIS LATER   "
+  "body": " When are two Venn diagrams different?  Answering this question is a bit subtle and depends on whether the diagrams is regarded as being embedded in the plane or on a sphere, whether the curves are coloured or not, and so on.   Venn diagram isomorphic  Two Venn diagrams are isomorphic if, by a continuous transformation of the plane, one of them can be changed into the other or its mirror image.    Venn diagram equivalent  Two Venn diagrams are equivalent if they are isomorphic as plane graphs, ignoring the edge colors (that is, isomorphic as planar graphs embedded in the plane).   Since curves meet transversally in simple Venn diagrams, two simple Venn diagrams are isomorphic if and only if they are equivalent.  On the other hand, a Venn diagram may be embedded on the surface of a sphere via stereographic projection. (Consider the standard basketball ball; it is the stereographic projection of a simple 3-Venn diagram; adding another great circle, orthogonal to the other two, gives Edwards' general construction for .) Sometimes it is more natural to look at Venn diagrams as being embedded on the sphere. EXPAND.   Venn diagram class of  Two Venn diagrams are in the same class if they can be projected to the same spherical Venn diagram.   When considering non-simple Venn diagrams there is another elementary operation that can sometimes be applied to one diagram to get another.   [rigid diagram, seperable vertex]  Venn diagram rigid  Venn diagram seperable vertex in  A vertex traversal of a vertex in a Venn diagram is a circular sequence of the curves adjacent to , when read in a clockwise rotation around . A vertex is said to be separable if its vertex traversal has the property that for some , there is a such that the intersection of and consists of one curve, say , and in addition, and . In the example below the sets and are = { red, green, black, red, green} and = {blue, yellow, black, blue, yellow}, and the black curve is the curve . A Venn diagram is said to be rigid if it has no separable vertices. The figures below illustrate the operation of splitting a separable vertex; unsplitting (or joining )is defined as the inverse operation.     A seperable vertex     Splitting that vertex     Note that the vertex of Figure is part of a Venn diagram if and only if the two vertices of Figure are part of a Venn diagram. Simple diagrams are in many ways the most visually pleasing of Venn diagrams. Rigid Venn diagrams are interesting because in the equivalence class of diagrams under splitting and unsplitting of vertices, they are the ones closest to being simple.  FINISH THIS LATER   "
 },
 {
   "id": "def-isomorphic",
@@ -268,7 +313,7 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "3.2.1",
   "title": "",
-  "body": " Two Venn diagrams are isomorphic if, by a continuous transformation of the plane, one of them can be changed into the other or its mirror image.  "
+  "body": " Venn diagram isomorphic  Two Venn diagrams are isomorphic if, by a continuous transformation of the plane, one of them can be changed into the other or its mirror image.  "
 },
 {
   "id": "def-equivalent",
@@ -277,7 +322,7 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "3.2.2",
   "title": "",
-  "body": " Two Venn diagrams are equivalent if they are isomorphic as plane graphs, ignoring the edge colors (that is, isomorphic as planar graphs embedded in the plane).  "
+  "body": " Venn diagram equivalent  Two Venn diagrams are equivalent if they are isomorphic as plane graphs, ignoring the edge colors (that is, isomorphic as planar graphs embedded in the plane).  "
 },
 {
   "id": "def-class",
@@ -286,7 +331,7 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "3.2.3",
   "title": "",
-  "body": " Two Venn diagrams are in the same class if they can be projected to the same spherical Venn diagram.  "
+  "body": " Venn diagram class of  Two Venn diagrams are in the same class if they can be projected to the same spherical Venn diagram.  "
 },
 {
   "id": "ch-VennGraphs-4-9",
@@ -295,7 +340,7 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "3.2.4",
   "title": "[rigid diagram, seperable vertex].",
-  "body": " [rigid diagram, seperable vertex]  A vertex traversal of a vertex in a Venn diagram is a circular sequence of the curves adjacent to , when read in a clockwise rotation around . A vertex is said to be separable if its vertex traversal has the property that for some , there is a such that the intersection of and consists of one curve, say , and in addition, and . In the example below the sets and are = { red, green, black, red, green} and = {blue, yellow, black, blue, yellow}, and the black curve is the curve . A Venn diagram is said to be rigid if it has no separable vertices. The figures below illustrate the operation of splitting a separable vertex; unsplitting (or joining )is defined as the inverse operation.  "
+  "body": " [rigid diagram, seperable vertex]  Venn diagram rigid  Venn diagram seperable vertex in  A vertex traversal of a vertex in a Venn diagram is a circular sequence of the curves adjacent to , when read in a clockwise rotation around . A vertex is said to be separable if its vertex traversal has the property that for some , there is a such that the intersection of and consists of one curve, say , and in addition, and . In the example below the sets and are = { red, green, black, red, green} and = {blue, yellow, black, blue, yellow}, and the black curve is the curve . A Venn diagram is said to be rigid if it has no separable vertices. The figures below illustrate the operation of splitting a separable vertex; unsplitting (or joining )is defined as the inverse operation.  "
 },
 {
   "id": "fig-seperable",
@@ -717,8 +762,8 @@ var ptx_lunr_docs = [
   "url": "ch-VennSymmetric-4.html",
   "type": "Section",
   "number": "4.2",
-  "title": "Symmetric Diagrams for Small <span xmlns:pf=\"https:\/\/prefigure.org\" class=\"process-math\">\\(n\\)<\/span>",
-  "body": " Symmetric Diagrams for Small   On this page we show many examples of symmetric Venn diagrams for specific values of n . For , there is only one Venn diagram and it can be drawn to be polar symmetric. For , there are two symmetric diagrams. The classic three circle diagram is monotone, simple, and has polar symmetry. Diagram #3.1 (shown in ) is also a monotone polar symmetric diagram, but it is not simple, nor is it rigid.    Symmetric diagrams with curves    The simple ellipse diagram shown to the left is from [Gr75] , and has a 5-fold rotational symmetry. It is the only simple symmetric Venn diagram for n =5; in the list below, there are several different renderings of it:    Rick Mabry observes that the link of five knots formed by weaving the Venn diagram shown above is a Brunnian link --- the removal of any knot causes the link to fall apart. Mabry has created a beautiful rendering of the link made from \"ice cream cone curves\", see .  A version created by the author is can be see in ; this diagram serves as an illustration of a symmetric Brunnian link A link is a finite collection of non-intersecting knots (where a knot is a closed, non-self-intersecting curve that is embedded in three dimensions; the trivial knot is a simple loop). A Brunnian link is a link which is non-trivial, yet every proper sub-collection is trivial. A trivial link is one that can be projected to a collection of non-intersecting circles in the plane. of order 5. (The usual depiction of the Borromean rings (see ) is a symmetric Brunnian link of order 3.) This Brunnian link is attributed to C. van de Walle by Stewart [St, pg. 106] .  A rendering of the diagram using 5 equilateral triangles is given by Grünbaum in [Gr92b] and redrawn here: .  Stuart Anderson provided us with the labelled Tutte embedding of the diagram; one curve is highlighted, see .    There are many non-simple symmetric diagrams for . The one shown here is a play on the result that Venn diagrams cannot be constructed from \"curves that are\" circles for ; a statement that is no longer true if the three words in quotation marks are removed.    We have done an exhaustive computer search of all symmetric Venn diagrams for (first reported in the 1997 version of this survey). The number of symmetric Venn diagrams for is 243, and the table below shows the number possessing particular attributes. It is a often a trivial matter to construct non-simple diagrams from simple ones by \"pinching together\" simple intersections, but this operation does not produce an essentially different diagram. Thus we are particularly interested in rigid diagrams, of which there are .   Classification of symmetric 5-Venn diagrams    Polar  Rigid  Monotone  Count    No  No  No  100    No  No  Yes  89    No  Yes  No  12    No  Yes  Yes  13    Yes  No  No  5    Yes  No  Yes  18    Yes  Yes  No  2    Yes  Yes  Yes  4     For , a symmetric minimum Venn diagram must have at least 10 vertices. There are exactly six symmetric rigid 5-Venn diagrams with 10 vertices. One of them is shown below. Three others may be seen in , , and .   The following table shows the number of symmetric diagrams classified according to the number of vertices and rigidity.   Counts of symmetric 5-Venn diagrams    vertices  10  15  20  25  30    total  72  111  49  10  1    rigid  6  12  12  0  1        Symmetric diagrams with curves    Referring to the case , Grünbaum [Gr75,p.19] wrote: \"at present it seems likely that no such diagram exists.\" However, Grünbaum himself later found examples of such diagrams [Gr92b] and in 1992 additional examples were also discovered by Anthony Edwards and independently by Carla Savage and Peter Winkler. One of Grünbaum's examples is a remarkable non-monotone simple symmetric Venn diagram (see and ). Below we summarize what is know about symmetric 7-Venn diagrams.    The Grünbaum encoding  The Grünbaum encoding of a simple symmetric Venn diagram consists of four -ary strings, call them , , , , each of length . String is obtained by first numbering the curves clockwise as they appear on the outer face, and then following curve , recording its intersections with each of the other curves. The other strings are obtained by going counter-clockwise and\/or starting with one of the innermost curves; in each case the curves must be re-numbered first. For the 3 circle diagram . For the 5 ellipse diagram at the top of this page, the strings of the Grünbaum encoding are   Of course, we really only need two of the strings, one starting at the inside and one at the outside, since can be inferred from , and from -- but it's convenient to have all four, particularly when checking a diagram by hand. How can be obtained from in general? Think of the strings as being indexed . The rule is .  In fact, only one string is required, since string is a circular rotation of . The starting position of can be determined as the unique position in where all curves have been encountered an odd number of times (thus implying that we're on the inside of all curves). In the 5 ellipse example, the starting position of is the rightmost 1 in . If a single string is chosen to be the representative, then we take the lexicographically least of all four.  This encoding scheme has its parallels in other disciplines: topologists may recognise the Grünbaum encoding as being closely related to the Gauss code of a knot 10 .   Tao Cao proved in [Ca] that for simple symmetric monotone Venn diagrams, the Grünbaum encoding uniquely identifies the diagram (up to isomorphism of plane graphs).     Simple Symmetric 7-Venn Diagrams  For , all simple monotone symmetric Venn diagrams with polar symmetry are known; there are six of them, and they are listed below. The first five were discovered by Anthony Edwards using a program to generate candidate diagrams and manual checking to eliminate those candidates that were not Venn diagrams [Ed96] ; however one, Hamilton, was first found constructed by hand by Edwards. He named them after the cities in which they were discovered and we follow his naming convention (but also number them P1-P6). Grünbaum [Gr92b] also discovered \"Adelaide\". An exhaustive computer search by Frank Ruskey uncovered another, \"Victoria\", that had been overlooked in Edwards' manual checking.   Adelaide (P1):   Black-and-white Adelaide, .  One curve coloured green, .  One curve coloured green, .         Symmetric diagrams with curves     Symmetric diagrams with curves   "
+  "title": "Symmetric Diagrams for <span xmlns:pf=\"https:\/\/prefigure.org\" class=\"process-math\">\\(n = 2,3,5\\)<\/span>",
+  "body": " Symmetric Diagrams for   In this section we show many examples of symmetric Venn diagrams for specific small values of n , mainly . For , there is only one Venn diagram and it can be drawn to be polar symmetric. For , there are two symmetric diagrams. The classic three circle diagram is monotone, simple, and has polar symmetry. Diagram #3.1 (shown in ) is also a monotone polar symmetric diagram, but it is not simple, nor is it rigid.    Symmetric diagrams with curves    The simple ellipse diagram shown to the left is from [Gr75] , and has a 5-fold rotational symmetry. It is the only simple symmetric Venn diagram for n =5; in the list below, there are several different renderings of it:    Rick Mabry observes that the link of five knots formed by weaving the Venn diagram shown above is a Brunnian link --- the removal of any knot causes the link to fall apart. Mabry has created a beautiful rendering of the link made from \"ice cream cone curves\", see .  A version created by the author can be see in ; this diagram serves as an illustration of a symmetric Brunnian link link A link is a finite collection of non-intersecting knots (where a knot is a closed, non-self-intersecting curve that is embedded in three dimensions; the trivial knot is a simple loop). A Brunnian link is a link which is non-trivial, yet every proper sub-collection is trivial. A trivial link is one that can be projected to a collection of non-intersecting circles in the plane. of order 5. (The usual depiction of the Borromean rings (see ) is a symmetric Brunnian link of order 3.) This Brunnian link is attributed to C. van de Walle by Stewart [St, pg. 106] .  A rendering of the diagram using 5 equilateral triangles is given by Grünbaum in [Gr92b] and redrawn here: .  Stuart Anderson provided us with the labelled Tutte embedding of the diagram; one curve is highlighted, see .    There are many non-simple symmetric diagrams for . The one shown here is a play on the result that Venn diagrams cannot be constructed from \"curves that are\" circles for ; a statement that is no longer true if the three words in quotation marks are removed.    We have done an exhaustive computer search of all symmetric Venn diagrams for (first reported in the 1997 version of this survey). The number of symmetric Venn diagrams for is 243, and the table below shows the number possessing particular attributes. It is a often a trivial matter to construct non-simple diagrams from simple ones by \"pinching together\" simple intersections, but this operation does not produce an essentially different diagram. Thus we are particularly interested in rigid diagrams, of which there are .   Classification of symmetric 5-Venn diagrams    Polar  Rigid  Monotone  Count    No  No  No  100    No  No  Yes  89    No  Yes  No  12    No  Yes  Yes  13    Yes  No  No  5    Yes  No  Yes  18    Yes  Yes  No  2    Yes  Yes  Yes  4     For , a symmetric minimum Venn diagram must have at least 10 vertices. There are exactly six symmetric rigid 5-Venn diagrams with 10 vertices. One of them is shown below. Three others may be seen in , , and .   The following table shows the number of symmetric diagrams classified according to the number of vertices and rigidity.   Counts of symmetric 5-Venn diagrams    vertices  10  15  20  25  30    total  72  111  49  10  1    rigid  6  12  12  0  1      "
 },
 {
   "id": "ch-VennSymmetric-4-3-6",
@@ -739,31 +784,67 @@ var ptx_lunr_docs = [
   "body": " Counts of symmetric 5-Venn diagrams    vertices  10  15  20  25  30    total  72  111  49  10  1    rigid  6  12  12  0  1    "
 },
 {
-  "id": "ch-VennSymmetric-4-4-3-6",
+  "id": "ch-VennSymmetric-5",
+  "level": "1",
+  "url": "ch-VennSymmetric-5.html",
+  "type": "Section",
+  "number": "4.3",
+  "title": "Symmetric diagrams with <span xmlns:pf=\"https:\/\/prefigure.org\" class=\"process-math\">\\(n = 7\\)<\/span> curves",
+  "body": " Symmetric diagrams with curves    Referring to the case , Grünbaum [Gr75,p.19] wrote: \"at present it seems likely that no such diagram exists.\" However, Grünbaum himself later found examples of such diagrams [Gr92b] and in 1992 additional examples were also discovered by Anthony Edwards and independently by Carla Savage and Peter Winkler. One of Grünbaum's examples is a remarkable non-monotone simple symmetric Venn diagram (see and ). Below we summarize what is know about symmetric 7-Venn diagrams.    The Grünbaum encoding  The Grünbaum encoding of a simple symmetric Venn diagram consists of four -ary strings, call them , , , , each of length . String is obtained by first numbering the curves clockwise as they appear on the outer face, and then following curve , recording its intersections with each of the other curves. The other strings are obtained by going counter-clockwise and\/or starting with one of the innermost curves; in each case the curves must be re-numbered first. For the 3 circle diagram . For the 5 ellipse diagram at the top of this page, the strings of the Grünbaum encoding are   Of course, we really only need two of the strings, one starting at the inside and one at the outside, since can be inferred from , and from -- but it's convenient to have all four, particularly when checking a diagram by hand. How can be obtained from in general? Think of the strings as being indexed . The rule is .  In fact, only one string is required, since string is a circular rotation of . The starting position of can be determined as the unique position in where all curves have been encountered an odd number of times (thus implying that we're on the inside of all curves). In the 5 ellipse example, the starting position of is the rightmost 1 in . If a single string is chosen to be the representative, then we take the lexicographically least of all four.  This encoding scheme has its parallels in other disciplines: topologists may recognise the Grünbaum encoding as being closely related to the Gauss code of a knot 10 .   Tao Cao proved in [Ca] that for simple symmetric monotone Venn diagrams, the Grünbaum encoding uniquely identifies the diagram (up to isomorphism of plane graphs).    Simple Symmetric 7-Venn Diagrams   Simple monotone polar symmetric 7-Venn diagrams  For , all simple monotone symmetric Venn diagrams with polar symmetry are known; there are six of them, and they are listed below. The first five were discovered by Anthony Edwards using a program to generate candidate diagrams and manual checking to eliminate those candidates that were not Venn diagrams [Ed96] ; however one, Hamilton, was first found constructed by hand by Edwards. He named them after the cities in which they were discovered and we follow his naming convention (but also number them P1-P6). Grünbaum [Gr92b] also discovered \"Adelaide\". An exhaustive computer search by Frank Ruskey uncovered another, \"Victoria\", that had been overlooked in Edwards' manual checking.   Adelaide (P1):   Black-and-white Adelaide, .  One curve coloured green, .  Rainbow coloured regions, .  Symmetrically coloured regions, .  A cylindrical representation, .  Edwards' rendering, .  Tutte embedding, .  Tutte embedding (one curve colored), .  A link rendering, .    Hamilton (P2):   Black-and-white Hamilton, .  One curve coloured green, .  Rainbow coloured regions, .  Tutte embedding, .  Tutte embedding (one curve colored), .  A link rendering, .    Massey (P3):   Black-and-white Massey, .  One curve coloured green, .  Rainbow coloured regions, .  Tutte embedding, .  Tutte embedding (one curve colored), .  A link rendering, .    Victoria (P4):   Black-and-white Victoria, .  One curve coloured green, .  Rainbow coloured regions, .  Tutte embedding, .  Tutte embedding (one curve colored), .  A link rendering, .    Palmerston (P5):   Black-and-white Palmerston, .  One curve coloured green, .  Rainbow coloured regions, .  Tutte embedding, .  Tutte embedding (one curve colored), .  A link rendering, .    Manawatu (P6):   Black-and-white Manawatu, .  One curve coloured green, .  Rainbow coloured regions, .  Tutte embedding, .  Tutte embedding (one curve colored), .  A link rendering, .        The polar symmetric simple 7-Venn diagrams         Adelaide Hamilton Manawatu         Massey Palmerston Victoria        Simple monotone symmetric 7-Venn diagrams without polar symmetry  There are in total 23 monotone symmetric Venn diagrams and 17 of these do not have polar symmetry. This was proven in [CMR] .    TO DO. A list of the 17 monotone symmetric Venn diagrams without polar symmetry.   A symmetric diagram whose curves are 5-gons. This diagram is from [Gr92b] and is M2 on our list.   TO DO A list of all 23 monotone Venn diagrams (includes the six with polar symmetry).     The non-polar symmetric simple 7-Venn diagrams                                           Non-simple symmetric 7-Venn diagrams  From computer searches it is apparent that there are many more non-simple diagrams than there are simple diagrams. Using the above techniques, in [Wes] the authors generated hundreds of thousands of distinct non-simple monotone symmetric 7-Venn diagrams, including 1576 rigid diagrams (both polar symmetric and not). An example is shown in .   A polar symmetric rigid monotone symmetric 7-Venn diagram from [Wes] . This diagram has the minimum number of vertices for a monotone diagram.    For , the value of is 21, which is is divisible by 7. It is thus possible that there is a minimum vertex symmetric Venn diagram in which every curve passes through every vertex. In fact, we have discovered 60 such diagrams, but all discovered so far are non-rigid. Illustrations of two of them are found in , , , and   Hamburger and Pippert, in [HP03] , using different methods than those above, also constructed a minimum-vertex non-monotone symmetric 7-Venn diagram with several nice features. Their diagram is not rigid either.    "
+},
+{
+  "id": "ch-VennSymmetric-5-3-6",
   "level": "2",
-  "url": "ch-VennSymmetric-4.html#ch-VennSymmetric-4-4-3-6",
+  "url": "ch-VennSymmetric-5.html#ch-VennSymmetric-5-3-6",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Gauss code "
 },
 {
-  "id": "ch-VennSymmetric-5",
-  "level": "1",
-  "url": "ch-VennSymmetric-5.html",
-  "type": "Section",
-  "number": "4.3",
-  "title": "Symmetric Diagrams for all <span xmlns:pf=\"https:\/\/prefigure.org\" class=\"process-math\">\\(n\\)<\/span>",
-  "body": " Symmetric Diagrams for all  This chapter is about the construction of Griggs, Killian, and Savage.  "
+  "id": "ch-VennSymmetric-5-4-2-4-1",
+  "level": "2",
+  "url": "ch-VennSymmetric-5.html#ch-VennSymmetric-5-4-2-4-1",
+  "type": "Figure",
+  "number": "4.3.1",
+  "title": "",
+  "body": " The polar symmetric simple 7-Venn diagrams         Adelaide Hamilton Manawatu         Massey Palmerston Victoria    "
 },
 {
-  "id": "sec-SymmVariant",
+  "id": "ch-VennSymmetric-5-4-3-4-1",
+  "level": "2",
+  "url": "ch-VennSymmetric-5.html#ch-VennSymmetric-5-4-3-4-1",
+  "type": "Figure",
+  "number": "4.3.2",
+  "title": "",
+  "body": " The non-polar symmetric simple 7-Venn diagrams                                       "
+},
+{
+  "id": "img-7-VD-polar-rigid",
+  "level": "2",
+  "url": "ch-VennSymmetric-5.html#img-7-VD-polar-rigid",
+  "type": "Figure",
+  "number": "4.3.3",
+  "title": "",
+  "body": " A polar symmetric rigid monotone symmetric 7-Venn diagram from [Wes] . This diagram has the minimum number of vertices for a monotone diagram.   "
+},
+{
+  "id": "ch-VennSymmetric-6",
   "level": "1",
-  "url": "sec-SymmVariant.html",
+  "url": "ch-VennSymmetric-6.html",
   "type": "Section",
   "number": "4.4",
-  "title": "Variants on Symmetry",
-  "body": " Variants on Symmetry  In this section blah blah.   Venn Diagrams and Gray Codes  Stuff about Gray codes.   "
+  "title": "Symmetric diagrams with <span xmlns:pf=\"https:\/\/prefigure.org\" class=\"process-math\">\\(n = 11,13\\)<\/span> curves",
+  "body": " Symmetric diagrams with curves    Symmetric diagrams with curves    Hamburger's non-simple symmetric 11-Venn diagram  Peter Hamburger [Ha02] constructed the first symmetric 11-Venn diagram. The diagram is monotone and highly non-simple. It is very similar in form to the diagram for from (Symmetric Diagrams, Necklaces, and Chains) but is vastly more complicated because of increase in the the number of regions, intersection points, etc. In fact, the diagram is so intricate that it is difficult to show in a single figure. One sector of the diagram is shown in . Successive sectors may be obtained from this one by cyclicly permuting the colors.   A sector of the cylindrical representation of Hamburger's symmetric 11-Venn diagram. All 11 curves intersect at the left and a the right boundaries of this diagram.    The construction method for this diagram uses a partition of the set of all bitstrings of length 11. Recall that the Venn dual can be labelled with bitstrings corresponding to regions, as we discussed on the page Graphs Associated with Venn Diagrams . The construction then uses chains of bitstrings connected together to build the large dual graph of the sector, which then is repeated to give the entire diagram.  Since the diagram is highly non-simple and not rigid, the diagram can be turned in to many others by separating any or all separable vertices. Hamburger has published variants of the diagram with vertex sets from 462 up to 1001 by increments of 11 in [Ha02b] . He and other co-authors have used similar techniques to create other diagrams; see the sub-sections below.    Mamakani's simple symmetric 11-Venn diagram     Symmetric diagrams with curves   "
+},
+{
+  "id": "fig-Hamburger11",
+  "level": "2",
+  "url": "ch-VennSymmetric-6.html#fig-Hamburger11",
+  "type": "Figure",
+  "number": "4.4.1",
+  "title": "",
+  "body": " A sector of the cylindrical representation of Hamburger's symmetric 11-Venn diagram. All 11 curves intersect at the left and a the right boundaries of this diagram.   "
 },
 {
   "id": "ch-VennSymmetric-7",
@@ -771,116 +852,530 @@ var ptx_lunr_docs = [
   "url": "ch-VennSymmetric-7.html",
   "type": "Section",
   "number": "4.5",
+  "title": "Symmetric Diagrams for all <span xmlns:pf=\"https:\/\/prefigure.org\" class=\"process-math\">\\(n\\)<\/span>",
+  "body": " Symmetric Diagrams for all  This chapter is about the construction of Griggs, Killian, and Savage.   Symmetric Diagrams, Necklaces, and Chains  The Venn diagram, discovered by Stirling Chow and the author in 1996, and shown below has a number of remarkable properties. First, it has the least number of vertices among all monotone 5-Venn diagrams by a result of [BR] . Secondly, two cut-vertices delimit a sector which can be rotated to get the full diagram. Of course, the labels on the curves must also be \"rotated.\" The same principles used to discover this diagram can be used to obtain similar 7-Venn diagrams, such as the discovered by the author in 1997 and shown below; the same ideas were used by Hamburger in discovering (see ) his diagram for and by Griggs, Killian and Savage in their amazing construction for symmetric diagrams for all prime , discussed later in this section.  Recall that a necklace is an equivalence class of strings under rotation. Here the strings are binary; i.e., taken over the two letter alphabet . Since is prime each of the rotations is distinct (if the string is not either all 0s or all 1s).  Below we show a lattice of necklaces, the ranks of the lattice giving the number of black beads (the all yellow and all black necklaces have been omitted). The relation is subset inclusion on the black bead numbers. Each cover relation of the lattice has been labelled with the number of the bead that changes. The lattice now has the property that every path from the top to the bottom is a permutation of . These properties are sufficient to allow us to construct a Venn diagram.  Consider each necklace to be a vertex in the dual graph as shown in the figure to the right. The edge numbering allows us to draw curves from left-to-right; curve 2 has been colored red. Copying this seven times results in the Venn diagram shown at the bottom of the page. The curves are renumbered in each successive pie-slice by adding 1 (mod ). Curve one has been colored in green. Note that curve 2 in the defining pie-slice has become curve 1 in the second pie slice, and so on.  When will the resulting diagram have the least number of vertices? Exactly when the middle two levels of the lattice diagram form a perfect matching, as they do here.    The GKS Construction  Using ideas similar to those above, Jerrold Griggs, Chip Killian, and Carla Savage [GKS] produced a construction for a symmetric -Venn diagram for any prime . The difficult part is constructing a plane embedding of a lattice of necklaces such that every string of length is represented exactly once by a necklace. We start by illustrating how to build chains of -bit strings, and then show how to link them up to form a dual graph like the one above.  In a binary string, regard each `1' as a right parenthesis and each `0' as a left parenthesis and then match parentheses in the usual way as much as possible. For example, in the string   1 0 0 1 0 0 1  1 1 1 0 0 1 0                   the parentheses in green are matched with the parentheses in red. The black underlined 1s and 0s are unmatched. Then chains of strings can be formed by using the Greene-Kleitman successor rule :   Starting with a string , change the first unmatched 0 in to a 1 to get its successor .   In the example above, the string 10010011110010 becomes 1001001111 1 010.  Greene and Kleitman showed in [GK] that, if the strings chosen to start the chains are exactly those with no unmatched 1, then the resulting chains (formed by applying the above rule successively to each chain starter until there are no unmatched 0s) form a symmetric chain decomposition of the Boolean lattice. That is, every -bit string will occur exactly once in the resulting chains.  Griggs, Killian, and Savage use this rule to construct a symmetric chain decomposition of only th of the strings to form a necklace diagram like that above. They build a set with size , consisting of necklace representatives. To choose the appropriate representatives, they use the notion of a block code for an -bit string: let be an -bit string. If begins with 0 or ends with 1, the block code is infinity. Otherwise, consists of some number of blocks of the form , and the block code is simply the sequence of the lengths of these blocks.  For example, the block codes of the string 1100100 and all of its 7 rotations are shown below:   bitstring  block code                                 For each -bit string, the rotation chosen as the representative in is that which has the lexicographically-least block code. For example, for the string above, the rotation 1001100 is the choice to be in . The authors of [GKS] show that this rule results in exactly one necklace representative for each equivalence class of strings under rotation, which is unique since is prime.  Given , the chains are built using this variation of the Greene-Kleitman successor rule:   Start with a string in with exactly one unmatched 1 (which must be in the first position). If there are at least two unmatched 0s in , change the first unmatched 0 to 1 to obtain the successor of . Continue until a string with only one unmatched 0 is reached.   It is shown in [GKS] that this gives a symmetric chain decomposition of the subset of the Boolean lattice defined by . The chains so constructed are illustrated below as vertical columns of strings connected by thick black edges.  The dual of the Venn diagram is formed by imposing a tree structure on the set of chains. Identify each chain with its chain starter (i.e., the string with exactly one unmatched 1). The root of the tree is , from the unique chain with elements. The parent of other chain starters is obtained by changing the rightmost 1 into a 0. For the tree so constructed is illustrated below with the green edges. To obtain the dual a symmetric tree is formed from the final elements in the chains (strings with one unmatched 0). These edges of this symmetric tree are shown in blue below for . The dual graph of a sector like those above can now be created by embedding in the plane the tree as defined, embedding each chain vertically starting from the nodes in the tree, and then embedding the tree attached to the final elements in the chains. The figure below (minus the red edges) shows the plane graph that results from the construction for .   This partial order can be turned into a symmetric 7-Venn diagram by the process illustrated in the first section on this page.  In [KRSW] the authors showed that more edges can be added to add vertices to the resulting Venn diagram. In the graph constructed above, the face formed between each chain and the child chain embedded immediately beside it can have edges added; the number of extra edges is equal to one less than the number of elements in the shorter chain. In the figure above, the red edges are extra edges that can be added between adjacent chains.    "
+},
+{
+  "id": "ch-VennSymmetric-7-4-7",
+  "level": "2",
+  "url": "ch-VennSymmetric-7.html#ch-VennSymmetric-7-4-7",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "block code "
+},
+{
+  "id": "ch-VennSymmetric-7-4-13",
+  "level": "2",
+  "url": "ch-VennSymmetric-7.html#ch-VennSymmetric-7-4-13",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "chain starter "
+},
+{
+  "id": "sec-SymmVariant",
+  "level": "1",
+  "url": "sec-SymmVariant.html",
+  "type": "Section",
+  "number": "4.6",
+  "title": "Variants on Symmetry",
+  "body": " Variants on Symmetry  In this section blah blah.   Venn Diagrams and Gray Codes  Stuff about Gray codes.    Spherical Venn Diagrams  Stuff about spherical Venn diagrams.   "
+},
+{
+  "id": "ch-VennSymmetric-9",
+  "level": "1",
+  "url": "ch-VennSymmetric-9.html",
+  "type": "Section",
+  "number": "4.7",
   "title": "Extra Diagrams",
-  "body": " Extra Diagrams  This section is a placeholder for certain ancillary diagrams that are referred to in other sections in this chapter. The online reader is encouraged to simply ignore this section; in printed book form it might be useful.   Diagrams with 5 curves    Rick Mabry's 5-Venn \"ice cream cone curves\" .    The 5 ellipses rendered as a link. .    The 5 ellipses rendered with equilateral triangles. .    A Tutte embedding of the 5 ellipses. .      Minimum vertex 5-Venn diagram (min5a). .    Minimum vertex 5-Venn diagram (min5b). .    Minimum vertex 5-Venn diagram (min5c). .      Diagrams with 7 curves    A simple non-monotone symmetric 7-Venn diagram. .    Coloured version. .     Adelaide (P1)    Adelaide (P1). .    One curve coloured. .    Symmetricaly coloured version. .      "
+  "body": " Extra Diagrams  This section is a placeholder for certain ancillary diagrams that are referred to in other sections in this chapter. The online reader is encouraged to simply ignore this section; in printed book form it might be useful.   Diagrams with 5 curves    Rick Mabry's 5-Venn \"ice cream cone curves\" .    The 5 ellipses rendered as a link. .    The 5 ellipses rendered with equilateral triangles. .    A Tutte embedding of the 5 ellipses. .      Minimum vertex 5-Venn diagram (min5a). .    Minimum vertex 5-Venn diagram (min5b). .    Minimum vertex 5-Venn diagram (min5c). .      Diagrams with 7 curves    A simple non-monotone symmetric 7-Venn diagram. .    Coloured version. .     Adelaide (P1)    Adelaide (P1). .    One curve coloured. .    Rainbow coloured regions. .    Symmetricaly coloured regions. .      Cylindrical representation. .    Edwards image of Adelaide. .      Tutte embedding of Adelaide (P1). .    One curve coloured. .    Rendered as a link. .      Hamilton (P2)    Hamilton (P2). .    One curve coloured. .    Rainbow coloured regions. .    Symmetricaly coloured regions. .      Tutte embedding of Hamilton (P2). .    One curve coloured. .    Rendered as a link. .      Massey (P3)    Massey (P3). .    One curve coloured. .    Rainbow coloured regions. .    Symmetricaly coloured regions. .      Tutte embedding of Massey (P3). .    One curve coloured. .    Rendered as a link. .      Victoria (P4)    Victoria (P4). .    One curve coloured. .    Rainbow coloured regions. .    Symmetricaly coloured regions. .      Tutte embedding of Victoria (P3). .    One curve coloured. .    Rendered as a link. .      Palmerston (P5)    Palmerston (P5). .    One curve coloured. .    Rainbow coloured regions. .    Symmetricaly coloured regions. .      Tutte embedding of Victoria (P3). .    One curve coloured. .    Rendered as a link. .      Manawatu (P5)    Victoria (P6). .    One curve coloured. .    Rainbow coloured regions. .    Symmetricaly coloured regions. .      Tutte embedding of Manawatu (P3). .    One curve coloured. .    Rendered as a link. .      A symmetric 7-Venn diagram who curves are 5-gons.     "
 },
 {
   "id": "img-MabryIce",
   "level": "2",
-  "url": "ch-VennSymmetric-7.html#img-MabryIce",
+  "url": "ch-VennSymmetric-9.html#img-MabryIce",
   "type": "Figure",
-  "number": "4.5.1",
+  "number": "4.7.1",
   "title": "",
   "body": " Rick Mabry's 5-Venn \"ice cream cone curves\" .  "
 },
 {
   "id": "img-GrunEllipseKnot",
   "level": "2",
-  "url": "ch-VennSymmetric-7.html#img-GrunEllipseKnot",
+  "url": "ch-VennSymmetric-9.html#img-GrunEllipseKnot",
   "type": "Figure",
-  "number": "4.5.2",
+  "number": "4.7.2",
   "title": "",
   "body": " The 5 ellipses rendered as a link. .  "
 },
 {
   "id": "img-5-VD-triangles",
   "level": "2",
-  "url": "ch-VennSymmetric-7.html#img-5-VD-triangles",
+  "url": "ch-VennSymmetric-9.html#img-5-VD-triangles",
   "type": "Figure",
-  "number": "4.5.3",
+  "number": "4.7.3",
   "title": "",
   "body": " The 5 ellipses rendered with equilateral triangles. .  "
 },
 {
   "id": "img-venn5-tutte",
   "level": "2",
-  "url": "ch-VennSymmetric-7.html#img-venn5-tutte",
+  "url": "ch-VennSymmetric-9.html#img-venn5-tutte",
   "type": "Figure",
-  "number": "4.5.4",
+  "number": "4.7.4",
   "title": "",
   "body": " A Tutte embedding of the 5 ellipses. .  "
 },
 {
   "id": "img-minsymm5a",
   "level": "2",
-  "url": "ch-VennSymmetric-7.html#img-minsymm5a",
+  "url": "ch-VennSymmetric-9.html#img-minsymm5a",
   "type": "Figure",
-  "number": "4.5.5",
+  "number": "4.7.5",
   "title": "",
   "body": " Minimum vertex 5-Venn diagram (min5a). .  "
 },
 {
   "id": "img-minsymm5b",
   "level": "2",
-  "url": "ch-VennSymmetric-7.html#img-minsymm5b",
+  "url": "ch-VennSymmetric-9.html#img-minsymm5b",
   "type": "Figure",
-  "number": "4.5.6",
+  "number": "4.7.6",
   "title": "",
   "body": " Minimum vertex 5-Venn diagram (min5b). .  "
 },
 {
   "id": "img-minsymm5c",
   "level": "2",
-  "url": "ch-VennSymmetric-7.html#img-minsymm5c",
+  "url": "ch-VennSymmetric-9.html#img-minsymm5c",
   "type": "Figure",
-  "number": "4.5.7",
+  "number": "4.7.7",
   "title": "",
   "body": " Minimum vertex 5-Venn diagram (min5c). .  "
 },
 {
   "id": "img-GrunSymm7",
   "level": "2",
-  "url": "ch-VennSymmetric-7.html#img-GrunSymm7",
+  "url": "ch-VennSymmetric-9.html#img-GrunSymm7",
   "type": "Figure",
-  "number": "4.5.8",
+  "number": "4.7.8",
   "title": "",
   "body": " A simple non-monotone symmetric 7-Venn diagram. .  "
 },
 {
   "id": "img-GrunSymm7color",
   "level": "2",
-  "url": "ch-VennSymmetric-7.html#img-GrunSymm7color",
+  "url": "ch-VennSymmetric-9.html#img-GrunSymm7color",
   "type": "Figure",
-  "number": "4.5.9",
+  "number": "4.7.9",
   "title": "",
   "body": " Coloured version. .  "
 },
 {
   "id": "img-Adelaide",
   "level": "2",
-  "url": "ch-VennSymmetric-7.html#img-Adelaide",
+  "url": "ch-VennSymmetric-9.html#img-Adelaide",
   "type": "Figure",
-  "number": "4.5.10",
+  "number": "4.7.10",
   "title": "",
   "body": " Adelaide (P1). .  "
 },
 {
   "id": "img-AdelaideGreen",
   "level": "2",
-  "url": "ch-VennSymmetric-7.html#img-AdelaideGreen",
+  "url": "ch-VennSymmetric-9.html#img-AdelaideGreen",
   "type": "Figure",
-  "number": "4.5.11",
+  "number": "4.7.11",
   "title": "",
   "body": " One curve coloured. .  "
 },
 {
+  "id": "img-AdelaideRain",
+  "level": "2",
+  "url": "ch-VennSymmetric-9.html#img-AdelaideRain",
+  "type": "Figure",
+  "number": "4.7.12",
+  "title": "",
+  "body": " Rainbow coloured regions. .  "
+},
+{
   "id": "img-AdelaideColor",
   "level": "2",
-  "url": "ch-VennSymmetric-7.html#img-AdelaideColor",
+  "url": "ch-VennSymmetric-9.html#img-AdelaideColor",
   "type": "Figure",
-  "number": "4.5.12",
+  "number": "4.7.13",
   "title": "",
-  "body": " Symmetricaly coloured version. .  "
+  "body": " Symmetricaly coloured regions. .  "
+},
+{
+  "id": "img-AdelaideCylinder",
+  "level": "2",
+  "url": "ch-VennSymmetric-9.html#img-AdelaideCylinder",
+  "type": "Figure",
+  "number": "4.7.14",
+  "title": "",
+  "body": " Cylindrical representation. .  "
+},
+{
+  "id": "img-AdelaideEdwards",
+  "level": "2",
+  "url": "ch-VennSymmetric-9.html#img-AdelaideEdwards",
+  "type": "Figure",
+  "number": "4.7.15",
+  "title": "",
+  "body": " Edwards image of Adelaide. .  "
+},
+{
+  "id": "img-TutteAdelaide",
+  "level": "2",
+  "url": "ch-VennSymmetric-9.html#img-TutteAdelaide",
+  "type": "Figure",
+  "number": "4.7.16",
+  "title": "",
+  "body": " Tutte embedding of Adelaide (P1). .  "
+},
+{
+  "id": "img-TutteAdelaideGreen",
+  "level": "2",
+  "url": "ch-VennSymmetric-9.html#img-TutteAdelaideGreen",
+  "type": "Figure",
+  "number": "4.7.17",
+  "title": "",
+  "body": " One curve coloured. .  "
+},
+{
+  "id": "img-AdelaideLink",
+  "level": "2",
+  "url": "ch-VennSymmetric-9.html#img-AdelaideLink",
+  "type": "Figure",
+  "number": "4.7.18",
+  "title": "",
+  "body": " Rendered as a link. .  "
+},
+{
+  "id": "img-Hamilton",
+  "level": "2",
+  "url": "ch-VennSymmetric-9.html#img-Hamilton",
+  "type": "Figure",
+  "number": "4.7.19",
+  "title": "",
+  "body": " Hamilton (P2). .  "
+},
+{
+  "id": "img-HamiltonGreen",
+  "level": "2",
+  "url": "ch-VennSymmetric-9.html#img-HamiltonGreen",
+  "type": "Figure",
+  "number": "4.7.20",
+  "title": "",
+  "body": " One curve coloured. .  "
+},
+{
+  "id": "img-HamiltonRain",
+  "level": "2",
+  "url": "ch-VennSymmetric-9.html#img-HamiltonRain",
+  "type": "Figure",
+  "number": "4.7.21",
+  "title": "",
+  "body": " Rainbow coloured regions. .  "
+},
+{
+  "id": "img-HamiltonColor",
+  "level": "2",
+  "url": "ch-VennSymmetric-9.html#img-HamiltonColor",
+  "type": "Figure",
+  "number": "4.7.22",
+  "title": "",
+  "body": " Symmetricaly coloured regions. .  "
+},
+{
+  "id": "img-TutteHamilton",
+  "level": "2",
+  "url": "ch-VennSymmetric-9.html#img-TutteHamilton",
+  "type": "Figure",
+  "number": "4.7.23",
+  "title": "",
+  "body": " Tutte embedding of Hamilton (P2). .  "
+},
+{
+  "id": "img-TutteHamiltonGreen",
+  "level": "2",
+  "url": "ch-VennSymmetric-9.html#img-TutteHamiltonGreen",
+  "type": "Figure",
+  "number": "4.7.24",
+  "title": "",
+  "body": " One curve coloured. .  "
+},
+{
+  "id": "img-HamiltonLink",
+  "level": "2",
+  "url": "ch-VennSymmetric-9.html#img-HamiltonLink",
+  "type": "Figure",
+  "number": "4.7.25",
+  "title": "",
+  "body": " Rendered as a link. .  "
+},
+{
+  "id": "img-Massey",
+  "level": "2",
+  "url": "ch-VennSymmetric-9.html#img-Massey",
+  "type": "Figure",
+  "number": "4.7.26",
+  "title": "",
+  "body": " Massey (P3). .  "
+},
+{
+  "id": "img-MasseyGreen",
+  "level": "2",
+  "url": "ch-VennSymmetric-9.html#img-MasseyGreen",
+  "type": "Figure",
+  "number": "4.7.27",
+  "title": "",
+  "body": " One curve coloured. .  "
+},
+{
+  "id": "img-MasseyRain",
+  "level": "2",
+  "url": "ch-VennSymmetric-9.html#img-MasseyRain",
+  "type": "Figure",
+  "number": "4.7.28",
+  "title": "",
+  "body": " Rainbow coloured regions. .  "
+},
+{
+  "id": "img-MasseyColor",
+  "level": "2",
+  "url": "ch-VennSymmetric-9.html#img-MasseyColor",
+  "type": "Figure",
+  "number": "4.7.29",
+  "title": "",
+  "body": " Symmetricaly coloured regions. .  "
+},
+{
+  "id": "img-TutteMassey",
+  "level": "2",
+  "url": "ch-VennSymmetric-9.html#img-TutteMassey",
+  "type": "Figure",
+  "number": "4.7.30",
+  "title": "",
+  "body": " Tutte embedding of Massey (P3). .  "
+},
+{
+  "id": "img-TutteMasseyGreen",
+  "level": "2",
+  "url": "ch-VennSymmetric-9.html#img-TutteMasseyGreen",
+  "type": "Figure",
+  "number": "4.7.31",
+  "title": "",
+  "body": " One curve coloured. .  "
+},
+{
+  "id": "img-MasseyLink",
+  "level": "2",
+  "url": "ch-VennSymmetric-9.html#img-MasseyLink",
+  "type": "Figure",
+  "number": "4.7.32",
+  "title": "",
+  "body": " Rendered as a link. .  "
+},
+{
+  "id": "img-Victoria",
+  "level": "2",
+  "url": "ch-VennSymmetric-9.html#img-Victoria",
+  "type": "Figure",
+  "number": "4.7.33",
+  "title": "",
+  "body": " Victoria (P4). .  "
+},
+{
+  "id": "img-VictoriaGreen",
+  "level": "2",
+  "url": "ch-VennSymmetric-9.html#img-VictoriaGreen",
+  "type": "Figure",
+  "number": "4.7.34",
+  "title": "",
+  "body": " One curve coloured. .  "
+},
+{
+  "id": "img-VictoriaRain",
+  "level": "2",
+  "url": "ch-VennSymmetric-9.html#img-VictoriaRain",
+  "type": "Figure",
+  "number": "4.7.35",
+  "title": "",
+  "body": " Rainbow coloured regions. .  "
+},
+{
+  "id": "img-VictoriaColor",
+  "level": "2",
+  "url": "ch-VennSymmetric-9.html#img-VictoriaColor",
+  "type": "Figure",
+  "number": "4.7.36",
+  "title": "",
+  "body": " Symmetricaly coloured regions. .  "
+},
+{
+  "id": "img-TutteVictoria",
+  "level": "2",
+  "url": "ch-VennSymmetric-9.html#img-TutteVictoria",
+  "type": "Figure",
+  "number": "4.7.37",
+  "title": "",
+  "body": " Tutte embedding of Victoria (P3). .  "
+},
+{
+  "id": "img-TutteVictoriaGreen",
+  "level": "2",
+  "url": "ch-VennSymmetric-9.html#img-TutteVictoriaGreen",
+  "type": "Figure",
+  "number": "4.7.38",
+  "title": "",
+  "body": " One curve coloured. .  "
+},
+{
+  "id": "img-VictoriaLink",
+  "level": "2",
+  "url": "ch-VennSymmetric-9.html#img-VictoriaLink",
+  "type": "Figure",
+  "number": "4.7.39",
+  "title": "",
+  "body": " Rendered as a link. .  "
+},
+{
+  "id": "img-Palmerston",
+  "level": "2",
+  "url": "ch-VennSymmetric-9.html#img-Palmerston",
+  "type": "Figure",
+  "number": "4.7.40",
+  "title": "",
+  "body": " Palmerston (P5). .  "
+},
+{
+  "id": "img-PalmerstonGreen",
+  "level": "2",
+  "url": "ch-VennSymmetric-9.html#img-PalmerstonGreen",
+  "type": "Figure",
+  "number": "4.7.41",
+  "title": "",
+  "body": " One curve coloured. .  "
+},
+{
+  "id": "img-PalmerstonRain",
+  "level": "2",
+  "url": "ch-VennSymmetric-9.html#img-PalmerstonRain",
+  "type": "Figure",
+  "number": "4.7.42",
+  "title": "",
+  "body": " Rainbow coloured regions. .  "
+},
+{
+  "id": "img-PalmerstonColor",
+  "level": "2",
+  "url": "ch-VennSymmetric-9.html#img-PalmerstonColor",
+  "type": "Figure",
+  "number": "4.7.43",
+  "title": "",
+  "body": " Symmetricaly coloured regions. .  "
+},
+{
+  "id": "img-TuttePalmerston",
+  "level": "2",
+  "url": "ch-VennSymmetric-9.html#img-TuttePalmerston",
+  "type": "Figure",
+  "number": "4.7.44",
+  "title": "",
+  "body": " Tutte embedding of Victoria (P3). .  "
+},
+{
+  "id": "img-TuttePalmerstonGreen",
+  "level": "2",
+  "url": "ch-VennSymmetric-9.html#img-TuttePalmerstonGreen",
+  "type": "Figure",
+  "number": "4.7.45",
+  "title": "",
+  "body": " One curve coloured. .  "
+},
+{
+  "id": "img-PalmerstonLink",
+  "level": "2",
+  "url": "ch-VennSymmetric-9.html#img-PalmerstonLink",
+  "type": "Figure",
+  "number": "4.7.46",
+  "title": "",
+  "body": " Rendered as a link. .  "
+},
+{
+  "id": "img-Manawatu",
+  "level": "2",
+  "url": "ch-VennSymmetric-9.html#img-Manawatu",
+  "type": "Figure",
+  "number": "4.7.47",
+  "title": "",
+  "body": " Victoria (P6). .  "
+},
+{
+  "id": "img-ManawatuGreen",
+  "level": "2",
+  "url": "ch-VennSymmetric-9.html#img-ManawatuGreen",
+  "type": "Figure",
+  "number": "4.7.48",
+  "title": "",
+  "body": " One curve coloured. .  "
+},
+{
+  "id": "img-ManawatuRain",
+  "level": "2",
+  "url": "ch-VennSymmetric-9.html#img-ManawatuRain",
+  "type": "Figure",
+  "number": "4.7.49",
+  "title": "",
+  "body": " Rainbow coloured regions. .  "
+},
+{
+  "id": "img-ManawatuColor",
+  "level": "2",
+  "url": "ch-VennSymmetric-9.html#img-ManawatuColor",
+  "type": "Figure",
+  "number": "4.7.50",
+  "title": "",
+  "body": " Symmetricaly coloured regions. .  "
+},
+{
+  "id": "img-TutteManawatu",
+  "level": "2",
+  "url": "ch-VennSymmetric-9.html#img-TutteManawatu",
+  "type": "Figure",
+  "number": "4.7.51",
+  "title": "",
+  "body": " Tutte embedding of Manawatu (P3). .  "
+},
+{
+  "id": "img-TutteManawatuGreen",
+  "level": "2",
+  "url": "ch-VennSymmetric-9.html#img-TutteManawatuGreen",
+  "type": "Figure",
+  "number": "4.7.52",
+  "title": "",
+  "body": " One curve coloured. .  "
+},
+{
+  "id": "img-ManawatuLink",
+  "level": "2",
+  "url": "ch-VennSymmetric-9.html#img-ManawatuLink",
+  "type": "Figure",
+  "number": "4.7.53",
+  "title": "",
+  "body": " Rendered as a link. .  "
+},
+{
+  "id": "img-scan-venn4",
+  "level": "2",
+  "url": "ch-VennSymmetric-9.html#img-scan-venn4",
+  "type": "Figure",
+  "number": "4.7.54",
+  "title": "",
+  "body": " A symmetric 7-Venn diagram who curves are 5-gons.   "
 },
 {
   "id": "ch-VennGeometric-3",
@@ -889,32 +1384,284 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "5.1",
   "title": "Convexity",
-  "body": " Convexity  "
+  "body": " Convexity  A Venn diagram is convex if the interior of each of its curves is convex. Note that the regions of a Venn diagram can alway be made convex, for example, by taking the Tutte embedding 11 of the diagram. Grünbaum also defines a stronger notion of convexity by insisting that not only are the curves convex, but also regions and the complement of the external region; we call this condition strong convexity , but it has not been much explored in the literature.  Every monotone Venn diagram is isomorphic to a convex diagram via the following result of Bultena, Grünbaum, and Ruskey [BGR] . A FISC is a family of F initely I ntersecting S imple closed C urves in the plane, with the property that the intersection of the interiors of all the curves is not empty. Clearly, every Venn diagram is a FISC. A FISC is monotone if its directed dual graph has a unique source and a unique sink; this corresponds with our definition of a monotone Venn diagram.    A FISC has a convex drawing in the plane if and only if it is monotone.    It is known (by construction, see, for example, [RRS] , [PS] , [Gr75] , and [BR] ) that there exists a convex -Venn diagram for every positive value of , and thus by the above result there is a monotone one as well.  "
 },
 {
-  "id": "VD_Book-9-2",
+  "id": "ch-VennGeometric-3-2",
+  "level": "2",
+  "url": "ch-VennGeometric-3.html#ch-VennGeometric-3-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "convex strong convexity "
+},
+{
+  "id": "ch-VennGeometric-3-3",
+  "level": "2",
+  "url": "ch-VennGeometric-3.html#ch-VennGeometric-3-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "monotone "
+},
+{
+  "id": "thm-monotone",
+  "level": "2",
+  "url": "ch-VennGeometric-3.html#thm-monotone",
+  "type": "Theorem",
+  "number": "5.1.1",
+  "title": "",
+  "body": "  A FISC has a convex drawing in the plane if and only if it is monotone.   "
+},
+{
+  "id": "ch-VennGeometric-4",
   "level": "1",
-  "url": "VD_Book-9-2.html",
+  "url": "ch-VennGeometric-4.html",
+  "type": "Section",
+  "number": "5.2",
+  "title": "Diagrams made from convex <span xmlns:pf=\"https:\/\/prefigure.org\" class=\"process-math\">\\(k\\)<\/span>-gons",
+  "body": " Diagrams made from convex -gons  Let the term -gon designate any convex polygon with at most sides. Observe that two -gons can (finitely) intersect with each other in at most points; for the purposes of this discussion we can treat a circle as a 1-gon and an ellipse as a 2-gon. We start off with a lemma first observed by Grünbaum [Gr75] , and discuss its consequences. RELATE THIS TO EARLIER THEOREM.   For a simple -Venn diagram of -gons to exist, .   Given a diagram of -gons, the number of vertices contributed by any two of them can be at most 2 , so the number of vertices must be at most . Since the number of vertices in a simple diagram is , the inequality follows.    A slight improvement to this theorem was obtained in [CRW] .   For a simple -Venn diagram of -gons to exist, .   The following table lists implications of as the column with header . The column with header is from a known construction.   Bounds on the least for which a simple -Venn diagram can be drawn with -gons.     Notes    3 1  E.g., the 3-circle diagram.    4 2  Doable with ellipses or triangles.    5 2  Many known examples of symmetric and non-symmetric diagrams for ellipses, triangles, etc. Conjectured to not be possible for squares by Grünbaum [Gr92b] .    6 3  Solved for triangles by Carroll [Ca00] . No congruent examples known.    7 4  Grünbaum constructed an independent family (not a Venn diagram) of seven hexagons. Solved for convex symmetric 4-gons (see ) by the authors. No diagram of 7 triangles is possible.    8 6    9 8    10 13      Triangles  Jeremy Carroll, while he was employed at HP Labs (Bristol, England), in [Ca00] solved the problem of finding a collection of six triangles that form a Venn diagram.  There is a simple symmetric 5-Venn diagram in which each curve is a triangle; see , redrawn from Grünbaum [Gr92b] . Grünbaum [Gr84b] asked whether there was a 6-Venn diagram made from triangles. Years later, this question was answered in the affirmative by Jeremy Carroll, while he was employed at HP Labs (Bristol, England), in [Ca00] . His first discovered example is shown below, and like his other diagrams, it is simple. He subsequently discovered that there are exactly 126 different 6-Venn diagrams that can be drawn where each curve is a triangle.   Below is a table of coordinates for the vertices of the six triangles.                                       Below is another nicer example (this jpeg image courtesy of Jeremy Carroll).     Triangles cannot be used to construct a 7-Venn diagram; the proof for the simple case is quite short. A full proof in the non-simple case may be found in [CRW] . Although it follows from , we provide below a proof that there is no simple 7-Venn diagram whose curves are triangles.   A simple Venn diagram of 7 triangles is impossible.   Assume such a diagram exists. By counting the number of vertices, as in Lemma G above, we see that ; thus, every pair of triangles must intersect in six points. Thus for any corner of any triangle , and any other triangle , lies outside . Thus lies on the outer face of the diagram, and the other face at is the one inside alone. Since the same argument holds for a second corner of , we have that the non-outer face at is also the non-outer face at , but an edge of separates them. Thus we have a disconnected region, which contradicts the fact that the diagram is a Venn diagram.      -gons for  We note that many constructions for Venn diagrams produce diagrams of -gons where the value is a function of (for examples, see [PS] or [Gr75] ). By the results of [BGR] any convex -FISC (and consequently any monotone -Venn diagram) with points of intersection is drawable with -gons. Venn diagram monotone As a consequence and monotone -Venn diagram can be drawn with -gons. Grünbaum's convex construction [Gr75] is very much like Edwards' general construction, except that the initial circle is replaced by a square and the th curve is a -gon; this gives the upper bounds in the table above. Also, Grünbaum [ Gr75 , pg. 17] states that \"the construction we used ... is a modification to convex polygons of the method described in More [Mo] .\"  In [CRW] Carroll, Ruskey, and Weston proved that there is a symmetric 7-Venn diagram drawn with 4-gons, which meets the lower bound of . See . The coordinates of one of the quadrilaterals is given in the list below. The other 6 quadrilaterals may be obtained from this one by rotating about the origin.     A symmetric 7-Venn diagram drawn with convex quadrilaterals.     "
+},
+{
+  "id": "ch-VennGeometric-4-2",
+  "level": "2",
+  "url": "ch-VennGeometric-4.html#ch-VennGeometric-4-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "-gon "
+},
+{
+  "id": "ch-VennGeometric-4-3",
+  "level": "2",
+  "url": "ch-VennGeometric-4.html#ch-VennGeometric-4-3",
+  "type": "Theorem",
+  "number": "5.2.1",
+  "title": "",
+  "body": " For a simple -Venn diagram of -gons to exist, .   Given a diagram of -gons, the number of vertices contributed by any two of them can be at most 2 , so the number of vertices must be at most . Since the number of vertices in a simple diagram is , the inequality follows.   "
+},
+{
+  "id": "thm-CRW",
+  "level": "2",
+  "url": "ch-VennGeometric-4.html#thm-CRW",
+  "type": "Theorem",
+  "number": "5.2.2",
+  "title": "",
+  "body": " For a simple -Venn diagram of -gons to exist, .  "
+},
+{
+  "id": "ch-VennGeometric-4-7",
+  "level": "2",
+  "url": "ch-VennGeometric-4.html#ch-VennGeometric-4-7",
+  "type": "Table",
+  "number": "5.2.3",
+  "title": "",
+  "body": " Bounds on the least for which a simple -Venn diagram can be drawn with -gons.     Notes    3 1  E.g., the 3-circle diagram.    4 2  Doable with ellipses or triangles.    5 2  Many known examples of symmetric and non-symmetric diagrams for ellipses, triangles, etc. Conjectured to not be possible for squares by Grünbaum [Gr92b] .    6 3  Solved for triangles by Carroll [Ca00] . No congruent examples known.    7 4  Grünbaum constructed an independent family (not a Venn diagram) of seven hexagons. Solved for convex symmetric 4-gons (see ) by the authors. No diagram of 7 triangles is possible.    8 6    9 8    10 13    "
+},
+{
+  "id": "ch-VennGeometric-4-8-10",
+  "level": "2",
+  "url": "ch-VennGeometric-4.html#ch-VennGeometric-4-8-10",
+  "type": "Theorem",
+  "number": "5.2.4",
+  "title": "",
+  "body": " A simple Venn diagram of 7 triangles is impossible.   Assume such a diagram exists. By counting the number of vertices, as in Lemma G above, we see that ; thus, every pair of triangles must intersect in six points. Thus for any corner of any triangle , and any other triangle , lies outside . Thus lies on the outer face of the diagram, and the other face at is the one inside alone. Since the same argument holds for a second corner of , we have that the non-outer face at is also the non-outer face at , but an edge of separates them. Thus we have a disconnected region, which contradicts the fact that the diagram is a Venn diagram.   "
+},
+{
+  "id": "fig-7quad",
+  "level": "2",
+  "url": "ch-VennGeometric-4.html#fig-7quad",
+  "type": "Figure",
+  "number": "5.2.5",
+  "title": "",
+  "body": " A symmetric 7-Venn diagram drawn with convex quadrilaterals.   "
+},
+{
+  "id": "ch-VennGeometric-5",
+  "level": "1",
+  "url": "ch-VennGeometric-5.html",
+  "type": "Section",
+  "number": "5.3",
+  "title": "Exposure",
+  "body": " Exposure  DOES THIS SECTION BELONG ELSEWHERE?  A Venn diagram is exposed if each of its curves touches the outer face at some point of non-intersection. Note, for example, that the 3-Venn diagram #3.2 is not exposed, even though all curves have a point of intersection on the outer face. Stated in terms of -Venn dual graphs, being exposed is the same as the condition that the vertex corresponding to the outer face has degree . Clearly, every symmetric Venn diagram must be exposed. Also, every convex Venn diagram must be exposed ( [Gr92a] ). A curve in a non-exposed Venn diagram is hidden if it does not touch the outer region. For example, in Venn's general construction, curves are all hidden. Chilakamarri, Hamburger, and Pippert [CHP96b] gave an example, shown below, of a simple 6-Venn diagram which is not in the same class as any exposed diagram. The hidden curve is the dotted green one.   All simple Venn diagrams with five or less curves are exposed, but with five curves there are 8 (5 reducible, 3 irreducible) that do not have a convex drawing in the plane [HP97] . CLARIFY THIS!  "
+},
+{
+  "id": "ch-VennGeometric-6",
+  "level": "1",
+  "url": "ch-VennGeometric-6.html",
+  "type": "Section",
+  "number": "5.4",
+  "title": "Area-Proportional Diagrams",
+  "body": " Area-Proportional Diagrams  "
+},
+{
+  "id": "sec-MinArea",
+  "level": "1",
+  "url": "sec-MinArea.html",
+  "type": "Section",
+  "number": "5.5",
+  "title": "Minimum Area Diagrams",
+  "body": " Minimum Area Diagrams   Venn diagram polyomino  Venn diagram minimum area On his \"Math Recreations\" website (now defunct), Mark Thompson proposed the novel problem of finding Venn polyominoes ; these are Venn diagrams where each curve is the outline of a polyomino. A polyomino is a generalization of a domino whereby the shape is formed by gluing together unit squares along their edges with no holes allowed. When considering Venn polyominoes we need to relax the restriction that curves intersect only finitely. Chow and Ruskey, in [CR05] , used Venn polyominoes to consider the special case of area-proportional diagrams when all regions have the same area, which can be viewed as being of unit area. For this reason, such Venn polyominoes are called minimum area Venn diagrams A convenient way to build such diagrams is on the grid; each polyomino is axis-aligned and each region is a connected area of unit squares. Thompson has found several examples of congruent Venn polyominoes for up to 4 sets, and Chow and Ruskey found an example for 5 sets; we show some of these below. Congruent minimum area Venn diagrams are not know for any .    Chow and Ruskey [CR05] have also found non-congruent Venn polyominoes for 6 and for 7 curves. Subsequently, Bultena, Klimesh, and Ruskey [BKR] found a couple of general constructions which we will describe pictorially.  "
+},
+{
+  "id": "sec-MinArea-2",
+  "level": "2",
+  "url": "sec-MinArea.html#sec-MinArea-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Venn polyominoes minimum area Venn diagrams "
+},
+{
+  "id": "ch-Extensions-3",
+  "level": "1",
+  "url": "ch-Extensions-3.html",
   "type": "Section",
   "number": "6.1",
+  "title": "<span xmlns:pf=\"https:\/\/prefigure.org\" class=\"process-math\">\\(m\\)<\/span>-fold Venn diagrams",
+  "body": " -fold Venn diagrams  In an ordinary Venn diagram each intersection of interiors and exteriors consists of one connected region. Fisher, Koh, and Grünbaum [FGK] define a -fold Venn diagram to be one in which each non-empty intersection consists of exactly connected regions. They show how to construct such diagrams for any . We show a couple of their examples below.   Some symmetric -fold -Venn diagrams  ARE THESE EXAMPLES ALL DUE TO GRUNBAUM?   Coiled snakes: A -fold -Venn diagram with mirror image symmetry. Shown with . Other values of may be obtained by twisting\/untwisting the tails.     Rotated F's. A -fold 2-Venn diagram with rotational symmetry. Shown with m = 1. Additional twists of both ends give larger values of .     A -fold 2-Venn diagram with rotational symmetry. Shown with . Additional twists\/untwists of both ends give other values of . Note that the curves passing through the red vertices do not meet transversally (showing that does not apply to -fold Venn diagrams.     "
+},
+{
+  "id": "ch-Extensions-3-3-3",
+  "level": "2",
+  "url": "ch-Extensions-3.html#ch-Extensions-3-3-3",
+  "type": "Figure",
+  "number": "6.1.1",
+  "title": "",
+  "body": " Coiled snakes: A -fold -Venn diagram with mirror image symmetry. Shown with . Other values of may be obtained by twisting\/untwisting the tails.   "
+},
+{
+  "id": "ch-Extensions-3-3-4",
+  "level": "2",
+  "url": "ch-Extensions-3.html#ch-Extensions-3-3-4",
+  "type": "Figure",
+  "number": "6.1.2",
+  "title": "",
+  "body": " Rotated F's. A -fold 2-Venn diagram with rotational symmetry. Shown with m = 1. Additional twists of both ends give larger values of .   "
+},
+{
+  "id": "ch-Extensions-3-3-5",
+  "level": "2",
+  "url": "ch-Extensions-3.html#ch-Extensions-3-3-5",
+  "type": "Figure",
+  "number": "6.1.3",
+  "title": "",
+  "body": " A -fold 2-Venn diagram with rotational symmetry. Shown with . Additional twists\/untwists of both ends give other values of . Note that the curves passing through the red vertices do not meet transversally (showing that does not apply to -fold Venn diagrams.   "
+},
+{
+  "id": "ch-Extensions-4",
+  "level": "1",
+  "url": "ch-Extensions-4.html",
+  "type": "Section",
+  "number": "6.2",
+  "title": "<span xmlns:pf=\"https:\/\/prefigure.org\" class=\"process-math\">\\(d\\)<\/span>-dimensional Venn Diagrams",
+  "body": " -dimensional Venn Diagrams  Independent sets and Venn diagrams can be generalized to more than two dimensions. In the definition of independent set and Venn diagram, \"curve\" gets replaced with \"boundary of an open -cell\" (that is, homeomorphic to a -sphere) and \"region\" is replace with \"open -cell\". Rényi, Rényi, and Surányi [RRS] proved that an independent family of -spheres has at most members, thereby generalizing the result that a Venn diagram whose curves are circles contains at most three curves.  Grünbaum [Gr75] mentions several general geometric problems regarding -dimensional diagrams where the sets are required to be boundaries of -polytopes or convex regions.  "
+},
+{
+  "id": "sec-inf",
+  "level": "1",
+  "url": "sec-inf.html",
+  "type": "Section",
+  "number": "6.3",
+  "title": "Infinitely intersecting Venn diagrams",
+  "body": " Infinitely intersecting Venn diagrams  If we relax the restriction that Venn diagrams meet in only finitely many points, then we lose some of the nice graph theoretic considerations (e.g., the dual graph is no longer a subgraph of the hypercube), but do gain some flexibility. Below we show a diagram made from three congruent curves, red, blue, and green. Each curve is congruent and they are successively rotated by radians about the central point.   Such a construction is possible for any , and is attributed to Peter Shor in Knuth, Graham, and Patashnik [GKP,p.20,633] . An order- (binary) de Bruijn cycle de Bruijn cycle is a circular binary string of length with the property that all substrings of length are distinct, and hence occur exactly once. For example, is a de Bruijn cycle for . A wealth of information about de Bruijn cycles can be found in [Kn4] . The idea of Shor's construction is to take a De Bruijn cycle of length , together with a regular -gon inscribed in a circle. Make a curve by successively choosing a circular arc for each 1 in and a polygonal edge segment for each 0. To obtain the other curves rotate this one about the central point by radians for . The example shown above is created by starting with the De Bruijn cycle .  We have already seen some other infinitely intersecting diagrams; the Venn polyominoes found in , minimum area diagrams, which also have infinitely intersecting segments of curves.  "
+},
+{
+  "id": "sec-inf-4",
+  "level": "2",
+  "url": "sec-inf.html#sec-inf-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "de Bruijn cycle "
+},
+{
+  "id": "ch-Extensions-6",
+  "level": "1",
+  "url": "ch-Extensions-6.html",
+  "type": "Section",
+  "number": "6.4",
+  "title": "Generalizations of Symmetric diagrams",
+  "body": " Generalizations of Symmetric diagrams  On the page Variants on Symmetry we have already discussed a generalization of symmetric Venn diagrams, namely pseudo-symmetric diagrams (which retain the property of being a Venn diagram while relaxing the notion of symmetry). Here we take the opposite tack by retaining the strict definition of symmetry but extending it to non-Venn diagrams. Our motivation is the fact that if is not prime, symmetric Venn diagrams cannot exist.  It is natural to consider diagrams that are \"close\" to Venn diagrams, in that the number of regions is as close to as possible while still being symmetric. We have already seen on the \"What is Venn Diagram?\" page that Venn diagrams are instances of independent families, and in [Gr99] , Grünbaum generalized the concept of symmetry in Venn diagrams to independent families.   equilateral triangles  A symmetric independent set made with 4 equilateral triangles    If is not prime, there will be some such that regions enclosed by curves must be repeated to create a symmetric diagram, and thus we must have more than regions in any symmetric diagram. Grünbaum gave the lower bound on the number of required regions: where is the number of binary necklaces of length . necklace The numbers are well-studied, see [GKP, pp. 139-141] for explicit formulae and further references; also see , Symmetric Diagrams, Necklaces, and Chains, for some important connections between necklaces and constructing symmetric Venn diagrams. The table below gives for small non-prime values of .   , from [Gr99] , shows a symmetric independent family of four equilateral triangles with regions.  In the same paper Grünbaum conjectured that symmetric independent families with only regions exist for every integer (this includes the special case that is prime, and the symmetric independent family is just a symmetric Venn diagram --- it has no repeated regions).  We can also create a symmetric diagram by removing as few regions as possible from a Venn diagram to create an Euler diagram that is not an independent family (as some regions will be missing) but will retain rotational symmetry - we can call these near-Venn diagrams. Euler diagram near-Venn diagram Symmetric near-Venn diagrams for non-prime are maximally symmetric Euler diagrams in the sense that they cannot have any more regions added without either losing their symmetry or repeating regions. The numbers in the table below are known upper bounds on the number of regions in a symmetric near-Venn diagram (they are not difficult to calculate; see [RW04] for a formula).            4  14  16  18    6  56  64  74    8  242  256  274    9  506  512  524    10  1012  1024  1062    12  4070  4096  4202    As we can see, the numbers and fairly closely bracket . In [Ji] , Zongliang Jiang extended the construction algorithm of [ GKS ] for prime to composite ; this construction repeats the minimum number of regions possible to create symmetric independent families with regions.   A symmetric independent family of 6 curves. The repeated regions are labelled, for example the region enclosed by the black, red and green curves is labelled by a \"4\" and occurs three times.  .   A symmetric independent family of 8 curves that is drawn to be near-simple , that is, as close to simple as possible: there are only 16 points where more than 2 curves intersect.     A near-Venn diagram of 6 curves, drawn to be near-simple.    In addition to examples for small in [Gr99] , many examples of larger symmetric independent families and near-Venn diagrams can be found in [RW04] , [Wes] , and [Ji] . The above examples are from [Wes] . Grünbaum also noticed, as have we, that, aside from the case , for which a simple diagram can be easily constructed, there do not seem to be any simple symmetric independent families or near-Venn diagrams attaining the given bounds. Why this should be is entirely unknown!  "
+},
+{
+  "id": "fig-4ind",
+  "level": "2",
+  "url": "ch-Extensions-6.html#fig-4ind",
+  "type": "Figure",
+  "number": "6.4.1",
+  "title": "",
+  "body": " equilateral triangles  A symmetric independent set made with 4 equilateral triangles   "
+},
+{
+  "id": "ch-Extensions-6-8",
+  "level": "2",
+  "url": "ch-Extensions-6.html#ch-Extensions-6-8",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "near-Venn "
+},
+{
+  "id": "ch-Extensions-6-11",
+  "level": "2",
+  "url": "ch-Extensions-6.html#ch-Extensions-6-11",
+  "type": "Figure",
+  "number": "6.4.2",
+  "title": "",
+  "body": " A symmetric independent family of 6 curves. The repeated regions are labelled, for example the region enclosed by the black, red and green curves is labelled by a \"4\" and occurs three times.  . "
+},
+{
+  "id": "ch-Extensions-6-12",
+  "level": "2",
+  "url": "ch-Extensions-6.html#ch-Extensions-6-12",
+  "type": "Figure",
+  "number": "6.4.3",
+  "title": "",
+  "body": " A symmetric independent family of 8 curves that is drawn to be near-simple , that is, as close to simple as possible: there are only 16 points where more than 2 curves intersect.   "
+},
+{
+  "id": "ch-Extensions-6-13",
+  "level": "2",
+  "url": "ch-Extensions-6.html#ch-Extensions-6-13",
+  "type": "Figure",
+  "number": "6.4.4",
+  "title": "",
+  "body": " A near-Venn diagram of 6 curves, drawn to be near-simple.   "
+},
+{
+  "id": "sec-Euler",
+  "level": "1",
+  "url": "sec-Euler.html",
+  "type": "Section",
+  "number": "6.5",
+  "title": "Euler Diagrams",
+  "body": " Euler diagram  Euler Diagrams  "
+},
+{
+  "id": "VD_Book-10-2",
+  "level": "1",
+  "url": "VD_Book-10-2.html",
+  "type": "Section",
+  "number": "7.1",
   "title": "Combinatorial and existential problems",
   "body": " Combinatorial and existential problems  "
 },
 {
-  "id": "VD_Book-9-3",
+  "id": "VD_Book-10-3",
   "level": "1",
-  "url": "VD_Book-9-3.html",
+  "url": "VD_Book-10-3.html",
   "type": "Section",
-  "number": "6.2",
+  "number": "7.2",
   "title": "Geometric problems",
-  "body": " Geometric problems  "
+  "body": " Geometric problems   Venn diagram minimum area Find a minimum area -Venn diagram made from congruent polyominoes for . Or prove that no such diagram exists. It seems likely that there is some large enough for which congruent polyomino minimum area Venn diagrams cease to exist.  "
 },
 {
-  "id": "VD_Book-9-4",
+  "id": "VD_Book-10-4",
   "level": "1",
-  "url": "VD_Book-9-4.html",
+  "url": "VD_Book-10-4.html",
   "type": "Section",
-  "number": "6.3",
+  "number": "7.3",
   "title": "Generalizations of Venn diagrams",
   "body": " Generalizations of Venn diagrams  "
 },
@@ -923,25 +1670,25 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "ch-VennRefs-3.html",
   "type": "Section",
-  "number": "7.1",
+  "number": "8.1",
   "title": "Print References",
-  "body": " Print References   [AC] Daniel E. Anderson and Frank L. Cleaver, Venn-type diagrams for arguments of terms, J. Symbolic Logic, 30 (1965) 113-118.  [An] J. Anusiak, On Set-theoretically Independent Collections of Balls, Colloquium Mathematicum, 13 (1965) 223-233.  [Bak] M. J. C. Baker, All swans are white: some remarks on the diagrams of Euler and Venn, Australian Math. Soc. Gaz., 17 (1990) 161-167.  [Bar] Margaret E. Baron, A note on the historical development of logic diagrams: Leibniz, Euler, and Venn, Mathematical Gazette, 53 (1969) 113-125.  [Be] E. C. Berkeley, Boolean algebra (the technique for manipulating \"and\", \"or\", \"not\" and conditions) and applications to insurance, The Record, American Institute of Actuaries, 26 (1937) 373-414. [According to [Grün75] , this paper contains a general Venn diagram construction].   [Boy] A. V. Boyd, Venn diagram of rectangles, Mathematics Magazine, 58 (1985) 251.  [Bow] L. J. Bowles, Logic diagrams for up to classes, Mathematical Gazette, 55 (1971) 370-373.  [BR] Bette Bultena and Frank Ruskey, Venn Diagrams with Few Vertices, Electronic Journal of Combinatorics, Volume 5, #R44, (1998).  [BGR] Bette Bultena, Branko Grünbaum, and Frank Ruskey, Convex Drawings of Intersecting Families of Simple Closed Curves, 11th Canadian Conference on Computational Geometry, (1999) 18-21.  [Ca] Tao Cao, Computing all the simple symmetric monotone Venn diagrams on seven curves, Master's thesis, University of Victoria (2001).  [Ca99] J. Carroll, personal communication, December 1999.  [Ca00] J. Carroll, Drawing Venn triangles, Technical Report HPL-2000-73, HP Labs (2000).  [Ca05] J. Carroll, personal communication, May 2005.  [CHP95] K. B. Chilakamarri, P. Hamburger, and R. E. Pippert, Venn diagrams: announcement of some new results, Geombinatorics, 4 (1995) 129-137.  [CHP96a] K. B. Chilakamarri, P. Hamburger, and R. E. Pippert, Hamilton Cycles in Planar Graphs and Venn Diagrams, Journal of Combinatorial Theory (Series B), 67 (1996) 296-303.  [CHP96b] Kiran B. Chilakamarri, Peter Hamburger and Raymond E. Pippert, Venn diagrams and planar graphs, Geometriae Dedicata, 62 (1996) 73-91.  [CHP00] Kiran B. Chilakamarri, Peter Hamburger and Raymond E. Pippert, Analysis of Venn diagrams using cycles in graphs, Geometriae Dedicata, 82 (2000) 193-223.  [CR98] S. Chow and F. Ruskey, Searching for symmetric Venn diagrams, extended abstract, (1998).  [CR03] S. Chow and F. Ruskey, Drawing Area-Proportional Venn and Euler Diagrams, 11th International Symposium on Graph Drawing, Perugia, Italy, Lecture Notes in Computer Science, 2912 (2003) 466-477.  [CR05] S. Chow and F. Ruskey, Drawing minimum area Venn diagrams using polyominoes, manuscript, submitted (2005), 11 pages.  [Ci03] Barry Cipra, Diagram masters cry 'Venn-i, Vidi, Vici', Science, 299 (January 2003) 651.  [Ci04] Barry Cipra, Venn Meets Boole in Symmetric Proof, SIAM News, 37 no. 1 (January\/February 2004).  Clewlow, Michelle, Intersecting Sets: John Venn, Church and University, 1834-1923. PhD thesis, 2007, The Open University.  [Ed89a] Anthony W. F. Edwards, Venn diagrams for many sets, Bulletin of the International Statistical Institute, 47th Session, Paris (1989). Contributed papers, Book 1, 311-312.  [Ed89b] Anthony W. F. Edwards, Venn diagrams for many sets, New Scientist, 7 (January 1989) 51-56.  [Ed92] Anthony W. F. Edwards, Rotatable Venn Diagrams, Mathematics Review, 2 (February 1992) 19-21.  [Ed96] Anthony W. F. Edwards, Seven-set Venn diagrams with rotational and polar symmetry, Combinatorics, Probability, and Computing, 7 (1998) 149-152.  [Ed04] Anthony W. F. Edwards, Cogwheels of the Mind: The Story of Venn Diagrams, The John Hopkins University Press, Baltimore, Maryland (2004).  [EE] Anthony W. F. Edwards and J. H. Edwards, Metrical Venn diagrams, Annals of Human Genetics 56 (1992), 71-75. Also reprinted in Cogwheels of the Mind ([Ed04]).  [ES] Anthony W. F. Edwards and C. A. B. Smith, New 3-set Venn diagram, Nature, (Scientific Correspondence), 339 (1989) 263.  [Eu] Leonard Euler, Lettres à une Princesse d'Allemagne, St. Petersburg, (1768). (Translated by Sir David Brewster, Edinburgh, W & C Tait, and Longman et al., 1823, Vol. 1. See in particular letters CII - CVIII on pages 337-366.)   [FGK] J. Chris Fisher, Branko Grünbaum, and E. L. Koh, Diagrams Venn and How, Mathematics Magazine, 61 (1988) 36-40.  [Ga] Martin Gardner, Logic, Machines, and Diagrams, McGraw-Hill, New York, (1958).  [GHKT] Joseph (Yossi) Gil, John Howse, Stuart Kent, and John Taylor, Projections in Venn-Euler Diagrams, in Proc. IEEE Symposium on Visual Languages, Seattle, Washington (2000) 119-126.  [Gl] Andrew Glassner, Venn and Now, IEEE Computer Graphics and Applications, Volume 23 (no. 4), (July\/August 2003), 82-95.  [GKP] Ronald Graham, Donald Knuth, and Oren Patashnik, Concrete Mathematics, Addison-Wesley, (1989). [Exercises about Venn diagrams (1.5 and 1.22) may be found on pages 17 and 20, with corresponding solutions on pages 483 and 486.]   [GKS] Jerrold Griggs, Charles E. Killian and Carla D. Savage, Venn Diagrams and Symmetric Chain Decompositions in the Boolean Lattice, Electronic Journal of Combinatorics, Volume 11 (no. 1), #R2, (2004).  [Gr75] Branko Grünbaum, Venn diagrams and Independent Families of Sets, Mathematics Magazine, 48 (Jan-Feb 1975) 12-23. [Grünbaum awarded the MAA Lester R. Ford prize for this paper in 1976 (see AMM, Aug-Sept. 1976, pg. 587).]   [Gr84a] Branko Grünbaum, The Construction of Venn Diagrams , The College Mathematics Journal, Vol. 15 No. 3 (1984) 238-247.  [Gr84b] Branko Grünbaum, On Venn Diagrams and the Counting of Regions, The College Mathematics Journal, Vol. 15 No. 5 (1984) 433-435.  [Gr92a] Branko Grünbaum, Venn Diagrams I, Geombinatorics, Volume I, Issue 4, (1992) 5-12.  [Gr92b] Branko Grünbaum, Venn Diagrams II, Geombinatorics, Volume II, Issue 2, (1992) 25-32.  [Gr99] Branko Grünbaum, The Search for Symmetric Venn Diagrams, Geombinatorics, 8 (1999) 104-109.  [GW] Branko Grünbaum and Peter Winkler, A Simple Venn Diagram of Five Triangles, Mathematics Magazine, 55 no. 5 (1982) 311.  [GLT] A. Gyárfás, J. Lehel, and Zs. Tuza, The structure of rectangle families dividing the plane into maximum number of atoms, Discrete Math. 52 (1984) 177-198. (MR 86g:05025)  [Ha98a] Peter Hamburger, Constructing Venn diagrams using graphs, Matematikai Lapok, 4 (1994) no. 2-3 (1998) 1-70. In Hungarian, with English summary.  [Ha98b] Peter Hamburger, A Graph-Theoretic Approach to Geometry, manuscript, 1998.  [Ha02] Peter Hamburger, Doodles and doilies, non-simple symmetric Venn diagrams, Discrete Math., a Special Issue in Honor of the 65th Birthday of Daniel J. Kleitman, (2-3) 257 (2002) 423-439.  [Ha02b] Peter Hamburger, Pretty drawings. More doodles and doilies, symmetric Venn diagrams, manuscript, (2002). [A shorter version (33 pages) will appear in Utilitas Mathematica]  [HH] Peter Hamburger and Edit Hepp, Symmetric Venn diagrams in the Plane: The Art of Assigning a Binary Bit String Code to Planar Regions Using Curves, Leonardo, MIT Press, accepted for publication, (2005).  [HPS] P. Hamburger, Gy. Petruska, and A. Sali, Saturated chain partitions in ranked partially ordered sets, and non-monotone symmetric 11-Venn diagrams, Studia Sci. Math. Hungar. 41 (2004) 147-191.  [HP97] P. Hamburger and R. E. Pippert, Simple, reducible Venn diagrams on five curves and Hamiltonian cycles, Geometriae Dedicata, (no. 3) 68 (1997) 245-262.  [HP00] P. Hamburger and R. E. Pippert, Venn said it couldn't be done, Mathematics Magazine, Vol. 73 No. 2 (April 2000) 105-110 .  [HP03] P. Hamburger and R. E. Pippert, A symmetrical beauty. A non-simple 7-Venn diagram with a minimum vertex set, Ars Combin. 66 (2003) 129-137.  [HS03] P. Hamburger and A. Sali, Symmetric 11-Venn diagrams with vertex sets 231, 242, ..., 352, Studia Sci. Math. Hungar., (1-2) 40 (2003) 121-143.  [HS04] P. Hamburger and A. Sali, 11-Doilies with vertex sets 275, 286, ..., 462, AKCE International Journal of Graphs and Combinatorics, 1 (2004) 109-133.  [He] D. W. Henderson, Venn diagrams for more than four classes, American Mathematical Monthly, 70 (1963) 424-426.  [Ji] Zongliang Jiang, Symmetric chain decompositions and independent families of curves, Master's thesis, Department of Computer Science, North Carolina State University, (2003).  [JP] D.S. Johnson and H.O. Pollack, Hypergraph Planarity and the Complexity of Drawing Venn Diagrams, Journal of Graph Theory, Vol. 3 No. 11 (1987) 309-325. [Earlier version appears in Colloquium on the Theory of Algorithms, North-Holland, 1985.]   [KRSW] Charles E. Killian, Frank Ruskey, Carla D. Savage, and Mark Weston, Half-Simple Symmetric Venn Diagrams, Electronic Journal of Combinatorics, Volume 11 (no. 1), #R86, (2004).  [LL] D.K.J. Lin and A.W. Lam, Connections Between Two-Level Factorials and Venn Diagrams , The American Statistician, 51 (1997) 49-51.  [MC] Arnaud Maes and Corinne Cerf, A family of Brunnian links based on Edwards' construction of Venn diagrams, J. Knot Theory Ramifications, 10 no. 1, (2001) 97-107.  [Mo] Trenchard More, Jr. On the construction of Venn diagrams, J. Symbolic Logic, 24 (1959) 303-304.  [No] P. Nowicki, Koniczynko -listna, [In Polish], Wiadom. Mat., 19 (1975) 11-18.  [Pa] Lewis Pakula, A note on Venn diagrams, American Mathematical Monthly, 96 (1989) 38-39. (MR 89k:51040)  [PS] Vern S. Poythress and Hugo S. Sun, A method to construct convex, connected Venn diagrams for any finite number of sets, The Pentagon, 31 (Spring 1972) 80-83.  [RRS] A. Rényi, V. Rényi, and J. Surányi, Sur l'indépendance des domaines simples dans l'Espace Euclidien a n dimensions, Colloquium Mathematicum, 2 (1951) 130-135. [Some erroneous statements made in this paper are corrected in [Gr75] ]   [RW] Frank Ruskey and Mark Weston, More fun with symmetric Venn diagrams, in Proceedings of Third International Conference on FUN with Algorithms, ed. P. Ferragina and R. Grossi, Tuscany, Italy, (2004), 235-246. [To appear in Theory of Computing Systems]  [Sc] A. J. Schwenk, Venn diagram for five sets, Mathematics Magazine, 57 (1984) 297.  [Sh] Sun-Joo Shin, The logical status of diagrams, Cambridge University Press, (1994). (MR 95j:03014)  [Ve80] J. Venn, On the diagrammatic and mechanical representation of propositions and reasonings, The London, Edinburgh, and Dublin Philosophical Magazine and Journal of Science, 9 (1880) 1-18.  [Ve81] J. Venn, Symbolic Logic, MacMillan, London 1881, 2nd ed., (1894). Reprinted by Lenox Hill Pub. & Dist. Co. (Burt Franklin), 1971 (S.B.N. 8337-36264).  Wagon, S., Webb, P. (2008). Venn Symmetry and Prime Numbers: A Seductive Proof Revisited. The American Mathematical Monthly, 115(7), 645–648. https:\/\/doi.org\/10.1080\/00029890.2008.11920574  [Weg] B. Weglorz, Nerves and Set-theoretical Independence, Colloquium Mathimaticum, 13 (1964) 17-19.  [Wes] Mark Weston, On symmetry in Venn diagrams and independent families, Master's thesis, University of Victoria, (2003).  [Wi] Peter Winkler, Venn diagrams: Some observations and an open problem, Congressus Numerantium, 45 (1984) 267-274.  "
+  "body": " Print References   [AC] Daniel E. Anderson and Frank L. Cleaver, Venn-type diagrams for arguments of terms, J. Symbolic Logic, 30 (1965) 113-118.  [An] J. Anusiak, On Set-theoretically Independent Collections of Balls, Colloquium Mathematicum, 13 (1965) 223-233.  [Au] A.K. Austin. Problem E2314. American Mathematical Monthly, 78 (8):904, 1971. Solution by H. Harborth, Ibid. 79(8):907-908, 1972.  [Bak] M. J. C. Baker, All swans are white: some remarks on the diagrams of Euler and Venn, Australian Math. Soc. Gaz., 17 (1990) 161-167.  [Bar] Margaret E. Baron, A note on the historical development of logic diagrams: Leibniz, Euler, and Venn, Mathematical Gazette, 53 (1969) 113-125.  [Be] E. C. Berkeley, Boolean algebra (the technique for manipulating \"and\", \"or\", \"not\" and conditions) and applications to insurance, The Record, American Institute of Actuaries, 26 (1937) 373-414. [According to [Grün75] , this paper contains a general Venn diagram construction].   [Boy] A. V. Boyd, Venn diagram of rectangles, Mathematics Magazine, 58 (1985) 251.  [Bow] L. J. Bowles, Logic diagrams for up to classes, Mathematical Gazette, 55 (1971) 370-373.  [Bu] Bette Bultena, Face-balanced, Venn and polyVenn diagrams Ph.D. thesis, University of Victoria, Department of Computer Science, 2014, http:\/\/hdl.handle.net\/1828\/4873.  [BR] Bette Bultena and Frank Ruskey, Venn Diagrams with Few Vertices, Electronic Journal of Combinatorics, Volume 5, #R44, (1998).  [BGR] Bette Bultena, Branko Grünbaum, and Frank Ruskey, Convex Drawings of Intersecting Families of Simple Closed Curves, 11th Canadian Conference on Computational Geometry, (1999) 18-21.  [BKR] B. Bultena, M. Klimesh, and F. Ruskey, Minimum Area Polyomino Venn Diagrams, Journal of Computational Geometry, (3)1 (2012) 154-167.  [Ca] Tao Cao, Computing all the simple symmetric monotone Venn diagrams on seven curves, Master's thesis, University of Victoria (2001).  [CMR] Tao Cao, Khalegh Mamakani, and Frank Ruskey, Symmetric Monotone Venn Diagrams with Seven Curves, LNCS 6099, (2010) 331-342.  [Ca99] J. Carroll, personal communication, December 1999.  [Ca00] J. Carroll, Drawing Venn triangles, Technical Report HPL-2000-73, HP Labs (2000).  [Ca05] J. Carroll, personal communication, May 2005.  [CHP95] K. B. Chilakamarri, P. Hamburger, and R. E. Pippert, Venn diagrams: announcement of some new results, Geombinatorics, 4 (1995) 129-137.  [CHP96a] K. B. Chilakamarri, P. Hamburger, and R. E. Pippert, Hamilton Cycles in Planar Graphs and Venn Diagrams, Journal of Combinatorial Theory (Series B), 67 (1996) 296-303.  [CHP96b] Kiran B. Chilakamarri, Peter Hamburger and Raymond E. Pippert, Venn diagrams and planar graphs, Geometriae Dedicata, 62 (1996) 73-91.  [CHP00] Kiran B. Chilakamarri, Peter Hamburger and Raymond E. Pippert, Analysis of Venn diagrams using cycles in graphs, Geometriae Dedicata, 82 (2000) 193-223.  [CR98] S. Chow and F. Ruskey, Searching for symmetric Venn diagrams, extended abstract, (1998).  [CR03] S. Chow and F. Ruskey, Drawing Area-Proportional Venn and Euler Diagrams, 11th International Symposium on Graph Drawing, Perugia, Italy, Lecture Notes in Computer Science, 2912 (2003) 466-477.  [CR05] S. Chow and F. Ruskey, Drawing minimum area Venn diagrams using polyominoes, Mathematics Magazine, Volume 80, No. 2, April 2007, pp. 91-103.  [CRW] J. Carroll, F. Ruskey, and M. Weston, Which -Venn diagrams can be drawn with convex -gons?, Discrete and Computational Geometry, 37 (2007) 619-628.  [Ci03] Barry Cipra, Diagram masters cry 'Venn-i, Vidi, Vici', Science, 299 (January 2003) 651.  [Ci04] Barry Cipra, Venn Meets Boole in Symmetric Proof, SIAM News, 37 no. 1 (January\/February 2004).  Clewlow, Michelle, Intersecting Sets: John Venn, Church and University, 1834-1923. PhD thesis, 2007, The Open University.  [Ed89a] Anthony W. F. Edwards, Venn diagrams for many sets, Bulletin of the International Statistical Institute, 47th Session, Paris (1989). Contributed papers, Book 1, 311-312.  [Ed89b] Anthony W. F. Edwards, Venn diagrams for many sets, New Scientist, 7 (January 1989) 51-56.  [Ed92] Anthony W. F. Edwards, Rotatable Venn Diagrams, Mathematics Review, 2 (February 1992) 19-21.  [Ed96] Anthony W. F. Edwards, Seven-set Venn diagrams with rotational and polar symmetry, Combinatorics, Probability, and Computing, 7 (1998) 149-152.  [Ed04] Anthony W. F. Edwards, Cogwheels of the Mind: The Story of Venn Diagrams, The John Hopkins University Press, Baltimore, Maryland (2004).  [EE] Anthony W. F. Edwards and J. H. Edwards, Metrical Venn diagrams, Annals of Human Genetics 56 (1992), 71-75. Also reprinted in Cogwheels of the Mind ([Ed04]).  [ES] Anthony W. F. Edwards and C. A. B. Smith, New 3-set Venn diagram, Nature, (Scientific Correspondence), 339 (1989) 263.  [Eu] Leonard Euler, Lettres à une Princesse d'Allemagne, St. Petersburg, (1768). (Translated by Sir David Brewster, Edinburgh, W & C Tait, and Longman et al., 1823, Vol. 1. See in particular letters CII - CVIII on pages 337-366.)   [FGK] J. Chris Fisher, Branko Grünbaum, and E. L. Koh, Diagrams Venn and How, Mathematics Magazine, 61 (1988) 36-40.  [Ga] Martin Gardner, Logic, Machines, and Diagrams, McGraw-Hill, New York, (1958).  [GHKT] Joseph (Yossi) Gil, John Howse, Stuart Kent, and John Taylor, Projections in Venn-Euler Diagrams, in Proc. IEEE Symposium on Visual Languages, Seattle, Washington (2000) 119-126.  [Gl] Andrew Glassner, Venn and Now, IEEE Computer Graphics and Applications, Volume 23 (no. 4), (July\/August 2003), 82-95.  [GKP] Ronald Graham, Donald Knuth, and Oren Patashnik, Concrete Mathematics, Addison-Wesley, (1989). [Exercises about Venn diagrams (1.5 and 1.22) may be found on pages 17 and 20, with corresponding solutions on pages 483 and 486.]   [GKS] Jerrold Griggs, Charles E. Killian and Carla D. Savage, Venn Diagrams and Symmetric Chain Decompositions in the Boolean Lattice, Electronic Journal of Combinatorics, Volume 11 (no. 1), #R2, (2004).  [Gr75] Branko Grünbaum, Venn diagrams and Independent Families of Sets, Mathematics Magazine, 48 (Jan-Feb 1975) 12-23. [Grünbaum awarded the MAA Lester R. Ford prize for this paper in 1976 (see AMM, Aug-Sept. 1976, pg. 587).]   [Gr84a] Branko Grünbaum, The Construction of Venn Diagrams , The College Mathematics Journal, Vol. 15 No. 3 (1984) 238-247.  [Gr84b] Branko Grünbaum, On Venn Diagrams and the Counting of Regions, The College Mathematics Journal, Vol. 15 No. 5 (1984) 433-435.  [Gr92a] Branko Grünbaum, Venn Diagrams I, Geombinatorics, Volume I, Issue 4, (1992) 5-12.  [Gr92b] Branko Grünbaum, Venn Diagrams II, Geombinatorics, Volume II, Issue 2, (1992) 25-32.  [Gr99] Branko Grünbaum, The Search for Symmetric Venn Diagrams, Geombinatorics, 8 (1999) 104-109.  [GW] Branko Grünbaum and Peter Winkler, A Simple Venn Diagram of Five Triangles, Mathematics Magazine, 55 no. 5 (1982) 311.  [GLT] A. Gyárfás, J. Lehel, and Zs. Tuza, The structure of rectangle families dividing the plane into maximum number of atoms, Discrete Math. 52 (1984) 177-198. (MR 86g:05025)  [Ha98a] Peter Hamburger, Constructing Venn diagrams using graphs, Matematikai Lapok, 4 (1994) no. 2-3 (1998) 1-70. In Hungarian, with English summary.  [Ha98b] Peter Hamburger, A Graph-Theoretic Approach to Geometry, manuscript, 1998.  [Ha02] Peter Hamburger, Doodles and doilies, non-simple symmetric Venn diagrams, Discrete Math., a Special Issue in Honor of the 65th Birthday of Daniel J. Kleitman, (2-3) 257 (2002) 423-439.  [Ha02b] Peter Hamburger, Pretty drawings. More doodles and doilies, symmetric Venn diagrams, manuscript, (2002). [A shorter version (33 pages) will appear in Utilitas Mathematica]  [HH] Peter Hamburger and Edit Hepp, Symmetric Venn diagrams in the Plane: The Art of Assigning a Binary Bit String Code to Planar Regions Using Curves, Leonardo, MIT Press, accepted for publication, (2005).  [HPS] P. Hamburger, Gy. Petruska, and A. Sali, Saturated chain partitions in ranked partially ordered sets, and non-monotone symmetric 11-Venn diagrams, Studia Sci. Math. Hungar. 41 (2004) 147-191.  [HP97] P. Hamburger and R. E. Pippert, Simple, reducible Venn diagrams on five curves and Hamiltonian cycles, Geometriae Dedicata, (no. 3) 68 (1997) 245-262.  [HP00] P. Hamburger and R. E. Pippert, Venn said it couldn't be done, Mathematics Magazine, Vol. 73 No. 2 (April 2000) 105-110 .  [HP03] P. Hamburger and R. E. Pippert, A symmetrical beauty. A non-simple 7-Venn diagram with a minimum vertex set, Ars Combin. 66 (2003) 129-137.  [HS03] P. Hamburger and A. Sali, Symmetric 11-Venn diagrams with vertex sets 231, 242, ..., 352, Studia Sci. Math. Hungar., (1-2) 40 (2003) 121-143.  [HS04] P. Hamburger and A. Sali, 11-Doilies with vertex sets 275, 286, ..., 462, AKCE International Journal of Graphs and Combinatorics, 1 (2004) 109-133.  [He] D. W. Henderson, Venn diagrams for more than four classes, American Mathematical Monthly, 70 (1963) 424-426.  [Ji] Zongliang Jiang, Symmetric chain decompositions and independent families of curves, Master's thesis, Department of Computer Science, North Carolina State University, (2003).  [JP] D.S. Johnson and H.O. Pollack, Hypergraph Planarity and the Complexity of Drawing Venn Diagrams, Journal of Graph Theory, Vol. 3 No. 11 (1987) 309-325. [Earlier version appears in Colloquium on the Theory of Algorithms, North-Holland, 1985.]   [KRSW] Charles E. Killian, Frank Ruskey, Carla D. Savage, and Mark Weston, Half-Simple Symmetric Venn Diagrams, Electronic Journal of Combinatorics, Volume 11 (no. 1), #R86, (2004).  [LL] D.K.J. Lin and A.W. Lam, Connections Between Two-Level Factorials and Venn Diagrams , The American Statistician, 51 (1997) 49-51.  [MC] Arnaud Maes and Corinne Cerf, A family of Brunnian links based on Edwards' construction of Venn diagrams, J. Knot Theory Ramifications, 10 no. 1, (2001) 97-107.  [MMR11] K. Mamakani, W. Myrvold and F. Ruskey, Generating all Simple Convexly-drawable Polar Symmetric 6-Venn Diagrams, International Workshop on Combinatorial Algorithms, Victoria, 2011. LNCS, 7056, 275-286.  [MMR12] K. Mamakani, W. Myrvold and F. Ruskey, Generating Simple Convex Venn Diagrams, Journal of Discrete Algorithms, 16 (2012) 270-286.  [MR12] K. Mamakani and F. Ruskey, Simple Spherical Venn diagrams with Isometry Groups of Order Eight, 2012, manuscript.  [MR14] K. Mamakani and F. Ruskey, New Roses: Simple Symmetric Venn Diagrams with 11 and 13 Curves, Discrete and Computational Geometry, 52 (2014) 71-87.  [Mo] Trenchard More, Jr. On the construction of Venn diagrams, J. Symbolic Logic, 24 (1959) 303-304.  [No] P. Nowicki, Koniczynko -listna, [In Polish], Wiadom. Mat., 19 (1975) 11-18.  [Pa] Lewis Pakula, A note on Venn diagrams, American Mathematical Monthly, 96 (1989) 38-39. (MR 89k:51040)  [PS] Vern S. Poythress and Hugo S. Sun, A method to construct convex, connected Venn diagrams for any finite number of sets, The Pentagon, 31 (Spring 1972) 80-83.  [PR] Gara Pruesse and Frank Ruskey, All Simple Venn Diagrams are Hamiltonian, arXiv:1504.06651 [math.CO], (Apr 2015) 7 pages.  [RRS] A. Rényi, V. Rényi, and J. Surányi, Sur l'indépendance des domaines simples dans l'Espace Euclidien a n dimensions, Colloquium Mathematicum, 2 (1951) 130-135. [Some erroneous statements made in this paper are corrected in [Gr75] ]   [RW04] Frank Ruskey and Mark Weston, More fun with symmetric Venn diagrams, in Proceedings of Third International Conference on FUN with Algorithms, ed. P. Ferragina and R. Grossi, Tuscany, Italy, (2004), 235-246. [To appear in Theory of Computing Systems]  [RW11] F. Ruskey and M. Weston, Spherical Venn Diagrams with Involutory Isometries, Electronic Journal of Combinatorics, 18 (2011) #P191, 14 pages.  [RSW] F. Ruskey, Carla D. Savage, and Stan Wagon, The Search for Simple Symmetric Venn Diagrams, Notices of the American Mathematical Society, December 2006, pages 1304-1311.  [Sc] A. J. Schwenk, Venn diagram for five sets, Mathematics Magazine, 57 (1984) 297.  [Sh] Sun-Joo Shin, The logical status of diagrams, Cambridge University Press, (1994). (MR 95j:03014)  [Ve80] J. Venn, On the diagrammatic and mechanical representation of propositions and reasonings, The London, Edinburgh, and Dublin Philosophical Magazine and Journal of Science, 9 (1880) 1-18.  [Ve81] J. Venn, Symbolic Logic, MacMillan, London 1881, 2nd ed., (1894). Reprinted by Lenox Hill Pub. & Dist. Co. (Burt Franklin), 1971 (S.B.N. 8337-36264).  Wagon, S., Webb, P. (2008). Venn Symmetry and Prime Numbers: A Seductive Proof Revisited. The American Mathematical Monthly, 115(7), 645–648. https:\/\/doi.org\/10.1080\/00029890.2008.11920574  [Weg] B. Weglorz, Nerves and Set-theoretical Independence, Colloquium Mathimaticum, 13 (1964) 17-19.  [Wes] Mark Weston, On symmetry in Venn diagrams and independent families, Master's thesis, University of Victoria, (2003).  [Wi] Peter Winkler, Venn diagrams: Some observations and an open problem, Congressus Numerantium, 45 (1984) 267-274.  "
 },
 {
   "id": "ch-VennRefs-4",
   "level": "1",
   "url": "ch-VennRefs-4.html",
   "type": "Section",
-  "number": "7.2",
+  "number": "8.2",
   "title": "Other References (not about Venn diagrams per se)",
-  "body": " Other References (not about Venn diagrams per se)  [Kn] D. Knuth, The Art of Computer Programming: Volume 4A, Combinatorial Algorithms, Addison-Wesley, 2011.  [NW] A. Nijenhuis and H. S. Wilf, Combinatorial Algorithms, 2nd. ed., Academic Press, New York, London, 1978.  [Or] O. Ore, The Four-Color Problem, Academic Press, New York, London, 1967.  [St] Ian Stewart, Game, Set, and Math, Basil Blackwell, 1989.  [Wh] H. Whitney, A Theorem on Graphs, Annals of Math., 32 (1931) 378-390.  "
+  "body": " Other References (not about Venn diagrams per se)  [Kn] D. Knuth, The Art of Computer Programming: Volume 4A, Combinatorial Algorithms, Addison-Wesley, 2011.  [GK] Curtis Greene and Daniel J. Kleitman, Strong versions of Sperner's theorem, J. Combinatorial Theory Ser. A, 20 (1) (1976) 80-88.  [Kn4] D.E. Knuth, The Art of Computer Programming, Volume 4A, Combinatorial Algorithms, Part 1, Addison-Wesley, 2011.  [NW] A. Nijenhuis and H. S. Wilf, Combinatorial Algorithms, 2nd. ed., Academic Press, New York, London, 1978.  [Or] O. Ore, The Four-Color Problem, Academic Press, New York, London, 1967.  [St] Ian Stewart, Game, Set, and Math, Basil Blackwell, 1989.  [Wh] H. Whitney, A Theorem on Graphs, Annals of Math., 32 (1931) 378-390.  "
 },
 {
   "id": "ch-VennRefs-5",
   "level": "1",
   "url": "ch-VennRefs-5.html",
   "type": "Section",
-  "number": "7.3",
+  "number": "8.3",
   "title": "Electronic References",
   "body": " Electronic References  The following references are online and may disappear or change over time. The external sites listed below are not endorsed by The Electronic Journal of Combinatorics and do not form part of this article.   [MAC] The MacTutor site contains a biography of John Venn .  [KP] Robert Scharein's KnotPlot site . All figures with knots on this site were produced with KnotPlot.  [SJ] Slavik Jablan's page \"Are Borromean Links so Rare?\"   [GC] The Geometry Center at the University of Minnesota.  "
 },

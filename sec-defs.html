@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Definition of Venn Diagrams</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta xmlns:pf="https://prefigure.org" property="og:type" content="book">
+<meta xmlns:pf="https://prefigure.org" property="book:title" content="Venn Diagrams">
+<meta xmlns:pf="https://prefigure.org" property="book:author" content="Frank Ruskey (and Mark Weston?)">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><link href="_static/pretext/css/pretext_search.css" rel="stylesheet" type="text/css">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link xmlns:pf="https://prefigure.org" rel="preconnect" href="https://fonts.googleapis.com">
+<link xmlns:pf="https://prefigure.org" rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link xmlns:pf="https://prefigure.org" href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<link xmlns:pf="https://prefigure.org" href="https://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
+<link xmlns:pf="https://prefigure.org" href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
+<link xmlns:pf="https://prefigure.org" href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
+<link xmlns:pf="https://prefigure.org" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+<link href="_static/pretext/css/pretext.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/shell_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/banner_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/navbar_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/toc_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/style_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/colors_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/setcolors.css" rel="stylesheet" type="text/css">
+<style>
+</style>
+</head>
+<body id="changeme" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
+<a xmlns:pf="https://prefigure.org" id="logo-link" class="logo-link" target="_blank" href=""></a><div class="title-container">
+<h1 class="heading"><a href="VD_Book.html"><span class="title">Venn Diagrams:</span> <span class="subtitle">A Mathematical Survey</span></a></h1>
+<p class="byline">Frank Ruskey (and Mark Weston?)</p>
+</div>
+</div></header><nav xmlns:pf="https://prefigure.org" id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><a class="index-button button" href="backmatter-2.html" title="Index"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span><span class="name">Index</span></a><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="ch-VennWhatIs.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-VennWhatIs.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-VennExist.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div xmlns:pf="https://prefigure.org" id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div xmlns:pf="https://prefigure.org" id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2"><ul class="structural contains-active toc-item-list">
+<li class="toc-item toc-frontmatter">
+<div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="front-colophon.html" class="internal"><span class="title">Colophon</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="frontmatter-4.html" class="internal"><span class="title">Preface</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-WhoVenn.html" class="internal"><span class="codenumber">1</span> <span class="title">Who was John Venn?</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-WhoVenn-3.html" class="internal"><span class="codenumber">1.1</span> <span class="title">John Venn</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="ch-VennWhatIs.html" class="internal"><span class="codenumber">2</span> <span class="title">What is a Venn Diagram?</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-defs.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Definition of Venn Diagrams</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-VennExist.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Constructions of Venn Diagrams</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-VennExist.html#sec-VennExist-3" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Venn’s Construction</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-VennExist.html#sec-VennExist-4" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Edwards’ Construction</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-VennExist.html#sec-VennExist-5" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Venn Diagrams and Knots</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Borromean.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Borromean Rings</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-VennWhatIs-7.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Extra Diagrams</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-VennGraphs.html" class="internal"><span class="codenumber">3</span> <span class="title">Graphs Associated with Venn Diagrams</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch-VennGraphs-3.html" class="internal"><span class="codenumber">3.1</span> <span class="title">The Planar Dual of a Venn Diagram</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennGraphs-3.html#subsec-Duals" class="internal"><span class="codenumber">3.1.1</span> <span class="title">The Venn Duals of Venn’s Construction</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-VennGraphs-4.html" class="internal"><span class="codenumber">3.2</span> <span class="title">When are two Venn diagrams different?</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch-VennGraphs-5.html" class="internal"><span class="codenumber">3.3</span> <span class="title">How many are there?</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennGraphs-5.html#ch-VennGraphs-5-3" class="internal"><span class="codenumber">3.3.1</span> <span class="title">Diagrams with <span class="process-math">\(n = 3\)</span> curves</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennGraphs-5.html#ch-VennGraphs-5-4" class="internal"><span class="codenumber">3.3.2</span> <span class="title">Diagrams with <span class="process-math">\(n = 4\)</span> curves</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennGraphs-5.html#ch-VennGraphs-5-5" class="internal"><span class="codenumber">3.3.3</span> <span class="title">Diagrams with <span class="process-math">\(n = 5\)</span> curves</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennGraphs-5.html#ch-VennGraphs-5-6" class="internal"><span class="codenumber">3.3.4</span> <span class="title">Diagrams with <span class="process-math">\(n = 6\)</span> curves</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch-VennGraphs-6.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Extending Venn Diagrams</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennGraphs-6.html#ch-VennGraphs-6-12" class="internal"><span class="codenumber">3.4.1</span> <span class="title">Winkler’s Conjecture</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="minimum.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Minimum Venn diagrams</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch-VennGraphs-8.html" class="internal"><span class="codenumber">3.6</span> <span class="title">Venn diagrams made from congruent curves</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennGraphs-8.html#ch-VennGraphs-8-3" class="internal"><span class="codenumber">3.6.1</span> <span class="title">Congruent Venn Diagrams</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennGraphs-8.html#ch-VennGraphs-8-4" class="internal"><span class="codenumber">3.6.2</span> <span class="title">Venn diagrams and "Revolving Door" lists</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch-VennGraphs-9.html" class="internal"><span class="codenumber">3.7</span> <span class="title">Extra Diagrams</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennGraphs-9.html#ch-VennGraphs-9-3" class="internal"><span class="codenumber">3.7.1</span> <span class="title">The six Venn classes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennGraphs-9.html#ch-VennGraphs-9-4" class="internal"><span class="codenumber">3.7.2</span> <span class="title">The radual graph construction</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennGraphs-9.html#ch-VennGraphs-9-5" class="internal"><span class="codenumber">3.7.3</span> <span class="title">Minimum Venn diagram for <span class="process-math">\(n = 5\)</span> curves</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennGraphs-9.html#ch-VennGraphs-9-6" class="internal"><span class="codenumber">3.7.4</span> <span class="title">Minimum Venn diagram for <span class="process-math">\(n = 7\)</span> curves</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-VennSymmetric.html" class="internal"><span class="codenumber">4</span> <span class="title">Symmetric Venn Diagrams</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-VennSymmetric-3.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Rotational Symmetry</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch-VennSymmetric-4.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Symmetric Diagrams for <span class="process-math">\(n = 2,3,5\)</span></span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennSymmetric-4.html#ch-VennSymmetric-4-3" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Symmetric diagrams with <span class="process-math">\(n = 5\)</span> curves</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch-VennSymmetric-5.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Symmetric diagrams with <span class="process-math">\(n = 7\)</span> curves</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennSymmetric-5.html#ch-VennSymmetric-5-3" class="internal"><span class="codenumber">4.3.1</span> <span class="title">The Grünbaum encoding</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="ch-VennSymmetric-5.html#ch-VennSymmetric-5-4" class="internal"><span class="codenumber">4.3.2</span> <span class="title">Simple Symmetric 7-Venn Diagrams</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="ch-VennSymmetric-5.html#ch-VennSymmetric-5-4-2" class="internal"><span class="codenumber">4.3.2.1</span> <span class="title">Simple monotone polar symmetric 7-Venn diagrams</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="ch-VennSymmetric-5.html#ch-VennSymmetric-5-4-4" class="internal"><span class="codenumber">4.3.2.2</span> <span class="title">Non-simple symmetric 7-Venn diagrams</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch-VennSymmetric-6.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Symmetric diagrams with <span class="process-math">\(n = 11,13\)</span> curves</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennSymmetric-6.html#ch-VennSymmetric-6-2" class="internal"><span class="codenumber">4.4.1</span> <span class="title">Symmetric diagrams with <span class="process-math">\(n = 11\)</span> curves</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="ch-VennSymmetric-6.html#sssec-Hamburger" class="internal"><span class="codenumber">4.4.1</span> <span class="title">Hamburger’s non-simple symmetric 11-Venn diagram</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="ch-VennSymmetric-6.html#ch-VennSymmetric-6-4" class="internal"><span class="codenumber">4.4.2</span> <span class="title">Mamakani’s simple symmetric 11-Venn diagram</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennSymmetric-6.html#ch-VennSymmetric-6-5" class="internal"><span class="codenumber">4.4.2</span> <span class="title">Symmetric diagrams with <span class="process-math">\(n = 13\)</span> curves</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch-VennSymmetric-7.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Symmetric Diagrams for all <span class="process-math">\(n\)</span></span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennSymmetric-7.html#sec-necklace" class="internal"><span class="codenumber">4.5.1</span> <span class="title">Symmetric Diagrams, Necklaces, and Chains</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennSymmetric-7.html#ch-VennSymmetric-7-4" class="internal"><span class="codenumber">4.5.2</span> <span class="title">The GKS Construction</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-SymmVariant.html" class="internal"><span class="codenumber">4.6</span> <span class="title">Variants on Symmetry</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SymmVariant.html#subsec-Gray" class="internal"><span class="codenumber">4.6.1</span> <span class="title">Venn Diagrams and Gray Codes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SymmVariant.html#subsec-Spherical" class="internal"><span class="codenumber">4.6.2</span> <span class="title">Spherical Venn Diagrams</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch-VennSymmetric-9.html" class="internal"><span class="codenumber">4.7</span> <span class="title">Extra Diagrams</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennSymmetric-9.html#ch-VennSymmetric-9-3" class="internal"><span class="codenumber">4.7.1</span> <span class="title">Diagrams with 5 curves</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="ch-VennSymmetric-9.html#ch-VennSymmetric-9-4" class="internal"><span class="codenumber">4.7.2</span> <span class="title">Diagrams with 7 curves</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="ch-VennSymmetric-9.html#ch-VennSymmetric-9-4-3" class="internal"><span class="codenumber">4.7.2.1</span> <span class="title">Adelaide (P1)</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="ch-VennSymmetric-9.html#ch-VennSymmetric-9-4-4" class="internal"><span class="codenumber">4.7.2.2</span> <span class="title">Hamilton (P2)</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="ch-VennSymmetric-9.html#ch-VennSymmetric-9-4-5" class="internal"><span class="codenumber">4.7.2.3</span> <span class="title">Massey (P3)</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="ch-VennSymmetric-9.html#ch-VennSymmetric-9-4-6" class="internal"><span class="codenumber">4.7.2.4</span> <span class="title">Victoria (P4)</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="ch-VennSymmetric-9.html#ch-VennSymmetric-9-4-7" class="internal"><span class="codenumber">4.7.2.5</span> <span class="title">Palmerston (P5)</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="ch-VennSymmetric-9.html#ch-VennSymmetric-9-4-8" class="internal"><span class="codenumber">4.7.2.6</span> <span class="title">Manawatu (P5)</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-VennGeometric.html" class="internal"><span class="codenumber">5</span> <span class="title">Geometric Variations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-VennGeometric-3.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Convexity</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch-VennGeometric-4.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Diagrams made from convex <span class="process-math">\(k\)</span>-gons</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennGeometric-4.html#ch-VennGeometric-4-8" class="internal"><span class="codenumber">5.2.1</span> <span class="title">Triangles</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennGeometric-4.html#ch-VennGeometric-4-9" class="internal"><span class="codenumber">5.2.2</span> <span class="title"><span class="process-math">\(k\)</span>-gons for <span class="process-math">\(k &gt; 3\)</span></span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-VennGeometric-5.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Exposure</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-VennGeometric-6.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Area-Proportional Diagrams</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-MinArea.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Minimum Area Diagrams</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-Extensions.html" class="internal"><span class="codenumber">6</span> <span class="title">Generalizations and Extensions of Venn Diagrams</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch-Extensions-3.html" class="internal"><span class="codenumber">6.1</span> <span class="title"><span class="process-math">\(m\)</span>-fold Venn diagrams</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-Extensions-3.html#ch-Extensions-3-3" class="internal"><span class="codenumber">6.1.1</span> <span class="title">Some symmetric <span class="process-math">\(m\)</span>-fold <span class="process-math">\(2\)</span>-Venn diagrams</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Extensions-4.html" class="internal"><span class="codenumber">6.2</span> <span class="title"><span class="process-math">\(d\)</span>-dimensional Venn Diagrams</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-inf.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Infinitely intersecting Venn diagrams</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Extensions-6.html" class="internal"><span class="codenumber">6.4</span> <span class="title">Generalizations of Symmetric diagrams</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Euler.html" class="internal"><span class="codenumber">6.5</span> <span class="title">Euler Diagrams</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="VD_Book-10.html" class="internal"><span class="codenumber">7</span> <span class="title">Open Problems about Venn Diagrams</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="VD_Book-10-2.html" class="internal"><span class="codenumber">7.1</span> <span class="title">Combinatorial and existential problems</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="VD_Book-10-3.html" class="internal"><span class="codenumber">7.2</span> <span class="title">Geometric problems</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="VD_Book-10-4.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Generalizations of Venn diagrams</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-VennRefs.html" class="internal"><span class="codenumber">8</span> <span class="title">References to Venn Diagrams</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-VennRefs-3.html" class="internal"><span class="codenumber">8.1</span> <span class="title">Print References</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-VennRefs-4.html" class="internal"><span class="codenumber">8.2</span> <span class="title">Other References (not about Venn diagrams per se)</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-VennRefs-5.html" class="internal"><span class="codenumber">8.3</span> <span class="title">Electronic References</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-backmatter">
+<div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-index"><div class="toc-title-box"><a href="backmatter-2.html" class="internal"><span class="title">Index</span></a></div></li>
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="backmatter-3.html" class="internal"><span class="title">Colophon</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section xmlns:pf="https://prefigure.org" class="section" id="sec-defs"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">2.1</span><span class="space"> </span><span class="title">Definition of Venn Diagrams</span>
+</h2>
+<div class="para" id="sec-defs-2">In a series of papers, starting with <a href="ch-VennRefs-3.html#ref-Gr75" class="xref" data-knowl="./knowl/xref/ref-Gr75.html" data-reveal-label="Reveal" data-close-label="Close" title="Paragraph">[Gr75] </a> Branko Grünbaum, a well known geometer at the University of Washington, initiated the mathematical investigation of Venn diagrams.  We will follow Grünbaum in first defining a more general concept, that of an independent family, and then move on to Venn diagrams. Both concepts are defined in terms of <dfn class="terminology">simple closed curves</dfn> in the plane, which can be thought of as being drawn by starting at a point <span class="process-math">\(x\text{,}\)</span> and then drawing a non-intersecting curve that ends back at <span class="process-math">\(x\text{.}\)</span> The Jordan curve theorem proves that such a curve <span class="process-math">\(C\)</span> partitions the plane into <span class="process-math">\(C\text{,}\)</span> together with two disjoint open regions <span class="process-math">\(int(C)\text{,}\)</span> the <dfn class="terminology">interior</dfn> of <span class="process-math">\(C\text{,}\)</span> and <span class="process-math">\(ext(C)\text{,}\)</span> the (unbounded) exterior of <span class="process-math">\(C\text{.}\)</span>
+</div>
+<article class="definition definition-like" id="def-IndependentFamily"><h3 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.1.1</span><span class="period">.</span>
+</h3>Let <span class="process-math">\(\mathbf{C} = \{ C_1, C_2, \ldots, C_n \}\)</span> be a collection of simple closed curves drawn in the plane. The collection <span class="process-math">\(\mathbf{C}\)</span> is said to be an <dfn class="terminology">independent family</dfn> if the <em class="emphasis">region</em> formed by the intersection of <span class="process-math">\(X_1 \cap X_2 \cap \ldots \cap X_n\)</span> is non-empty, where each <span class="process-math">\(X_i\)</span> is either <span class="process-math">\(int(C_i)\)</span> or is <span class="process-math">\(ext(C_i)\text{.}\)</span> If, in addition, each such intersection region is connected and there are only finitely many points of intersection between curves, then C is a <dfn class="terminology">Venn diagram</dfn>, or an <span class="process-math">\(n\)</span>-Venn diagram if we wish to emphasize the number of curves in the diagram.</article><div class="para" id="sec-defs-4">Note that the term <dfn class="terminology">region</dfn> in the mathematical literature is often assumed to be connected; when discussing Venn diagrams no confusion should arise. Since there are 2 choices for each <span class="process-math">\(X_i\text{,}\)</span> there are <span class="process-math">\(2^n\)</span> non-empty disjoint regions that result from the different intersections in the definition. One region, the one arising from the intersection of all the exteriors, is unbounded and all of the other regions are bounded. In a Venn diagram all regions are required to be <dfn class="terminology">connected</dfn>, meaning that there is a curve joining any two point in a region, a curve that is entirely contained in the region. The condition that there are only a finite number of intersection points is usually assumed in the literature, but sometimes not stated explicitly. It rules out, e.g., segments of curves from intersecting. We will relax this restriction in <a href="sec-MinArea.html" class="internal" title="Section 5.5: Minimum Area Diagrams">Section 5.5</a>.</div>
+<div class="para" id="sec-defs-5"> Note that some authors refer to diagrams with fewer than <span class="process-math">\(2^n\)</span> non-empty regions as Venn diagrams, but they are more properly termed <dfn class="terminology">Euler diagrams</dfn>, after the mathematician Leonard Euler.  More on these important diagrams can be found on the page on Generalizations and Extensions. We refer to a region enclosed by exactly <span class="process-math">\(k\)</span> curves as a <span class="process-math">\(k\)</span>-region or <span class="process-math">\(k\)</span>-set.</div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><figure class="figure figure-like" id="fig-V3"><img src="external//gifs/V3.gif" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.1.2<span class="period">.</span></span><span class="space"> </span>Regions labeled inclusion.</figcaption></figure></div>
+<div class="sbspanel top" style="width:50%;"><figure class="figure figure-like" id="fig-CO-V3"><img src="external//gifs/V3plain.gif" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.1.3<span class="period">.</span></span><span class="space"> </span>Regions colored by size.</figcaption></figure></div>
+</div></div>
+<div class="para" id="sec-defs-7">Above we show the most familiar of all Venn diagrams. In this case <span class="process-math">\(n=3\text{,}\)</span> the simple closed curves are all circles, and in <a href="sec-defs.html#fig-V3" class="xref" data-knowl="./knowl/xref/fig-V3.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 2.1.2">Figure 2.1.2</a> the 8 regions have been labelled with the interiors that are included in each intersection. The eighth region is the exterior region, corresponding to the empty set. The colored diagram <a href="sec-defs.html#fig-CO-V3" class="xref" data-knowl="./knowl/xref/fig-CO-V3.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 2.1.3">Figure 2.1.3</a> has all 1-sets colored yellow, all 2-sets red, and the 3-set blue. The 3 circle Venn diagram also occurs as a minimal projection of the Borromean Rings, see <a href="sec-Borromean.html" class="internal" title="Section 2.3: Borromean Rings">Section 2.3</a>.</div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:40%;"><img src="external//gifs/independent.gif" class="contained"></div>
+<div class="sbspanel top" style="width:60%;"><div class="para" id="sec-defs-8-2"> On the left we show an example, for <span class="process-math">\(n=4\text{,}\)</span> of an independent family that is not a Venn diagram. Here the simple closed curves are each congruent triangles, which are colored red, blue, green, and gold. Note that the intersection of the interiors of the red and blue triangles with the exteriors of the green and gold triangles gives a disconnected region, the two darkly shaded regions in the figure.  For an example of intersecting closed curves that is not an independent family, consider the Olympic Rings.</div></div>
+</div></div>
+<div class="para" id="sec-defs-9">The figure below is a Venn diagram of 4 ellipses, originally found by Venn himself <a href="ch-VennRefs-3.html#ref-Ve80" class="xref" data-knowl="./knowl/xref/ref-Ve80.html" data-reveal-label="Reveal" data-close-label="Close" title="Paragraph">[Ve80] </a>.  See also a <a href="ch-VennWhatIs-7.html#img-ellipses" class="xref" data-knowl="./knowl/xref/img-ellipses.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 2.4.1">black-and-white 2.4.1</a> version and its <a href="ch-VennWhatIs-7.html#img-Tutte4" class="xref" data-knowl="./knowl/xref/img-Tutte4.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 2.4.2">Tutte embedding 2.4.2</a>. <div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/pngs/4-ellipses.png" class="contained"></div>
+</div>
+<article class="definition definition-like" id="sec-defs-10"><h3 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.1.4</span><span class="period">.</span>
+</h3>A <dfn class="terminology">simple</dfn> Venn diagram is one in which no more than two curves intersect at a common point.</article><div class="para" id="sec-defs-11">Simple diagrams are in some sense the "nicest" as they are easiest to draw and understand. All of the figures in this chapter are simple, but we will see many examples in other chapters of non-simple diagrams.  Unless stated otherwise, we assume that Venn diagrams are simple.</div>
+<div class="para" id="sec-defs-12">You often see 2, and 3 curve Venn diagrams drawn with circles, but all diagrams with 4 curves seem to have the wrong number of regions.  In the next chapter we’ll prove a little theorem that implies that a 4-Venn diagram can never be drawn with circles, even if they have varying diameters.  The basic reason is that there are too many regions for the possible number of intersections.  Below we make two observations. The reader is encouraged to try to figure out why these are true.</div>
+<article class="definition definition-like" id="sec-defs-13"><h3 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.1.5</span><span class="period">.</span>
+</h3>
+<div class="para" id="sec-defs-13-1">Suppose two curves intersect at a point <span class="process-math">\(x\text{.}\)</span>  The curves can cross at <span class="process-math">\(x\text{,}\)</span> in which case we say that they intersect <dfn class="terminology">transversally</dfn>.  If they do not cross, then we say that they intersect <dfn class="terminology">non-transversally</dfn>, or that they <dfn class="terminology">kiss</dfn>.</div></article><article class="observation remark-like" id="obs-transverse"><h3 class="heading">
+<span class="type">Observation</span><span class="space"> </span><span class="codenumber">2.1.6</span><span class="period">.</span>
+</h3>In a simple Venn diagram, at every point of intersection, the two curves meet transversally. I.e., the two curves cross and do not meerly "kiss" each other. More generally, at any point of intersection in a Venn diagram, there must be at least two curves that meet transversally.<details id="obs-transverse-2" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></summary><article class="hiddenproof knowl__content"><div class="para" id="obs-transverse-2-1">Suppose that curve <span class="process-math">\(A\)</span> kisses curve <span class="process-math">\(B\)</span> at point <span class="process-math">\(x\)</span> in Venn diagram <span class="process-math">\(V\text{.}\)</span> In a rotation about <span class="process-math">\(x\)</span> there are 4 regions, which we may denote <span class="process-math">\(AA\text{,}\)</span> <span class="process-math">\(AB\text{,}\)</span> <span class="process-math">\(BB\text{,}\)</span> and <span class="process-math">\(BA\text{.}\)</span> Unless <span class="process-math">\(AB\)</span> and <span class="process-math">\(BA\)</span> are connected we can not have a Venn diagram since these regions are in the same set of interiors and exteriors of curves.  We will show that they are not connected, a contradiction which will prove the observation. Because <span class="process-math">\(V\)</span> is a Venn diagram, curves <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> must have at least two transverse intersections, for otherwise one curve would be contained in the other.   Define a closed curve <span class="process-math">\(C\)</span> by following curve <span class="process-math">\(A\)</span> with region <span class="process-math">\(AB\)</span> on its boundary until first encountering a transverse intersection <span class="process-math">\(y\)</span> with <span class="process-math">\(B\text{,}\)</span> and then follow <span class="process-math">\(B\)</span> back to <span class="process-math">\(x\text{.}\)</span>  The curve <span class="process-math">\(C\)</span> might have points of kissing, but no transverse intersections.  To finish the proof, observe that <span class="process-math">\(C\)</span> contains region <span class="process-math">\(AB\)</span> but excludes region <span class="process-math">\(BA\text{,}\)</span> and thus they are not connected.  The more general statement may be proven by essentially the same proof.</div></article></details></article><article class="observation remark-like" id="obs-maxn"><h3 class="heading">
+<span class="type">Observation</span><span class="space"> </span><span class="codenumber">2.1.7</span><span class="period">.</span>
+</h3>At most <span class="process-math">\(n\)</span> curves pass through any point of intersection in a <span class="process-math">\(n\)</span>-Venn diagram.<details id="obs-maxn-2" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></summary><article class="hiddenproof knowl__content"><div class="para" id="obs-maxn-2-1">Since the curves are simple closed Jordan curves, they do not self-intersect, and thus pass through any point at most once.</div></article></details></article><div class="para" id="sec-defs-16">Finally, we note that the 3-circle diagram shown above, and the 2-circle diagram for 2 sets, appear often in the context of illustrating simple logical arguments.  Readers interested in the applications of Venn diagrams to logical arguments are referred to the excellent introductory article by Glassner <a href="ch-VennRefs-3.html#ref-Gl" class="xref" data-knowl="./knowl/xref/ref-Gl.html" data-reveal-label="Reveal" data-close-label="Close" title="Paragraph">[Gl] </a>, the book by Shin <a href="ch-VennRefs-3.html#ref-Sh" class="xref" data-knowl="./knowl/xref/ref-Sh.html" data-reveal-label="Reveal" data-close-label="Close" title="Paragraph">[Sh] </a>, and many standard logic textbooks.</div></section></div>
+<div class="ptx-content-footer">
+<a class="previous-button button" href="ch-VennWhatIs.html" title="Previous"><span xmlns:pf="https://prefigure.org" class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span xmlns:pf="https://prefigure.org" class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-VennExist.html" title="Next"><span class="name">Next</span><span xmlns:pf="https://prefigure.org" class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a xmlns:pf="https://prefigure.org" class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a xmlns:pf="https://prefigure.org" class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png"></a><a xmlns:pf="https://prefigure.org" class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png"></a>
+</div>
+</body>
+</html>
