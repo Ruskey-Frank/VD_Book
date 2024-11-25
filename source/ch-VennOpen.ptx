@@ -9,6 +9,13 @@
 <section>
 <title>Geometric problems</title>
 
+<p>
+<idx><h>Venn diagram</h><h>minimum area</h></idx>
+Find a minimum area <m>n</m>-Venn diagram made from <m>n</m> congruent polyominoes for <m>n = 6</m>.  Or prove that no such
+diagram exists.  It seems likely that there is some large enough <m>n</m> for which congruent polyomino minimum area Venn diagrams
+cease to exist.
+</p>
+
 </section>
 
 <section>

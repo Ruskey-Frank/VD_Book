@@ -11,10 +11,7 @@
     <!-- Include frontmatter -->
     <xi:include href="./frontmatter.ptx" />
 
-    <!--
-    <xi:include href="./VennEJC.ptx" /> 
-    -->
-    
+  
     <!-- Include chapters -->
     <xi:include href="./ch-WhoVenn.ptx" />
 
@@ -28,7 +25,9 @@
     <xi:include href="./ch-VennSymmetric.ptx" />
     
     <!-- Include chapters -->
-    <xi:include href="./ch-VennGeometric.ptx" />    
+    <xi:include href="./ch-VennGeometric.ptx" />
+    
+    <xi:include href="./ch-VennExtension.ptx" />    
 
     <!-- Include chapters -->
     <xi:include href="./ch-VennOpen.ptx" />

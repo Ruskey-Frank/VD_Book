@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section>
+<title>Symmetric diagrams with <m>n = 11,13</m> curves</title>
+
+<!-- ========================================================================================= -->
+
+<subsection>
+<title>Symmetric diagrams with <m>n = 11</m> curves</title>
+</subsection>
+
+<subsubsection xml:id="sssec-Hamburger">
+<title>Hamburger's non-simple symmetric 11-Venn diagram</title>
+
+<p>
+Peter Hamburger <xref ref="ref-Ha02">[Ha02]</xref>
+  constructed the first symmetric 11-Venn diagram.
+The diagram is monotone and highly non-simple.
+It is very similar in form to the diagram for <m>n=7</m> from <xref ref="sec-necklace"/>
+  (Symmetric Diagrams, Necklaces, and Chains) 
+  but is vastly more complicated because of increase in the the number of regions, 
+  intersection points, etc.
+In fact, the diagram is so intricate that it is difficult 
+  to show in a single figure.
+One sector of the diagram is shown in <xref ref="fig-Hamburger11"/>.
+Successive sectors may be obtained from this one by
+  cyclicly permuting the colors.
+</p>
+
+<figure xml:id="fig-Hamburger11">
+<caption>
+  A <m>1/11</m> sector of the cylindrical representation of Hamburger's symmetric 11-Venn diagram.
+  All 11 curves intersect at the left and a the right boundaries of this diagram.
+</caption>
+<image source="gifs/sector1big.gif"></image>
+</figure>
+
+<p>
+The construction method for this diagram uses a partition of the set of all bitstrings of
+length 11.  Recall that the Venn dual can be labelled with bitstrings corresponding
+to regions, as we discussed on the page <a href="VennGraphEJC.html#dual">Graphs Associated
+with Venn Diagrams</a>.
+The construction then uses chains of bitstrings connected together to build the large dual
+graph of the sector, which then is repeated to give the entire diagram.
+</p>
+
+<p>
+Since the diagram is highly non-simple and not rigid, the diagram can be turned in to many
+others by separating any or all separable vertices.  Hamburger has published variants of
+the diagram with vertex sets from 462 up to 1001 by increments of 11 in <xref ref="ref-Ha02b">[Ha02b]</xref>.
+He and other co-authors have used similar techniques to create other diagrams; see the sub-sections below.
+</p>
+
+
+
+</subsubsection>
+
+<subsubsection>
+<title>Mamakani's simple symmetric 11-Venn diagram</title>
+
+</subsubsection>
+
+<!-- ========================================================================================= -->
+
+<subsection>
+<title>Symmetric diagrams with <m>n = 13</m> curves</title>
+</subsection>
+
+</section>

@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <chapter xml:id="ch-WhoVenn" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title><sidebyside  widths="5% 95%"><image source="gifs/littleJohnVenn.gif"></image><p>Who was John Venn?</p></sidebyside></title>
+  <title>Who was John Venn?</title>
 
   <introduction>
+    <image source="gifs/littleJohnVenn.gif" width="10%"/>
     <p>This chapter gives a short biography of John Venn.</p>
   </introduction>
 

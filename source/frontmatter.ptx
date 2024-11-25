@@ -28,5 +28,27 @@
       </shortlicense>
     </copyright>
   </colophon>
+  
+    <preface>
+  <p>
+  Almost everyone has been exposed to Venn diagrams as part of their schooling.
+  It is less well-known are that Venn diagrams exist for more than 3 categories or that
+  interesting mathematics arises from their careful study.
+  </p>
+  <p>
+  Venn introduced his diagrams around 1880, but it wasn't until the pioneering papers
+  of Branko Grunbaum, starting in 1975, that the mathematical study of Venn diagrams
+  really took off.  
+  </p>
+  <p>
+  Much of the material in this book first appeared in the "Survey of Venn Diagrams" that was
+  published as a "Dynamic Survey", in the Electronic Journal of Combintorics as the fifth
+  dynamic survey and the only one that was a collection of html pages and not a pdf document.
+  The original survey was first published in 1997 and had updates in 2001 and 2005.  The
+  last update was co-authored with my former Ph.D. student, Mark Weston.  
+  </p>
+  
+  </preface>
+
 </frontmatter>
 

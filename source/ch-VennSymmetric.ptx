@@ -98,11 +98,17 @@ different properties, can all be seen in the next section.
  
 </section>
 
-<xi:include href="./sec-SymmSmall.ptx" />
+<xi:include href="./sec-Symm5.ptx" />
+
+<xi:include href="./sec-Symm7.ptx" />
+
+<xi:include href="./sec-Symm11.ptx" />
 
 <xi:include href="./sec-SymmGeneral.ptx" />
 
 <xi:include href="./sec-SymmVariant.ptx" />
+
+<!-- =================================================================================== -->
 
 <section>
 <title>Extra Diagrams</title>
@@ -176,13 +182,239 @@ The online reader is encouraged to simply ignore this section; in printed book f
 <caption>One curve coloured.</caption>.
 <image source="gifs/AdelaideGreen.gif"></image>
 </figure>
+<figure xml:id="img-AdelaideRain">
+<caption>Rainbow coloured regions.</caption>.
+<image source="gifs/AdelaideRain.gif"></image>
+</figure>
 <figure xml:id="img-AdelaideColor">
-<caption>Symmetricaly coloured version.</caption>.
+<caption>Symmetricaly coloured regions.</caption>.
 <image source="gifs/AdelaideColor.gif"></image>
 </figure>
 </sidebyside>
 
+<sidebyside widths="60% 40%">
+<figure xml:id="img-AdelaideCylinder">
+<caption>Cylindrical representation.</caption>.
+<image source="gifs/linesAdelaide.gif"></image>
+</figure>
+<figure xml:id="img-AdelaideEdwards">
+<caption>Edwards image of Adelaide.</caption>.
+<image source="gifs/AdelaideEdwards.gif"></image>
+</figure>
+</sidebyside>
+
+<sidebyside width="30%">
+<figure xml:id="img-TutteAdelaide">
+<caption>Tutte embedding of Adelaide (P1).</caption>.
+<image source="gifs/p1.gif"></image>
+</figure>
+<figure xml:id="img-TutteAdelaideGreen">
+<caption>One curve coloured.</caption>.
+<image source="gifs/p1c.gif"></image>
+</figure>
+<figure xml:id="img-AdelaideLink">
+<caption>Rendered as a link.</caption>.
+<image source="jpgs/knot/p1.jpg"></image>
+</figure>
+</sidebyside>
+
 </subsubsection>
+
+<subsubsection>
+<title>Hamilton (P2)</title>
+
+<sidebyside>
+<figure xml:id="img-Hamilton">
+<caption>Hamilton (P2).</caption>.
+<image source="gifs/Hamilton.gif"></image>
+</figure>
+<figure xml:id="img-HamiltonGreen">
+<caption>One curve coloured.</caption>.
+<image source="gifs/HamiltonGreen.gif"></image>
+</figure>
+<figure xml:id="img-HamiltonRain">
+<caption>Rainbow coloured regions.</caption>.
+<image source="gifs/HamiltonRain.gif"></image>
+</figure>
+<figure xml:id="img-HamiltonColor">
+<caption>Symmetricaly coloured regions.</caption>.
+<image source="gifs/HamiltonColor.gif"></image>
+</figure>
+</sidebyside>
+
+<sidebyside width="30%">
+<figure xml:id="img-TutteHamilton">
+<caption>Tutte embedding of Hamilton (P2).</caption>.
+<image source="gifs/p2.gif"></image>
+</figure>
+<figure xml:id="img-TutteHamiltonGreen">
+<caption>One curve coloured.</caption>.
+<image source="gifs/p2c.gif"></image>
+</figure>
+<figure xml:id="img-HamiltonLink">
+<caption>Rendered as a link.</caption>.
+<image source="jpgs/knot/p2.jpg"></image>
+</figure>
+</sidebyside>
+</subsubsection>
+
+
+<subsubsection>
+<title>Massey (P3)</title>
+
+<sidebyside>
+<figure xml:id="img-Massey">
+<caption>Massey (P3).</caption>.
+<image source="gifs/Massey.gif"></image>
+</figure>
+<figure xml:id="img-MasseyGreen">
+<caption>One curve coloured.</caption>.
+<image source="gifs/MasseyGreen.gif"></image>
+</figure>
+<figure xml:id="img-MasseyRain">
+<caption>Rainbow coloured regions.</caption>.
+<image source="gifs/MasseyRain.gif"></image>
+</figure>
+<figure xml:id="img-MasseyColor">
+<caption>Symmetricaly coloured regions.</caption>.
+<image source="gifs/MasseyColor.gif"></image>
+</figure>
+</sidebyside>
+
+<sidebyside width="30%">
+<figure xml:id="img-TutteMassey">
+<caption>Tutte embedding of Massey (P3).</caption>.
+<image source="gifs/p3.gif"></image>
+</figure>
+<figure xml:id="img-TutteMasseyGreen">
+<caption>One curve coloured.</caption>.
+<image source="gifs/p3c.gif"></image>
+</figure>
+<figure xml:id="img-MasseyLink">
+<caption>Rendered as a link.</caption>.
+<image source="jpgs/knot/p3.jpg"></image>
+</figure>
+</sidebyside>
+</subsubsection>
+
+<subsubsection>
+<title>Victoria (P4)</title>
+
+<sidebyside>
+<figure xml:id="img-Victoria">
+<caption>Victoria (P4).</caption>.
+<image source="gifs/Victoria.gif"></image>
+</figure>
+<figure xml:id="img-VictoriaGreen">
+<caption>One curve coloured.</caption>.
+<image source="gifs/VictoriaGreen.gif"></image>
+</figure>
+<figure xml:id="img-VictoriaRain">
+<caption>Rainbow coloured regions.</caption>.
+<image source="gifs/VictoriaRain.gif"></image>
+</figure>
+<figure xml:id="img-VictoriaColor">
+<caption>Symmetricaly coloured regions.</caption>.
+<image source="gifs/VictoriaColor.gif"></image>
+</figure>
+</sidebyside>
+
+<sidebyside width="30%">
+<figure xml:id="img-TutteVictoria">
+<caption>Tutte embedding of Victoria (P3).</caption>.
+<image source="gifs/p4.gif"></image>
+</figure>
+<figure xml:id="img-TutteVictoriaGreen">
+<caption>One curve coloured.</caption>.
+<image source="gifs/p4c.gif"></image>
+</figure>
+<figure xml:id="img-VictoriaLink">
+<caption>Rendered as a link.</caption>.
+<image source="jpgs/knot/p4.jpg"></image>
+</figure>
+</sidebyside>
+</subsubsection>
+
+<subsubsection>
+<title>Palmerston (P5)</title>
+
+<sidebyside>
+<figure xml:id="img-Palmerston">
+<caption>Palmerston (P5).</caption>.
+<image source="gifs/Palmerston.gif"></image>
+</figure>
+<figure xml:id="img-PalmerstonGreen">
+<caption>One curve coloured.</caption>.
+<image source="gifs/PalmerstonGreen.gif"></image>
+</figure>
+<figure xml:id="img-PalmerstonRain">
+<caption>Rainbow coloured regions.</caption>.
+<image source="gifs/PalmerstonRain.gif"></image>
+</figure>
+<figure xml:id="img-PalmerstonColor">
+<caption>Symmetricaly coloured regions.</caption>.
+<image source="gifs/VictoriaColor.gif"></image>
+</figure>
+</sidebyside>
+
+<sidebyside width="30%">
+<figure xml:id="img-TuttePalmerston">
+<caption>Tutte embedding of Victoria (P3).</caption>.
+<image source="gifs/p5.gif"></image>
+</figure>
+<figure xml:id="img-TuttePalmerstonGreen">
+<caption>One curve coloured.</caption>.
+<image source="gifs/p5c.gif"></image>
+</figure>
+<figure xml:id="img-PalmerstonLink">
+<caption>Rendered as a link.</caption>.
+<image source="jpgs/knot/p5.jpg"></image>
+</figure>
+</sidebyside>
+</subsubsection>
+
+<subsubsection>
+<title>Manawatu (P5)</title>
+
+<sidebyside>
+<figure xml:id="img-Manawatu">
+<caption>Victoria (P6).</caption>.
+<image source="gifs/Manawatu.gif"></image>
+</figure>
+<figure xml:id="img-ManawatuGreen">
+<caption>One curve coloured.</caption>.
+<image source="gifs/ManawatuGreen.gif"></image>
+</figure>
+<figure xml:id="img-ManawatuRain">
+<caption>Rainbow coloured regions.</caption>.
+<image source="gifs/ManawatuRain.gif"></image>
+</figure>
+<figure xml:id="img-ManawatuColor">
+<caption>Symmetricaly coloured regions.</caption>.
+<image source="gifs/ManawatuColor.gif"></image>
+</figure>
+</sidebyside>
+
+<sidebyside width="30%">
+<figure xml:id="img-TutteManawatu">
+<caption>Tutte embedding of Manawatu (P3).</caption>.
+<image source="gifs/p6.gif"></image>
+</figure>
+<figure xml:id="img-TutteManawatuGreen">
+<caption>One curve coloured.</caption>.
+<image source="gifs/p6c.gif"></image>
+</figure>
+<figure xml:id="img-ManawatuLink">
+<caption>Rendered as a link.</caption>.
+<image source="jpgs/knot/p6.jpg"></image>
+</figure>
+</sidebyside>
+</subsubsection>
+
+<figure xml:id="img-scan-venn4" width="30%">
+<caption>A symmetric 7-Venn diagram who curves are 5-gons.</caption>
+<image source="gifs/scan-venn4.gif"></image>
+</figure>
 
 </subsection>
 

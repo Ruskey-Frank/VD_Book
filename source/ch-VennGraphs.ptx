@@ -30,22 +30,15 @@ As an example, the three circle Venn diagram
   has 6 vertices (corresponding to the 6 intersections) and 12 edges.
 Recall Euler's formula <m>f = e - v + 2</m> relating
   the number of faces, edges, and vertices of a graph
-  embedded in the plane.
+  embedded in the plane.<idx><h>Euler</h><h>formula</h></idx>
 Assuming that no three curves intersect at a common point
   (i.e., a simple Venn diagram), the graph is 4-regular and so we have <m>e = 2v</m>.
 By definition the number of faces is <m>f = 2^n</m>.
 It thus follows that <m>v = 2^n - 2</m> and
   <m>e = 2^{n+1} - 4</m> for simple Venn diagrams.
+By <xref ref="obs-maxn"/> the maximum vertex degree is <m>2n</m> 
 </p>
 
-<p>
-Two curves can meet at a point <term>transversally</term> or not, depending
-  on whether the two curves cross.<idx>transversal intersection</idx>
-A moment's reflection will convince you that the curves in a
-  simple Venn diagram must meet transversally.
-More generally, at any point of intersection in a Venn diagram,
-  there must be at least two curves that meet transversally.
-</p>
 
 <p>
 <idx>Venn dual</idx>

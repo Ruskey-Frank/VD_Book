@@ -16,67 +16,90 @@
   <xi:include href="sec-section-name.ptx" />
   -->
 
-<section>
+<section xml:id="sec-defs">
 <title>Definition of Venn Diagrams</title>
 
 <p>
-We follow Grünbaum <xref ref="ref-Gr75">[Gr75]</xref> in first
-  defining a more general concept, that of an independent family.
+In a series of papers, starting with <xref ref="ref-Gr75">[Gr75]</xref> Branko Grünbaum, a well known geometer 
+  at the University of Washington, initiated the mathematical investigation of Venn diagrams.  We will 
+  follow Grünbaum in first defining a more general concept, that of an independent family, 
+  and then move on to Venn diagrams.
+Both concepts are defined in terms of <term>simple closed curves</term> in the plane, which can be thought of as
+  being drawn by starting at a point <m>x</m>, and then drawing a non-intersecting curve that ends back at <m>x</m>.
+The Jordan curve theorem proves that such a curve <m>C</m> partitions the plane into <m>C</m>, together with two disjoint open regions 
+  <m>int(C)</m>, the <term>interior</term> of <m>C</m>, and <m>ext(C)</m>, the (unbounded) exterior of <m>C</m>.
+</p>
+
+<definition xml:id="def-IndependentFamily">
+<idx>independent family</idx>
+<statement>
 Let <m>\mathbf{C} = \{ C_1, C_2, \ldots, C_n \}</m>
   be a collection of simple closed curves drawn in the plane.
 The collection <m>\mathbf{C}</m> is said to be an <term>independent family</term>
-  if the <em>region</em> formed by the intersection of <m>X_1, X_2, \ldots, X_n</m>
-  is nonempty, where each <m>X_i</m> is either <m>int(C_i)</m>
-  (the interior of <m>C_i</m> ) or is <m>ext(C_i)</m>
-  (the exterior of <m>C_i</m> ).
-</p>
-
-<p>
-If, in addition, each such region is connected and there are only
+  if the <em>region</em> formed by the intersection of <m>X_1 \cap X_2 \cap \ldots \cap X_n</m>
+  is non-empty, where each <m>X_i</m> is either <m>int(C_i)</m>
+  or is <m>ext(C_i)</m>.
+If, in addition, each such intersection region is connected and there are only
   finitely many points of intersection between curves, then <B>C</B> is a <term>Venn diagram</term>,
   or an <m>n</m>-Venn diagram if we wish to
   emphasize the number of curves in the diagram.
+</statement>
+</definition>
+
+<p>
+Note that the term <term>region</term> in the mathematical literature is often assumed to be
+  connected; when discussing Venn diagrams no confusion should arise.
+Since there are 2 choices for each <m>X_i</m>, there are <m>2^n</m> non-empty disjoint regions that result from the different intersections 
+  in the definition.  
+One region, the one arising from the intersection of all the exteriors, is unbounded and all of the
+  other regions are bounded.
+In a Venn diagram all regions are required to be <term>connected</term>, 
+  meaning that there is a curve joining any two point in a region, a curve that is 
+  entirely contained in the region.
 The condition that there are only a finite number of intersection points
-is usually assumed in the literature, but often not stated explicitly.
+  is usually assumed in the literature, but sometimes not stated explicitly.
 It rules out, e.g., segments of curves from intersecting.
+We will relax this restriction in <xref ref="sec-MinArea"/>.
 </p>
 
 <p>
-Since each region is either inside or outside of a given curve, and there are <m>n</m> curves,
-there must be exactly <m>2^n</m> regions in a Venn diagram (including the exterior,
-empty region, which is outside of all curves).
+<idx>Euler diagram</idx>
 Note that some authors refer to diagrams
-with <i>fewer</i> than <m>2^n</m> regions as Venn diagrams, but they are more properly termed
-<emph>Euler diagrams</emph>, after the mathematician Leonard Euler.  More on these important diagrams can be
+with <i>fewer</i> than <m>2^n</m> non-empty regions as Venn diagrams, but they are more properly termed
+<term>Euler diagrams</term>, after the mathematician Leonard Euler.  More on these important diagrams can be
 found on the page on <a href="VennOtherEJC.html#euler">Generalizations and Extensions</a>.
 We refer to a region enclosed by exactly <m>k</m> curves as a <m>k</m>-region or <m>k</m>-set.
 </p>
 
   <sidebyside>
   <figure xml:id="fig-V3">
+  <caption>Regions labeled inclusion.</caption>
   <image source="/gifs/V3.gif" width="10%">
   </image>
   </figure>
   <figure xml:id="fig-CO-V3">
+  <caption>Regions colored by size.</caption>
   <image source="/gifs/V3plain.gif" width="10%">
   </image>
   </figure>
+  </sidebyside>
+
   <p>
-  On the left we show the most familiar of all Venn diagrams.
+  Above we show the most familiar of all Venn diagrams.
 In this case <m>n=3</m>, the simple closed curves are all circles,
-  and in the leftmost diagram the 8 regions have been labelled with
+  and in <xref ref="fig-V3"/> the 8 regions have been labelled with
   the interiors that are included in each intersection.
 The eighth region is the exterior region, corresponding to the empty set.
-The colored diagram has all 1-sets colored yellow, all 2-sets red,
+The colored diagram <xref ref="fig-CO-V3"/> has all 1-sets colored yellow, all 2-sets red,
   and the 3-set blue.
-This diagram also occurs as a minimal projection of the
+The 3 circle Venn diagram also occurs as a minimal projection of the
   Borromean Rings, see <xref ref="sec-Borromean"/>.
   </p>
-  </sidebyside>
   
-<sidebyside>
+<sidebyside widths="40% 60%">
   <image source="/gifs/independent.gif" width="20%"></image>
   <p>
+  <idx>independent family</idx>
   On the left we show an example, for <m>n=4</m>,
   of an independent family that is not a Venn diagram.
   Here the simple closed curves are each congruent triangles, which
@@ -84,7 +107,8 @@ This diagram also occurs as a minimal projection of the
   Note that the intersection of the interiors of the red and
   blue triangles with the exteriors of the green and gold
   triangles gives a disconnected region, the two darkly shaded regions
-  in the figure.
+  in the figure.  For an example of intersecting closed curves that is
+  not an independent family, consider the Olympic Rings.
   </p>
 </sidebyside>
 
@@ -95,18 +119,95 @@ This diagram also occurs as a minimal projection of the
   <image source="pngs/4-ellipses.png" width="50%"></image>
   </p>
 
-<p>
+<definition>
+<idx><h>Venn diagram</h><h>simple</h></idx>
+<statement>
 A <term>simple</term> Venn diagram is one in which
-no more than two curves intersect at a common point.  Simple diagrams
-are in some sense the "nicest" as they are easiest to draw and understand.
+no more than two curves intersect at a common point.
+</statement>
+</definition>
+
+<p>
+Simple diagrams are in some sense the "nicest" as they are easiest to draw and understand.
 All of the figures in this chapter are simple, but we will see many examples
-in other chapters of non-simple diagrams.
-Unless stated otherwise, we assume that Venn diagrams are simple.
+in other chapters of non-simple diagrams.  Unless stated otherwise, we assume that Venn diagrams are simple.
 </p>
 
 <p>
+You often see 2, and 3 curve Venn diagrams drawn with circles, but all diagrams with 4 curves
+seem to have the wrong number of regions.  In the next chapter we'll prove a little theorem that implies that
+a 4-Venn diagram can never be drawn with circles, even if they have varying diameters.  The basic reason
+is that there are too many regions for the possible number of intersections.  Below we make two observations.
+The reader is encouraged to try to figure out why these are true.
+</p>
+
+<definition>
+<p>
+Suppose two curves intersect at a point <m>x</m>.  The curves can cross at <m>x</m>, in which case
+  we say that they intersect <term>transversally</term>.  If they do not cross, then we say that they
+  intersect <term>non-transversally</term>, or that they <term>kiss</term>.<idx>transversal intersection</idx>
+</p>
+</definition>
+
+<observation xml:id="obs-transverse">
+<statement>
+In a simple Venn diagram, at every point of intersection, the two curves meet transversally.
+I.e., the two curves cross and do not meerly "kiss" each other.
+More generally, at any point of intersection in a Venn diagram,
+  there must be at least two curves that meet transversally.
+</statement>
+<proof>
+<p>
+Suppose that curve <m>A</m> kisses curve <m>B</m> at point <m>x</m> in Venn diagram <m>V</m>.
+In a rotation about <m>x</m> there are 4 regions, which we may denote <m>AA</m>, <m>AB</m>, <m>BB</m>, and <m>BA</m>.
+Unless <m>AB</m> and <m>BA</m> are connected we can not have a Venn diagram since these regions are in the
+same set of interiors and exteriors of curves.  We will show that they are not connected, a contradiction
+which will prove the observation.
+Because <m>V</m> is a Venn diagram, curves <m>A</m> and <m>B</m> must have at least two transverse intersections,
+for otherwise one curve would be contained in the other.   Define a closed curve <m>C</m> by following curve <m>A</m> with region <m>AB</m> on its boundary
+until first encountering a transverse intersection <m>y</m> with <m>B</m>, and then follow <m>B</m> back to <m>x</m>.  The curve <m>C</m> might have points of kissing, but
+no transverse intersections.  To finish the proof, observe that <m>C</m> contains region <m>AB</m> but excludes region <m>BA</m>, and thus
+they are not connected.  The more general statement may be proven by essentially the same proof.
+</p>
+</proof>
+</observation>
+
+<observation xml:id="obs-maxn">
+<statement>
+At most <m>n</m> curves pass through any point of intersection in a <m>n</m>-Venn diagram.
+</statement>
+<proof>
+<p>
+Since the curves are simple closed Jordan curves, they do not self-intersect, and thus pass through
+any point at most once.
+</p>
+</proof>
+</observation>
+
+
+<!--
+<theorem>
+<statement>
+Let <m>F</m> be a family of curves with the propery that no two finitely intersecting curves from <m>F</m> intersect
+in more than <m>k</m> points.  Then there is no simple <m>n</m>-Venn diagram drawable with curves from <m>F</m> unless
+<me>
+k {n \choose 2} \ge 2^n - 2.
+</me>
+</statement>
+<proof>
+<p>
+In an <m>n</m>-Venn diagram there are <m>{n \choose 2}</m> pairs of curves, so the maximum number of intersections using
+curves from <m>F</m> is <m>{n \choose 2}</m>.  On the other hand, there are exactly <m>2^n-2</m> points of intersection in a
+simple <m>n</m>-Venn diagram.
+</p>
+</proof>
+</theorem>
+-->
+
+
+<p>
 Finally, we note that the 3-circle diagram shown above, and the 2-circle diagram for 2 sets, appear often in
-the context of proving simple logical arguments.  Readers interested in the applications of Venn
+the context of illustrating simple logical arguments.  Readers interested in the applications of Venn
 diagrams to logical arguments are referred to the excellent introductory article by Glassner <xref ref="ref-Gl">[Gl]</xref>, 
 the book by Shin <xref ref="ref-Sh">[Sh]</xref>, and many standard logic textbooks.
 </p>
@@ -209,7 +310,7 @@ The reason for calling these colourings "bipartite" is explained in
 
 <p>
 Every simple Venn diagram can be "woven" in to a
-  link<fn>A <term>link</term> is a finite collection of non-intersecting knots 
+  link<fn><idx>link</idx>A <term>link</term> is a finite collection of non-intersecting knots 
   (where a <em>knot</em> is a closed, non-self-intersecting curve that is embedded in three dimensions.</fn>;
   as one traverses any curve, the other curves
   alternately go over and under.

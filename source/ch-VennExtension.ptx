@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-Extensions" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Generalizations and Extensions of Venn Diagrams</title>
+
+  <introduction>
+    <p>
+    We began <xref ref="sec-defs"/>, "Definition of Venn Diagrams", with a generalization, namely, the independent family, 
+    and there are several other variants that have appeared in the literature. Perhaps the most important generalization, 
+    Euler diagrams, we treat in <xref ref="sec-Euler"/> below.
+    </p>
+  </introduction>
+  
+<section>
+<title><m>m</m>-fold Venn diagrams</title>
+
+<p>
+In an ordinary Venn diagram each intersection of interiors and exteriors consists of one connected region. Fisher, Koh, and Grünbaum 
+  <xref ref="ref-FGK">[FGK]</xref> define a <m>m</m>-fold Venn diagram to be one in which each non-empty intersection consists of exactly <m>m</m> connected regions. 
+  They show how to construct such diagrams for any <m>n,m \gt 1</m>.  We show a couple of their examples below.
+</p>  
+
+<subsection>
+<title>Some symmetric <m>m</m>-fold <m>2</m>-Venn diagrams</title>
+
+<p>
+ARE THESE EXAMPLES ALL DUE TO GRUNBAUM?
+</p>
+
+<figure>
+<caption>
+Coiled snakes:
+A <m>m</m>-fold <m>2</m>-Venn diagram with mirror image
+  symmetry.  
+Shown with <m>m=4</m>.  Other values of <m>m</m> may
+  be obtained by twisting/untwisting the tails.
+</caption>
+<image source="pdfs/grunSwizzle.svg"/>
+</figure>
+
+<figure>
+<caption>
+Rotated F's.
+A <m>(2m+1)</m>-fold 2-Venn diagram with rotational symmetry.
+Shown with <I>m</I> = 1.
+Additional twists of both ends give larger values of <m>k</m>.
+</caption>
+<image source="pdfs/grun3fold.svg"/>
+</figure>
+
+<figure>
+<caption>
+A <m>2m</m>-fold 2-Venn diagram with rotational symmetry.
+Shown with <m>m=3</m>.
+Additional twists/untwists of both ends give other values of <m>m</m>.
+Note that the curves passing through the red vertices do not 
+  meet transversally (showing that <xref ref="obs-transverse"/> does not
+  apply to <m>m</m>-fold Venn diagrams.
+</caption>
+<image source="pdfs/grunEvenRotate.svg"/>
+</figure>
+
+</subsection>
+
+</section>
+
+<!-- =================================================================================== -->
+
+<section>
+<title><m>d</m>-dimensional Venn Diagrams</title>
+
+<p>
+Independent sets and Venn diagrams can be generalized to more 
+  than two dimensions.
+In the definition of independent set and Venn diagram, "curve" gets replaced
+  with "boundary of an open <m>d</m>-cell" (that is, homeomorphic
+  to a <m>d</m>-sphere) and "region" is replace with "open <m>d</m>-cell".
+Rényi, Rényi, and Surányi <xref ref="ref-RRS">[RRS]</xref> proved that an independent family of
+  <m>d</m>-spheres has at most <m>d+1</m> members, thereby generalizing
+  the result that a Venn diagram whose curves are circles contains
+  at most three curves.
+</p>
+
+<p>
+Grünbaum <xref ref="ref-Gr75">[Gr75]</xref> mentions several 
+  general geometric problems regarding <m>d</m>-dimensional diagrams where the
+  sets are required to be boundaries of <m>d</m>-polytopes or
+  convex regions.
+</p>
+
+</section>
+
+<!-- =================================================================================== -->
+
+<section xml:id="sec-inf">
+<title>Infinitely intersecting Venn diagrams</title>
+
+<p>
+If we relax the restriction that Venn diagrams meet in only finitely 
+  many points, then we lose some of the nice graph theoretic 
+  considerations (e.g., the dual graph is no longer a subgraph of the
+  hypercube), but do gain some flexibility.
+Below we show a diagram made from three congruent curves, red, blue, and green.
+Each curve is congruent and they are successively rotated by 
+  <m>\pi/4</m> radians about the central point.
+</p>
+
+<image source="pdfs/shor.svg" width="60%" />
+
+<p>
+Such a construction is possible for any <m>n</m>, and is attributed to Peter
+  Shor in Knuth, Graham, and Patashnik <xref ref="ref-GKP">[GKP,p.20,633]</xref>.
+  
+An order-<m>n</m> (binary) <term>de Bruijn cycle</term><idx>de Bruijn cycle</idx> is a circular binary string of length
+  <m>2^n</m> with the property that all <m>2^n</m> substrings of length <m>n</m>
+  are distinct, and hence occur exactly once.  For example, <m>0011</m> is a de Bruijn
+  cycle for <m>n=2</m>.
+A wealth of information about de Bruijn cycles can be found in 
+  <xref ref="ref-Kn4">[Kn4]</xref>.
+  
+The idea of Shor's construction is to take a De Bruijn 
+  cycle <m>C</m> of length <m>2^n</m>, together with a regular 
+  <m>2^n</m>-gon inscribed in a circle.
+Make a curve by successively choosing a circular arc for each 1 
+  in <m>C</m> and a polygonal edge segment for each 0.
+To obtain the other curves rotate this one about the central point by
+  <m>2 k \pi / 2^n</m> radians for 
+  <m>k = 1,2,\ldots,n-1</m>.
+The example shown above is created by starting with the De Bruijn cycle
+<m>C = 00011101</m>.
+</p>
+
+<p>
+We have already seen some other infinitely intersecting diagrams; the Venn polyominoes
+found in <xref ref="sec-MinArea"/>, minimum area diagrams,
+which also have infinitely intersecting segments of curves.
+</p>
+
+</section>
+
+<!-- =================================================================================== -->
+
+
+<section>
+<title>Generalizations of Symmetric diagrams</title>
+
+<p>
+On the page <a href="VennSymmVariants.html#nonprime">Variants on Symmetry</a> we have already discussed
+a generalization of symmetric Venn diagrams, namely pseudo-symmetric diagrams (which retain
+the property of being a Venn diagram while relaxing the notion of symmetry).  Here we take
+the opposite tack by retaining the strict definition of symmetry but extending it to 
+non-Venn diagrams.  Our motivation is the fact that if <m>n</m> is not prime, symmetric
+Venn diagrams cannot exist.  
+</p>
+
+<p>
+It is natural to consider diagrams that are "close" to Venn
+diagrams, in that the number of regions is as close to <m>2^n</m> as possible
+while still being symmetric.  We have already seen on the "What is Venn Diagram?" page 
+that Venn diagrams are 
+instances of independent families, and in <xref ref="ref-Gr99">[Gr99]</xref>, 
+Grünbaum 
+generalized the concept of symmetry in Venn diagrams
+to independent families.
+</p>
+
+<figure xml:id="fig-4ind" width="70%">
+<idx>equilateral triangles</idx>
+<caption>A symmetric independent set made with 4 equilateral triangles</caption>
+<image source="pngs/4-ISF-grunbaum.png"/>
+</figure>
+
+<p>
+If <m>n</m> is not prime, there will be 
+some <m>i</m> such that regions enclosed by <m>i</m> curves must be 
+repeated to create a symmetric diagram, and
+thus we must have more than <m>2^n</m> regions in any symmetric diagram.
+Grünbaum gave the lower bound <m>I(n)</m> on the number of
+required regions: 
+<me>
+I(n) = 2 + n (N_n - 2 ), 
+</me>
+where <m>N_n</m> is the
+number of binary necklaces of length <m>n</m>.<idx>necklace</idx>
+The numbers <m>N_n</m> are well-studied, see 
+<xref ref="ref-GKP">[GKP, pp. 139-141]</xref>
+for explicit formulae and further references; also see <xref ref="sec-necklace"/>, 
+Symmetric Diagrams, Necklaces, and Chains, for some important 
+connections between necklaces and constructing symmetric Venn diagrams. 
+The table below
+gives <m>I(n)</m> for small non-prime values of <m>n</m>.
+</p>
+
+<p>
+<xref ref="fig-4ind"/>, from <xref ref="ref-Gr99">[Gr99]</xref>, shows a symmetric independent family of
+four equilateral triangles with <m>I(4) = 18</m> regions.
+</p>
+
+<p>
+In the same paper Grünbaum conjectured that
+symmetric independent families with only <m>I(n)</m>
+regions exist for every integer <m>n</m> (this includes the special case 
+that <m>n</m> is prime, and the symmetric
+independent family is just a symmetric Venn diagram --- it has no repeated regions).
+</p>
+
+<p>
+We can also create a symmetric diagram
+by removing as few regions as possible from a Venn diagram to create an
+Euler diagram that is not an independent family (as some regions will be missing)
+but will retain rotational symmetry - we can call these
+<term>near-Venn</term> diagrams.<idx>Euler diagram</idx><idx>near-Venn diagram</idx>
+Symmetric near-Venn diagrams for non-prime <m>n</m>
+are maximally symmetric Euler diagrams in the sense that they
+cannot have any more regions added without either
+losing their symmetry or repeating regions.  The numbers <m>E(n)</m> in the table
+below are known upper bounds on the number of regions in a symmetric near-Venn diagram 
+(they are not difficult to calculate; see <xref ref="ref-RW04">[RW04]</xref> for a formula).
+</p>
+
+<tabular>
+<row>
+<cell><m>n</m></cell>
+<cell><m>E(n)</m></cell>  <!-- : <font size=-1>upper bound on regions in symmetric near-Venn diagram</font> -->
+<cell><m>2^n</m></cell>
+<cell><m>I(n)</m></cell>  <!-- : <font size=-1>lower bound on regions in symmetric independent family</font> -->
+</row>
+<row>
+<cell>4</cell>
+<cell>14</cell>
+<cell>16</cell>
+<cell>18</cell>
+</row>
+<row>
+<cell>6</cell>
+<cell>56</cell>
+<cell>64</cell>
+<cell>74</cell>
+</row>
+<row>
+<cell>8</cell>
+<cell>242</cell>
+<cell>256</cell>
+<cell>274</cell>
+</row>
+<row>
+<cell>9</cell>
+<cell>506</cell>
+<cell>512</cell>
+<cell>524</cell>
+</row>
+<row>
+<cell>10</cell>
+<cell>1012</cell>
+<cell>1024</cell>
+<cell>1062</cell>
+</row>
+<row>
+<cell>12</cell>
+<cell>4070</cell>
+<cell>4096</cell>
+<cell>4202</cell>
+</row>
+</tabular>
+
+
+<p>
+As we can see, the numbers <m>I(n)</m> and <m>E(n)</m> fairly closely bracket <m>2^n</m>.
+In <xref ref="ref-Ji">[Ji]</xref>, Zongliang Jiang extended the construction algorithm of [<a href="VennRefs.html#GKS">GKS</a>] for
+prime <m>n</m> to composite <m>n \le 16</m>; this construction repeats the minimum number of regions
+possible to create symmetric independent families with <m>I(n)</m> regions.
+</p>
+
+<figure width="70%">
+<caption>A symmetric independent family of 6 curves.  The repeated regions are labelled, 
+for example the region enclosed by the black, red and green curves is
+	labelled by a "4" and occurs three times.
+</caption>
+<image source="pngs/6-ISF-colour.png"/>.  
+</figure>
+
+<figure width="70%">
+<caption>A symmetric independent family of 8 curves that is drawn to be <i>near-simple</i>, 
+that is, as close to simple as possible: there are only 16 points where more than 2 curves intersect.
+</caption>
+<image source="pngs/8-ISF-colour-nearsimple.png"/>
+</figure>
+
+<figure width="70%">
+<caption>A near-Venn diagram of 6 curves, drawn to be near-simple.</caption>
+<image source="pngs/6-nVD-colour.png"/>
+</figure>
+
+<p>
+In addition to examples for small <m>n</m> in <xref ref="ref-Gr99">[Gr99]</xref>, 
+many examples of larger symmetric independent families and near-Venn diagrams 
+can be found in <xref ref="ref-RW04">[RW04]</xref>, <xref ref="ref-Wes">[Wes]</xref>, and <xref ref="ref-Ji">[Ji]</xref>.  
+The above examples are from <xref ref="ref-Wes">[Wes]</xref>.  
+
+Grünbaum also noticed, as have we, that, aside from the case <m>E(4) = 14</m>, for which a simple diagram can 
+be easily constructed, there do not seem to be any <em>simple</em> symmetric independent families or near-Venn diagrams attaining the given
+bounds.  Why this should be is entirely unknown! 
+</p>
+
+</section>
+
+<!-- =================================================================================== -->
+
+<section xml:id="sec-Euler">
+<idx>Euler diagram</idx>
+<title>Euler Diagrams</title>
+
+
+
+</section>
+
+</chapter>

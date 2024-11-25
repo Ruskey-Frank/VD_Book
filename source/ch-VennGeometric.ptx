@@ -3,14 +3,486 @@
 <chapter xml:id="ch-VennGeometric" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Geometric Variations</title>
 
-  <introduction>
-    <p>In this chapter we are concerned with Venn diagrams where geometric constraints are placed on the curves.
+<introduction>
+    <p>
+    There are many geometric aspects of Venn diagrams and generalizations that have
+    been considered in the literature.  We have seen some diagrams already
+    whose form is motivated by geometric issues; for example, Venn diagrams 
+    made from <a href="gifs/V3plain.gif">circles</a>, 
+    <a href="gifs/5-VD-ellipses-colour.gif">ellipses</a>, 
+    <a href="pngs/5-VD-symm-rectangles.png">rectangles</a>, 
+    <a href="gifs/5-VD-triangles.gif">triangles</a>, and <a href="gifs/scan-venn4.gif">a 7-Venn diagram</a> whose curves are non-convex 5-gons.  
     </p>
-  </introduction>
+    
+    <p>
+    Several articles discuss the geometric procedures used to draw Venn diagrams.  
+    Glassner <xref ref="ref-Gl">[Gl]</xref> discusses some of the computational aspects of generating diagrams using Edwards' construction 
+    [<a href="VennRefs.html#Ed89a">Ed89a</a>].  The survey article of Hamburger
+    <xref ref="ref-Ha98b">[Ha98b]</xref> contains a wealth of material on geometric aspects of Venn diagrams, particularly
+    convexity issues.
+    </p>
 
+It is interesting to note that Venn himself, in the final chapter of his book <xref ref="ref-Ve81">[Ve81]</xref>,
+speaks in no uncertain terms of his opinions of these geometric considerations:
+
+<blockquote>
+<p>
+"My own conviction is very decided that all introduction of considerations
+such as these should be avoided as tending to confound the domains of
+Logic and Mathematics; of that which is, broadly speaking, qualitative,
+and that which is quantitative.  The compartments yielded by our diagrams
+must be regarded solely in the light of being bounded by such and such
+contours, as lying inside or outside such and such lines.  <em>We must
+abstract entirely from all consideration of their relative magnitude,
+as we do of their actual shape, and trace no more connection between
+these facts and the logical extension of the terms which they represent
+than we do between this logical extension and the size and shape of the
+letter symbols, A and B and C.</em>"  (Quoted in <xref ref="ref-EE">[EE]</xref>.  Our emphasis added.)
+</p>
+</blockquote>
+</introduction>
+
+<!-- =========================================================================================== -->
 <section>
 <title>Convexity</title>
 
+<p>
+A Venn diagram is <term>convex</term> if the interior of each  
+  of its curves is convex.
+Note that the regions of a Venn diagram can alway be made convex,
+  for example, by taking the Tutte embedding<sup><a href="VennFootEJC.html#tutte">11</a></sup> of the diagram.
+Grünbaum also defines a stronger notion of convexity by insisting
+  that not only are the curves convex, but also regions and the
+  complement of the external region; we call this condition
+  <term>strong convexity</term>, but it has not been much explored in the literature.
+</p>
+
+<p>
+Every monotone Venn diagram is isomorphic to a convex diagram
+  via the following result of Bultena, Grünbaum, and Ruskey
+  <xref ref="ref-BGR">[BGR]</xref>.
+  A FISC is a family of <i>F</i>initely <i>I</i>ntersecting <i>S</i>imple closed
+<i>C</i>urves in the plane, with the property that the intersection of
+  the interiors of all the curves is not empty.
+Clearly, every Venn diagram is a FISC.
+A FISC is <term>monotone</term> if its directed dual graph has a unique
+  source and a unique sink; this corresponds with our definition
+  of a monotone Venn diagram.
+</p>
+
+<theorem xml:id="thm-monotone">
+<statement>
+<p>
+A FISC has a convex drawing in the plane if and only if it is
+monotone.
+</p>
+</statement>
+</theorem>
+
+<p>
+It is known (by construction, see, for example, <xref ref="ref-RRS">[RRS]</xref>, 
+<xref ref="ref-PS">[PS]</xref>, 
+<xref ref="ref-Gr75">[Gr75]</xref>, and <xref ref="ref-BR">[BR]</xref>) that there
+exists a convex <m>n</m>-Venn diagram for every positive value of <m>n</m>,
+and thus by the above result there is a monotone one as well.
+</p>
+
 </section>
+
+<section>
+<title>Diagrams made from convex <m>k</m>-gons</title>
+
+<p>
+Let the term <term><m>k</m>-gon</term> designate any convex polygon with at most <m>k</m>
+  sides.  Observe that two <m>k</m>-gons can (finitely) intersect with
+  each other in at most <m>2k</m> points; for the purposes of this
+  discussion we can treat a circle as a 1-gon and an ellipse as a
+  2-gon.  
+  We start off with a lemma first observed by Grünbaum
+  <xref ref="ref-Gr75">[Gr75]</xref>, and discuss its consequences.
+  RELATE THIS TO EARLIER THEOREM.
+ </p>
+
+<theorem>
+<statement>
+For a simple <m>n</m>-Venn diagram of <m>k</m>-gons to exist,
+<m>k \ge \lceil (2^{n-1}-1) / {n \choose 2} \rceil </m>.
+</statement>
+<proof>
+<p>
+Given a diagram of <m>k</m>-gons, the number of
+vertices contributed by any two of them can be at most 2<m>k</m>, so the
+number of vertices must be at most <m>2 k {n \choose 2}</m>.  Since
+the number of vertices in a simple diagram is <m>2^n - 2</m>, the inequality follows.
+</p>
+</proof>
+</theorem>
+
+<p>
+A slight improvement to this theorem was obtained in <xref ref="ref-CRW">[CRW]</xref>.
+</p>
+
+<theorem xml:id="thm-CRW">
+<statement>
+For a simple <m>n</m>-Venn diagram of <m>k</m>-gons to exist,
+<m>k \ge \lceil (2^n-2-n) / n(n-2) \rceil </m>.
+</statement>
+</theorem>
+
+<p>
+The following table lists implications of <xref ref="thm-CRW"/> as the column
+  with header <m>k \ge</m>. 
+The column with header <m>k \le</m> is from a known construction. 
+</p>
+
+<table>
+<caption>
+Bounds on the least <m>k</m> for which a simple <m>n</m>-Venn diagram can be
+drawn with <m>k</m>-gons.
+</caption>
+<tabular>
+<col/><col/><col width="70%"/>
+<row header="yes" bottom="minor" >
+<cell><m>n</m></cell><cell><m>k \ge</m></cell><cell>Notes</cell>
+</row>
+<row>
+<cell>3</cell><cell>1</cell>
+<cell><p>E.g., the 3-circle diagram.</p></cell>
+</row>
+<row>
+<cell>4</cell><cell>2</cell>
+<cell><p>Doable with ellipses or triangles.</p></cell>
+</row>
+<row>
+<cell>5</cell><cell>2</cell>
+<cell><p>Many known examples of symmetric and non-symmetric diagrams for ellipses, triangles,  etc.  
+Conjectured to not be possible for squares by Grünbaum <xref ref="ref-Gr92b">[Gr92b]</xref>.</p></cell>
+</row>
+<row>
+<cell>6</cell><cell>3</cell>
+<cell>Solved for triangles by Carroll <xref ref="ref-Ca00">[Ca00]</xref>.
+No congruent examples known.</cell>
+</row>
+<row>
+<cell>7</cell><cell>4</cell>
+<cell>Grünbaum constructed an independent family (not a Venn diagram) of seven hexagons.
+Solved for convex symmetric 4-gons (see <xref ref="fig-7quad"/>) by the authors.  
+No diagram of 7 triangles is possible.</cell>
+</row>
+<row>
+<cell>8</cell><cell>6</cell><cell><m>k \le 64</m></cell>
+</row>
+<row>
+<cell>9</cell><cell>8</cell><cell><m>k \le 128</m></cell>
+</row>
+<row>
+<cell>10</cell><cell>13</cell><cell><m>k \le 256</m></cell>
+</row>
+</tabular>
+</table>
+
+<subsection>
+<title>Triangles</title>
+
+<p>
+Jeremy Carroll, while he was employed at HP Labs (Bristol, England), 
+  in <xref ref="ref-Ca00">[Ca00]</xref> solved the problem of finding a collection of six triangles that
+  form a Venn diagram.
+</p>
+
+<p>
+There is a simple symmetric 5-Venn diagram in which
+  each curve is a triangle; see <xref ref="img-5-VD-triangles"/>, 
+  redrawn from Grünbaum 
+  <xref ref="ref-Gr92b">[Gr92b]</xref>.
+Grünbaum <xref ref="ref-Gr84b">[Gr84b]</xref>
+  asked whether there was a 6-Venn diagram made from triangles.
+Years later, this question was answered in the affirmative by
+  Jeremy Carroll, while he was employed at HP Labs (Bristol, England), in <xref ref="ref-Ca00">[Ca00]</xref>.
+His first discovered example is shown below, and like his other diagrams, it is simple.
+He subsequently discovered that there are exactly
+  126 different 6-Venn diagrams that can be drawn where
+  each curve is a triangle.
+</p>
+
+<image source="gifs/CarrollTriangleHuge.gif" width="70%" />
+
+<p>
+Below is a table of coordinates for the vertices of the six triangles.
+</p>
+
+<tabular>
+<row header="yes" bottom="minor" >
+<cell><m>(x_1,y_1)</m></cell>
+<cell><m>(x_2,y_2)</m></cell>
+<cell><m>(x_3,y_3)</m></cell>
+</row>
+<row>
+<cell><m>(-69277, -32868)</m></cell> 
+<cell><m>(135580, 121186)</m></cell> 
+<cell><m>(70900, 199427)</m></cell>
+</row>
+<row>
+<cell><m>(333561, 225349)</m></cell> 
+<cell><m>(61764, 76805)</m></cell> 
+<cell><m>(38980, 182461)</m></cell> 
+</row>
+<row>
+<cell><m>(81988, -44426)</m></cell> 
+<cell><m>(38444, 206222)</m></cell> 
+<cell><m>(121044, 165111)</m></cell> 
+</row>
+<row>
+<cell><m>(-60184, 274046)</m></cell> 
+<cell><m>(142476, 39903)</m></cell> 
+<cell><m>(103276, 183962)</m></cell> 
+</row>
+<row>
+<cell><m>(131886, 385785)</m></cell> 
+<cell><m>(38136, 111491)</m></cell> 
+<cell><m>(94208, 24690)</m></cell> 
+</row>
+<row>
+<cell><m>(203271, 9619)</m></cell> 
+<cell><m>(39604, 82683)</m></cell> 
+<cell><m>(84652, 206669)</m></cell>
+</row>
+</tabular>
+
+<p>
+Below is another nicer example (this jpeg image courtesy of
+Jeremy Carroll). 
+</p> 
+<!-- See his web page
+[<A HREF="VennRefs.html#JC">JC</A>] for further 
+examples like this.
+-->
+
+<image source="jpgs/forFrank.jpg" width="70%" />
+
+<!--
+<UL>
+<LI>
+First example with <A HREF="gifs/CarrollTriColor.gif">coloured triangles</A>.
+<LI>
+Larger version of first example with
+<A HREF="gifs/CarrollTriangleBigRed.gif">bipartite colouring</A>.
+<LI>
+<A HREF="gifs/CarrollTriangleRedClipped.gif">Clipped version of 
+  bipartite colouring</A>.
+<LI>
+<A HREF="gifs/venn6a.gif">Black and white version</A>
+  of second example (gif courtesy of Jeremy Carroll).
+<LI>
+Another <A HREF="gifs/venn6color.gif">Coloured version</A>
+  the second example (gif courtesy of Jeremy Carroll).
+</UL>
+-->
+
+<p>
+Triangles cannot be used to construct a 7-Venn diagram; the proof for the simple case is quite short.  
+A full proof in the non-simple case may be found in <xref ref="ref-CRW">[CRW]</xref>.
+Although it follows from <xref ref="thm-CRW"/>, we provide below a proof that there
+is no simple 7-Venn diagram whose curves are triangles.
+</p>
+
+<theorem>
+<statement>
+A simple Venn diagram of 7 triangles is impossible.
+</statement>
+<proof>
+<p>
+Assume such a diagram exists.  By counting
+the number of vertices, as in Lemma G above, we see that 
+<m>6{7 \choose 2} = 2^7 - 2</m>; 
+thus, every pair of triangles must intersect in six points. 
+Thus for any corner <m>A</m> of any triangle <m>t</m>, and any other triangle <m>t'</m>, 
+<m>A</m> lies outside <m>t'</m>. Thus <m>A</m> lies on the outer face of the diagram, and
+the other face at <m>A</m> is the one inside <m>t</m> alone. Since the same 
+argument holds for a second corner <m>B</m> of <m>t</m>, we have that the non-outer face at <m>A</m>
+is also the non-outer face at <m>B</m>, but an edge of <m>t'</m> separates them.  Thus we have
+a disconnected region, which contradicts the fact that the diagram is a Venn diagram. 
+</p>
+</proof>
+</theorem>
+
+</subsection>
+
+<subsection>
+<title><m>k</m>-gons for <m>k > 3</m></title>
+
+<p>
+We note that many constructions for Venn diagrams produce diagrams of <m>k</m>-gons where 
+the value <m>k</m> is a function of <m>n</m> (for examples, see <xref ref="ref-PS">[PS]</xref>
+or <xref ref="ref-Gr75">[Gr75]</xref>).
+By the results of <xref ref="ref-PS">[BGR]</xref> any convex <m>n</m>-FISC (and consequently any monotone <m>n</m>-Venn diagram) with
+  <m>N</m> points of intersection is drawable with <m>N</m>-gons.
+  <idx><h>Venn diagram</h><h>monotone</h></idx>
+As a consequence and monotone <m>n</m>-Venn diagram can be drawn with <m>(2^n-2)</m>-gons.
+Grünbaum's convex construction 
+  <xref ref="ref-Gr75">[Gr75]</xref> 
+is very much like Edwards' general
+  construction, except that the initial circle is replaced by a square and the
+  <m>n</m>th curve is a <m>2^{n-2}</m>-gon; this gives the upper bounds
+  in the table above.
+Also, Grünbaum 
+  [<A HREF="VennRefs.html#Gr75">Gr75</A>, pg. 17] 
+  states that "the construction we
+  used ... is a modification to convex polygons of the method
+  described in More <xref ref="ref-Mo">[Mo]</xref>." 
+</p>
+
+<p>
+In <xref ref="ref-CRW">[CRW]</xref> Carroll, Ruskey, and Weston proved that there is a
+symmetric 7-Venn diagram drawn with 4-gons, which meets the lower bound of <xref ref="thm-CRW"/>.
+See <xref ref="fig-7quad"/>.  The coordinates of one of the quadrilaterals is given in the
+list below.  The other 6 quadrilaterals may be obtained from this one by rotating about the origin.
+</p>
+
+<me>
+(-0.446, 0.000), (-0.123, -0.433), (\ 0.699,\ 0.061), (-0.446,\ 0.451)
+</me>
+
+<!--
+<tabular>
+<row>
+<cell>(x,y)</cell>
+</row>
+<row>
+<cell><m>(-0.446,\ 0.000)</m></cell>
+</row>
+<row>
+<cell><m>(-0.123, -0.433)</m></cell>
+</row>
+<row>
+<cell><m>(\ 0.699,\ 0.061)</m></cell>
+</row>
+<row>
+<cell><m>(-0.446,\ 0.451)</m></cell>
+</row>
+</tabular>
+-->
+
+<figure xml:id="fig-7quad">
+<caption>
+A symmetric 7-Venn diagram drawn with convex quadrilaterals.
+</caption>
+<image source="pngs/7-VD-quads-thick.png" width="70%" />
+</figure>
+
+</subsection>
+
+</section>
+
+<section>
+<title>Exposure</title>
+
+<p>
+DOES THIS SECTION BELONG ELSEWHERE?
+</p>
+
+<p>
+A Venn diagram is <em>exposed</em> if each of its curves touches the
+  outer face at some point of non-intersection.
+Note, for example, that the 3-Venn diagram #3.2 is not exposed, even
+  though all curves have a point of intersection on the outer face.
+Stated in terms of <m>n</m>-Venn dual graphs, being exposed is 
+  the same as the condition 
+  that the vertex corresponding to the outer face has degree <m>n</m>.
+Clearly, every symmetric Venn diagram must be exposed.
+Also, every convex Venn diagram must be exposed 
+  (<xref ref="ref-Gr92a">[Gr92a]</xref>).
+A curve in a non-exposed Venn diagram is <em>hidden</em> if it 
+  does not touch the outer region.
+For example, in Venn's general construction, curves <m>4,5,\ldots,n-1</m>
+  are all hidden.
+Chilakamarri, Hamburger, and Pippert 
+  <xref ref="ref-CHP96b">[CHP96b]</xref> gave an example, shown below,
+  of a simple 6-Venn diagram which is not in the same class as
+  any exposed diagram.
+The hidden curve is the dotted green one.
+</p>
+
+<image source="gifs/hidden6.gif"/>
+
+<p>
+All simple Venn diagrams with five or less curves are exposed, but with
+  five curves there are 8 (5 reducible, 3 irreducible) that do not 
+  have a convex drawing in the plane 
+  <xref ref="ref-HP97">[HP97]</xref>.   CLARIFY THIS!
+</p>
+
+</section>
+
+<section>
+<title>Area-Proportional Diagrams</title>
+</section>
+
+<section xml:id="sec-MinArea">
+<title>Minimum Area Diagrams</title>
+
+<p> 
+<idx><h>Venn diagram</h><h>polyomino</h></idx>
+<idx><h>Venn diagram</h><h>minimum area</h></idx>
+On his "Math Recreations" website (now defunct), Mark
+Thompson proposed the novel problem of finding <term>Venn polyominoes</term>; these
+are Venn diagrams where each curve is the outline of a polyomino.  A
+polyomino is a generalization of a domino whereby the shape is formed 
+by gluing together unit squares along their edges with no holes allowed.
+When considering Venn polyominoes we need to relax the restriction that curves intersect
+  only finitely.  
+Chow and Ruskey, in <xref ref="ref-CR05">[CR05]</xref>,
+  used Venn polyominoes to consider the special case of area-proportional diagrams 
+  when all regions have the same area, which can be viewed as being of unit area.
+For this reason, such Venn polyominoes are called <term>minimum area Venn diagrams</term>
+A convenient way to build such diagrams is on the grid; each polyomino is axis-aligned
+and each region is a connected area of unit squares.
+Thompson has found several 
+examples of <em>congruent</em> Venn polyominoes for <m>n</m> up to 4 sets, and Chow and Ruskey found
+an example for 5 sets; we show some of these below.  Congruent minimum area Venn diagrams
+are not know for any <m>n > 5</m>.
+</p>  
+
+<image source="pngs/venn_minarea-polyominoes.png" width="70%" />
+
+<!-- SUBSUMED BY LATER RESULTS
+The examples above all have the nice property that they have minimum area: each region is a single
+unit square.  
+<p>Chow and Ruskey have also found non-congruent Venn polyominoes for 6 and 7 curves each; these diagrams, and their
+component curves, can be seen on the following page:
+<CENTER>
+<TABLE BORDER=1 cellpadding=4>
+<TR><TD>&nbsp; &nbsp;
+<A HREF="VennPoly67EJC.html">Venn diagrams from polyominoes for 6 and 7 sets</A>&nbsp; &nbsp;
+</TABLE>
+</CENTER>
+
+Chow and Ruskey also gave a 3/2-approximation algorithm to construct
+Venn polyominoes; that is, their algorithm produces Venn polyominoes with 
+at most 3/2 times the minimum area (which is, of course, 2<sup><i>n</i></sup>-1 unit squares).
+Their algorithm produces diagrams whose area is 1 + <i>O</i>(1 / <i>n</i><sup>&frac12;</sup>) times
+the minimum area, so
+they are asymptotically optimal since as <i>n</i> increases the number
+of regions approaches 2<sup><i>n</i></sup>-1.  Like the diagrams constructed by
+[<a href="VennRefs.html#GKS">GKS</a>] on the page 
+<a href="VennNecklaceEJC.html">Symmetric Diagrams, Necklaces, and Chains</a>, their construction
+uses a symmetric chain decomposition of the Boolean lattice to specify how
+to lay out regions.
+-->
+
+<p>
+
+Chow and Ruskey <xref ref="ref-CR05">[CR05]</xref> have also found non-congruent Venn polyominoes for 6 and for 7 curves.
+Subsequently, Bultena, Klimesh, and Ruskey <xref ref="ref-BKR">[BKR]</xref> found a couple of general
+constructions which we will describe pictorially.
+
+
+
+</p>
+
+</section>
+
+
+
 
 </chapter>

@@ -18,7 +18,7 @@ See <xref ref="img-min5"/> and <xref ref="img-min5c"/> for an example when <m>n=
 and <xref ref="img-min7a"/>, <xref ref="img-min7aC"/>, <xref ref="img-min7b"/> and <xref ref="img-min7bC"/>
   for examples when examples for <m>n=7</m> (discovered in collaboration with Stirling Chow).
 </p>
-<image source="gifs/betteMin4.gif"></image>
+<image source="pdfs/betteMin4.svg"></image>
 </sidebyside>
 
 <definition xml:id="def-monotone">

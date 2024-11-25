@@ -8,6 +8,7 @@ or not, and so on.
 </p>
 
 <definition xml:id="def-isomorphic">
+<idx><h>Venn diagram</h><h>isomorphic</h></idx>
 <statement>
 Two Venn diagrams are <term>isomorphic</term> if, by a continuous
   transformation of the plane, one of them can be changed into
@@ -16,6 +17,7 @@ Two Venn diagrams are <term>isomorphic</term> if, by a continuous
 </definition>
 
 <definition xml:id="def-equivalent">
+<idx><h>Venn diagram</h><h>equivalent</h></idx>
 <statement>
 Two Venn diagrams are <term>equivalent</term> if they are isomorphic
   as plane graphs, ignoring the edge colors
@@ -33,12 +35,14 @@ Since curves meet transversally in simple Venn diagrams, two
 On the other hand, a Venn diagram may be embedded on the surface of a sphere
   via stereographic projection.
 (Consider the standard basketball ball; it is the stereographic projection
-  of Edwards' general construction for <m>n=4</m>.)
+  of a simple 3-Venn diagram; adding another great circle, orthogonal to the
+  other two, gives Edwards' general construction for <m>n=4</m>.)
 Sometimes it is more natural to look at Venn diagrams
-  as being embedded on the sphere.
+  as being embedded on the sphere.  EXPAND.
 </p>
 
 <definition xml:id="def-class">
+<idx><h>Venn diagram</h><h>class of</h></idx>
 <statement>
 Two Venn diagrams are <term>in the same class</term> if they can be
   projected to the same spherical Venn diagram.
@@ -52,6 +56,8 @@ When considering non-simple Venn diagrams there is another elementary
 
 <definition>
 <title>[rigid diagram, seperable vertex]</title>
+<idx><h>Venn diagram</h><h>rigid</h></idx>
+<idx><h>Venn diagram</h><h>seperable vertex in</h></idx>
 <statement>
 A <term>vertex traversal</term> of a
   vertex <m>v</m> in a Venn diagram is a circular
@@ -74,14 +80,14 @@ a separable vertex; <term>unsplitting</term> (or <term>joining</term>)is defined
 </statement>
 </definition>
 
-<sidebyside width="40%">
+<sidebyside widths="35% 45%">
 <figure xml:id="fig-seperable">
 <caption>A seperable vertex</caption>
-<image source="gifs/separable.gif"></image>
+<image source="pdfs/separable.svg"></image>
 </figure>
 <figure xml:id="fig-splitting">
 <caption>Splitting that vertex</caption>
-<image source="gifs/nonrigid.gif"></image>
+<image source="pdfs/nonrigid.svg"></image>
 </figure>
 </sidebyside>
 
