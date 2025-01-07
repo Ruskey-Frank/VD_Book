@@ -89,6 +89,12 @@ window.MathJax = {
 <link href="_static/pretext/css/colors_default.css" rel="stylesheet" type="text/css">
 <link href="_static/pretext/css/setcolors.css" rel="stylesheet" type="text/css">
 <style>
+#VD_Book-10-3-4-3 { counter-set: VD_Book-10-3-4-3 0; }
+#VD_Book-10-3-4-3 > li::marker { content: ""counter(VD_Book-10-3-4-3,decimal)"."; }
+#VD_Book-10-3-4-3 > li { counter-increment: VD_Book-10-3-4-3; }
+#VD_Book-10-4-2-3 { counter-set: VD_Book-10-4-2-3 0; }
+#VD_Book-10-4-2-3 > li::marker { content: ""counter(VD_Book-10-4-2-3,decimal)"."; }
+#VD_Book-10-4-2-3 > li { counter-increment: VD_Book-10-4-2-3; }
 </style>
 </head>
 <body id="changeme" class="pretext book ignore-math">
@@ -135,13 +141,14 @@ window.MathJax = {
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-VennExist.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Constructions of Venn Diagrams</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-VennExist.html#sec-VennExist-3" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Venn’s Construction</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-VennExist.html#sec-VennExist-4" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Edwards’ Construction</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-VennExist.html#sec-VennExist-5" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Venn Diagrams and Knots</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-VennExist.html#sec-VennExist-3" class="internal"><span class="codenumber">2.2.1</span> <span class="title">How to draw a 2 or 3 circle Venn diagram</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-VennExist.html#sec-VennExist-5" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Venn’s Construction</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-VennExist.html#subsec-EdwardsConstruction" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Edwards’ "Cogwheels" Construction</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-VennExist.html#sec-VennExist-7" class="internal"><span class="codenumber">2.2.4</span> <span class="title">Venn Diagrams and Knots</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Borromean.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Borromean Rings</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-VennWhatIs-7.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Extra Diagrams</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-VennWhatIs-6.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Extra Diagrams</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -151,7 +158,10 @@ window.MathJax = {
 <div class="toc-title-box"><a href="ch-VennGraphs-3.html" class="internal"><span class="codenumber">3.1</span> <span class="title">The Planar Dual of a Venn Diagram</span></a></div>
 <ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennGraphs-3.html#subsec-Duals" class="internal"><span class="codenumber">3.1.1</span> <span class="title">The Venn Duals of Venn’s Construction</span></a></div></li></ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-VennGraphs-4.html" class="internal"><span class="codenumber">3.2</span> <span class="title">When are two Venn diagrams different?</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch-VennGraphs-4.html" class="internal"><span class="codenumber">3.2</span> <span class="title">When are two Venn diagrams different?</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennGraphs-4.html#ch-VennGraphs-4-12" class="internal"><span class="codenumber">3.2.1</span> <span class="title">An extended example of vertex splitting.</span></a></div></li></ul>
+</li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="ch-VennGraphs-5.html" class="internal"><span class="codenumber">3.3</span> <span class="title">How many are there?</span></a></div>
 <ul class="structural toc-item-list">
@@ -187,7 +197,10 @@ window.MathJax = {
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="ch-VennSymmetric.html" class="internal"><span class="codenumber">4</span> <span class="title">Symmetric Venn Diagrams</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-VennSymmetric-3.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Rotational Symmetry</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch-VennSymmetric-3.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Rotational Symmetry</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennSymmetric-3.html#ch-VennSymmetric-3-9" class="internal"><span class="codenumber">4.1.1</span> <span class="title"></span></a></div></li></ul>
+</li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="ch-VennSymmetric-4.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Symmetric Diagrams for <span class="process-math">\(n = 2,3,5\)</span></span></a></div>
 <ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennSymmetric-4.html#ch-VennSymmetric-4-3" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Symmetric diagrams with <span class="process-math">\(n = 5\)</span> curves</span></a></div></li></ul>
@@ -198,11 +211,10 @@ window.MathJax = {
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennSymmetric-5.html#ch-VennSymmetric-5-3" class="internal"><span class="codenumber">4.3.1</span> <span class="title">The Grünbaum encoding</span></a></div></li>
 <li class="toc-item toc-subsection">
 <div class="toc-title-box"><a href="ch-VennSymmetric-5.html#ch-VennSymmetric-5-4" class="internal"><span class="codenumber">4.3.2</span> <span class="title">Simple Symmetric 7-Venn Diagrams</span></a></div>
-<ul class="structural toc-item-list">
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="ch-VennSymmetric-5.html#ch-VennSymmetric-5-4-2" class="internal"><span class="codenumber">4.3.2.1</span> <span class="title">Simple monotone polar symmetric 7-Venn diagrams</span></a></div></li>
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="ch-VennSymmetric-5.html#ch-VennSymmetric-5-4-4" class="internal"><span class="codenumber">4.3.2.2</span> <span class="title">Non-simple symmetric 7-Venn diagrams</span></a></div></li>
-</ul>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="ch-VennSymmetric-5.html#ch-VennSymmetric-5-4-2" class="internal"><span class="codenumber">4.3.2.1</span> <span class="title">Simple monotone polar symmetric 7-Venn diagrams</span></a></div></li></ul>
 </li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennSymmetric-5.html#sec-nonmono7" class="internal"><span class="codenumber">4.3.3</span> <span class="title">Non-monotone simple symmetric 7-Venn diagrams</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennSymmetric-5.html#ch-VennSymmetric-5-6" class="internal"><span class="codenumber">4.3.4</span> <span class="title">Non-simple symmetric 7-Venn diagrams</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -280,8 +292,14 @@ window.MathJax = {
 <div class="toc-title-box"><a href="VD_Book-10.html" class="internal"><span class="codenumber">7</span> <span class="title">Open Problems about Venn Diagrams</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="VD_Book-10-2.html" class="internal"><span class="codenumber">7.1</span> <span class="title">Combinatorial and existential problems</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="VD_Book-10-3.html" class="internal"><span class="codenumber">7.2</span> <span class="title">Geometric problems</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="VD_Book-10-4.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Generalizations of Venn diagrams</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="VD_Book-10-3.html" class="internal"><span class="codenumber">7.2</span> <span class="title">Geometric problems</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="VD_Book-10-3.html#VD_Book-10-3-4" class="internal"><span class="codenumber">7.2.1</span> <span class="title">polyVenn diagrams</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="VD_Book-10-4.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Generalizations of Venn diagrams</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="VD_Book-10-4.html#VD_Book-10-4-2" class="internal"><span class="codenumber">7.3.1</span> <span class="title">Euler Diagrams</span></a></div></li></ul>
+</li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -303,9 +321,9 @@ window.MathJax = {
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section xmlns:pf="https://prefigure.org" class="section" id="ch-Extensions-6"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">6.4</span><span class="space"> </span><span class="title">Generalizations of Symmetric diagrams</span>
 </h2>
-<div class="para" id="ch-Extensions-6-2">On the page Variants on Symmetry we have already discussed a generalization of symmetric Venn diagrams, namely pseudo-symmetric diagrams (which retain the property of being a Venn diagram while relaxing the notion of symmetry).  Here we take the opposite tack by retaining the strict definition of symmetry but extending it to non-Venn diagrams.  Our motivation is the fact that if <span class="process-math">\(n\)</span> is not prime, symmetric Venn diagrams cannot exist.</div>
-<div class="para" id="ch-Extensions-6-3">It is natural to consider diagrams that are "close" to Venn diagrams, in that the number of regions is as close to <span class="process-math">\(2^n\)</span> as possible while still being symmetric.  We have already seen on the "What is Venn Diagram?" page that Venn diagrams are instances of independent families, and in <a href="ch-VennRefs-3.html#ref-Gr99" class="xref" data-knowl="./knowl/xref/ref-Gr99.html" data-reveal-label="Reveal" data-close-label="Close" title="Paragraph">[Gr99] </a>, Grünbaum generalized the concept of symmetry in Venn diagrams to independent families.</div>
-<figure class="figure figure-like" id="fig-4ind"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/pngs/4-ISF-grunbaum.png" class="contained"></div>
+<div class="para" id="ch-Extensions-6-2">In <a href="sec-SymmVariant.html" class="internal" title="Section 4.6: Variants on Symmetry">Section 4.6</a>, Variants on Symmetry, we have already discussed a generalization of symmetric Venn diagrams, namely pseudo-symmetric diagrams (which retain the property of being a Venn diagram while relaxing the notion of symmetry).  Here we take the opposite tack by retaining the strict definition of symmetry but extend it to non-Venn diagrams.  Our motivation is the fact that if <span class="process-math">\(n\)</span> is not prime, symmetric Venn diagrams cannot exist.</div>
+<div class="para" id="ch-Extensions-6-3">It is natural to consider diagrams that are "close" to Venn diagrams, in that the number of regions is as close to <span class="process-math">\(2^n\)</span> as possible, while still having a <span class="process-math">\(n\)</span>-fold rotational symmetry.  By definition, Venn diagrams are special instances of independent families, and in <a href="ch-VennRefs-3.html#ref-Gr99" class="xref" data-knowl="./knowl/xref/ref-Gr99.html" data-reveal-label="Reveal" data-close-label="Close" title="Paragraph">[Gr99] </a>, Grünbaum generalized the concept of symmetry in Venn diagrams to symmetry in independent families.</div>
+<figure class="figure figure-like" id="fig-4ind"><div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="external/pdfs/4-IF-min-symm.svg" role="img" class="contained"></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">6.4.1<span class="period">.</span></span><span class="space"> </span>A symmetric independent set made with 4 equilateral triangles</figcaption></figure><div class="para logical" id="ch-Extensions-6-5">
 <div class="para">If <span class="process-math">\(n\)</span> is not prime, there will be some <span class="process-math">\(i\)</span> such that regions enclosed by <span class="process-math">\(i\)</span> curves must be repeated to create a symmetric diagram, and thus we must have more than <span class="process-math">\(2^n\)</span> regions in any symmetric diagram. Grünbaum gave the lower bound <span class="process-math">\(I(n)\)</span> on the number of required regions:</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/ref-GKP.html ./knowl/xref/sec-necklace.html">
@@ -317,7 +335,7 @@ I(n) = 2 + n (N_n - 2 ),
 </div>
 </div>
 <div class="para" id="ch-Extensions-6-6">
-<a href="ch-Extensions-6.html#fig-4ind" class="xref" data-knowl="./knowl/xref/fig-4ind.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 6.4.1">Figure 6.4.1</a>, from <a href="ch-VennRefs-3.html#ref-Gr99" class="xref" data-knowl="./knowl/xref/ref-Gr99.html" data-reveal-label="Reveal" data-close-label="Close" title="Paragraph">[Gr99] </a>, shows a symmetric independent family of four equilateral triangles with <span class="process-math">\(I(4) = 18\)</span> regions.</div>
+<a href="ch-Extensions-6.html#fig-4ind" class="xref" data-knowl="./knowl/xref/fig-4ind.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 6.4.1">Figure 6.4.1</a>, from <a href="ch-VennRefs-3.html#ref-Gr99" class="xref" data-knowl="./knowl/xref/ref-Gr99.html" data-reveal-label="Reveal" data-close-label="Close" title="Paragraph">[Gr99] </a>, shows a symmetric independent family of four equilateral triangles with <span class="process-math">\(I(4) = 18\)</span> regions.  We have seen an example of a symmetric independent family of 4 triangles before, in <a href="sec-defs.html#fig-4-IF" class="xref" data-knowl="./knowl/xref/fig-4-IF.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 2.1.6">Figure 2.1.6</a>, but this family has 22 regions.</div>
 <div class="para" id="ch-Extensions-6-7">In the same paper Grünbaum conjectured that symmetric independent families with only <span class="process-math">\(I(n)\)</span> regions exist for every integer <span class="process-math">\(n\)</span> (this includes the special case that <span class="process-math">\(n\)</span> is prime, and the symmetric independent family is just a symmetric Venn diagram --- it has no repeated regions).</div>
 <div class="para" id="ch-Extensions-6-8">We can also create a symmetric diagram by removing as few regions as possible from a Venn diagram to create an Euler diagram that is not an independent family (as some regions will be missing) but will retain rotational symmetry - we can call these <dfn class="terminology">near-Venn</dfn> diagrams. Symmetric near-Venn diagrams for non-prime <span class="process-math">\(n\)</span> are maximally symmetric Euler diagrams in the sense that they cannot have any more regions added without either losing their symmetry or repeating regions.  The numbers <span class="process-math">\(E(n)\)</span> in the table below are known upper bounds on the number of regions in a symmetric near-Venn diagram (they are not difficult to calculate; see <a href="ch-VennRefs-3.html#ref-RW04" class="xref" data-knowl="./knowl/xref/ref-RW04.html" data-reveal-label="Reveal" data-close-label="Close" title="Paragraph">[RW04] </a> for a formula).</div>
 <div class="tabular-box natural-width"><table class="tabular">

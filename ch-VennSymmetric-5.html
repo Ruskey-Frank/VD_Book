@@ -89,6 +89,12 @@ window.MathJax = {
 <link href="_static/pretext/css/colors_default.css" rel="stylesheet" type="text/css">
 <link href="_static/pretext/css/setcolors.css" rel="stylesheet" type="text/css">
 <style>
+#VD_Book-10-3-4-3 { counter-set: VD_Book-10-3-4-3 0; }
+#VD_Book-10-3-4-3 > li::marker { content: ""counter(VD_Book-10-3-4-3,decimal)"."; }
+#VD_Book-10-3-4-3 > li { counter-increment: VD_Book-10-3-4-3; }
+#VD_Book-10-4-2-5 { counter-set: VD_Book-10-4-2-5 0; }
+#VD_Book-10-4-2-5 > li::marker { content: ""counter(VD_Book-10-4-2-5,decimal)"."; }
+#VD_Book-10-4-2-5 > li { counter-increment: VD_Book-10-4-2-5; }
 </style>
 </head>
 <body id="changeme" class="pretext book ignore-math">
@@ -135,13 +141,14 @@ window.MathJax = {
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-VennExist.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Constructions of Venn Diagrams</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-VennExist.html#sec-VennExist-3" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Venn’s Construction</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-VennExist.html#sec-VennExist-4" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Edwards’ Construction</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-VennExist.html#sec-VennExist-5" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Venn Diagrams and Knots</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-VennExist.html#sec-VennExist-3" class="internal"><span class="codenumber">2.2.1</span> <span class="title">How to draw a 2 or 3 circle Venn diagram</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-VennExist.html#sec-VennExist-5" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Venn’s Construction</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-VennExist.html#subsec-EdwardsConstruction" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Edwards’ "Cogwheels" Construction</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-VennExist.html#sec-VennExist-7" class="internal"><span class="codenumber">2.2.4</span> <span class="title">Venn Diagrams and Knots</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Borromean.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Borromean Rings</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-VennWhatIs-7.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Extra Diagrams</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-VennWhatIs-6.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Extra Diagrams</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -151,7 +158,10 @@ window.MathJax = {
 <div class="toc-title-box"><a href="ch-VennGraphs-3.html" class="internal"><span class="codenumber">3.1</span> <span class="title">The Planar Dual of a Venn Diagram</span></a></div>
 <ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennGraphs-3.html#subsec-Duals" class="internal"><span class="codenumber">3.1.1</span> <span class="title">The Venn Duals of Venn’s Construction</span></a></div></li></ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-VennGraphs-4.html" class="internal"><span class="codenumber">3.2</span> <span class="title">When are two Venn diagrams different?</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch-VennGraphs-4.html" class="internal"><span class="codenumber">3.2</span> <span class="title">When are two Venn diagrams different?</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennGraphs-4.html#ch-VennGraphs-4-12" class="internal"><span class="codenumber">3.2.1</span> <span class="title">An extended example of vertex splitting.</span></a></div></li></ul>
+</li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="ch-VennGraphs-5.html" class="internal"><span class="codenumber">3.3</span> <span class="title">How many are there?</span></a></div>
 <ul class="structural toc-item-list">
@@ -176,7 +186,7 @@ window.MathJax = {
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="ch-VennGraphs-9.html" class="internal"><span class="codenumber">3.7</span> <span class="title">Extra Diagrams</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennGraphs-9.html#ch-VennGraphs-9-3" class="internal"><span class="codenumber">3.7.1</span> <span class="title">The six Venn classes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennGraphs-9.html#subsec-3VennClasses" class="internal"><span class="codenumber">3.7.1</span> <span class="title">The six Venn classes</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennGraphs-9.html#ch-VennGraphs-9-4" class="internal"><span class="codenumber">3.7.2</span> <span class="title">The radual graph construction</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennGraphs-9.html#ch-VennGraphs-9-5" class="internal"><span class="codenumber">3.7.3</span> <span class="title">Minimum Venn diagram for <span class="process-math">\(n = 5\)</span> curves</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennGraphs-9.html#ch-VennGraphs-9-6" class="internal"><span class="codenumber">3.7.4</span> <span class="title">Minimum Venn diagram for <span class="process-math">\(n = 7\)</span> curves</span></a></div></li>
@@ -187,7 +197,10 @@ window.MathJax = {
 <li class="toc-item toc-chapter contains-active">
 <div class="toc-title-box"><a href="ch-VennSymmetric.html" class="internal"><span class="codenumber">4</span> <span class="title">Symmetric Venn Diagrams</span></a></div>
 <ul class="structural toc-item-list contains-active">
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-VennSymmetric-3.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Rotational Symmetry</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch-VennSymmetric-3.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Rotational Symmetry</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennSymmetric-3.html#ch-VennSymmetric-3-9" class="internal"><span class="codenumber">4.1.1</span> <span class="title"></span></a></div></li></ul>
+</li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="ch-VennSymmetric-4.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Symmetric Diagrams for <span class="process-math">\(n = 2,3,5\)</span></span></a></div>
 <ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennSymmetric-4.html#ch-VennSymmetric-4-3" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Symmetric diagrams with <span class="process-math">\(n = 5\)</span> curves</span></a></div></li></ul>
@@ -198,11 +211,10 @@ window.MathJax = {
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennSymmetric-5.html#ch-VennSymmetric-5-3" class="internal"><span class="codenumber">4.3.1</span> <span class="title">The Grünbaum encoding</span></a></div></li>
 <li class="toc-item toc-subsection">
 <div class="toc-title-box"><a href="ch-VennSymmetric-5.html#ch-VennSymmetric-5-4" class="internal"><span class="codenumber">4.3.2</span> <span class="title">Simple Symmetric 7-Venn Diagrams</span></a></div>
-<ul class="structural toc-item-list">
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="ch-VennSymmetric-5.html#ch-VennSymmetric-5-4-2" class="internal"><span class="codenumber">4.3.2.1</span> <span class="title">Simple monotone polar symmetric 7-Venn diagrams</span></a></div></li>
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="ch-VennSymmetric-5.html#ch-VennSymmetric-5-4-4" class="internal"><span class="codenumber">4.3.2.2</span> <span class="title">Non-simple symmetric 7-Venn diagrams</span></a></div></li>
-</ul>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="ch-VennSymmetric-5.html#ch-VennSymmetric-5-4-2" class="internal"><span class="codenumber">4.3.2.1</span> <span class="title">Simple monotone polar symmetric 7-Venn diagrams</span></a></div></li></ul>
 </li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennSymmetric-5.html#sec-nonmono7" class="internal"><span class="codenumber">4.3.3</span> <span class="title">Non-monotone simple symmetric 7-Venn diagrams</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennSymmetric-5.html#ch-VennSymmetric-5-6" class="internal"><span class="codenumber">4.3.4</span> <span class="title">Non-simple symmetric 7-Venn diagrams</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -215,17 +227,18 @@ window.MathJax = {
 </ul>
 </li>
 <li class="toc-item toc-section">
-<div class="toc-title-box"><a href="ch-VennSymmetric-7.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Symmetric Diagrams for all <span class="process-math">\(n\)</span></span></a></div>
+<div class="toc-title-box"><a href="sec-SymmGeneral.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Symmetric Diagrams for all <span class="process-math">\(n\)</span></span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennSymmetric-7.html#sec-necklace" class="internal"><span class="codenumber">4.5.1</span> <span class="title">Symmetric Diagrams, Necklaces, and Chains</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennSymmetric-7.html#ch-VennSymmetric-7-4" class="internal"><span class="codenumber">4.5.2</span> <span class="title">The GKS Construction</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SymmGeneral.html#sec-necklace" class="internal"><span class="codenumber">4.5.1</span> <span class="title">Symmetric Diagrams, Necklaces, and Chains</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SymmGeneral.html#sec-SymmGeneral-4" class="internal"><span class="codenumber">4.5.2</span> <span class="title">The GKS Construction</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-SymmVariant.html" class="internal"><span class="codenumber">4.6</span> <span class="title">Variants on Symmetry</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SymmVariant.html#subsec-Gray" class="internal"><span class="codenumber">4.6.1</span> <span class="title">Venn Diagrams and Gray Codes</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SymmVariant.html#subsec-Spherical" class="internal"><span class="codenumber">4.6.2</span> <span class="title">Spherical Venn Diagrams</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SymmVariant.html#subsec-PseudoSymmetric" class="internal"><span class="codenumber">4.6.1</span> <span class="title">Pseudo-Symmetric Venn Diagrams</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SymmVariant.html#subsec-Gray" class="internal"><span class="codenumber">4.6.2</span> <span class="title">Venn Diagrams and Gray Codes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SymmVariant.html#subsec-Spherical" class="internal"><span class="codenumber">4.6.3</span> <span class="title">Spherical Venn Diagrams</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -272,7 +285,7 @@ window.MathJax = {
 </li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Extensions-4.html" class="internal"><span class="codenumber">6.2</span> <span class="title"><span class="process-math">\(d\)</span>-dimensional Venn Diagrams</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-inf.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Infinitely intersecting Venn diagrams</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Extensions-6.html" class="internal"><span class="codenumber">6.4</span> <span class="title">Generalizations of Symmetric diagrams</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-GenSymm.html" class="internal"><span class="codenumber">6.4</span> <span class="title">Generalizations of Symmetric diagrams</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Euler.html" class="internal"><span class="codenumber">6.5</span> <span class="title">Euler Diagrams</span></a></div></li>
 </ul>
 </li>
@@ -280,8 +293,14 @@ window.MathJax = {
 <div class="toc-title-box"><a href="VD_Book-10.html" class="internal"><span class="codenumber">7</span> <span class="title">Open Problems about Venn Diagrams</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="VD_Book-10-2.html" class="internal"><span class="codenumber">7.1</span> <span class="title">Combinatorial and existential problems</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="VD_Book-10-3.html" class="internal"><span class="codenumber">7.2</span> <span class="title">Geometric problems</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="VD_Book-10-4.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Generalizations of Venn diagrams</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="VD_Book-10-3.html" class="internal"><span class="codenumber">7.2</span> <span class="title">Geometric problems</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="VD_Book-10-3.html#VD_Book-10-3-4" class="internal"><span class="codenumber">7.2.1</span> <span class="title">polyVenn diagrams</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="VD_Book-10-4.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Generalizations of Venn diagrams</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="VD_Book-10-4.html#VD_Book-10-4-2" class="internal"><span class="codenumber">7.3.1</span> <span class="title">Euler Diagrams</span></a></div></li></ul>
+</li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -305,7 +324,7 @@ window.MathJax = {
 </h2>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
 <div class="sbspanel top" style="width:31.5789473684211%;"><img src="external/gifs/VicRed10quarter.gif" class="contained"></div>
-<div class="sbspanel top" style="width:63.1578947368421%;"><div class="para" id="ch-VennSymmetric-5-2-2">Referring to the case <span class="process-math">\(n=7\text{,}\)</span> Grünbaum <a href="ch-VennRefs-3.html#ref-Gr75" class="xref" data-knowl="./knowl/xref/ref-Gr75.html" data-reveal-label="Reveal" data-close-label="Close" title="Paragraph">[Gr75,p.19] </a> wrote: "at present it seems likely that no such diagram exists." However, Grünbaum himself later found examples of such diagrams <a href="ch-VennRefs-3.html#ref-Gr92b" class="xref" data-knowl="./knowl/xref/ref-Gr92b.html" data-reveal-label="Reveal" data-close-label="Close" title="Paragraph">[Gr92b] </a> and in 1992 additional examples were also discovered by Anthony Edwards and independently by Carla Savage and Peter Winkler. One of Grünbaum’s examples is a remarkable non-monotone simple symmetric Venn diagram (see <a href="ch-VennSymmetric-9.html#img-GrunSymm7" class="xref" data-knowl="./knowl/xref/img-GrunSymm7.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 4.7.8">Figure 4.7.8</a> and <a href="ch-VennSymmetric-9.html#img-GrunSymm7color" class="xref" data-knowl="./knowl/xref/img-GrunSymm7color.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 4.7.9">Figure 4.7.9</a>).  Below we summarize what is know about symmetric 7-Venn diagrams.</div></div>
+<div class="sbspanel top" style="width:63.1578947368421%;"><div class="para" id="ch-VennSymmetric-5-2-2">Referring to the case <span class="process-math">\(n=7\text{,}\)</span> Grünbaum <a href="ch-VennRefs-3.html#ref-Gr75" class="xref" data-knowl="./knowl/xref/ref-Gr75.html" data-reveal-label="Reveal" data-close-label="Close" title="Paragraph">[Gr75,p.19] </a> wrote: "at present it seems likely that no such diagram exists." However, Grünbaum himself later found examples of such diagrams <a href="ch-VennRefs-3.html#ref-Gr92b" class="xref" data-knowl="./knowl/xref/ref-Gr92b.html" data-reveal-label="Reveal" data-close-label="Close" title="Paragraph">[Gr92b] </a> and in 1992 additional examples were also discovered by Anthony Edwards and independently by Carla Savage and Peter Winkler. In this section we summarize what is know about symmetric 7-Venn diagrams. They can be classified in various ways depending on whether they are monotone or non-monotone, and simple or non-simple, and we will have a sub-section on each of those 4 possibilities.</div></div>
 </div></div>
 <section class="subsection" id="ch-VennSymmetric-5-3"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">4.3.1</span><span class="space"> </span><span class="title">The Grünbaum encoding</span>
@@ -447,15 +466,27 @@ window.MathJax = {
 <td class="l m b0 r0 l0 t0 lines"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/pdfs/SSM_7Venn_18.svg" class="contained"></div></td>
 <td class="l m b0 r0 l0 t0 lines"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/pdfs/SSM_7Venn_20.svg" class="contained"></div></td>
 </tr></table></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.3.2<span class="period">.</span></span><span class="space"> </span>The non-polar symmetric simple 7-Venn diagrams</figcaption></figure></div>
-<section class="subsubsection" id="ch-VennSymmetric-5-4-4"><h4 class="heading hide-type">
-<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber">4.3.2.2</span><span class="space"> </span><span class="title">Non-simple symmetric 7-Venn diagrams</span>
-</h4>
-<div class="para" id="ch-VennSymmetric-5-4-4-2">From computer searches it is apparent that there are many more non-simple diagrams than there are simple diagrams. Using the above techniques, in <a href="ch-VennRefs-3.html#ref-Wes" class="xref" data-knowl="./knowl/xref/ref-Wes.html" data-reveal-label="Reveal" data-close-label="Close" title="Paragraph">[Wes] </a> the authors generated hundreds of thousands of distinct non-simple monotone symmetric 7-Venn diagrams, including 1576 rigid diagrams (both polar symmetric and not). An example is shown in <a href="ch-VennSymmetric-5.html#img-7-VD-polar-rigid" class="xref" data-knowl="./knowl/xref/img-7-VD-polar-rigid.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 4.3.3">Figure 4.3.3</a>.</div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.3.2<span class="period">.</span></span><span class="space"> </span>The non-polar symmetric simple 7-Venn diagrams</figcaption></figure></div></section><section class="subsection" id="sec-nonmono7"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">4.3.3</span><span class="space"> </span><span class="title">Non-monotone simple symmetric 7-Venn diagrams</span>
+</h3>
+<div class="para" id="sec-nonmono7-2">Branko Grünbaum was the first to discover a non-monotone symmetric 7-Venn diagram. The exact number of symmetric 7-Venn diagrams is not known, but there is strong evidence to suggest that there are 33 of them. The reason for this belief is that Stirling Chow conducted a "hill-climbing" algorithm with randomized choices; this algorithm was run thousands of times without ever discovering more than the 33 that it found in initial runs.</div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;">
+<div class="sbspanel top" style="width:44.4444444444444%;"><figure class="figure figure-like" id="sec-nonmono7-3-1"><img src="external/gifs/GrunSymm7.gif" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.3.3<span class="period">.</span></span><span class="space"> </span>Grünbaum’s non-monotone simple symmetric 7-Venn diagram.</figcaption></figure></div>
+<div class="sbspanel top" style="width:44.4444444444444%;"><figure class="figure figure-like" id="sec-nonmono7-3-2"><img src="external/gifs/GrunSymm7color.gif" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.3.4<span class="period">.</span></span><span class="space"> </span>Grünbaum’s non-monotone simple symmetric 7-Venn diagram.  Regions colored according to cardinality.</figcaption></figure></div>
+</div></div>
+<div class="para" id="sec-nonmono7-4">Computer searches by Stiring Chow have uncovered many other non-monotone simple symmetric 7-Venn diagrams. One of them is illustrated in the figures below.</div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;">
+<div class="sbspanel top" style="width:44.4444444444444%;"><figure class="figure figure-like" id="sec-nonmono7-5-1"><img src="external/pdfs/7venn-nonmono_color.svg" role="img" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.3.5<span class="period">.</span></span><span class="space"> </span>A simple symmetric non-monotone 7-Venn diagram.  Each curve has a different color.</figcaption></figure></div>
+<div class="sbspanel top" style="width:44.4444444444444%;"><figure class="figure figure-like" id="sec-nonmono7-5-2"><img src="external/pdfs/7venn-nonmono_rainbow.svg" role="img" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.3.6<span class="period">.</span></span><span class="space"> </span>A simple symmetric non-monotone 7-Venn diagram.  Regions colored according to cardinality.</figcaption></figure></div>
+</div></div>
+<div class="para" id="sec-nonmono7-6"></div></section><section class="subsection" id="ch-VennSymmetric-5-6"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">4.3.4</span><span class="space"> </span><span class="title">Non-simple symmetric 7-Venn diagrams</span>
+</h3>
+<div class="para" id="ch-VennSymmetric-5-6-2">From computer searches it is apparent that there are many more non-simple diagrams than there are simple diagrams. Using the above techniques, in <code class="code-inline tex2jax_ignore">[cross-reference to target(s) "ref-Wes03" missing or not unique]</code> the authors generated hundreds of thousands of distinct non-simple monotone symmetric 7-Venn diagrams, including 1576 rigid diagrams (both polar symmetric and not). An example is shown in <a href="ch-VennSymmetric-5.html#img-7-VD-polar-rigid" class="xref" data-knowl="./knowl/xref/img-7-VD-polar-rigid.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 4.3.7">Figure 4.3.7</a>.</div>
 <figure class="figure figure-like" id="img-7-VD-polar-rigid"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/pngs/7-VD-polar-rigid.png" class="contained"></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.3.3<span class="period">.</span></span><span class="space"> </span>A polar symmetric rigid monotone symmetric 7-Venn diagram from <a href="ch-VennRefs-3.html#ref-Wes" class="xref" data-knowl="./knowl/xref/ref-Wes.html" data-reveal-label="Reveal" data-close-label="Close" title="Paragraph">[Wes] </a>. This diagram has the minimum number of vertices for a monotone diagram.</figcaption></figure><div class="para" id="ch-VennSymmetric-5-4-4-4">For <span class="process-math">\(n=7\text{,}\)</span> the value of <span class="process-math">\(\lceil (2^n-2)/(n-1) \rceil\)</span> is 21, which is is divisible by 7. It is thus possible that there is a minimum vertex symmetric Venn diagram in which every curve passes through every vertex. In fact, we have discovered 60 such diagrams, but all discovered so far are non-rigid. Illustrations of two of them are found in <a href="ch-VennGraphs-9.html#img-min7a" class="xref" data-knowl="./knowl/xref/img-min7a.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 3.7.14">Figure 3.7.14</a>, <a href="ch-VennGraphs-9.html#img-min7aC" class="xref" data-knowl="./knowl/xref/img-min7aC.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 3.7.15">Figure 3.7.15</a>, <a href="ch-VennGraphs-9.html#img-min7b" class="xref" data-knowl="./knowl/xref/img-min7b.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 3.7.16">Figure 3.7.16</a>, and <a href="ch-VennGraphs-9.html#img-min7bC" class="xref" data-knowl="./knowl/xref/img-min7bC.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 3.7.17">Figure 3.7.17</a>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.3.7<span class="period">.</span></span><span class="space"> </span>A polar symmetric rigid monotone symmetric 7-Venn diagram from <code class="code-inline tex2jax_ignore">[cross-reference to target(s) "ref-Wes03" missing or not unique]</code>. This diagram has the minimum number of vertices for a monotone diagram.</figcaption></figure><div class="para" id="ch-VennSymmetric-5-6-4">For <span class="process-math">\(n=7\text{,}\)</span> the value of <span class="process-math">\(\lceil (2^n-2)/(n-1) \rceil\)</span> is 21, which is is divisible by 7. It is thus possible that there is a minimum vertex symmetric Venn diagram in which every curve passes through every vertex. In fact, we have discovered 60 such diagrams, but all discovered so far are non-rigid. Illustrations of two of them are found in <a href="ch-VennGraphs-9.html#img-min7a" class="xref" data-knowl="./knowl/xref/img-min7a.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 3.7.14">Figure 3.7.14</a>, <a href="ch-VennGraphs-9.html#img-min7aC" class="xref" data-knowl="./knowl/xref/img-min7aC.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 3.7.15">Figure 3.7.15</a>, <a href="ch-VennGraphs-9.html#img-min7b" class="xref" data-knowl="./knowl/xref/img-min7b.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 3.7.16">Figure 3.7.16</a>, and <a href="ch-VennGraphs-9.html#img-min7bC" class="xref" data-knowl="./knowl/xref/img-min7bC.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 3.7.17">Figure 3.7.17</a>
 </div>
-<div class="para" id="ch-VennSymmetric-5-4-4-5">Hamburger and Pippert, in <a href="ch-VennRefs-3.html#ref-HP03" class="xref" data-knowl="./knowl/xref/ref-HP03.html" data-reveal-label="Reveal" data-close-label="Close" title="Paragraph">[HP03] </a>, using different methods than those above, also constructed a minimum-vertex non-monotone symmetric 7-Venn diagram with several nice features.  Their diagram is not rigid either.</div></section></section></section></div>
+<div class="para" id="ch-VennSymmetric-5-6-5">Hamburger and Pippert, in <a href="ch-VennRefs-3.html#ref-HP03" class="xref" data-knowl="./knowl/xref/ref-HP03.html" data-reveal-label="Reveal" data-close-label="Close" title="Paragraph">[HP03] </a>, using different methods than those above, also constructed a minimum-vertex non-monotone symmetric 7-Venn diagram with several nice features.  Their diagram is not rigid either.</div></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="ch-VennSymmetric-4.html" title="Previous"><span xmlns:pf="https://prefigure.org" class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span xmlns:pf="https://prefigure.org" class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ch-VennSymmetric-6.html" title="Next"><span class="name">Next</span><span xmlns:pf="https://prefigure.org" class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

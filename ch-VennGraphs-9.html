@@ -89,6 +89,12 @@ window.MathJax = {
 <link href="_static/pretext/css/colors_default.css" rel="stylesheet" type="text/css">
 <link href="_static/pretext/css/setcolors.css" rel="stylesheet" type="text/css">
 <style>
+#VD_Book-10-3-4-3 { counter-set: VD_Book-10-3-4-3 0; }
+#VD_Book-10-3-4-3 > li::marker { content: ""counter(VD_Book-10-3-4-3,decimal)"."; }
+#VD_Book-10-3-4-3 > li { counter-increment: VD_Book-10-3-4-3; }
+#VD_Book-10-4-2-5 { counter-set: VD_Book-10-4-2-5 0; }
+#VD_Book-10-4-2-5 > li::marker { content: ""counter(VD_Book-10-4-2-5,decimal)"."; }
+#VD_Book-10-4-2-5 > li { counter-increment: VD_Book-10-4-2-5; }
 </style>
 </head>
 <body id="changeme" class="pretext book ignore-math">
@@ -135,13 +141,14 @@ window.MathJax = {
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-VennExist.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Constructions of Venn Diagrams</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-VennExist.html#sec-VennExist-3" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Venn’s Construction</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-VennExist.html#sec-VennExist-4" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Edwards’ Construction</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-VennExist.html#sec-VennExist-5" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Venn Diagrams and Knots</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-VennExist.html#sec-VennExist-3" class="internal"><span class="codenumber">2.2.1</span> <span class="title">How to draw a 2 or 3 circle Venn diagram</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-VennExist.html#sec-VennExist-5" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Venn’s Construction</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-VennExist.html#subsec-EdwardsConstruction" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Edwards’ "Cogwheels" Construction</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-VennExist.html#sec-VennExist-7" class="internal"><span class="codenumber">2.2.4</span> <span class="title">Venn Diagrams and Knots</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Borromean.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Borromean Rings</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-VennWhatIs-7.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Extra Diagrams</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-VennWhatIs-6.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Extra Diagrams</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter contains-active">
@@ -151,7 +158,10 @@ window.MathJax = {
 <div class="toc-title-box"><a href="ch-VennGraphs-3.html" class="internal"><span class="codenumber">3.1</span> <span class="title">The Planar Dual of a Venn Diagram</span></a></div>
 <ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennGraphs-3.html#subsec-Duals" class="internal"><span class="codenumber">3.1.1</span> <span class="title">The Venn Duals of Venn’s Construction</span></a></div></li></ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-VennGraphs-4.html" class="internal"><span class="codenumber">3.2</span> <span class="title">When are two Venn diagrams different?</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch-VennGraphs-4.html" class="internal"><span class="codenumber">3.2</span> <span class="title">When are two Venn diagrams different?</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennGraphs-4.html#ch-VennGraphs-4-12" class="internal"><span class="codenumber">3.2.1</span> <span class="title">An extended example of vertex splitting.</span></a></div></li></ul>
+</li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="ch-VennGraphs-5.html" class="internal"><span class="codenumber">3.3</span> <span class="title">How many are there?</span></a></div>
 <ul class="structural toc-item-list">
@@ -176,7 +186,7 @@ window.MathJax = {
 <li class="toc-item toc-section active">
 <div class="toc-title-box"><a href="ch-VennGraphs-9.html" class="internal"><span class="codenumber">3.7</span> <span class="title">Extra Diagrams</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennGraphs-9.html#ch-VennGraphs-9-3" class="internal"><span class="codenumber">3.7.1</span> <span class="title">The six Venn classes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennGraphs-9.html#subsec-3VennClasses" class="internal"><span class="codenumber">3.7.1</span> <span class="title">The six Venn classes</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennGraphs-9.html#ch-VennGraphs-9-4" class="internal"><span class="codenumber">3.7.2</span> <span class="title">The radual graph construction</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennGraphs-9.html#ch-VennGraphs-9-5" class="internal"><span class="codenumber">3.7.3</span> <span class="title">Minimum Venn diagram for <span class="process-math">\(n = 5\)</span> curves</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennGraphs-9.html#ch-VennGraphs-9-6" class="internal"><span class="codenumber">3.7.4</span> <span class="title">Minimum Venn diagram for <span class="process-math">\(n = 7\)</span> curves</span></a></div></li>
@@ -187,7 +197,10 @@ window.MathJax = {
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="ch-VennSymmetric.html" class="internal"><span class="codenumber">4</span> <span class="title">Symmetric Venn Diagrams</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-VennSymmetric-3.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Rotational Symmetry</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch-VennSymmetric-3.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Rotational Symmetry</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennSymmetric-3.html#ch-VennSymmetric-3-9" class="internal"><span class="codenumber">4.1.1</span> <span class="title"></span></a></div></li></ul>
+</li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="ch-VennSymmetric-4.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Symmetric Diagrams for <span class="process-math">\(n = 2,3,5\)</span></span></a></div>
 <ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennSymmetric-4.html#ch-VennSymmetric-4-3" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Symmetric diagrams with <span class="process-math">\(n = 5\)</span> curves</span></a></div></li></ul>
@@ -198,11 +211,10 @@ window.MathJax = {
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennSymmetric-5.html#ch-VennSymmetric-5-3" class="internal"><span class="codenumber">4.3.1</span> <span class="title">The Grünbaum encoding</span></a></div></li>
 <li class="toc-item toc-subsection">
 <div class="toc-title-box"><a href="ch-VennSymmetric-5.html#ch-VennSymmetric-5-4" class="internal"><span class="codenumber">4.3.2</span> <span class="title">Simple Symmetric 7-Venn Diagrams</span></a></div>
-<ul class="structural toc-item-list">
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="ch-VennSymmetric-5.html#ch-VennSymmetric-5-4-2" class="internal"><span class="codenumber">4.3.2.1</span> <span class="title">Simple monotone polar symmetric 7-Venn diagrams</span></a></div></li>
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="ch-VennSymmetric-5.html#ch-VennSymmetric-5-4-4" class="internal"><span class="codenumber">4.3.2.2</span> <span class="title">Non-simple symmetric 7-Venn diagrams</span></a></div></li>
-</ul>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="ch-VennSymmetric-5.html#ch-VennSymmetric-5-4-2" class="internal"><span class="codenumber">4.3.2.1</span> <span class="title">Simple monotone polar symmetric 7-Venn diagrams</span></a></div></li></ul>
 </li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennSymmetric-5.html#sec-nonmono7" class="internal"><span class="codenumber">4.3.3</span> <span class="title">Non-monotone simple symmetric 7-Venn diagrams</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennSymmetric-5.html#ch-VennSymmetric-5-6" class="internal"><span class="codenumber">4.3.4</span> <span class="title">Non-simple symmetric 7-Venn diagrams</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -215,17 +227,18 @@ window.MathJax = {
 </ul>
 </li>
 <li class="toc-item toc-section">
-<div class="toc-title-box"><a href="ch-VennSymmetric-7.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Symmetric Diagrams for all <span class="process-math">\(n\)</span></span></a></div>
+<div class="toc-title-box"><a href="sec-SymmGeneral.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Symmetric Diagrams for all <span class="process-math">\(n\)</span></span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennSymmetric-7.html#sec-necklace" class="internal"><span class="codenumber">4.5.1</span> <span class="title">Symmetric Diagrams, Necklaces, and Chains</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennSymmetric-7.html#ch-VennSymmetric-7-4" class="internal"><span class="codenumber">4.5.2</span> <span class="title">The GKS Construction</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SymmGeneral.html#sec-necklace" class="internal"><span class="codenumber">4.5.1</span> <span class="title">Symmetric Diagrams, Necklaces, and Chains</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SymmGeneral.html#sec-SymmGeneral-4" class="internal"><span class="codenumber">4.5.2</span> <span class="title">The GKS Construction</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-SymmVariant.html" class="internal"><span class="codenumber">4.6</span> <span class="title">Variants on Symmetry</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SymmVariant.html#subsec-Gray" class="internal"><span class="codenumber">4.6.1</span> <span class="title">Venn Diagrams and Gray Codes</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SymmVariant.html#subsec-Spherical" class="internal"><span class="codenumber">4.6.2</span> <span class="title">Spherical Venn Diagrams</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SymmVariant.html#subsec-PseudoSymmetric" class="internal"><span class="codenumber">4.6.1</span> <span class="title">Pseudo-Symmetric Venn Diagrams</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SymmVariant.html#subsec-Gray" class="internal"><span class="codenumber">4.6.2</span> <span class="title">Venn Diagrams and Gray Codes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SymmVariant.html#subsec-Spherical" class="internal"><span class="codenumber">4.6.3</span> <span class="title">Spherical Venn Diagrams</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -272,7 +285,7 @@ window.MathJax = {
 </li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Extensions-4.html" class="internal"><span class="codenumber">6.2</span> <span class="title"><span class="process-math">\(d\)</span>-dimensional Venn Diagrams</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-inf.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Infinitely intersecting Venn diagrams</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Extensions-6.html" class="internal"><span class="codenumber">6.4</span> <span class="title">Generalizations of Symmetric diagrams</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-GenSymm.html" class="internal"><span class="codenumber">6.4</span> <span class="title">Generalizations of Symmetric diagrams</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Euler.html" class="internal"><span class="codenumber">6.5</span> <span class="title">Euler Diagrams</span></a></div></li>
 </ul>
 </li>
@@ -280,8 +293,14 @@ window.MathJax = {
 <div class="toc-title-box"><a href="VD_Book-10.html" class="internal"><span class="codenumber">7</span> <span class="title">Open Problems about Venn Diagrams</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="VD_Book-10-2.html" class="internal"><span class="codenumber">7.1</span> <span class="title">Combinatorial and existential problems</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="VD_Book-10-3.html" class="internal"><span class="codenumber">7.2</span> <span class="title">Geometric problems</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="VD_Book-10-4.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Generalizations of Venn diagrams</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="VD_Book-10-3.html" class="internal"><span class="codenumber">7.2</span> <span class="title">Geometric problems</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="VD_Book-10-3.html#VD_Book-10-3-4" class="internal"><span class="codenumber">7.2.1</span> <span class="title">polyVenn diagrams</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="VD_Book-10-4.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Generalizations of Venn diagrams</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="VD_Book-10-4.html#VD_Book-10-4-2" class="internal"><span class="codenumber">7.3.1</span> <span class="title">Euler Diagrams</span></a></div></li></ul>
+</li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -304,49 +323,49 @@ window.MathJax = {
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">3.7</span><span class="space"> </span><span class="title">Extra Diagrams</span>
 </h2>
 <div class="para" id="ch-VennGraphs-9-2">This section is a placeholder for certain ancillary diagrams that are referred to in other sections in this chapter. The online reader is encouraged to simply ignore this section; in printed book form it might be useful.</div>
-<section class="subsection" id="ch-VennGraphs-9-3"><h3 class="heading hide-type">
+<section class="subsection" id="subsec-3VennClasses"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.7.1</span><span class="space"> </span><span class="title">The six Venn classes</span>
 </h3>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;">
-<div class="sbspanel top" style="width:44.4444444444444%;"><figure class="figure figure-like" id="img-Class1"><img src="external/gifs/venn3c-01-02.gif" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.7.1<span class="period">.</span></span><span class="space"> </span>The two 3-Venn diagrams (#3.1,#3.2) in Class 1.</figcaption></figure></div>
-<div class="sbspanel top" style="width:44.4444444444444%;"><figure class="figure figure-like" id="img-CO-Class1"><img src="external/gifs/CO-venn3c-01-02.gif" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.7.2<span class="period">.</span></span><span class="space"> </span>The two 3-Venn diagrams (#3.1,#3.2) in Class 1 with regions coloured.</figcaption></figure></div>
+<div class="sbspanel top" style="width:44.4444444444444%;"><figure class="figure figure-like" id="img-Class1"><img src="external/pdfs/3VennClass1.svg" role="img" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.7.1<span class="period">.</span></span><span class="space"> </span>The two 3-Venn diagrams (#3.1,#3.2) in Class 1.</figcaption></figure></div>
+<div class="sbspanel top" style="width:44.4444444444444%;"><figure class="figure figure-like" id="img-CO-Class1"><img src="external/pdfs/3VennClass1color.svg" role="img" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.7.2<span class="period">.</span></span><span class="space"> </span>The two 3-Venn diagrams (#3.1,#3.2) in Class 1 with regions coloured.</figcaption></figure></div>
 </div></div>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;">
-<div class="sbspanel top" style="width:44.4444444444444%;"><figure class="figure figure-like" id="img-Class2"><img src="external/gifs/venn3c-03-04.gif" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.7.3<span class="period">.</span></span><span class="space"> </span>The two 3-Venn diagrams (#3.3,#3.4) in Class 2.</figcaption></figure></div>
-<div class="sbspanel top" style="width:44.4444444444444%;"><figure class="figure figure-like" id="img-CO-Class2"><img src="external/gifs/CO-venn3c-03-04.gif" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.7.4<span class="period">.</span></span><span class="space"> </span>The two 3-Venn diagrams (#3.3,#3.4) in Class 2 with regions coloured.</figcaption></figure></div>
+<div class="sbspanel top" style="width:44.4444444444444%;"><figure class="figure figure-like" id="img-Class2"><img src="external/pdfs/3VennClass2.svg" role="img" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.7.3<span class="period">.</span></span><span class="space"> </span>The two 3-Venn diagrams (#3.3,#3.4) in Class 2.</figcaption></figure></div>
+<div class="sbspanel top" style="width:44.4444444444444%;"><figure class="figure figure-like" id="img-CO-Class2"><img src="external/pdfs/3VennClass2color.svg" role="img" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.7.4<span class="period">.</span></span><span class="space"> </span>The two 3-Venn diagrams (#3.3,#3.4) in Class 2 with regions coloured.</figcaption></figure></div>
 </div></div>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;">
-<div class="sbspanel top" style="width:44.4444444444444%;"><figure class="figure figure-like" id="img-Class3"><img src="external/gifs/venn3c-05-06.gif" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.7.5<span class="period">.</span></span><span class="space"> </span>The two 3-Venn diagrams (#3.5,#3.6) in Class 3.</figcaption></figure></div>
-<div class="sbspanel top" style="width:44.4444444444444%;"><figure class="figure figure-like" id="img-CO-Class3"><img src="external/gifs/CO-venn3c-05-06.gif" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.7.6<span class="period">.</span></span><span class="space"> </span>The two 3-Venn diagrams (#3.5,#3.6) in Class 3 with regions coloured.</figcaption></figure></div>
+<div class="sbspanel top" style="width:44.4444444444444%;"><figure class="figure figure-like" id="img-Class3"><img src="external/pdfs/3VennClass3.svg" role="img" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.7.5<span class="period">.</span></span><span class="space"> </span>The two 3-Venn diagrams (#3.5,#3.6) in Class 3.</figcaption></figure></div>
+<div class="sbspanel top" style="width:44.4444444444444%;"><figure class="figure figure-like" id="img-CO-Class3"><img src="external/pdfs/3VennClass3color.svg" role="img" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.7.6<span class="period">.</span></span><span class="space"> </span>The two 3-Venn diagrams (#3.5,#3.6) in Class 3 with regions coloured.</figcaption></figure></div>
 </div></div>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;">
-<div class="sbspanel top" style="width:44.4444444444444%;"><figure class="figure figure-like" id="img-Class4"><img src="external/gifs/venn3c-07-08-09-10.gif" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.7.7<span class="period">.</span></span><span class="space"> </span>The four 3-Venn diagrams (#3.7,#3.8,#3.9,#3.10) in Class 4.</figcaption></figure></div>
-<div class="sbspanel top" style="width:44.4444444444444%;"><figure class="figure figure-like" id="img-CO-Class4"><img src="external/gifs/CO-venn3c-07-08-09-10.gif" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.7.8<span class="period">.</span></span><span class="space"> </span>The four 3-Venn diagrams (#3.7,#3.8,#3.9,#3.10) in Class 4 with regions coloured.</figcaption></figure></div>
+<div class="sbspanel top" style="width:44.4444444444444%;"><figure class="figure figure-like" id="img-Class4"><img src="external/pdfs/3VennClass4.svg" role="img" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.7.7<span class="period">.</span></span><span class="space"> </span>The four 3-Venn diagrams (#3.7,#3.8,#3.9,#3.10) in Class 4.</figcaption></figure></div>
+<div class="sbspanel top" style="width:44.4444444444444%;"><figure class="figure figure-like" id="img-CO-Class4"><img src="external/pdfs/3VennClass4color.svg" role="img" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.7.8<span class="period">.</span></span><span class="space"> </span>The four 3-Venn diagrams (#3.7,#3.8,#3.9,#3.10) in Class 4 with regions coloured.</figcaption></figure></div>
 </div></div>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;">
-<div class="sbspanel top" style="width:44.4444444444444%;"><figure class="figure figure-like" id="img-Class5"><img src="external/gifs/venn3c-11-12-13.gif" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.7.9<span class="period">.</span></span><span class="space"> </span>The three 3-Venn diagrams (#3.11,#3.12,#3.13) in Class 5.</figcaption></figure></div>
-<div class="sbspanel top" style="width:44.4444444444444%;"><figure class="figure figure-like" id="img-CO-Class5"><img src="external/gifs/CO-venn3c-11-12-13.gif" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.7.10<span class="period">.</span></span><span class="space"> </span>The three 3-Venn diagrams (#3.11,#3.12,#3.13) in Class 5 with regions coloured.</figcaption></figure></div>
+<div class="sbspanel top" style="width:44.4444444444444%;"><figure class="figure figure-like" id="img-Class5"><img src="external/pdfs/3VennClass5.svg" role="img" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.7.9<span class="period">.</span></span><span class="space"> </span>The three 3-Venn diagrams (#3.11,#3.12,#3.13) in Class 5.</figcaption></figure></div>
+<div class="sbspanel top" style="width:44.4444444444444%;"><figure class="figure figure-like" id="img-CO-Class5"><img src="external/pdfs/3VennClass5color.svg" role="img" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.7.10<span class="period">.</span></span><span class="space"> </span>The three 3-Venn diagrams (#3.11,#3.12,#3.13) in Class 5 with regions coloured.</figcaption></figure></div>
 </div></div>
-<div class="para" id="ch-VennGraphs-9-3-7">There is only one Venn diagram in class 6, the three circle Venn diagram: <a href="sec-defs.html#fig-V3" class="xref" data-knowl="./knowl/xref/fig-V3.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 2.1.2">Figure 2.1.2</a>, with regions coloured, <a href="sec-defs.html#fig-CO-V3" class="xref" data-knowl="./knowl/xref/fig-CO-V3.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 2.1.3">Figure 2.1.3</a>
+<div class="para" id="subsec-3VennClasses-7">There is only one Venn diagram in class 6, the three circle Venn diagram: <a href="sec-defs.html#fig-V3" class="xref" data-knowl="./knowl/xref/fig-V3.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 2.1.2">Figure 2.1.2</a>, with regions coloured, <a href="sec-defs.html#fig-CO-V3" class="xref" data-knowl="./knowl/xref/fig-CO-V3.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 2.1.4">Figure 2.1.4</a>
 </div></section><section class="subsection" id="ch-VennGraphs-9-4"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.7.2</span><span class="space"> </span><span class="title">The radual graph construction</span>
 </h3>
 <figure class="figure figure-like" id="img-radual"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/gifs/radual.gif" class="contained"></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.7.11<span class="period">.</span></span><span class="space"> </span>Illustration of the proof of Theorem <a href="ch-VennGraphs-6.html#thm-extendible" class="xref" data-knowl="./knowl/xref/thm-extendible.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 3.4.5">Theorem 3.4.5</a>.</figcaption></figure></section><section class="subsection" id="ch-VennGraphs-9-5"><h3 class="heading hide-type">
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.7.11<span class="period">.</span></span><span class="space"> </span>Illustration of the proof of Theorem <a href="ch-VennGraphs-6.html#thm-extendible" class="xref" data-knowl="./knowl/xref/thm-extendible.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 3.4.6">Theorem 3.4.6</a>.</figcaption></figure></section><section class="subsection" id="ch-VennGraphs-9-5"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.7.3</span><span class="space"> </span><span class="title">Minimum Venn diagram for <span class="process-math">\(n = 5\)</span> curves</span>
 </h3>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;">
-<div class="sbspanel top" style="width:44.4444444444444%;"><figure class="figure figure-like" id="img-min5"><img src="external/pngs/betteMin5.png" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.7.12<span class="period">.</span></span><span class="space"> </span>A minimum 5-Venn diagram.</figcaption></figure></div>
+<div class="sbspanel top" style="width:44.4444444444444%;"><figure class="figure figure-like" id="img-min5"><img src="external/pdfs/betteMin5.svg" role="img" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.7.12<span class="period">.</span></span><span class="space"> </span>A minimum 5-Venn diagram.</figcaption></figure></div>
 <div class="sbspanel top" style="width:44.4444444444444%;"><figure class="figure figure-like" id="img-min5c"><img src="external/pngs/colorBetteMin5.png" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.7.13<span class="period">.</span></span><span class="space"> </span>A minimum 5-Venn diagram, with regions coloured by size.</figcaption></figure></div>
 </div></div></section><section class="subsection" id="ch-VennGraphs-9-6"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.7.4</span><span class="space"> </span><span class="title">Minimum Venn diagram for <span class="process-math">\(n = 7\)</span> curves</span>
 </h3>[CR98]<div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;">
-<div class="sbspanel top" style="width:44.4444444444444%;"><figure class="figure figure-like" id="img-min7a"><img src="external/gifs/min7single20.gif" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.7.14<span class="period">.</span></span><span class="space"> </span>A minimum 7-Venn diagram.</figcaption></figure></div>
-<div class="sbspanel top" style="width:44.4444444444444%;"><figure class="figure figure-like" id="img-min7aC"><img src="external/gifs/min7color20.gif" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.7.15<span class="period">.</span></span><span class="space"> </span>A minimum 7-Venn diagram, with regions coloured by size.</figcaption></figure></div>
+<div class="sbspanel top" style="width:44.4444444444444%;"><figure class="figure figure-like" id="img-min7a"><img src="external/pdfs/min7single20.svg" role="img" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.7.14<span class="period">.</span></span><span class="space"> </span>A minimum 7-Venn diagram.</figcaption></figure></div>
+<div class="sbspanel top" style="width:44.4444444444444%;"><figure class="figure figure-like" id="img-min7aC"><img src="external/pdfs/min7color20.svg" role="img" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.7.15<span class="period">.</span></span><span class="space"> </span>A minimum 7-Venn diagram, with regions coloured by size.</figcaption></figure></div>
 </div></div>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
-<div class="sbspanel top" style="width:50%;"><figure class="figure figure-like" id="img-min7b"><img src="external/pngs/min7single.png" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.7.16<span class="period">.</span></span><span class="space"> </span>A minimum 7-Venn diagram. One curve is coloured green.</figcaption></figure></div>
-<div class="sbspanel top" style="width:50%;"><figure class="figure figure-like" id="img-min7bC"><img src="external/pngs/min7.png" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.7.17<span class="period">.</span></span><span class="space"> </span>A minimum 7-Venn diagram.</figcaption></figure></div>
+<div class="sbspanel top" style="width:50%;"><figure class="figure figure-like" id="img-min7b"><img src="external/pdfs/min7single.svg" role="img" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.7.16<span class="period">.</span></span><span class="space"> </span>A minimum 7-Venn diagram. One curve is coloured green.</figcaption></figure></div>
+<div class="sbspanel top" style="width:50%;"><figure class="figure figure-like" id="img-min7bC"><img src="external/pdfs/min7.svg" role="img" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.7.17<span class="period">.</span></span><span class="space"> </span>A minimum 7-Venn diagram.</figcaption></figure></div>
 </div></div></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="ch-VennGraphs-8.html" title="Previous"><span xmlns:pf="https://prefigure.org" class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span xmlns:pf="https://prefigure.org" class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ch-VennSymmetric.html" title="Next"><span class="name">Next</span><span xmlns:pf="https://prefigure.org" class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>

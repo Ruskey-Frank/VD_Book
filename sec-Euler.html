@@ -89,6 +89,12 @@ window.MathJax = {
 <link href="_static/pretext/css/colors_default.css" rel="stylesheet" type="text/css">
 <link href="_static/pretext/css/setcolors.css" rel="stylesheet" type="text/css">
 <style>
+#VD_Book-10-3-4-3 { counter-set: VD_Book-10-3-4-3 0; }
+#VD_Book-10-3-4-3 > li::marker { content: ""counter(VD_Book-10-3-4-3,decimal)"."; }
+#VD_Book-10-3-4-3 > li { counter-increment: VD_Book-10-3-4-3; }
+#VD_Book-10-4-2-5 { counter-set: VD_Book-10-4-2-5 0; }
+#VD_Book-10-4-2-5 > li::marker { content: ""counter(VD_Book-10-4-2-5,decimal)"."; }
+#VD_Book-10-4-2-5 > li { counter-increment: VD_Book-10-4-2-5; }
 </style>
 </head>
 <body id="changeme" class="pretext book ignore-math">
@@ -108,7 +114,7 @@ window.MathJax = {
 <ol id="searchresults" class="searchresults"></ol>
 </div>
 </div>
-<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="ch-Extensions-6.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-Extensions.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="VD_Book-10.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div xmlns:pf="https://prefigure.org" id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
+<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec-GenSymm.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-Extensions.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="VD_Book-10.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div xmlns:pf="https://prefigure.org" id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -135,13 +141,14 @@ window.MathJax = {
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-VennExist.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Constructions of Venn Diagrams</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-VennExist.html#sec-VennExist-3" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Venn’s Construction</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-VennExist.html#sec-VennExist-4" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Edwards’ Construction</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-VennExist.html#sec-VennExist-5" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Venn Diagrams and Knots</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-VennExist.html#sec-VennExist-3" class="internal"><span class="codenumber">2.2.1</span> <span class="title">How to draw a 2 or 3 circle Venn diagram</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-VennExist.html#sec-VennExist-5" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Venn’s Construction</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-VennExist.html#subsec-EdwardsConstruction" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Edwards’ "Cogwheels" Construction</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-VennExist.html#sec-VennExist-7" class="internal"><span class="codenumber">2.2.4</span> <span class="title">Venn Diagrams and Knots</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Borromean.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Borromean Rings</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-VennWhatIs-7.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Extra Diagrams</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-VennWhatIs-6.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Extra Diagrams</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -151,7 +158,10 @@ window.MathJax = {
 <div class="toc-title-box"><a href="ch-VennGraphs-3.html" class="internal"><span class="codenumber">3.1</span> <span class="title">The Planar Dual of a Venn Diagram</span></a></div>
 <ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennGraphs-3.html#subsec-Duals" class="internal"><span class="codenumber">3.1.1</span> <span class="title">The Venn Duals of Venn’s Construction</span></a></div></li></ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-VennGraphs-4.html" class="internal"><span class="codenumber">3.2</span> <span class="title">When are two Venn diagrams different?</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch-VennGraphs-4.html" class="internal"><span class="codenumber">3.2</span> <span class="title">When are two Venn diagrams different?</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennGraphs-4.html#ch-VennGraphs-4-12" class="internal"><span class="codenumber">3.2.1</span> <span class="title">An extended example of vertex splitting.</span></a></div></li></ul>
+</li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="ch-VennGraphs-5.html" class="internal"><span class="codenumber">3.3</span> <span class="title">How many are there?</span></a></div>
 <ul class="structural toc-item-list">
@@ -176,7 +186,7 @@ window.MathJax = {
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="ch-VennGraphs-9.html" class="internal"><span class="codenumber">3.7</span> <span class="title">Extra Diagrams</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennGraphs-9.html#ch-VennGraphs-9-3" class="internal"><span class="codenumber">3.7.1</span> <span class="title">The six Venn classes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennGraphs-9.html#subsec-3VennClasses" class="internal"><span class="codenumber">3.7.1</span> <span class="title">The six Venn classes</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennGraphs-9.html#ch-VennGraphs-9-4" class="internal"><span class="codenumber">3.7.2</span> <span class="title">The radual graph construction</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennGraphs-9.html#ch-VennGraphs-9-5" class="internal"><span class="codenumber">3.7.3</span> <span class="title">Minimum Venn diagram for <span class="process-math">\(n = 5\)</span> curves</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennGraphs-9.html#ch-VennGraphs-9-6" class="internal"><span class="codenumber">3.7.4</span> <span class="title">Minimum Venn diagram for <span class="process-math">\(n = 7\)</span> curves</span></a></div></li>
@@ -187,7 +197,10 @@ window.MathJax = {
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="ch-VennSymmetric.html" class="internal"><span class="codenumber">4</span> <span class="title">Symmetric Venn Diagrams</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-VennSymmetric-3.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Rotational Symmetry</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch-VennSymmetric-3.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Rotational Symmetry</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennSymmetric-3.html#ch-VennSymmetric-3-9" class="internal"><span class="codenumber">4.1.1</span> <span class="title"></span></a></div></li></ul>
+</li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="ch-VennSymmetric-4.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Symmetric Diagrams for <span class="process-math">\(n = 2,3,5\)</span></span></a></div>
 <ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennSymmetric-4.html#ch-VennSymmetric-4-3" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Symmetric diagrams with <span class="process-math">\(n = 5\)</span> curves</span></a></div></li></ul>
@@ -198,11 +211,10 @@ window.MathJax = {
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennSymmetric-5.html#ch-VennSymmetric-5-3" class="internal"><span class="codenumber">4.3.1</span> <span class="title">The Grünbaum encoding</span></a></div></li>
 <li class="toc-item toc-subsection">
 <div class="toc-title-box"><a href="ch-VennSymmetric-5.html#ch-VennSymmetric-5-4" class="internal"><span class="codenumber">4.3.2</span> <span class="title">Simple Symmetric 7-Venn Diagrams</span></a></div>
-<ul class="structural toc-item-list">
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="ch-VennSymmetric-5.html#ch-VennSymmetric-5-4-2" class="internal"><span class="codenumber">4.3.2.1</span> <span class="title">Simple monotone polar symmetric 7-Venn diagrams</span></a></div></li>
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="ch-VennSymmetric-5.html#ch-VennSymmetric-5-4-4" class="internal"><span class="codenumber">4.3.2.2</span> <span class="title">Non-simple symmetric 7-Venn diagrams</span></a></div></li>
-</ul>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="ch-VennSymmetric-5.html#ch-VennSymmetric-5-4-2" class="internal"><span class="codenumber">4.3.2.1</span> <span class="title">Simple monotone polar symmetric 7-Venn diagrams</span></a></div></li></ul>
 </li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennSymmetric-5.html#sec-nonmono7" class="internal"><span class="codenumber">4.3.3</span> <span class="title">Non-monotone simple symmetric 7-Venn diagrams</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennSymmetric-5.html#ch-VennSymmetric-5-6" class="internal"><span class="codenumber">4.3.4</span> <span class="title">Non-simple symmetric 7-Venn diagrams</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -215,17 +227,18 @@ window.MathJax = {
 </ul>
 </li>
 <li class="toc-item toc-section">
-<div class="toc-title-box"><a href="ch-VennSymmetric-7.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Symmetric Diagrams for all <span class="process-math">\(n\)</span></span></a></div>
+<div class="toc-title-box"><a href="sec-SymmGeneral.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Symmetric Diagrams for all <span class="process-math">\(n\)</span></span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennSymmetric-7.html#sec-necklace" class="internal"><span class="codenumber">4.5.1</span> <span class="title">Symmetric Diagrams, Necklaces, and Chains</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-VennSymmetric-7.html#ch-VennSymmetric-7-4" class="internal"><span class="codenumber">4.5.2</span> <span class="title">The GKS Construction</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SymmGeneral.html#sec-necklace" class="internal"><span class="codenumber">4.5.1</span> <span class="title">Symmetric Diagrams, Necklaces, and Chains</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SymmGeneral.html#sec-SymmGeneral-4" class="internal"><span class="codenumber">4.5.2</span> <span class="title">The GKS Construction</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-SymmVariant.html" class="internal"><span class="codenumber">4.6</span> <span class="title">Variants on Symmetry</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SymmVariant.html#subsec-Gray" class="internal"><span class="codenumber">4.6.1</span> <span class="title">Venn Diagrams and Gray Codes</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SymmVariant.html#subsec-Spherical" class="internal"><span class="codenumber">4.6.2</span> <span class="title">Spherical Venn Diagrams</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SymmVariant.html#subsec-PseudoSymmetric" class="internal"><span class="codenumber">4.6.1</span> <span class="title">Pseudo-Symmetric Venn Diagrams</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SymmVariant.html#subsec-Gray" class="internal"><span class="codenumber">4.6.2</span> <span class="title">Venn Diagrams and Gray Codes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-SymmVariant.html#subsec-Spherical" class="internal"><span class="codenumber">4.6.3</span> <span class="title">Spherical Venn Diagrams</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -272,7 +285,7 @@ window.MathJax = {
 </li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Extensions-4.html" class="internal"><span class="codenumber">6.2</span> <span class="title"><span class="process-math">\(d\)</span>-dimensional Venn Diagrams</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-inf.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Infinitely intersecting Venn diagrams</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Extensions-6.html" class="internal"><span class="codenumber">6.4</span> <span class="title">Generalizations of Symmetric diagrams</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-GenSymm.html" class="internal"><span class="codenumber">6.4</span> <span class="title">Generalizations of Symmetric diagrams</span></a></div></li>
 <li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-Euler.html" class="internal"><span class="codenumber">6.5</span> <span class="title">Euler Diagrams</span></a></div></li>
 </ul>
 </li>
@@ -280,8 +293,14 @@ window.MathJax = {
 <div class="toc-title-box"><a href="VD_Book-10.html" class="internal"><span class="codenumber">7</span> <span class="title">Open Problems about Venn Diagrams</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="VD_Book-10-2.html" class="internal"><span class="codenumber">7.1</span> <span class="title">Combinatorial and existential problems</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="VD_Book-10-3.html" class="internal"><span class="codenumber">7.2</span> <span class="title">Geometric problems</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="VD_Book-10-4.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Generalizations of Venn diagrams</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="VD_Book-10-3.html" class="internal"><span class="codenumber">7.2</span> <span class="title">Geometric problems</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="VD_Book-10-3.html#VD_Book-10-3-4" class="internal"><span class="codenumber">7.2.1</span> <span class="title">polyVenn diagrams</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="VD_Book-10-4.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Generalizations of Venn diagrams</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="VD_Book-10-4.html#VD_Book-10-4-2" class="internal"><span class="codenumber">7.3.1</span> <span class="title">Euler Diagrams</span></a></div></li></ul>
+</li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -302,9 +321,70 @@ window.MathJax = {
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section xmlns:pf="https://prefigure.org" class="section" id="sec-Euler"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">6.5</span><span class="space"> </span><span class="title">Euler Diagrams</span>
-</h2></section></div>
+</h2>
+<div class="para" id="sec-Euler-3">Euler diagrams predate Venn diagrams, but are quite distinct. They were introduced by Euler to aid in the understanding of syllogisms. In that context, they have certain deficiencies, some of which Venn tried to rectify with Venn diagrams.</div>
+<div class="para" id="sec-Euler-4">Recall from <a href="sec-defs.html#def-IndependentFamily" class="xref" data-knowl="./knowl/xref/def-IndependentFamily.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 2.1.1">Definition 2.1.1</a> that an Euler diagram is like a Venn diagram except that intersections of curve interiors are allowed to be empty, although the regions of intersection must still be connected. From this point of view a Venn diagram is a particular type of Euler diagram. If infinite intersections are allowed we refer to the diagrams as <dfn class="terminology">iEuler</dfn> diagrams.</div>
+<div class="para" id="sec-Euler-5">As used in the analysis of syllogisms, each region of a Venn diagram is shaded (in red in the table below) according to whether the region can contain any members. In this way any set system can be represented by a Venn diagram. In an Euler diagram a region is present if and only if it contains at least one member; there is no shading. As a consequence not all set systems may be represented by Euler diagrams; for example the reader can verify that the system <span class="process-math">\(\{ \emptyset, A, B, AC, BC \}\)</span> cannot be drawn as an Euler diagram (although it can be drawn as an iEuler diagram).</div>
+<div class="para logical" id="sec-Euler-6">
+<div class="para">Euler wrote four letters in February of 1761 which contain Euler diagrams as defined above (from the Brewster translation) <a href="ch-VennRefs-3.html#ref-Eu" class="xref" data-knowl="./knowl/xref/ref-Eu.html" data-reveal-label="Reveal" data-close-label="Close" title="Paragraph">[Eu] </a>.</div>
+<ul class="disc" id="sec-Euler-6-2">
+<li id="sec-Euler-6-2-1"><div class="para" id="p-derived-sec-Euler-6-2-1">LETTER CII. <em class="emphasis">Of the Perfections of a Language. Judgements and Nature of Propositions, affirmative and negative; universal or particular.</em>
+</div></li>
+<li id="sec-Euler-6-2-2"><div class="para" id="p-derived-sec-Euler-6-2-2">LETTER CIII. <em class="emphasis">Of Syllogisms, and their different Forms, when the first Proposition is universal.</em>
+</div></li>
+<li id="sec-Euler-6-2-3"><div class="para" id="p-derived-sec-Euler-6-2-3">LETTER CIV. <em class="emphasis">Different Forms of Syllogisms, whose first Proposition is particular.</em>
+</div></li>
+<li id="sec-Euler-6-2-4"><div class="para" id="p-derived-sec-Euler-6-2-4">LETTER CV. <em class="emphasis">Analysis of some Syllogisms.</em>
+</div></li>
+</ul>
+</div>
+<div class="para" id="sec-Euler-7">Euler always drew his diagrams as collections of circles, but remarks in Letter CIII, <em class="emphasis">These circles, or rather these spaces, for it is of no importance of what figure they are of,...</em>. We know of no written record that Euler ever made use of the familiar 3 circle Venn diagram in the study of syllogisms.</div>
+<div class="para" id="sec-Euler-8">Chapter V of John Venn’s book <em class="emphasis">Symbolic Logic</em> contains an explanation and comparison of Venn and Euler diagrams <a href="ch-VennRefs-3.html#ref-Ve81" class="xref" data-knowl="./knowl/xref/ref-Ve81.html" data-reveal-label="Reveal" data-close-label="Close" title="Paragraph">[Ve81] </a>. The second part of his historical notes contains much information about the history of diagrammic reasoning.</div>
+<div class="para" id="sec-Euler-9">Since Venn’s time, his diagrams have since been extended to Venn-Pierce diagrams, which add extra information in the form of symbols inside the regions to enable them to be used as valid logical proof mechanisms. The book by Sun-Joo Shin <a href="ch-VennRefs-3.html#ref-Sh" class="xref" data-knowl="./knowl/xref/ref-Sh.html" data-reveal-label="Reveal" data-close-label="Close" title="Paragraph">[Sh] </a> contains a clear discussion of the differences between Euler, Venn, and Pierce diagrams, and a proof that with some enhancements the Venn system provides a sound and complete logical representation system.</div>
+<div class="para" id="sec-Euler-10">In the table below we show the corresponding set system, Venn diagram, and Euler diagram for 2-sets.  Up to a relabelling of sets, all possibilities are shown (subject to the constraint that they include the empty set).</div>
+<figure class="table table-like" id="tbl-VennEuler"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">6.5.1<span class="period">.</span></span><span class="space"> </span>Comparison of Venn and Euler diagrams for <span class="process-math">\(n=2\)</span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b1 r0 l0 t0 lines">Set system</th>
+<th scope="col" class="l m b1 r0 l0 t0 lines">Venn diagram</th>
+<th scope="col" class="l m b1 r0 l0 t0 lines">Euler diagram</th>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(\{ \emptyset, AB, B, AB \}\)</span></td>
+<td class="l m b1 r0 l0 t0 lines"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/pdfs/2venn-A_ab_B.svg" class="contained"></div></td>
+<td class="l m b1 r0 l0 t0 lines"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/pdfs/2venn-A_ab_B.svg" class="contained"></div></td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(\{ \emptyset, A, AB \}\)</span></td>
+<td class="l m b1 r0 l0 t0 lines"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/pdfs/2venn-A_ab.svg" class="contained"></div></td>
+<td class="l m b1 r0 l0 t0 lines"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/pdfs/2euler-A_ab.svg" class="contained"></div></td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(\{ \emptyset, A, B \}\)</span></td>
+<td class="l m b1 r0 l0 t0 lines"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/pdfs/2venn-A_B.svg" class="contained"></div></td>
+<td class="l m b1 r0 l0 t0 lines"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/pdfs/2euler-A_B.svg" class="contained"></div></td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(\{ \emptyset, AB \}\)</span></td>
+<td class="l m b1 r0 l0 t0 lines"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/pdfs/2venn-ab.svg" class="contained"></div></td>
+<td class="l m b1 r0 l0 t0 lines"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/pdfs/2euler-ab.svg" class="contained"></div></td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(\{ \emptyset, A \}\)</span></td>
+<td class="l m b1 r0 l0 t0 lines"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/pdfs/2venn-A.svg" class="contained"></div></td>
+<td class="l m b1 r0 l0 t0 lines"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/pdfs/2euler-A.svg" class="contained"></div></td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(\{ \emptyset \}\)</span></td>
+<td class="l m b1 r0 l0 t0 lines"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/pdfs/2venn.svg" class="contained"></div></td>
+<td class="l m b1 r0 l0 t0 lines"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/pdfs/2euler.svg" class="contained"></div></td>
+</tr>
+</table></div></figure><div class="para" id="sec-Euler-12">In <a href="sec-Euler.html#tbl-VennEuler" class="xref" data-knowl="./knowl/xref/tbl-VennEuler.html" data-reveal-label="Reveal" data-close-label="Close" title="Table 6.5.1: Comparison of Venn and Euler diagrams for n=2">Table 6.5.1</a> the Euler diagram for set system <span class="process-math">\(\{ \emptyset, AB \}\)</span> is actually an iEuler diagram, there are two overlapping circles, one for <span class="process-math">\(A\)</span> and one for <span class="process-math">\(B\text{.}\)</span> Note also that the Euler diagram for <span class="process-math">\(\{ \emptyset \}\)</span> is the entire plane, which is awkward. These are two limitations of Euler diagrams, in addition to the fact mentioned above, that not all set systems can be represented as Euler diagrams. However, this leads to a natural question: what is the complexity of determining whether a given set system is representable at an Euler diagram? One known result is found in the following theorem.</div>
+<article class="theorem theorem-like" id="sec-Euler-13"><h3 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">6.5.2</span><span class="period">.</span>
+</h3>The problem of determining whether a given set system is representable by an iEuler diagram is NP-complete.</article><div class="para" id="sec-Euler-14">This theorem was proven in Stirling Chow’s Ph.D. thesis <a href="ch-VennRefs-3.html#ref-Ch" class="xref" data-knowl="./knowl/xref/ref-Ch.html" data-reveal-label="Reveal" data-close-label="Close" title="Paragraph">[Ch] </a> via a reduction to a known NP-complete problem, that of determining whether a 3-connected planar graph is Hamiltonian or not.  The gadgets used in the reduction would need significant modification to restrict the problem to Euler or simple Euler diagrams.</div>
+<div class="para" id="sec-Euler-15">Another complexity result involving set systems and planar representations was given in Johnson and Pollack <a href="ch-VennRefs-3.html#ref-JP" class="xref" data-knowl="./knowl/xref/ref-JP.html" data-reveal-label="Reveal" data-close-label="Close" title="Paragraph">[JP] </a>.  However, their planar representation are neither Venn or Euler diagrams as we have defined them.</div></section></div>
 <div class="ptx-content-footer">
-<a class="previous-button button" href="ch-Extensions-6.html" title="Previous"><span xmlns:pf="https://prefigure.org" class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span xmlns:pf="https://prefigure.org" class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="VD_Book-10.html" title="Next"><span class="name">Next</span><span xmlns:pf="https://prefigure.org" class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="sec-GenSymm.html" title="Previous"><span xmlns:pf="https://prefigure.org" class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span xmlns:pf="https://prefigure.org" class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="VD_Book-10.html" title="Next"><span class="name">Next</span><span xmlns:pf="https://prefigure.org" class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">
