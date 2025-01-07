@@ -4,22 +4,146 @@
 <section>
 <title>Combinatorial and existential problems</title>
 
+<p>
+Find a simple symmetric 17-Venn diagram.  More generally, prove that <em>simple</em> symmetric <m>n</m>-Venn diagrams
+  exist for all prime <m>n</m>.
+</p>
+
+<p>
+Prove Winkler's conjecture that every <em>simple</em> <m>n</m>-Venn diagram is extendible to at simple <m>(n+1)</m>-Venn diagram.
+Equivalently: Is every planar dual graph of a simple Venn diagram Hamiltonian?
+Or find a counter example.  The conjecture is know to be true for all <m>n \le 5</m>.
+</p>
+
+<!-- -->
+<p>
+It has been conjectured that all non-simple Venn diagrams are Hamiltonian.  Prove or find a counter-example.  It is known that all
+simple Venn diagrams are Hamiltonian; see 
+<xref ref="ref-PR">[PR]</xref>.
+</p>
+<!-- -->
+
+<p>
+The dual of a simple Venn diagram is a maximal planar spanning
+  subgraph of the hypercube. 
+Does every maximal spanning subgraph of the hypercube occur as the
+  Venn graph of some Venn diagram?
+It seems likely that the answer is no.
+</p>
+
+<p>
+Determine the exact number of simple symmetric non-monotone 7-Venn diagrams.  It is suspected that the number is 33, but the problem is to 
+  provide a proof, either by exhaustive computer search or by mathematical arguments; see <xref ref="sec-nonmono7"/>.
+</p>
+
+<p>
+Find a minimum vertex <m>n</m>-Venn diagram for <m>n=8</m>; such a diagram would have 37 vertices.
+</p>
+
+<p>
+What is the least number of intersection points (vertices) in a <em>rigid</em> Venn diagram?  There is only one rigid <m>3</m>-Venn diagram,
+the classic simple 3 circle diagram.
+</p>
+
+<p>
+Over all <m>n</m>-Venn diagrams, which requires the greatest number of
+  straight line segments to draw it?  ELABORATE.
+</p>
+
 </section>
 
 <section>
 <title>Geometric problems</title>
 
 <p>
-<idx><h>Venn diagram</h><h>minimum area</h></idx>
-Find a minimum area <m>n</m>-Venn diagram made from <m>n</m> congruent polyominoes for <m>n = 6</m>.  Or prove that no such
-diagram exists.  It seems likely that there is some large enough <m>n</m> for which congruent polyomino minimum area Venn diagrams
+For every <m>n</m>, is there a convex Venn diagram made from congruent
+  curves?
+If we drop the condition of curves being finitely intersecting, then the answer is yes; see <xref ref="sec-inf"/>.
+</p>
+
+<p>
+There is a rotationally symmetric simple 7-Venn diagram constructed with congruent convex quadrilaterals, as shown in <xref ref="fig-7quad"/>.
+It is equivalent to the diagram "Victoria".  Can any of the other 23 symmetric simple 7-Venn diagram be constructed with congruent convex 
+  quadrilaterals?  
+If not, what about congruent <em>non-convex</em> quadrilaterals?
+</p>
+
+<subsection>
+<title>polyVenn diagrams</title>
+
+<p>
+See <xref ref="sec-MinArea"/> for background material on polyVenn diagrams.
+</p>
+
+<ol>
+<li>
+<p>
+<idx><h>Venn diagram</h><h>minimum area</h></idx><idx>congruent</idx>
+Find a minimum area <m>n</m>-polyVenn diagram made from <m>n</m> congruent polyominoes for <m>n = 6</m>.  For <m>n = 5</m>, 
+  find a polyVenn diagram made from congruent polyominoes but without allowing reflection.  Or prove that no such
+diagrams exists.  It seems likely that there is some large enough <m>n</m> for which congruent polyomino minimum area Venn diagrams
 cease to exist.
 </p>
+</li>
+<li>
+<p>
+Find examples of <m>n</m>-polyVenn diagrams with no cell representing the empty set, and existing in a rectangular <m>h \times w</m> grid.  
+Thus <m>2^n -1 = h \cdot w</m>.  These diagrams are known generally for <m>(2^{n/2}+1) \cdot (2^{n/2}-1)</m> for <m>n \ge 2</m> but not otherwise.
+The first few open cases are
+<me>
+63 = 3 \times 21\text{, }
+255 = 3 \times 85 = 5 \times 51 \text{, and }
+511 = 7 \times 73.
+</me>
+</p>
+</li>
+</ol>
+
+</subsection>
 
 </section>
 
 <section>
 <title>Generalizations of Venn diagrams</title>
+
+<subsection>
+<title>Euler Diagrams</title>
+
+<p>
+For every integer <m>n</m> there exists a symmetric independent family of <m>n</m> curves with only <m>I(n)</m> regions.
+See <xref ref="sec-GenSymm"/> for the formula for <m>I(n)</m>.  This conjecture is due to Grünbaum 
+<!-- <xref ref="ref-Gr99">[Gr99,pg.6]<xref/>, and -->
+is true for prime <m>n</m> by the results of <xref ref="sec-SymmGeneral"/>.
+</p>
+
+<p>
+If integer <m>n</m> is not a prime, every symmetric independent family with <m>I(n)</m> regions is non-simple.
+See <xref ref="sec-GenSymm"/> for the formula for <m>I(n)</m>.  This conjecture is due to Grünbaum 
+<xref ref="ref-Gr99">[Gr99,pg.6]</xref>, and
+is false for prime <m>n</m> by the results of <xref ref="sec-SymmGeneral"/>.  It is known to be true for <m>n \le 16</m> by the results
+of <xref ref="ref-Ji">[Ji]</xref>.
+</p>
+
+<p>
+See <xref ref="sec-Euler"/> for background material on Euler diagrams.
+</p>
+
+<ol>
+<li>
+<p>
+Given an arbitrary set system <m>\mathcal{S}</m>, give a polytime algorithm to determine if <m>\mathcal{S}</m> is representable
+  by an Euler diagram, or prove that the problem is NP-complete.
+</p>
+</li>
+<li>
+<p>
+Given an arbitrary set system <m>\mathcal{S}</m>, give a polytime algorithm to determine if <m>\mathcal{S}</m> is representable
+  by a <em>simple</em> Euler diagram, or prove that the problem is NP-complete.
+</p>
+</li>
+</ol>
+
+</subsection>
 
 </section>
 

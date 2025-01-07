@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section>
+<section xml:id="sec-SymmGeneral">
 <title>Symmetric Diagrams for all <m>n</m></title>
 
 <introduction>

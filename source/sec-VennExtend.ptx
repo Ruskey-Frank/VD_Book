@@ -7,7 +7,7 @@ than <m>n</m> curves.
 </p>
 
 <definition>
-<statement>
+<statement><idx><h>reducible</h><h>Venn diagram</h></idx>
 A <m>n</m>-Venn diagram is <term>reducible</term> if the removal of one of its
   <m>n</m> curves results in a Venn diagram with <m>n-1</m> curves.
 A Venn diagram that is not reducible is <term>irreducible</term>.
@@ -32,7 +32,7 @@ For a long time it was not known whether a reducible Venn diagram
 </p>
 
 <definition>
-<statement>
+<statement><idx><h>extendible</h><h>Venn diagram</h></idx>
 A <m>n</m>-Venn diagram <m>\mathbf{C}</m> is <term>extendible</term> if
   there is a curve that can be added to it to make an <m>(n+1)</m>-Venn diagram,
   <m>\mathbf{C}'</m>.
@@ -78,7 +78,7 @@ Edwards' general construction is a manifestation of this proof of
   back and forth between the two copies of the cycle, two vertices at
   a time from each cycle.
 Venn's general construction is related but different since it uses
-  non-prism edges (see <xref ref="subsec-Duals"/>).
+  only two prism edges (see <xref ref="subsec-Duals"/>).
 </p>
 
 <subsection>
@@ -97,6 +97,27 @@ Grünbaum's version was proven by Chilakamarri, Hamburger, and Pippert
   conjecture remains unsettled.
 </p>
 
+<figure>
+<caption>Extending a Venn diagram by using the radual graph.</caption>
+<tabular align="center" width="90%">
+<row>
+<cell><image source="pdfs/RadualPrimal"/></cell>
+<cell><image source="pdfs/RadualDual"/></cell>
+<cell><image source="pdfs/RadualRadual"/></cell>
+</row>
+<row>
+<cell>(a) Venn #3.4.</cell><cell>(b) The dual.</cell><cell>(c) Radual graph.</cell>
+</row>
+<row>
+<cell><image source="pdfs/RadualHamilton"/></cell>
+<cell><image source="pdfs/RadualExtended"/></cell>
+<row>
+<cell>(d) Hamilton cycle.</cell><cell>(e) Extended diagram.</cell><cell></cell>
+</row>
+</row>
+</tabular>
+</figure>
+
 <p>
 The proof of
   <xref ref="ref-CHP96a">[CHP96a]</xref>
@@ -107,13 +128,21 @@ The proof of
   the radial and dual graphs).
 A simple example, using Venn diagram #3.4, is shown
   in Figure <xref ref="img-radual"/>.
+In that figure, the dual graph is shown in (b) with magenta edges.
+The vertex set of the radial graph is the union of the vertex sets of the
+  primal graph and its dual, and the edge set consist of all possible edges
+  that join a dual vertex with an incident vertex of its face; these are
+  the black edges in (c).
+Observe that the radual graph of a connected plane graph is a triangulation
+  (every face is a triangle).
 The strategy of their proof is first to show that <m>R(\mathbf{C})</m> is
   a simple triangulation without separating triangles
   and then invoke a theorem of Whitney
   <xref ref="ref-Wh">[Wh]</xref> that
   any such graph is Hamiltonian.
+Such a Hamilton cycle is shown in (d).
 It is then easy to see that the Hamilton cycle in the radual graph can be
-  used as the additional curve.
+  used as the additional curve; see (e).
 This sufficient condition is also necessary as stated in this
   analogue of <xref ref="thm-A"/>.
 </p>

@@ -26,12 +26,20 @@ Following Chilakamarri, Hamburger, and Pippert
   <xref ref="ref-CHP95">[CHP95]</xref>,
   we overload the term and call this graph the <term>Venn diagram</term>.
 In an <term>unlabelled</term> Venn diagram we ignore the edge labels.
+There is no loss of information in the unlabelled version of a Venn graph if the corresponding Venn diagram
+  is <em>simple</em>, since each of the curves can be uniquely recovered.
+We will see examples later where this is not true of non-simple diagrams.
+</p>
+
+<p>
+Let us count the number of vertices, edges, and faces in an <m>n</m>-Venn diagram.
 As an example, the three circle Venn diagram
-  has 6 vertices (corresponding to the 6 intersections) and 12 edges.
+  has 8 faces (corresponding to the 8 possible interior/exterior possibilities), 
+  6 vertices (corresponding to the 6 intersections) and 12 edges.
 Recall Euler's formula <m>f = e - v + 2</m> relating
   the number of faces, edges, and vertices of a graph
   embedded in the plane.<idx><h>Euler</h><h>formula</h></idx>
-Assuming that no three curves intersect at a common point
+Assuming that no three or more curves intersect at a common point
   (i.e., a simple Venn diagram), the graph is 4-regular and so we have <m>e = 2v</m>.
 By definition the number of faces is <m>f = 2^n</m>.
 It thus follows that <m>v = 2^n - 2</m> and
@@ -39,9 +47,10 @@ It thus follows that <m>v = 2^n - 2</m> and
 By <xref ref="obs-maxn"/> the maximum vertex degree is <m>2n</m> 
 </p>
 
-
 <p>
 <idx>Venn dual</idx>
+<idx><h>graph</h><h>bipartite</h></idx>
+<idx><h>graph</h><h>hypercube</h></idx>
 With each Venn diagram, <m>\mathbf{C}</m>, we may associate another plane graph
   called the <term>Venn dual</term>, which is denoted <m>D(\mathbf{C})</m>,
   the planar dual of the Venn diagram.
@@ -67,12 +76,16 @@ If <m>\mathbf{C}</m> is a simple Venn diagram, then every face of <m>D(\mathbf{C
   The <m>n</m>-cube is bipartite, and thus so is the Venn dual.</fn>
   planar graph.
 </p>
-  
-<image source="gifs/VennGraph.gif"></image>
+ 
+<figure> 
+<caption>(a) A Venn diagram <m>\mathbf{C}</m>. (b) Venn graph <m>V(C)</m> as an edge labelled graph.  
+(c) The Venn dual, a 3-cube, <m>D(C)</m>.  The cyan vertices are identified.</caption>
+<image source="pdfs/VennGraphDual"></image>
+</figure>
 
 <p>
 Above we illustrate these definitions.
-The following section contains illustrations of some
+The following subsection contains illustrations of some
   Venn duals.
 </p>
 
@@ -82,60 +95,78 @@ The following section contains illustrations of some
 
 <p>
 Here are the Venn dual graphs of Venn's general construction for
-  <m>n=3,4,5</m>, but without coloured edges for the corresponding to the curves.
-Here the red edges indicate the Hamilton cycle that is used in extending
+  <m>n=3,4,5</m>, but without coloured edges for the different curves.
+Rather, here the red edges indicate the Hamilton cycle that is used in extending
   to the next higher value of <m>n</m>.
 </p>
 
-<image source="gifs/VennGraphs.gif"></image>
+<image source="pdfs/VennDuals345"></image>
 
 <p>
 How, in general, do you go from the dual graph <m>D</m> of
-  a Venn diagram, together with a  Hamilton cycle
+  a Venn diagram <m>V</m>, together with a  Hamilton cycle
   <m>H</m> in <m>G</m>, and get a new planar
-  dual <m>D'</m> of a Venn diagram of the
+  dual <m>D'</m> of a Venn diagram <m>V'</m> of the
   next higher order?
 We now explain this process.
 Note that <m>H</m> is a simple closed curve with an interior
-  and an exterior.
+  and an exterior, and that the edges not in <m>H</m> lie either 
+  in the interior or in the exterior.
 </p>
 
-<image source="gifs/VennExpand.gif"></image>
+<image source="pdfs/VennDuals45"></image>
 
 <p>
 We illustrate the discussion with the expansion of <m>n=4</m>
-  to <m>n=5</m> as shown above.
-Color the edges of <m>H</m> red, edges on the interior blue,
-  and edges on the exterior black.
+  to <m>n=5</m> using the image above.
+In the dual <m>D</m> where <m>n=4</m> the edges of <m>H</m> are red, edges on the interior are black,
+  and edges on the exterior are gold.  
+We now discuss how to obtain the central dual in the image.
+This part of the discussion works in general for a simple <m>n</m>-Venn diagram with a Hamilton cycle.
+Thus there are <m>2^{n+1}-4</m> edges in <m>D</m>, of which <m>2^n</m> are red, <m>2^{n-1}-2</m> are gold
+  and <m>2^{n-1}-2</m> are black.
 </p>
 
 <ul>
 <li>Each (black) vertex of <m>D</m> is split into two vertices, one green
   and one blue, in <m>D'</m>.
-The blue vertices are in the interior, the red edges in the exterior.
+The blue vertices are in the interior, the green vertices in the exterior.  In <m>V</m> this
+  corresponds to splitting each region into 2 regions, one interior to <m>H</m> and one exterior to <m>H</m>.
 </li>
-<li>Each blue edge in <m>D</m> becomes a blue edge in <m>D'</m>
+<li>Each black (interior) edge in <m>D</m> remains a black edge in <m>D'</m>
   connecting the corresponding blue vertices.
 </li>
-<li>Each black edge in <m>D</m> becomes a black edge in <m>D'</m>
+<li>Each gold (exterior) edge in <m>D</m> becomes a gold edge in <m>D'</m>
   connecting the corresponding green vertices.
 </li>
-<li>Each red edge in <m>D</m> becomes a 4-cycle of red edges in
-  <m>D'</m>, connecting either corresponding vertices or vertices
-  of the same color.
+<li>
+The remaining edges form two cycles, one of green vertices (and edges) and the other of blue vertices (and edges).
 </li>
 </ul>
 
 <p>
-<idx><h>graph</h><h>prism of</h></idx>
-Note that the red edges in <m>D'</m> give the prism of the Hamilton
-  cycle in <m>D</m>.
+Note that the <m>D'</m> is indeed a Venn dual of a Venn diagram <m>V'</m> because all of the original curves are intact; they just enclose
+  twice as many faces, half blue and half green.  
+The curve defined by the thick black edges is the new curve and it has all the blue faces on it's interior, and all
+  the green faces on its exterior.
+</p>  
+  
+<p>
+To finish the construction we just need to show that there is a Hamilton cycle <m>H'</m> in <m>D'</m>.
+This will be formed by joining the green cycle and the blue cycle, using a <term>flip</term> of edges in a 4-cycle in <m>D'</m>.
+Any 4-cycle whose consecutive edges are green, black, blue, black will work; i.e., the flip removes the green and blue edges from
+  their cycles and adds the two black edges to the cycle to give a Hamilton cycle.
+Such edges abound: any red edge in <m>D</m> becomes such a cycle in <m>D'</m>.
+In Venn's construction, the chosen edge of <m>H</m> is the leftmost red edge with orientation <m>\diagdown</m>; the resulting
+  4-cycle is shown with dashed lines on the right in the image.
 </p>
 
-<p>
+<p><idx>prism</idx>
 Peter Winkler provides a similar discussion in
-<xref ref="ref-Wi">[Wi,pg. 271]</xref>.
-<!-- Comment added Sept. 15, 2004 -->
+  <xref ref="ref-Wi">[Wi,pg. 271]</xref>. 
+The discussion above essentially proves one direction of <xref ref="thm-A"/> and <xref ref="thm-B"/>. 
+Note that the blue, green, and thick black edges of the middle image are the prism of the red Hamilton
+  cycle in the left image.
 </p>
 
 </subsection>
@@ -159,19 +190,19 @@ This section is a placeholder for certain ancillary diagrams that are referred t
 The online reader is encouraged to simply ignore this section; in printed book form it might be useful.
 </p>
 
-<subsection>
+<subsection xml:id="subsec-3VennClasses">
 <title>The six Venn classes</title>
 
 <sidebyside width="40%">
 <figure xml:id="img-Class1">
 <caption>The two 3-Venn diagrams (#3.1,#3.2) in Class 1.</caption>
-<image source="gifs/venn3c-01-02.gif" width="50%">
+<image source="pdfs/3VennClass1" width="50%">
 </image>
 </figure>
 
 <figure xml:id="img-CO-Class1">
 <caption>The two 3-Venn diagrams (#3.1,#3.2) in Class 1 with regions coloured.</caption>
-<image source="gifs/CO-venn3c-01-02.gif" width="50%">
+<image source="pdfs/3VennClass1color" width="50%">
 </image>
 </figure>
 
@@ -180,13 +211,13 @@ The online reader is encouraged to simply ignore this section; in printed book f
 <sidebyside width="40%">
 <figure xml:id="img-Class2">
 <caption>The two 3-Venn diagrams (#3.3,#3.4) in Class 2.</caption>
-<image source="gifs/venn3c-03-04.gif" width="50%">
+<image source="pdfs/3VennClass2" width="50%">
 </image>
 </figure>
 
 <figure xml:id="img-CO-Class2">
 <caption>The two 3-Venn diagrams (#3.3,#3.4) in Class 2 with regions coloured.</caption>
-<image source="gifs/CO-venn3c-03-04.gif" width="50%">
+<image source="pdfs/3VennClass2color" width="50%">
 </image>
 </figure>
 
@@ -195,13 +226,13 @@ The online reader is encouraged to simply ignore this section; in printed book f
 <sidebyside width="40%">
 <figure xml:id="img-Class3">
 <caption>The two 3-Venn diagrams (#3.5,#3.6) in Class 3.</caption>
-<image source="gifs/venn3c-05-06.gif" width="50%">
+<image source="pdfs/3VennClass3" width="50%">
 </image>
 </figure>
 
 <figure xml:id="img-CO-Class3">
 <caption>The two 3-Venn diagrams (#3.5,#3.6) in Class 3 with regions coloured.</caption>
-<image source="gifs/CO-venn3c-05-06.gif" width="50%">
+<image source="pdfs/3VennClass3color" width="50%">
 </image>
 </figure>
 
@@ -210,13 +241,13 @@ The online reader is encouraged to simply ignore this section; in printed book f
 <sidebyside width="40%">
 <figure xml:id="img-Class4">
 <caption>The four 3-Venn diagrams (#3.7,#3.8,#3.9,#3.10) in Class 4.</caption>
-<image source="gifs/venn3c-07-08-09-10.gif" width="50%">
+<image source="pdfs/3VennClass4" width="50%">
 </image>
 </figure>
 
 <figure xml:id="img-CO-Class4">
 <caption>The four 3-Venn diagrams (#3.7,#3.8,#3.9,#3.10) in Class 4 with regions coloured.</caption>
-<image source="gifs/CO-venn3c-07-08-09-10.gif" width="50%">
+<image source="pdfs/3VennClass4color" width="50%">
 </image>
 </figure>
 
@@ -225,13 +256,13 @@ The online reader is encouraged to simply ignore this section; in printed book f
 <sidebyside width="40%">
 <figure xml:id="img-Class5">
 <caption>The three 3-Venn diagrams (#3.11,#3.12,#3.13) in Class 5.</caption>
-<image source="gifs/venn3c-11-12-13.gif" width="50%">
+<image source="pdfs/3VennClass5" width="50%">
 </image>
 </figure>
 
 <figure xml:id="img-CO-Class5">
 <caption>The three 3-Venn diagrams (#3.11,#3.12,#3.13) in Class 5 with regions coloured.</caption>
-<image source="gifs/CO-venn3c-11-12-13.gif" width="50%">
+<image source="pdfs/3VennClass5color" width="50%">
 </image>
 </figure>
 
@@ -261,7 +292,7 @@ This diagram has 8 vertices.  It was discovered by Bette Bultena.
 <sidebyside width="40%">
 <figure xml:id="img-min5">
 <caption>A minimum 5-Venn diagram.</caption>
-<image source="pngs/betteMin5.png"></image>
+<image source="pdfs/betteMin5"></image>
 </figure>
 <figure xml:id="img-min5c">
 <caption>A minimum 5-Venn diagram, with regions coloured by size.</caption>
@@ -281,22 +312,22 @@ From <href ref="ref-CR98">[CR98]</href>.
 <sidebyside width="40%">
 <figure xml:id="img-min7a">
 <caption>A minimum 7-Venn diagram.</caption>
-<image source="gifs/min7single20.gif"></image>
+<image source="pdfs/min7single20"></image>
 </figure>
 <figure xml:id="img-min7aC">
 <caption>A minimum 7-Venn diagram, with regions coloured by size.</caption>
-<image source="gifs/min7color20.gif"></image>
+<image source="pdfs/min7color20"></image>
 </figure>
 </sidebyside>
 
 <sidebyside>
-<figure xml:id="img-min7b">
+<figure xml:id="img-min7b" width="40%">
 <caption>A minimum 7-Venn diagram. One curve is coloured green.</caption>
-<image source="pngs/min7single.png"></image>
+<image source="pdfs/min7single"></image>
 </figure>
 <figure xml:id="img-min7bC">
 <caption>A minimum 7-Venn diagram.</caption>
-<image source="pngs/min7.png"></image>
+<image source="pdfs/min7"></image>
 </figure>
 </sidebyside>
 

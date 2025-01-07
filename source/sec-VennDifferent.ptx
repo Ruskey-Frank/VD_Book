@@ -38,7 +38,8 @@ On the other hand, a Venn diagram may be embedded on the surface of a sphere
   of a simple 3-Venn diagram; adding another great circle, orthogonal to the
   other two, gives Edwards' general construction for <m>n=4</m>.)
 Sometimes it is more natural to look at Venn diagrams
-  as being embedded on the sphere.  EXPAND.
+  as being embedded on the sphere. 
+This topic is explored in <xref ref="subsec-Spherical"/>.
 </p>
 
 <definition xml:id="def-class">
@@ -101,14 +102,82 @@ Rigid Venn diagrams are interesting because in the equivalence class
   the ones closest to being simple.
 </p>
 
+<!-- ==================================================================================== -->
+
+<subsection>
+<title>An extended example of vertex splitting.</title>
+
 <p>
-FINISH THIS LATER
-<!--
-<a href="VennSeparatingEJC.html">This page</a> shows an
-  example of creating a simple symmetric diagram from a non-simple diagram by
-  splitting vertices in a symmetric fashion.
--->
+To make a Venn diagram more simple, we wish to add vertices, which corresponds to adding 
+faces (by adding edges) in the dual graph.  Since any face in the Venn dual whose boundary
+contains more than four edges corresponds to a vertex of degree greater than four in the Venn
+diagram, adding a chord across that face corresponds to splitting the
+relevant vertex into two adjacent vertices in the Venn diagram - thus adding one extra vertex
+into the diagram and making it closer to being simple. 
 </p>
+
+<sidebyside width="45%">
+<image source="pdfs/5venn1star"/>
+<p>
+Consider the symmetric 5-venn diagram shown to the left.  This diagram can be constructed using
+the necklace construction ideas on the page <a href="VennNecklaceEJC.html">Symmetric Diagrams, Necklaces, and Chains</a>;
+it is very non-simple, but it is also not rigid.  In this subsection, we show how to transform it into the 
+unique simple diagram on 5 vertices, shown at the beginning of the section on <a href="VennSymmEJC.html">symmetric diagrams</a>.
+The vertex marked with a star is separable, and we will separate it.
+</p>
+</sidebyside>
+
+<p>
+Below we show the corresponding unlabelled Venn dual (the red edges) overlaying a monochromatic
+version of the diagram above, and then the dual graph alone on the right.  In both
+graphs the external vertices, corresponding to the external empty region in the Venn diagram,
+are identified; we don't join them to emphasize the symmetry of the diagram.
+</p>
+
+<sidebyside width="45%">
+<image source="pdfs/5vennDualOverlay"/>
+<image source="pdfs/5vennDual"/>
+</sidebyside>
+  
+  
+<sidebyside width="45%">
+<p>
+To the right we show how the starred separable vertex above can be separated to create a new 
+  vertex - the green and black curves have now formed a new vertex where they intersect, which is
+  the second star. 
+(Note that the originally starred vertex remains separable.)
+The separation corresponds to adding the thin green edge in the Venn dual.
+The fact that this can be done without creating any new regions corresponds to the fact
+that the vertices in the Venn dual corresponding to the newly neighbouring faces can have
+an edge added between them (<em>i.e.</em>, their labels differ by a single bit).
+</p>
+<image source="pdfs/5venn1splitOverlay"/>
+</sidebyside>
+
+<p>
+Below we show how this edge can be added symmetrically to create five new vertices in the
+diagram (on the left) and adding five new edges to the dual (on the right).
+</p>
+
+<sidebyside>
+<image source="pdfs/5venn1splitOverlay"/>
+<image source="pdfs/5venn5quad"/>
+</sidebyside>
+
+<p>
+Continuing in this fashion, we add edges to the dual graph until no more can be added; at this point
+the Venn dual is composed entirely of 4-faces (faces with exactly 4 edges bordering them), implying that
+the corresponding Venn diagram is simple.  Following <xref ref="ref-KRSW">[KRSW]</xref>, we
+can call this operation <term>quadrangulation</term> since each resulting face is a quadrangle.  The final
+diagram is shown below; it is isomorphic to the unique simple symmetric 5-Venn diagram.
+</p>
+
+<sidebyside>
+<image source="pdfs/5vennQuadrangulatedThick"/>
+<image source="pdfs/5vennQuadOverlay"/>
+</sidebyside>
+
+</subsection>
 
 </section>
 

@@ -7,14 +7,12 @@
     <p>The first section of this chapter defines independent sets, and then Venn diagrams.  
     We then show a couple of inductive constructions of Venn diagrams with <m>n</m> curves, for any integer <m>n</m>.
     There also is a small section on the Borromean Rings.</p>
-  </introduction>
 
   <image source="/gifs/VictoriaIcon.gif">
   </image>
 
-  <!-- include sections
-  <xi:include href="sec-section-name.ptx" />
-  -->
+  </introduction>
+
 
 <section xml:id="sec-defs">
 <title>Definition of Venn Diagrams</title>
@@ -26,17 +24,17 @@ In a series of papers, starting with <xref ref="ref-Gr75">[Gr75]</xref> Branko G
   and then move on to Venn diagrams.
 Both concepts are defined in terms of <term>simple closed curves</term> in the plane, which can be thought of as
   being drawn by starting at a point <m>x</m>, and then drawing a non-intersecting curve that ends back at <m>x</m>.
-The Jordan curve theorem proves that such a curve <m>C</m> partitions the plane into <m>C</m>, together with two disjoint open regions 
+The Jordan curve theorem states that such a curve <m>C</m> partitions the plane into <m>C</m>, together with two disjoint open regions 
   <m>int(C)</m>, the <term>interior</term> of <m>C</m>, and <m>ext(C)</m>, the (unbounded) exterior of <m>C</m>.
 </p>
 
 <definition xml:id="def-IndependentFamily">
 <idx>independent family</idx>
 <statement>
-Let <m>\mathbf{C} = \{ C_1, C_2, \ldots, C_n \}</m>
+Let <m>\mathbf{C} = \{ C_1, C_2, \cdots, C_n \}</m>
   be a collection of simple closed curves drawn in the plane.
 The collection <m>\mathbf{C}</m> is said to be an <term>independent family</term>
-  if the <em>region</em> formed by the intersection of <m>X_1 \cap X_2 \cap \ldots \cap X_n</m>
+  if the <em>region</em> formed by the intersection of <m>X_1 \cap X_2 \cap \cdots \cap X_n</m>
   is non-empty, where each <m>X_i</m> is either <m>int(C_i)</m>
   or is <m>ext(C_i)</m>.
 If, in addition, each such intersection region is connected and there are only
@@ -54,7 +52,7 @@ Since there are 2 choices for each <m>X_i</m>, there are <m>2^n</m> non-empty di
 One region, the one arising from the intersection of all the exteriors, is unbounded and all of the
   other regions are bounded.
 In a Venn diagram all regions are required to be <term>connected</term>, 
-  meaning that there is a curve joining any two point in a region, a curve that is 
+  meaning that there is a curve joining any two points in a region, a curve that is 
   entirely contained in the region.
 The condition that there are only a finite number of intersection points
   is usually assumed in the literature, but sometimes not stated explicitly.
@@ -65,39 +63,58 @@ We will relax this restriction in <xref ref="sec-MinArea"/>.
 <p>
 <idx>Euler diagram</idx>
 Note that some authors refer to diagrams
-with <i>fewer</i> than <m>2^n</m> non-empty regions as Venn diagrams, but they are more properly termed
+with <em>fewer</em> than <m>2^n</m> non-empty regions as Venn diagrams, but they are more properly termed
 <term>Euler diagrams</term>, after the mathematician Leonard Euler.  More on these important diagrams can be
-found on the page on <a href="VennOtherEJC.html#euler">Generalizations and Extensions</a>.
+found in <xref ref="sec-Euler"/>, Generalizations and Extensions of Venn Diagrams.
 We refer to a region enclosed by exactly <m>k</m> curves as a <m>k</m>-region or <m>k</m>-set.
 </p>
 
-  <sidebyside>
+  <sidebyside widths="30% 30% 30%">
   <figure xml:id="fig-V3">
-  <caption>Regions labeled inclusion.</caption>
-  <image source="/gifs/V3.gif" width="10%">
+  <caption>Regions labeled by inclusion.</caption>
+  <image source="/pdfs/3venn-labelled">
+  </image>
+  </figure>
+  <figure xml:id="fig-V3-bitstring">
+  <caption>Regions labeled by inclusion.</caption>
+  <image source="/pdfs/3venn-bitstring">
   </image>
   </figure>
   <figure xml:id="fig-CO-V3">
   <caption>Regions colored by size.</caption>
-  <image source="/gifs/V3plain.gif" width="10%">
+  <image source="/pdfs/3venn-color">
   </image>
   </figure>
   </sidebyside>
 
-  <p>
-  Above we show the most familiar of all Venn diagrams.
+<p>
+Above we show the most familiar of all Venn diagrams.
 In this case <m>n=3</m>, the simple closed curves are all circles,
   and in <xref ref="fig-V3"/> the 8 regions have been labelled with
   the interiors that are included in each intersection.
 The eighth region is the exterior region, corresponding to the empty set.
+In <xref ref="fig-V3-bitstring"/>, regions have been labelled with bitstrings (binary strings)
+  of length <m>n</m>, where inclusion in A is indicated by the first bit, B by the second bit,
+  and C by the third bit.
+This labelling will also be used often in the sequel.
 The colored diagram <xref ref="fig-CO-V3"/> has all 1-sets colored yellow, all 2-sets red,
   and the 3-set blue.
+Thus there is 1 0-set, 3 1-sets, 3 2-sets, and 1 3-sets.
 The 3 circle Venn diagram also occurs as a minimal projection of the
   Borromean Rings, see <xref ref="sec-Borromean"/>.
-  </p>
+</p>
+
+<observation xml:id="obs-binomial">
+<statement>
+For <m>0 \le k \le n</m>, the number of <m>k</m>-regions in a Venn diagram is <m>{n \choose k}</m>.
+</statement>
+</observation>
   
-<sidebyside widths="40% 60%">
-  <image source="/gifs/independent.gif" width="20%"></image>
+<sidebyside widths="35% 55%">
+<figure xml:id="fig-4-IF">
+<caption>An independent family that is not a Venn diagram</caption>
+  <image source="/pdfs/4-IF-triangles.svg" width="20%"></image>
+</figure>
   <p>
   <idx>independent family</idx>
   On the left we show an example, for <m>n=4</m>,
@@ -105,19 +122,23 @@ The 3 circle Venn diagram also occurs as a minimal projection of the
   Here the simple closed curves are each congruent triangles, which
   are colored red, blue, green, and gold.
   Note that the intersection of the interiors of the red and
-  blue triangles with the exteriors of the green and gold
-  triangles gives a disconnected region, the two darkly shaded regions
-  in the figure.  For an example of intersecting closed curves that is
-  not an independent family, consider the Olympic Rings.
+  green triangles with the exteriors of the blue and gold
+  triangles gives a disconnected region, the two cross-hatched regions
+  in the figure.  For an example of intersecting closed curves that are
+  not an independent family, consider the five Olympic Rings.
   </p>
 </sidebyside>
 
   <p>
-  The figure below is a Venn diagram of 4 ellipses, originally found by Venn himself
+  The figure below is a Venn diagram of 4 ellipses, a colored version of one originally found by Venn himself
   <xref ref="ref-Ve80">[Ve80]</xref>.  See also a <xref ref="img-ellipses">black-and-white</xref> version
   and its <xref ref="img-Tutte4">Tutte embedding</xref>.
-  <image source="pngs/4-ellipses.png" width="50%"></image>
   </p>
+
+<figure xml:id="fig-4Venn_ellipses">
+<caption>A simple 4-Venn diagram.</caption>
+  <image source="pdfs/4-ellipses.svg" width="50%"></image>
+</figure>
 
 <definition>
 <idx><h>Venn diagram</h><h>simple</h></idx>
@@ -134,7 +155,7 @@ in other chapters of non-simple diagrams.  Unless stated otherwise, we assume th
 </p>
 
 <p>
-You often see 2, and 3 curve Venn diagrams drawn with circles, but all diagrams with 4 curves
+You often see 2, and 3 curve Venn diagrams drawn with circles, but all diagrams with 4 circles
 seem to have the wrong number of regions.  In the next chapter we'll prove a little theorem that implies that
 a 4-Venn diagram can never be drawn with circles, even if they have varying diameters.  The basic reason
 is that there are too many regions for the possible number of intersections.  Below we make two observations.
@@ -164,8 +185,9 @@ Unless <m>AB</m> and <m>BA</m> are connected we can not have a Venn diagram sinc
 same set of interiors and exteriors of curves.  We will show that they are not connected, a contradiction
 which will prove the observation.
 Because <m>V</m> is a Venn diagram, curves <m>A</m> and <m>B</m> must have at least two transverse intersections,
-for otherwise one curve would be contained in the other.   Define a closed curve <m>C</m> by following curve <m>A</m> with region <m>AB</m> on its boundary
-until first encountering a transverse intersection <m>y</m> with <m>B</m>, and then follow <m>B</m> back to <m>x</m>.  The curve <m>C</m> might have points of kissing, but
+for otherwise one curve would be contained in the other.   Define a closed curve <m>C</m> by following curve <m>A</m> 
+with region <m>AB</m> on its boundary until first encountering a transverse intersection <m>y</m> with <m>B</m>, 
+and then follow <m>B</m> back to <m>x</m>.  The curve <m>C</m> might have points of kissing, but
 no transverse intersections.  To finish the proof, observe that <m>C</m> contains region <m>AB</m> but excludes region <m>BA</m>, and thus
 they are not connected.  The more general statement may be proven by essentially the same proof.
 </p>
@@ -204,6 +226,13 @@ simple <m>n</m>-Venn diagram.
 </theorem>
 -->
 
+<p>
+The reason that Venn wanted his diagrams to have all <m>2^n</m> non-empty is that he would shade any
+regions that were excluded from the syllogism under consideration.  We can also regard these shaded Venn diagrams
+as representing a set system; that is, one of the <m>2^{2^n}</m> sets of subsets of <m>\{1,2,\ldots,n\}</m>.
+If a region is not shaded, then the corresponding set of interiors is in the set system.
+We use set systems when comparing Venn and Euler diagrams in <xref ref="sec-Euler"/>.
+</p>
 
 <p>
 Finally, we note that the 3-circle diagram shown above, and the 2-circle diagram for 2 sets, appear often in
@@ -214,8 +243,46 @@ the book by Shin <xref ref="ref-Sh">[Sh]</xref>, and many standard logic textboo
   
 </section>
 
+<!-- ===================================================================================== -->
+
 <section xml:id="sec-VennExist">
 <title>Constructions of Venn Diagrams</title>
+
+<p>
+In this section we first discuss how to nicely draw diagrams with two or three circles,
+and some connections of these diagrams with geometry and other areas.  Then we discuss the
+two most well-known techniques for drawing Venn diagrams with any positive number of curves.
+</p>
+
+<subsection>
+<title>How to draw a 2 or 3 circle Venn diagram</title>
+
+<p>
+Given a compass, it is easy to draw a nice looking two circle Venn diagram as follows.
+First draw a circle centered at some point <m>x</m>.  Now draw a second circle of equal radius whose
+center lies on the first circle.  The new circle will pass through <m>x</m>.
+The region of intersection has been given several names including <term>vesica piscis</term> and
+<term>mandorla</term>.<idx>vesica piscis</idx><idx>mandorla</idx>
+In Latin vesica is <q>bladder</q> and piscis is <q>fish</q>, and mandorla is Italian for <q>almond</q>.
+This shape was known to the ancient Greeks, and found use in early Christian imagery.
+</p>
+
+<p>
+To draw a three circle Venn diagram one can start with the drawing of a two circle diagram
+and then add a circle of equal radius and centered at one of the points of intersection
+of the two circles.  Effectively, that is how the diagram of <xref ref="fig-V3"/> was
+produced.  In this case the central region of intersection (the blue region of
+<xref ref="fig-CO-V3"/>) is known as a <term>Reuleaux triangle</term>.<idx>Reuleaux triangle</idx>
+It is an example of a curve of constant width, meaning that if the object is placed 
+between two parallel tangential lines, then the lines are equidistant, no mater the orientation
+of the parallel lines.  This property is why they are used in the design of drill bits for drilling
+rounded square holes; e.g., H.J. Watts' 1917 US patent 1,241,176.  
+(There is a widespread misconception that the piston of Wankel engine
+is a Reuleaux triangle; they look similar but are not identical.)
+</p>
+
+</subsection>
+
 <p>
 Above we saw that Venn diagrams exist for <m>n = 3</m>, and it is
   easy to see (for example, by removing circles) that Venn
@@ -246,22 +313,25 @@ In the figure they are added in the order blue (4), red (5),
   and green (6).
 It should be clear where the seventh curve would be drawn.
 </p>
-<image source="gifs/V3a.gif"></image>
+<image source="pdfs/VennGeneralConstruction"></image>
 </sidebyside>
 </subsection>
 
-<subsection>
-<title>Edwards' Construction</title>
+<subsection xml:id="subsec-EdwardsConstruction">
+<title>Edwards' "Cogwheels" Construction</title>
 
-<sidebyside>
-<image source="gifs/EdwardsCol6.gif"></image>
+<figure xml:id="fig-Edwards7colored">
+<caption>Edwards 7-Venn construction.</caption>
+<image source="pdfs/Edwards7colored" width="80%"></image>
+</figure>
+
 <p>
-  Anthony Edwards <xref ref="ref-Ed89a">[Ed89a]</xref>,
+Anthony Edwards <xref ref="ref-Ed89a">[Ed89a]</xref>,
   <xref ref="ref-Ed89b">[Ed89b]</xref> developed another general
   inductive construction that has several nice properties,
   including some symmetry.
 It is also best explained by means of an example; refer to
-  the diagram on the left.
+  the diagram in <xref ref="fig-Edwards7colored"/>.
 For <m>n=2</m> the diagram consists of two perpendicular lines.
 (Strictly speaking we have to join the endpoints of these lines to make
   them into simple closed curves.)
@@ -269,19 +339,21 @@ For <m>n=3</m> a circle is added, centered at the point of intersection of the l
 Successive curves will all be added that follow this circle,
   weaving back and forth along the circle, again dividing each
   region in two.
-For <m>n = 4,5,6</m> the blue, red, and green curves are added,
+For <m>n = 4,5,6,7</m> the blue, red, green and magenta curves are added,
   in that order.
 </p>
-</sidebyside>
 
 <p>
 These diagrams have very attractive bipartite colourings as can be
   seen below.
+If the region is interior to an odd number of curves, then it is colored blue;
+  otherwise, it is white.
 The reason for calling these colourings "bipartite" is explained in 
   <xref ref="ch-VennGraphs">Chapter</xref>, Graphs Associated with Venn
   Diagrams.
 </p>
 
+<!--
 <sidebyside>
 <ul>
 <li><xref ref="img-n2c"/> shows <m>n=2</m>.
@@ -296,14 +368,57 @@ The reason for calling these colourings "bipartite" is explained in
 </li>
 <li><xref ref="img-n7c"/> shows <m>n=7</m>.
 </li>
-<!--
-<li><xref ref="img-n8c"><m>n=8</m></xref>
-</li>
--->
 </ul>
 <image source="gifs/anim-nc.gif"></image>
 </sidebyside>
 </subsection>
+-->
+
+<p>
+<figure xml:id="fig-EdwardsBipartite">
+<idx>bipartite</idx>
+<caption>Edwards Venn diagrams with bipartite coloring, <m>n = 1,2,\ldots,9</m>.</caption>
+<tabular align="center" width="90%">
+<row>
+<cell><image source="pdfs/EdwardsBipart1"></image></cell>
+<cell><image source="pdfs/EdwardsBipart2"></image></cell>
+<cell><image source="pdfs/EdwardsBipart3"></image></cell>
+</row>
+<row>
+<cell><m>n=1</m></cell><cell><m>n=2</m></cell><cell><m>n=3</m></cell>
+</row>
+<row>
+<cell><image source="pdfs/EdwardsBipart4"></image></cell>
+<cell><image source="pdfs/EdwardsBipart5"></image></cell>
+<cell><image source="pdfs/EdwardsBipart6"></image></cell>
+</row>
+<row>
+<cell><m>n=4</m></cell><cell><m>n=5</m></cell><cell><m>n=6</m></cell>
+</row>
+<row>
+<cell><image source="pdfs/EdwardsBipart7"></image></cell>
+<cell><image source="pdfs/EdwardsBipart8"></image></cell>
+<cell><image source="pdfs/EdwardsBipart9"></image></cell>
+</row>
+<row>
+<cell><m>n=7</m></cell><cell><m>n=8</m></cell><cell><m>n=9</m></cell>
+</row>
+</tabular>
+</figure>
+</p>
+
+<p>
+Topologically equivalent constructions had been discovered ealier than Edwards' cogwheels, but these
+  do not have the same aesthetic appeal as Edwards' diagrams.
+For example, see the convex polygons of <xref ref="ref-Gr75">[Gr75]</xref> and <xref ref="ref-FGK">[FGK]</xref>.
+Futher references are <xref ref="ref-PS">[PS]</xref> and <xref ref="ref-Hu">[Hu]</xref>
+Also, Edwards' diagrams have an interesting "phase-shifted" variant that we will explore later and which
+  are nicely explained in his book <xref ref="ref-Ed04">[Ed04]</xref>.
+</p>
+
+</subsection>
+
+<!-- ============================================================================= -->
 
 <subsection>
 <title>Venn Diagrams and Knots</title>
@@ -468,6 +583,7 @@ The online reader is encouraged to simply ignore this section; in printed book f
 </image>
 </figure>
 </sidebyside>
+
 
 
 </section>

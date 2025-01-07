@@ -23,11 +23,13 @@ In an ordinary Venn diagram each intersection of interiors and exteriors consist
 <subsection>
 <title>Some symmetric <m>m</m>-fold <m>2</m>-Venn diagrams</title>
 
+<!--
 <p>
 ARE THESE EXAMPLES ALL DUE TO GRUNBAUM?
 </p>
+-->
 
-<figure>
+<figure width="40%">
 <caption>
 Coiled snakes:
 A <m>m</m>-fold <m>2</m>-Venn diagram with mirror image
@@ -38,7 +40,7 @@ Shown with <m>m=4</m>.  Other values of <m>m</m> may
 <image source="pdfs/grunSwizzle.svg"/>
 </figure>
 
-<figure>
+<figure width="40%">
 <caption>
 Rotated F's.
 A <m>(2m+1)</m>-fold 2-Venn diagram with rotational symmetry.
@@ -48,14 +50,14 @@ Additional twists of both ends give larger values of <m>k</m>.
 <image source="pdfs/grun3fold.svg"/>
 </figure>
 
-<figure>
+<figure width="40%">
 <caption>
 A <m>2m</m>-fold 2-Venn diagram with rotational symmetry.
 Shown with <m>m=3</m>.
 Additional twists/untwists of both ends give other values of <m>m</m>.
 Note that the curves passing through the red vertices do not 
   meet transversally (showing that <xref ref="obs-transverse"/> does not
-  apply to <m>m</m>-fold Venn diagrams.
+  apply to <m>m</m>-fold Venn diagrams).
 </caption>
 <image source="pdfs/grunEvenRotate.svg"/>
 </figure>
@@ -117,7 +119,9 @@ An order-<m>n</m> (binary) <term>de Bruijn cycle</term><idx>de Bruijn cycle</idx
   cycle for <m>n=2</m>.
 A wealth of information about de Bruijn cycles can be found in 
   <xref ref="ref-Kn4">[Kn4]</xref>.
-  
+</p>
+
+<p>  
 The idea of Shor's construction is to take a De Bruijn 
   cycle <m>C</m> of length <m>2^n</m>, together with a regular 
   <m>2^n</m>-gon inscribed in a circle.
@@ -128,6 +132,8 @@ To obtain the other curves rotate this one about the central point by
   <m>k = 1,2,\ldots,n-1</m>.
 The example shown above is created by starting with the De Bruijn cycle
 <m>C = 00011101</m>.
+Thus there is an infinitely intersecting <m>n</m>-Venn diagram drawn with
+  <em>congruent</em> curves for any <m>n</m>.
 </p>
 
 <p>
@@ -141,33 +147,31 @@ which also have infinitely intersecting segments of curves.
 <!-- =================================================================================== -->
 
 
-<section>
+<section xml:id="sec-GenSymm">
 <title>Generalizations of Symmetric diagrams</title>
 
 <p>
-On the page <a href="VennSymmVariants.html#nonprime">Variants on Symmetry</a> we have already discussed
+In <xref ref="sec-SymmVariant"/>, Variants on Symmetry, we have already discussed
 a generalization of symmetric Venn diagrams, namely pseudo-symmetric diagrams (which retain
 the property of being a Venn diagram while relaxing the notion of symmetry).  Here we take
-the opposite tack by retaining the strict definition of symmetry but extending it to 
+the opposite tack by retaining the strict definition of symmetry but extend it to 
 non-Venn diagrams.  Our motivation is the fact that if <m>n</m> is not prime, symmetric
 Venn diagrams cannot exist.  
 </p>
 
 <p>
 It is natural to consider diagrams that are "close" to Venn
-diagrams, in that the number of regions is as close to <m>2^n</m> as possible
-while still being symmetric.  We have already seen on the "What is Venn Diagram?" page 
-that Venn diagrams are 
-instances of independent families, and in <xref ref="ref-Gr99">[Gr99]</xref>, 
-Grünbaum 
-generalized the concept of symmetry in Venn diagrams
-to independent families.
+diagrams, in that the number of regions is as close to <m>2^n</m> as possible,
+while still having a <m>n</m>-fold rotational symmetry.  By definition, Venn diagrams are 
+special instances of independent families, and in <xref ref="ref-Gr99">[Gr99]</xref>, 
+Grünbaum generalized the concept of symmetry in Venn diagrams
+to symmetry in independent families.
 </p>
 
 <figure xml:id="fig-4ind" width="70%">
 <idx>equilateral triangles</idx>
 <caption>A symmetric independent set made with 4 equilateral triangles</caption>
-<image source="pngs/4-ISF-grunbaum.png"/>
+<image source="pdfs/4-IF-min-symm" width="70%"/>
 </figure>
 
 <p>
@@ -193,7 +197,8 @@ gives <m>I(n)</m> for small non-prime values of <m>n</m>.
 
 <p>
 <xref ref="fig-4ind"/>, from <xref ref="ref-Gr99">[Gr99]</xref>, shows a symmetric independent family of
-four equilateral triangles with <m>I(4) = 18</m> regions.
+four equilateral triangles with <m>I(4) = 18</m> regions.  We have seen an example of a symmetric independent
+family of 4 triangles before, in <xref ref="fig-4-IF"/>, but this family has 22 regions.
 </p>
 
 <p>
@@ -288,14 +293,14 @@ that is, as close to simple as possible: there are only 16 points where more tha
 
 <figure width="70%">
 <caption>A near-Venn diagram of 6 curves, drawn to be near-simple.</caption>
-<image source="pngs/6-nVD-colour.png"/>
+<image source="pdfs/6-nVD-colour"/>
 </figure>
 
 <p>
 In addition to examples for small <m>n</m> in <xref ref="ref-Gr99">[Gr99]</xref>, 
 many examples of larger symmetric independent families and near-Venn diagrams 
-can be found in <xref ref="ref-RW04">[RW04]</xref>, <xref ref="ref-Wes">[Wes]</xref>, and <xref ref="ref-Ji">[Ji]</xref>.  
-The above examples are from <xref ref="ref-Wes">[Wes]</xref>.  
+can be found in <xref ref="ref-RW04">[RW04]</xref>, <xref ref="ref-We03">[We03]</xref>, and <xref ref="ref-Ji">[Ji]</xref>.  
+The above examples are from <xref ref="ref-We03">[We03]</xref>.  
 
 Grünbaum also noticed, as have we, that, aside from the case <m>E(4) = 14</m>, for which a simple diagram can 
 be easily constructed, there do not seem to be any <em>simple</em> symmetric independent families or near-Venn diagrams attaining the given
@@ -310,6 +315,186 @@ bounds.  Why this should be is entirely unknown!
 <idx>Euler diagram</idx>
 <title>Euler Diagrams</title>
 
+<p>
+Euler diagrams predate Venn diagrams, but are quite distinct.
+They were introduced by Euler to aid in the understanding
+  of syllogisms.
+In that context, they have certain deficiencies, some of which
+  Venn tried to rectify with Venn diagrams.
+</p>  
+
+<p>
+Recall from <xref ref="def-IndependentFamily"/> that 
+an Euler diagram is like a Venn diagram except that
+  intersections of curve interiors are allowed to be empty, although
+  the regions of intersection must still be connected.
+From this point of view a Venn diagram is a particular type of
+  Euler diagram.
+If infinite intersections are allowed we refer to the
+  diagrams as <term>iEuler</term> diagrams.
+</p>
+
+<p>
+As used in the analysis of syllogisms, each region of a Venn
+  diagram is shaded (in red in the table below) according
+  to whether the region can contain any members.
+In this way any set system can be represented by a Venn diagram.
+In an Euler diagram a region is present if and only if it
+  contains at least one member; there is no shading.
+As a consequence not all set systems may be represented by 
+  Euler diagrams; for example the reader can verify that the system 
+   <m>\{ \emptyset, A, B, AC, BC \}</m> cannot be drawn as an
+   Euler diagram (although it can be drawn as an iEuler diagram).
+</p>
+
+<p>
+Euler wrote four letters in February of 1761 which contain Euler diagrams as defined above
+(from the Brewster translation) 
+<xref ref="ref-Eu">[Eu]</xref>.
+
+<ul>
+<li>
+LETTER CII. <em>Of the Perfections of a Language.
+Judgements and Nature of Propositions, affirmative and negative;
+universal or particular.</em>
+</li>
+<li>
+LETTER CIII. <em>Of Syllogisms, and their different Forms,
+when the first Proposition is universal.</em>
+</li>
+<li>
+LETTER CIV. <em>Different Forms of Syllogisms, whose first
+Proposition is particular.</em>
+</li>
+<li>
+LETTER CV. <em>Analysis of some Syllogisms.</em>
+</li>
+</ul>
+</p>
+
+<p>
+Euler always drew his diagrams as collections of circles,
+  but remarks in Letter CIII, <em>These circles, or rather
+  these spaces, for it is of no importance of what figure
+  they are of,...</em>.
+We know of no written record that Euler ever made use of the
+  familiar 3 circle Venn diagram in the study of syllogisms.
+</p>
+
+<p>
+Chapter V of John Venn's book <em>Symbolic Logic</em> contains
+  an explanation and comparison of Venn and Euler diagrams
+  <xref ref="ref-Ve81">[Ve81]</xref>.
+  The second part of his historical notes contains much
+  information about the history of diagrammic reasoning.  
+</p>
+
+<p>
+Since Venn's time, his diagrams have
+  since been extended to Venn-Pierce diagrams, which add
+  extra information in the form of symbols inside the regions
+  to enable them to be used as valid logical proof mechanisms.
+  The book by Sun-Joo Shin <xref ref="ref-Sh">[Sh]</xref>
+  contains a clear discussion of the differences between Euler,
+  Venn, and Pierce diagrams, and a proof that with some enhancements
+  the Venn system provides a sound and complete logical representation
+  system.
+</p>
+  
+<p>
+In the table below we show the corresponding set system,
+Venn diagram, and Euler diagram for 2-sets.  Up to a relabelling
+of sets, all possibilities are shown (subject to the constraint that they include the
+empty set).
+</p>
+
+<table xml:id="tbl-VennEuler">
+<title>Comparison of Venn and Euler diagrams for <m>n=2</m></title>
+<tabular>
+<col width="30%"/> <col width="20%"/> <col width="20%"/>
+<row  header="yes" bottom="minor">
+<cell>Set system</cell>
+<cell>Venn diagram</cell>
+<cell>Euler diagram</cell>
+</row>
+
+<row bottom="minor" >
+<cell><m>\{ \emptyset, AB, B, AB \}</m></cell>
+<cell><image source="pdfs/2venn-A_ab_B.svg"/></cell>
+<cell><image source="pdfs/2venn-A_ab_B.svg"/></cell>
+</row>
+
+<row bottom="minor" >
+<cell><m>\{ \emptyset, A, AB \}</m></cell>
+<cell><image source="pdfs/2venn-A_ab.svg"/></cell>
+<cell><image source="pdfs/2euler-A_ab.svg"/></cell>
+</row>
+
+<row bottom="minor" >
+<cell><m>\{ \emptyset, A, B \}</m></cell>
+<cell><image source="pdfs/2venn-A_B.svg"/></cell>
+<cell><image source="pdfs/2euler-A_B.svg"/></cell>
+</row>
+
+<row bottom="minor" >
+<cell><m>\{ \emptyset, AB \}</m></cell>
+<cell><image source="pdfs/2venn-ab.svg"/></cell>
+<cell><image source="pdfs/2euler-ab.svg"/></cell>
+</row>
+
+<row bottom="minor" >
+<cell><m>\{ \emptyset, A \}</m></cell>
+<cell><image source="pdfs/2venn-A.svg"/></cell>
+<cell><image source="pdfs/2euler-A.svg"/></cell>
+</row>
+
+<row bottom="minor" >
+<cell><m>\{ \emptyset \}</m></cell>
+<cell><image source="pdfs/2venn.svg"/></cell>
+<cell><image source="pdfs/2euler.svg"/></cell>
+</row>
+</tabular>
+</table>
+
+<!--
+<TR>
+<TD>
+{<FONT SIZE="+1"><TT>&Oslash;</TT></FONT>}
+<TD height=150 width=200 align=center>
+<IMG SRC="pngs/2vennAabB.png">
+<TD height=150 width=200 align=center>
+-->
+
+<p>
+In <xref ref="tbl-VennEuler"/> the Euler diagram for set system <m>\{ \emptyset, AB \}</m> is actually
+  an iEuler diagram, there are two overlapping circles, one for <m>A</m> and one for <m>B</m>.
+Note also that the Euler diagram for <m>\{ \emptyset \}</m> is the entire plane, which is awkward.
+These are two limitations of Euler diagrams, in addition to the fact mentioned above, that not all
+  set systems can be represented as Euler diagrams.
+However, this leads to a natural question: what is the complexity of determining whether a given
+  set system is representable at an Euler diagram?
+One known result is found in the following theorem.
+</p>
+  
+<theorem><idx>NP-complete problem</idx><idx>iEuler diagram</idx>
+<statement>
+The problem of determining whether a given set system is representable by an iEuler diagram
+  is NP-complete.
+</statement>
+</theorem>
+
+<p>
+This theorem was proven in Stirling Chow's Ph.D. thesis <xref ref="ref-Ch">[Ch]</xref> via a
+reduction to a known NP-complete problem, that of determining whether a 3-connected planar graph
+is Hamiltonian or not.  The gadgets used in the reduction would need
+significant modification to restrict the problem to Euler or simple Euler diagrams.
+</p>
+
+<p>
+Another complexity result involving set systems and planar representations was given in
+Johnson and Pollack <xref ref="ref-JP">[JP]</xref>.  However, their planar representation are
+neither Venn or Euler diagrams as we have defined them.
+</p>
 
 
 </section>

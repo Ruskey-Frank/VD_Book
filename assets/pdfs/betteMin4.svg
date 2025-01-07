@@ -1,0 +1,100 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: fig2dev Version 3.2 Patchlevel 5d -->
+<!-- CreationDate: Tue Nov 19 13:37:29 2024 -->
+<!-- Magnification: 1.000 -->
+<svg	xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	width="4.2in" height="5.3in"
+	viewBox="2498 635 5088 6324">
+<g style="stroke-width:.025in; fill:none">
+<!-- Line -->
+<polyline points="4802,1651
+6150,5700
+" style="stroke:#000000;stroke-width:60;
+stroke-linejoin:miter; stroke-linecap:butt;
+"/>
+<!-- Arc -->
+<path style="stroke:#0000ff;stroke-width:60;stroke-linecap:butt;"
+d="M 6150,5700 A 1818 1818  0  0  1  3467  5721 " />
+<!-- Arc -->
+<path style="stroke:#00ff00;stroke-width:60;stroke-linecap:butt;"
+d="M 6150,5700 A 4298 4298  0  0  1  3467  5721 " />
+<!-- Arc -->
+<path style="stroke:#000000;stroke-width:60;stroke-linecap:butt;"
+d="M 6150,5700 A 2944 2944  0  0  0  3459  5751 " />
+<!-- Arc -->
+<path style="stroke:#000000;stroke-width:60;stroke-linecap:butt;"
+d="M 6900,3225 A 2155 2155  0  1  1  3467  5736 " />
+<!-- Arc -->
+<path style="stroke:#ff0000;stroke-width:60;stroke-linecap:butt;"
+d="M 6144,5709 A 1545 1545  0  0  0  3459  5751 " />
+<!-- Arc -->
+<path style="stroke:#ff0000;stroke-width:60;stroke-linecap:butt;"
+d="M 6939,3204 A 1987 1987  0  0  1  6150  5700 " />
+<!-- Arc -->
+<path style="stroke:#0000ff;stroke-width:60;stroke-linecap:butt;"
+d="M 2625,3225 A 2533 2533  0  0  0  4809  1621 " />
+<!-- Arc -->
+<path style="stroke:#000000;stroke-width:60;stroke-linecap:butt;"
+d="M 4787,1636 A 2008 2008  0  0  1  6900  3225 " />
+<!-- Arc -->
+<path style="stroke:#0000ff;stroke-width:60;stroke-linecap:butt;"
+d="M 4824,1629 A 2204 2204  0  0  0  6954  3212 " />
+<!-- Arc -->
+<path style="stroke:#ff0000;stroke-width:60;stroke-linecap:butt;"
+d="M 2625,3225 A 1898 1898  0  0  1  4817  1644 " />
+<!-- Arc -->
+<path style="stroke:#ff0000;stroke-width:60;stroke-linecap:butt;"
+d="M 2625,3225 A 2637 2637  0  0  1  3482  5728 " />
+<!-- Arc -->
+<path style="stroke:#0000ff;stroke-width:60;stroke-linecap:butt;"
+d="M 3474,5728 A 2804 2804  0  0  1  2625  3225 " />
+<!-- Arc -->
+<path style="stroke:#00ff00;stroke-width:60;stroke-linecap:butt;"
+d="M 6902,3234 A 2279 2279  0  0  0  6152  5709 " />
+<!-- Line -->
+<polyline points="4794,1644
+6969,3212
+" style="stroke:#ff0000;stroke-width:60;
+stroke-linejoin:miter; stroke-linecap:butt;
+"/>
+<!-- Line -->
+<polyline points="2625,3225
+4817,1644
+3482,5728
+" style="stroke:#00ff00;stroke-width:60;
+stroke-linejoin:miter; stroke-linecap:butt;
+"/>
+<!-- Line -->
+<polyline points="6939,3204
+6150,5700
+" style="stroke:#0000ff;stroke-width:60;
+stroke-linejoin:miter; stroke-linecap:butt;
+"/>
+<!-- Arc -->
+<path style="stroke:#00ff00;stroke-width:60;stroke-linecap:butt;"
+d="M 6900,3225 A 2170 2170  0  1  0  2625  3225 " />
+<!-- Circle -->
+<circle cx="3467" cy="5727" r="106"
+ style="fill:#000000;stroke:#000000;stroke-width:60;"/>
+<!-- Line -->
+<polyline points="4817,1629
+" style="stroke:#000000;stroke-width:30;
+stroke-linejoin:miter; stroke-linecap:butt;
+"/>
+<!-- Circle -->
+<circle cx="2642" cy="3200" r="106"
+ style="fill:#000000;stroke:#000000;stroke-width:60;"/>
+<!-- Circle -->
+<circle cx="4802" cy="1648" r="106"
+ style="fill:#000000;stroke:#000000;stroke-width:60;"/>
+<!-- Circle -->
+<circle cx="6931" cy="3200" r="106"
+ style="fill:#000000;stroke:#000000;stroke-width:60;"/>
+<!-- Circle -->
+<circle cx="6137" cy="5697" r="106"
+ style="fill:#000000;stroke:#000000;stroke-width:60;"/>
+</g>
+</svg>

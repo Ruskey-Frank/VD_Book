@@ -51,6 +51,11 @@ In a monotone Venn diagram the
 
 <p>
 <idx>monotone</idx>
+<idx>Hasse diagram</idx>
+<idx>hypercube</idx>
+<idx>Boolean lattice</idx>
+<idx>source</idx>
+<idx>sink</idx>
 We can view monotonicity in another order-theoretic way.
 The Venn dual graph, <m>D(\mathbf{C})</m>, defined above, could have been
   defined as a directed acyclic graph, with the direction indicating
@@ -82,7 +87,8 @@ M_n = {n \choose \lfloor n/2 \rfloor}.
 <p>
 As part of their proof they gave an inductive construction to show
   that monotone Venn diagrams that achieve this bound exist for all <m>n &gt; 1</m>.
-A constructive proof with a different motivation is given in <xref ref="ref-GKS">[GKS]</xref>.
+A constructive proof with a different motivation is given in <xref ref="ref-GKS">[GKS]</xref>
+  for the case where <m>n</m> is a prime number.
 </p>
 
 </section>

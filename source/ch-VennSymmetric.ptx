@@ -93,8 +93,29 @@ Many symmetric diagrams are known for <m>n = 2,3,5,7</m>, and a few beautifully 
 <!-- (the large figure that appears twice in the title section of these pages, 
 Victoria, is a simple polar symmetric 7-Venn diagram).  -->
 These diagrams, along with counting results establishing the number of symmetric diagrams with 
-different properties, can all be seen in the next section.
+different properties, can all be seen in the following sections.
 </p>
+
+<subsection>
+<caption>Reflective Symmetry</caption>
+
+<p>
+Besides rotational and polar symmetry, there is another symmetry that is natural to consider, <term>reflective symmetry</term>.
+We have already seen several diagrams with reflective symmetry.  For 3-Venn diagrams there are
+the two in Class 2 (<xref ref="img-Class2"/>), the two in Class 3 (<xref ref="img-Class3"/>), and two of the
+three diagrams in Class 5 (<xref ref="img-Class5"/>, #3.11, #3.13), and the simple three circle Venn diagram.
+For 4-Venn diagrams, the congruent ellipse diagram of <xref ref="fig-4Venn_ellipses"/> has reflective symmetry; as does 
+  the very nice non-monotone example shown below in <xref ref="fig-4Venn-nonmonotone"/>.
+For <m>n \gt 4</m>, we do not know any examples of diagrams with reflective symmetry.
+</p>
+  
+<figure xml:id="fig-4Venn-nonmonotone" width="40%">
+<caption>A simple non-monotone 4-Venn diagram with reflective symmetry.</caption>.
+<image source="pdfs/4Venn_NonMonotone"/>
+</figure>  
+  
+  
+</subsection>
  
 </section>
 

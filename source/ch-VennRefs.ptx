@@ -75,6 +75,9 @@
   <p xml:id="ref-CHP00">
   [CHP00] Kiran B. Chilakamarri, Peter Hamburger and Raymond E. Pippert, Analysis of Venn diagrams using cycles in graphs, Geometriae Dedicata, 82 (2000) 193-223.
   </p>
+  <p xml:id="ref-Ch">
+  [Ch] S. Chow, Generating and Drawing Area-Proportional Euler and Venn Diagrams, Ph.D. Thesis, University of Victoria, 2007.
+  </p>
   <p>
   [CR98] S. Chow and F. Ruskey, Searching for symmetric Venn diagrams, extended abstract, (1998).
   </p>
@@ -117,7 +120,7 @@
   <p xml:id="ref-ES">
   [ES] Anthony W. F. Edwards and C. A. B. Smith, New 3-set Venn diagram, Nature, (Scientific Correspondence), 339 (1989) 263.
   </p>
-  <p>
+  <p xml:id="ref-Eu">
   [Eu] Leonard Euler, Lettres à une Princesse d'Allemagne, St. Petersburg, (1768). 
   <fn>(Translated by Sir David Brewster, Edinburgh, W &amp; C Tait, and Longman et al., 1823, Vol. 1. See in particular letters CII - CVIII on pages 337-366.)</fn>
   </p>
@@ -201,6 +204,9 @@
   <p xml:id="ref-He">
   [He] D. W. Henderson, Venn diagrams for more than four classes, American Mathematical Monthly, 70 (1963) 424-426.
   </p>
+  <p xml:id="ref-Hu">
+  [Hu] M. Humphries, Venn diagrams using convex sets, Mathematical Gazette, 71 (1987) 59.
+  </p>
   <p xml:id="ref-Ji">
   [Ji] Zongliang Jiang, Symmetric chain decompositions and independent families of curves, Master's thesis, Department of Computer Science, North Carolina State University, (2003).
   </p>
@@ -248,6 +254,12 @@
   <p xml:id="ref-RRS">
   [RRS] A. Rényi, V. Rényi, and J. Surányi, Sur l'indépendance des domaines simples dans l'Espace Euclidien a n dimensions, Colloquium Mathematicum, 2 (1951) 130-135. 
   <fn>[Some erroneous statements made in this paper are corrected in <xref ref="ref-Gr75">[Gr75]</xref>]</fn>
+  <instructions>
+  <title>Note</title>
+  <p>
+  Some erroneous statements made in this paper are corrected in <xref ref="ref-Gr75">[Gr75]</xref>.
+  </p>
+  </instructions>
   </p>
   <p xml:id="ref-RW04">
   [RW04] Frank Ruskey and Mark Weston, More fun with symmetric Venn diagrams, in Proceedings of Third International Conference on FUN with Algorithms, 
@@ -277,8 +289,11 @@
   <p>
   [Weg] B. Weglorz, Nerves and Set-theoretical Independence, Colloquium Mathimaticum, 13 (1964) 17-19.
   </p>
-  <p xml:id="ref-Wes">
-  [Wes] Mark Weston, On symmetry in Venn diagrams and independent families, Master's thesis, University of Victoria, (2003).
+  <p xml:id="ref-We03">
+  [We03] Mark Weston, On symmetry in Venn diagrams and independent families, Master's thesis, University of Victoria, (2003).
+  </p>
+  <p xml:id="ref-We09">
+  [We09] Mark Weston, Symmetries of Venn Diagrams on the sphere, Ph.D. thesis, University of Victoria, (2009).
   </p>
   <p xml:id="ref-Wi">
   [Wi] Peter Winkler, Venn diagrams: Some observations and an open problem, Congressus Numerantium, 45 (1984) 267-274.
@@ -306,6 +321,9 @@
   </p>
   <p xml:id="ref-St">
   [St] Ian Stewart, Game, Set, and Math, Basil Blackwell, 1989.
+  </p>
+  <p xml:id="ref-Tu">
+  [Tu] W. Tutte, A theorem on planar graphs, Transactions of the AMS, 82 (1956) 183-116.
   </p>
   <p xml:id="ref-Wh">
   [Wh] H. Whitney, A Theorem on Graphs, Annals of Math., 32 (1931) 378-390.

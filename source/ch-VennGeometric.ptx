@@ -116,7 +116,7 @@ number of vertices must be at most <m>2 k {n \choose 2}</m>.  Since
 the number of vertices in a simple diagram is <m>2^n - 2</m>, the inequality follows.
 </p>
 </proof>
-</theorem>
+</theorem> 
 
 <p>
 A slight improvement to this theorem was obtained in <xref ref="ref-CRW">[CRW]</xref>.
@@ -135,39 +135,49 @@ The following table lists implications of <xref ref="thm-CRW"/> as the column
 The column with header <m>k \le</m> is from a known construction. 
 </p>
 
-<table>
-<caption>
+<table xml:id="tbl-kgons">
+<title>
 Bounds on the least <m>k</m> for which a simple <m>n</m>-Venn diagram can be
 drawn with <m>k</m>-gons.
-</caption>
+</title>
 <tabular>
-<col/><col/><col width="70%"/>
-<row header="yes" bottom="minor" >
+<col />
+<col />
+<col width="70%" />
+<row valign="top" header="yes" bottom="minor" >
 <cell><m>n</m></cell><cell><m>k \ge</m></cell><cell>Notes</cell>
 </row>
-<row>
+<row valign="top" >
 <cell>3</cell><cell>1</cell>
-<cell><p>E.g., the 3-circle diagram.</p></cell>
+<cell>
+  <p>
+  E.g., the 3-circle diagram.
+  </p>
+</cell>
 </row>
 <row>
 <cell>4</cell><cell>2</cell>
 <cell><p>Doable with ellipses or triangles.</p></cell>
 </row>
-<row>
+<row valign="top" >
 <cell>5</cell><cell>2</cell>
 <cell><p>Many known examples of symmetric and non-symmetric diagrams for ellipses, triangles,  etc.  
 Conjectured to not be possible for squares by Grünbaum <xref ref="ref-Gr92b">[Gr92b]</xref>.</p></cell>
 </row>
-<row>
+<row valign="top" >
 <cell>6</cell><cell>3</cell>
-<cell>Solved for triangles by Carroll <xref ref="ref-Ca00">[Ca00]</xref>.
-No congruent examples known.</cell>
+<cell>
+  <p>Solved for triangles by Carroll <xref ref="ref-Ca00">[Ca00]</xref>.
+    No congruent examples known.<idx>congruent</idx>
+  </p>
+</cell>
 </row>
-<row>
+<row valign="top" >
 <cell>7</cell><cell>4</cell>
-<cell>Grünbaum constructed an independent family (not a Venn diagram) of seven hexagons.
+<cell><p>Grünbaum constructed an independent family (not a Venn diagram) of seven hexagons.
 Solved for convex symmetric 4-gons (see <xref ref="fig-7quad"/>) by the authors.  
-No diagram of 7 triangles is possible.</cell>
+No diagram of 7 triangles is possible.
+</p></cell>
 </row>
 <row>
 <cell>8</cell><cell>6</cell><cell><m>k \le 64</m></cell>
@@ -297,7 +307,7 @@ the number of vertices, as in Lemma G above, we see that
 <m>6{7 \choose 2} = 2^7 - 2</m>; 
 thus, every pair of triangles must intersect in six points. 
 Thus for any corner <m>A</m> of any triangle <m>t</m>, and any other triangle <m>t'</m>, 
-<m>A</m> lies outside <m>t'</m>. Thus <m>A</m> lies on the outer face of the diagram, and
+the point <m>A</m> lies outside <m>t'</m>. Thus <m>A</m> lies on the outer face of the diagram, and
 the other face at <m>A</m> is the one inside <m>t</m> alone. Since the same 
 argument holds for a second corner <m>B</m> of <m>t</m>, we have that the non-outer face at <m>A</m>
 is also the non-outer face at <m>B</m>, but an edge of <m>t'</m> separates them.  Thus we have
@@ -318,7 +328,7 @@ or <xref ref="ref-Gr75">[Gr75]</xref>).
 By the results of <xref ref="ref-PS">[BGR]</xref> any convex <m>n</m>-FISC (and consequently any monotone <m>n</m>-Venn diagram) with
   <m>N</m> points of intersection is drawable with <m>N</m>-gons.
   <idx><h>Venn diagram</h><h>monotone</h></idx>
-As a consequence and monotone <m>n</m>-Venn diagram can be drawn with <m>(2^n-2)</m>-gons.
+As a consequence any monotone <m>n</m>-Venn diagram can be drawn with <m>(2^n-2)</m>-gons.
 Grünbaum's convex construction 
   <xref ref="ref-Gr75">[Gr75]</xref> 
 is very much like Edwards' general
@@ -326,7 +336,7 @@ is very much like Edwards' general
   <m>n</m>th curve is a <m>2^{n-2}</m>-gon; this gives the upper bounds
   in the table above.
 Also, Grünbaum 
-  [<A HREF="VennRefs.html#Gr75">Gr75</A>, pg. 17] 
+  <xref ref="ref-Gr75">[Gr75, pg.17]</xref> 
   states that "the construction we
   used ... is a modification to convex polygons of the method
   described in More <xref ref="ref-Mo">[Mo]</xref>." 
@@ -337,10 +347,11 @@ In <xref ref="ref-CRW">[CRW]</xref> Carroll, Ruskey, and Weston proved that ther
 symmetric 7-Venn diagram drawn with 4-gons, which meets the lower bound of <xref ref="thm-CRW"/>.
 See <xref ref="fig-7quad"/>.  The coordinates of one of the quadrilaterals is given in the
 list below.  The other 6 quadrilaterals may be obtained from this one by rotating about the origin.
+The diagram is isomorphic to "Victoria".
 </p>
 
 <me>
-(-0.446, 0.000), (-0.123, -0.433), (\ 0.699,\ 0.061), (-0.446,\ 0.451)
+(-0.446, 0.000), (-0.123, -0.433), (\ 0.699,\ 0.061), (-0.081,\ 0.451)
 </me>
 
 <!--
@@ -367,7 +378,7 @@ list below.  The other 6 quadrilaterals may be obtained from this one by rotatin
 <caption>
 A symmetric 7-Venn diagram drawn with convex quadrilaterals.
 </caption>
-<image source="pngs/7-VD-quads-thick.png" width="70%" />
+<image source="pdfs/7-venn-quad-bw" width="70%" />
 </figure>
 
 </subsection>
@@ -381,10 +392,16 @@ A symmetric 7-Venn diagram drawn with convex quadrilaterals.
 DOES THIS SECTION BELONG ELSEWHERE?
 </p>
 
-<p>
-A Venn diagram is <em>exposed</em> if each of its curves touches the
+<definition xml:id="def-exposed">
+<idx><h>Venn diagram</h><h>exposed</h></idx>
+<statement>
+A Venn diagram is <term>exposed</term> if each of its curves touches the
   outer face at some point of non-intersection.
-Note, for example, that the 3-Venn diagram #3.2 is not exposed, even
+</statement>
+</definition>
+
+<p>
+Note, for example, that the 3-Venn diagram #3.2 of <xref ref="img-Class1"/> is not exposed, even
   though all curves have a point of intersection on the outer face.
 Stated in terms of <m>n</m>-Venn dual graphs, being exposed is 
   the same as the condition 
@@ -392,8 +409,17 @@ Stated in terms of <m>n</m>-Venn dual graphs, being exposed is
 Clearly, every symmetric Venn diagram must be exposed.
 Also, every convex Venn diagram must be exposed 
   (<xref ref="ref-Gr92a">[Gr92a]</xref>).
+</p>
+
+<definition xml:id="def-hidden">
+<idx><h>curve</h><h>hidden</h></idx>
+<statement>
 A curve in a non-exposed Venn diagram is <em>hidden</em> if it 
   does not touch the outer region.
+</statement>
+</definition>
+
+<p>
 For example, in Venn's general construction, curves <m>4,5,\ldots,n-1</m>
   are all hidden.
 Chilakamarri, Hamburger, and Pippert 
@@ -424,60 +450,192 @@ All simple Venn diagrams with five or less curves are exposed, but with
 <p> 
 <idx><h>Venn diagram</h><h>polyomino</h></idx>
 <idx><h>Venn diagram</h><h>minimum area</h></idx>
+<idx><h>Venn diagram</h><h>polyVenn</h></idx>
 On his "Math Recreations" website (now defunct), Mark
-Thompson proposed the novel problem of finding <term>Venn polyominoes</term>; these
-are Venn diagrams where each curve is the outline of a polyomino.  A
-polyomino is a generalization of a domino whereby the shape is formed 
-by gluing together unit squares along their edges with no holes allowed.
-When considering Venn polyominoes we need to relax the restriction that curves intersect
+Thompson proposed the novel problem of finding <em>Venn polyominoes</em>; these
+  are Venn diagrams where each curve is the perimeter of an axis-aligned polyomino in an integer grid.  
+A polyomino is a generalization of a domino whereby the shape is formed 
+  by gluing together unit squares along their edges with no holes allowed.
+When considering Venn polyominoes we need to relax the Venn diagram restriction that curves intersect
   only finitely.  
 Chow and Ruskey, in <xref ref="ref-CR05">[CR05]</xref>,
   used Venn polyominoes to consider the special case of area-proportional diagrams 
-  when all regions have the same area, which can be viewed as being of unit area.
-For this reason, such Venn polyominoes are called <term>minimum area Venn diagrams</term>
-A convenient way to build such diagrams is on the grid; each polyomino is axis-aligned
-and each region is a connected area of unit squares.
-Thompson has found several 
-examples of <em>congruent</em> Venn polyominoes for <m>n</m> up to 4 sets, and Chow and Ruskey found
-an example for 5 sets; we show some of these below.  Congruent minimum area Venn diagrams
-are not know for any <m>n > 5</m>.
+  when all regions have the same area, which can be viewed as being a one unit area.
+For this reason, such Venn polyominoes can be called <term>minimum area Venn diagrams</term>.
+We will prefer to call them <term>polyVenn diagrams</term>.
+Thompson found several examples of <em>congruent</em> polyVenn diagrams for <m>n</m> up to 4 curves, and Chow and Ruskey found
+  an example for 5 curves; we show some of these in <xref ref="fig-polyVenn-congruent"/> below.  
+Note that only translations of curves are used in (a),(b),(c), but that reflection is used in (d).
+Congruent polyVenn diagrams are not know for any <m>n \gt 5</m>.<idx>congruent</idx>
 </p>  
 
-<image source="pngs/venn_minarea-polyominoes.png" width="70%" />
-
-<!-- SUBSUMED BY LATER RESULTS
-The examples above all have the nice property that they have minimum area: each region is a single
-unit square.  
-<p>Chow and Ruskey have also found non-congruent Venn polyominoes for 6 and 7 curves each; these diagrams, and their
-component curves, can be seen on the following page:
-<CENTER>
-<TABLE BORDER=1 cellpadding=4>
-<TR><TD>&nbsp; &nbsp;
-<A HREF="VennPoly67EJC.html">Venn diagrams from polyominoes for 6 and 7 sets</A>&nbsp; &nbsp;
-</TABLE>
-</CENTER>
-
-Chow and Ruskey also gave a 3/2-approximation algorithm to construct
-Venn polyominoes; that is, their algorithm produces Venn polyominoes with 
-at most 3/2 times the minimum area (which is, of course, 2<sup><i>n</i></sup>-1 unit squares).
-Their algorithm produces diagrams whose area is 1 + <i>O</i>(1 / <i>n</i><sup>&frac12;</sup>) times
-the minimum area, so
-they are asymptotically optimal since as <i>n</i> increases the number
-of regions approaches 2<sup><i>n</i></sup>-1.  Like the diagrams constructed by
-[<a href="VennRefs.html#GKS">GKS</a>] on the page 
-<a href="VennNecklaceEJC.html">Symmetric Diagrams, Necklaces, and Chains</a>, their construction
-uses a symmetric chain decomposition of the Boolean lattice to specify how
-to lay out regions.
--->
+<figure xml:id="fig-polyVenn-congruent">
+<caption>Congruent <m>n</m>-polyVenn diagrams for <m>n = 2,3,4,5</m>.</caption>
+<image source="pdfs/venn_congruent-polyominoes" width="70%" />
+</figure>
 
 <p>
-
-Chow and Ruskey <xref ref="ref-CR05">[CR05]</xref> have also found non-congruent Venn polyominoes for 6 and for 7 curves.
+Chow and Ruskey <xref ref="ref-CR05">[CR05]</xref> have also found non-congruent polyVenn diagrams for 6 and for 7 curves.
 Subsequently, Bultena, Klimesh, and Ruskey <xref ref="ref-BKR">[BKR]</xref> found a couple of general
-constructions which we will describe pictorially.
+  constructions which we will describe pictorially below.  
+The final "shape" of the polyVenn diagram is a rectangle as per the definition below.
+</p>
+  
+<definition>
+<statement>
+A <term><m>(r,c)</m>-polyVenn diagram</term> is a polyVenn diagram with <m>n = r+c</m> curves, each of which is the 
+  perimeter of a polyomino, all existing in a <m>2^r \times 2^c</m> rectangular <term>base</term> grid.
+</statement>
+</definition>  
 
+<p>
+A <m>(1,2)</m>-polyVenn diagram is shown in <xref ref="fig-Lpoly"/>.  Two depictions are shown.  In the first,
+the three polyominoes and their position in the rectangular grid are shown.  In the second, each grid square contains the
+labels of the curve interiors that it intersects.  Note also that the empty set occurs as a square within the grid, rather
+than as the unbounded exterior region.
+</p>
 
+<figure xml:id="fig-Lpoly">
+<caption>A <m>(1,2)</m>-polyVenn diagram.</caption>
+<image source="pdfs/LpolyVenn" width="70%" />
+</figure>
 
+<p>
+In <xref ref="fig-LpolySmall"/> we show the smallest polyVenn diagrams, using letter labels to indicate the interior of the curves.  
+Up to relabelling and rotations/reflections they are unique.
+</p>
+
+<figure xml:id="fig-LpolySmall">
+<caption>Small polyVenns: (0,0), (0,1), (0,2), (1,1).</caption>
+<image source="pdfs/polyVennSmall" width="70%" />
+</figure>
+
+<p>
+The sequence of <m>(0,c)</m>-polyVenn diagrams does not continue beyond <m>(0,2)</m> as we prove below.
+</p>
+
+<theorem>
+<statement>
+There is no <m>(0,c)</m>-polyVenn diagram if <m>c > 2</m>.
+</statement>
+<proof>
+<p>
+Label the cells <m>1,2,\ldots,2^c</m> and assume that there is a <m>(0,c)</m>-polyVenn diagram.
+The polyominoes are all <m>1 \times 2^{c-1}</m> rectangles.
+Let <m>c \ge 3</m>.  The uncovered cell (the one corresponding to the empty set) must occur at one of the ends, for
+  otherwise two of the rectangles don't intersect; assume that the uncovered cell has label 1. 
+Cells 2 and <m>2^c</m> must be covered by two different polyominoes; however, those two polyominoes intersect in only one cell,
+  which is a contradiction. 
+</p>
+</proof>
+</theorem>
+
+<p>
+We can expand the (1,2)-polyVenn into a (2,3)-polyVenn by the following <em>expansion</em> process.  
+First, double the width and height of the base grid and of each polyomino in the (1,2)-polyVenn as shown in 
+  the top row of <xref ref="fig-LpolyExpand"/>.
+Each square cell of the (1,2) grid has become a <m>2 \times 2</m> square in the (2,3) grid.
+If the two new polyominoes, call them A and B, subdivide each of these <m>2 \times 2</m> squares into the four
+  possible interiors <m>\{ \emptyset,A,B,A \cap B \}</m>, then the result is the desired (2,3)-polyVenn.
+</p>
+
+<figure xml:id="fig-LpolyExpand" width="80%">
+<caption>A <m>(2,3)</m>-polyVenn diagram created by expansion.</caption>
+<image source="pdfs/LpolyVennExpand" width="80%" />
+</figure>
+
+<p>
+In <xref ref="fig-LpolyExpandColumn"/> we show another type of expansion, one that goes from (2,3) to (2,5).
+The first 5 polyominoes are derived from <xref ref="fig-LpolyExpand"/> by quadrupling the number of columns, replacing
+  each cell by a <m>1 \times 4</m> row of cells.  
+This ensures that all <m>2^5</m> possible interior/exterior combinations of those first 5 curves occur, once per each <m>1 \times 4</m> block of cells.
+The final two polyominoes, call them A and B, have the <em>cover property</em> that all 4 possible interior exterior combinations of A and B occur within each
+  <m>1 \times 4</m> block of cells, and thus that the collection of all 7 curves is a Venn diagram.
+</p>
+
+<figure xml:id="fig-LpolyExpandColumn" width="80%">
+<caption>A <m>(2,5)</m>-polyVenn diagram created by expansion.</caption>
+<image source="pdfs/LpolyVennExpandColumn" width="80%" />
+</figure>
+
+<theorem xml:id="thm-expand02">
+<statement>
+For <m>c \geq 2</m>, a <m>(2,c)</m>-polyVenn diagram can be expanded to a <m>(2,c+2)</m>-polyVenn diagram.
+</statement>
+<proof>
+<p>
+The main ideas can be generalize from our discussion of <xref ref="fig-LpolyExpandColumn"/>.  
+Observe that the pattern and cover property of the final two (blue) polyominoes holds for any positive 
+  number of columns that is divisible by 4.
+</p>
+</proof>
+</theorem>
+
+<theorem xml:id="thm-expand11">
+<statement>
+For <m>r,c \geq 1</m>, a <m>(r,c)</m>-polyVenn diagram can be expanded to a <m>(r+1,c+1)</m>-polyVenn diagram.
+</statement>
+<proof>
+<p>
+Again, the main ideas can be generalized from the discussion of <xref ref="fig-LpolyExpand"/>.
+However, here it is not so clear how the two non-expanded polyominoes, A and B, generalize.
+We do this by making use of the progression of polyominoes shown in <xref ref="fig-PolyBette"/>
+  (or <xref ref="fig-PolyMatt"/>).
+To get a particular size, remove the same number of rows from the top and the bottom from a big enough instance.
+For example, the get the two polyominoes in the second row of <xref ref="fig-LpolyExpand"/>, remove the
+  top 2 and bottom 2 rows of cells from the <m>8 \times 8</m> polyominoes in <xref ref="fig-PolyBette"/>.
+</p>
+</proof>
+</theorem>
+
+<p>
+Note that the collection of 8 polyominoes in <xref ref="fig-PolyBette"/> or <xref ref="fig-PolyMatt"/> together
+  with the <m>(1,1)</m>-polyVenn of <xref ref="fig-LpolySmall"/> form
+  <m>(5,5)</m>-polyVenn diagrams after each is expanded enough times to make the base grid <m>32 \time 32</m>.
+</p>
+
+<figure xml:id="fig-PolyBette" width="80%">
+<caption>Progression of polyominoes used in the proof of <xref ref="thm-expand11"/>.  </caption>
+<image source="pdfs/PolyB_progression" width="80%" />
+</figure>
+
+<figure xml:id="fig-PolyMatt" width="80%">
+<caption>Another progression of polyominoes that could be used in the proof of <xref ref="thm-expand11"/>. </caption>
+<image source="pdfs/PolyM_progression" width="80%" />
+</figure>
+
+<p>
+We will now argue that <xref ref="thm-expand11"/> and <xref ref="thm-expand02"/> together imply that there are <m>(r,c)</m>-polyVenn diagrams
+  for all <m>2 \le r \le c</m>.
+The (1,1)- and (1,2)-polyVenn diagrams shown in <xref ref="fig-LpolySmall"/> and <xref ref="fig-Lpoly"/> give us 
+  (2,2)- and (2,3)-polyVenn diagrams via <xref ref="thm-expand11"/>, which in turn are the base cases for
+  applying <xref ref="thm-expand02"/> to get all <m>(2,c)</m>-polyVenn diagrams for <m>c \ge 2</m>.
+The remaining <m>(r,c)</m>-polyVenns for <m>3 \le r \le c</m> are obtained by repeated applications of <xref ref="thm-expand11"/>.
+</p>
+
+<p>
+We previously discussed the <m>(0,c)</m>-polyVenns, which only exist if <m>c = 0,1,2</m>.
+What remains to be considered are the <m>(1,c)</m>-polyVenns where <m>c > 2</m>.
+They exist for <m>c = 3</m> and <m>c = 4</m> (see <xref ref="fig-polyVenn13"/> and <xref ref="fig-polyVenn14"/>)
+  and we conjecture that they don't exist if <m>c \ge 5</m>.
+</p>
+
+<figure xml:id="fig-polyVenn13" width="80%">
+<caption>A <m>(1,3)</m>-polyVenn diagram with nice symmetry.  </caption>
+<image source="pdfs/polyMin4_2X8Sym" width="80%" />
+</figure>
+
+<figure xml:id="fig-polyVenn14" width="80%">
+<caption>A <m>(1,4)</m>-polyVenn diagram. </caption>
+<image source="pdfs/polyMin5_2X16" width="80%" />
+</figure>
+
+<p>
+A purist might complain that polyVenn diagrams include the empty set as a cell instead of the unbounded exterior.
+In certain situations we can modify the constructions discussed above to omit the empty set cell.
+In <xref ref="ref-BKR">[BKR]</xref> it is shown how to modify the above construction to prove that if <m>n</m> is
+  even, then there is a empty set omitting <m>(2^{n/2}-1) \times (2^{n/2}+1)</m> polyVenn diagram.  
+Other instances where <m>2^n-1</m> is a composite number are unresolved.
 </p>
 
 </section>

@@ -12,13 +12,11 @@ However, Grünbaum himself later found examples of such diagrams
   <xref ref="ref-Gr92b">[Gr92b]</xref> and
   in 1992 additional examples were also discovered by Anthony 
   Edwards and independently by Carla Savage and Peter Winkler.
-One of Grünbaum's examples is a remarkable 
-  non-monotone simple symmetric Venn diagram (see
-  <xref ref="img-GrunSymm7"/> and <xref ref="img-GrunSymm7color"/>).
-<!-- There are <A HREF="nonsymm7.html">23 simple monotone symmetric Venn 
-  diagrams</A> for <m>n=7</m>.
--->
-Below we summarize what is know about symmetric 7-Venn diagrams.
+In this section we summarize what is know about symmetric 7-Venn diagrams.
+They can be classified in various ways depending on whether they are
+  monotone or non-monotone, and simple or non-simple, and we will have
+  a sub-section on each of those 4 possibilities.
+
 </p>
 </sidebyside>
 
@@ -386,13 +384,61 @@ This was proven in <xref ref="ref-CMR">[CMR]</xref>.
 
 </subsubsubsection>
 
-<subsubsection>
+</subsection>
+
+<subsection xml:id="sec-nonmono7">
+<title>Non-monotone simple symmetric 7-Venn diagrams</title>
+
+<p>
+Branko Grünbaum was the first to discover a non-monotone symmetric
+  7-Venn diagram.
+The exact number of symmetric 7-Venn diagrams is not known, but there
+  is strong evidence to suggest that there are 33 of them.
+The reason for this belief is that Stirling Chow conducted a "hill-climbing" algorithm with randomized choices; 
+  this algorithm was run thousands of times without ever discovering more than the 33 that it found in initial runs.
+</p>
+
+<sidebyside widths="40% 40%">
+<figure width="40%">
+<caption>Grünbaum's non-monotone simple symmetric 7-Venn diagram.</caption>
+<image source="gifs/GrunSymm7.gif"/>
+</figure>
+<figure width="40%">
+<caption>Grünbaum's non-monotone simple symmetric 7-Venn diagram.  Regions colored according to cardinality.</caption>
+<image source="gifs/GrunSymm7color.gif"/>
+</figure>
+</sidebyside>
+
+<p>
+Computer searches by Stiring Chow have uncovered many other non-monotone simple symmetric
+  7-Venn diagrams.  
+One of them is illustrated in the figures below.
+</p>
+
+<sidebyside widths="40% 40%">
+<figure width="40%">
+<caption>A simple symmetric non-monotone 7-Venn diagram.  Each curve has a different color.</caption>
+<image source="pdfs/7venn-nonmono_color"/>
+</figure>
+<figure width="40%">
+<caption>A simple symmetric non-monotone 7-Venn diagram.  Regions colored according to cardinality.</caption>
+<image source="pdfs/7venn-nonmono_rainbow"/>
+</figure>
+</sidebyside>
+
+<p>
+
+</p>
+
+</subsection>
+
+<subsection>
 <title>Non-simple symmetric 7-Venn diagrams</title>
 
 <p>
 From computer searches it is apparent that there are many more
   non-simple diagrams than there are simple diagrams.  
-Using the above techniques, in <xref ref="ref-Wes">[Wes]</xref> the authors generated
+Using the above techniques, in <xref ref="ref-We03">[We03]</xref> the authors generated
   hundreds of thousands of distinct non-simple monotone symmetric 7-Venn diagrams, including
   1576 rigid diagrams (both polar symmetric and not).
 An example is shown in <xref ref="img-7-VD-polar-rigid"/>.
@@ -401,7 +447,7 @@ An example is shown in <xref ref="img-7-VD-polar-rigid"/>.
 <figure xml:id="img-7-VD-polar-rigid" width="50%">
 <caption>
 A polar symmetric rigid monotone symmetric 7-Venn diagram from
-<xref ref="ref-Wes">[Wes]</xref>.  
+<xref ref="ref-We03">[We03]</xref>.  
 This diagram has the minimum number of vertices for a monotone diagram.
 </caption>
 <image source="pngs/7-VD-polar-rigid.png"></image>
@@ -427,8 +473,6 @@ Hamburger and Pippert, in <xref ref="ref-HP03">[HP03]</xref>, using different me
 </p>
 
 
-</subsubsection>
-  
 </subsection>
 
 </section>
