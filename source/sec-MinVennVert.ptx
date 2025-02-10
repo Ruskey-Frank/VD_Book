@@ -18,15 +18,17 @@ See <xref ref="img-min5"/> and <xref ref="img-min5c"/> for an example when <m>n=
 and <xref ref="img-min7a"/>, <xref ref="img-min7aC"/>, <xref ref="img-min7b"/> and <xref ref="img-min7bC"/>
   for examples when examples for <m>n=7</m> (discovered in collaboration with Stirling Chow).
 </p>
-<image source="pdfs/betteMin4.svg"></image>
+<image source="pdfs/betteMin4"></image>
 </sidebyside>
 
 <definition xml:id="def-monotone">
 <idx>monotone</idx>
 <statement>
+<p>
 A Venn diagram is <term>monotone</term> if, for <m>0 \lt k \lt n</m>,
   every <m>k</m>-region is adjacent to both a <m>(k-1)</m>-region and
   a <m>(k+1)</m>-region.
+</p>
 </statement>
 </definition>
 
@@ -43,7 +45,7 @@ The 3-Venn diagrams
   since #3.12 is monotone and #3.13 is not.
 In a monotone Venn diagram the
   <m>k</m>-regions, for any <m>0 \lt k \lt n</m>,
-  form a "cycle", in the sense that every <m>k</m>-region touches
+  form a <q>cycle</q>, in the sense that every <m>k</m>-region touches
   exactly two others, and they are connected together in a
   cycle under this relation
   <xref ref="ref-BR">[BR]</xref>.
@@ -72,15 +74,17 @@ As shown in <xref ref="ref-BGR">[BGR]</xref>, a Venn diagram
 <p>
 Bultena and Ruskey   <xref ref="ref-BR">[BR]</xref>
   determined <m>M_n</m>,
-  the least number of vertices in a monotone <I>n</I>-Venn diagram.
+  the least number of vertices in a monotone <m>n</m>-Venn diagram.
 </p>
 
 <theorem>
 <statement>
+<p>
 For all <m>n \ge 1</m>,
 <me>
 M_n = {n \choose \lfloor n/2 \rfloor}.
 </me>
+</p>
 </statement>
 </theorem>
 

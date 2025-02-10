@@ -25,7 +25,7 @@ In an ordinary Venn diagram each intersection of interiors and exteriors consist
 
 <!--
 <p>
-ARE THESE EXAMPLES ALL DUE TO GRUNBAUM?
+ARE THESE EXAMPLES ALL DUE TO GRÜNBAUM?
 </p>
 -->
 
@@ -37,17 +37,17 @@ A <m>m</m>-fold <m>2</m>-Venn diagram with mirror image
 Shown with <m>m=4</m>.  Other values of <m>m</m> may
   be obtained by twisting/untwisting the tails.
 </caption>
-<image source="pdfs/grunSwizzle.svg"/>
+<image source="pdfs/grunSwizzle"/>
 </figure>
 
-<figure width="40%">
+<figure width="35%">
 <caption>
 Rotated F's.
 A <m>(2m+1)</m>-fold 2-Venn diagram with rotational symmetry.
 Shown with <I>m</I> = 1.
 Additional twists of both ends give larger values of <m>k</m>.
 </caption>
-<image source="pdfs/grun3fold.svg"/>
+<image source="pdfs/grun3fold"/>
 </figure>
 
 <figure width="40%">
@@ -59,7 +59,7 @@ Note that the curves passing through the red vertices do not
   meet transversally (showing that <xref ref="obs-transverse"/> does not
   apply to <m>m</m>-fold Venn diagrams).
 </caption>
-<image source="pdfs/grunEvenRotate.svg"/>
+<image source="pdfs/grunEvenRotate"/>
 </figure>
 
 </subsection>
@@ -107,11 +107,11 @@ Each curve is congruent and they are successively rotated by
   <m>\pi/4</m> radians about the central point.
 </p>
 
-<image source="pdfs/shor.svg" width="60%" />
+<image source="pdfs/shor" width="60%" />
 
 <p>
 Such a construction is possible for any <m>n</m>, and is attributed to Peter
-  Shor in Knuth, Graham, and Patashnik <xref ref="ref-GKP">[GKP,p.20,633]</xref>.
+  Shor in Knuth, Graham, and Patashnik <xref ref="ref-GKP">[GKP;p.20,633]</xref>.
   
 An order-<m>n</m> (binary) <term>de Bruijn cycle</term><idx>de Bruijn cycle</idx> is a circular binary string of length
   <m>2^n</m> with the property that all <m>2^n</m> substrings of length <m>n</m>
@@ -129,7 +129,7 @@ Make a curve by successively choosing a circular arc for each 1
   in <m>C</m> and a polygonal edge segment for each 0.
 To obtain the other curves rotate this one about the central point by
   <m>2 k \pi / 2^n</m> radians for 
-  <m>k = 1,2,\ldots,n-1</m>.
+  <m>k = 1,2,\ldots,2^n-1</m>.
 The example shown above is created by starting with the De Bruijn cycle
 <m>C = 00011101</m>.
 Thus there is an infinitely intersecting <m>n</m>-Venn diagram drawn with
@@ -420,38 +420,38 @@ empty set).
 
 <row bottom="minor" >
 <cell><m>\{ \emptyset, AB, B, AB \}</m></cell>
-<cell><image source="pdfs/2venn-A_ab_B.svg"/></cell>
-<cell><image source="pdfs/2venn-A_ab_B.svg"/></cell>
+<cell><image source="pdfs/2venn-A_ab_B" width="20%"/></cell>
+<cell><image source="pdfs/2venn-A_ab_B" width="20%"/></cell>
 </row>
 
 <row bottom="minor" >
 <cell><m>\{ \emptyset, A, AB \}</m></cell>
-<cell><image source="pdfs/2venn-A_ab.svg"/></cell>
-<cell><image source="pdfs/2euler-A_ab.svg"/></cell>
+<cell><image source="pdfs/2venn-A_ab" width="20%"/></cell>
+<cell><image source="pdfs/2euler-A_ab" width="20%"/></cell>
 </row>
 
 <row bottom="minor" >
 <cell><m>\{ \emptyset, A, B \}</m></cell>
-<cell><image source="pdfs/2venn-A_B.svg"/></cell>
-<cell><image source="pdfs/2euler-A_B.svg"/></cell>
+<cell><image source="pdfs/2venn-A_B" width="20%"/></cell>
+<cell><image source="pdfs/2euler-A_B" width="20%"/></cell>
 </row>
 
 <row bottom="minor" >
 <cell><m>\{ \emptyset, AB \}</m></cell>
-<cell><image source="pdfs/2venn-ab.svg"/></cell>
-<cell><image source="pdfs/2euler-ab.svg"/></cell>
+<cell><image source="pdfs/2venn-ab" width="20%"/></cell>
+<cell><image source="pdfs/2euler-ab" width="20%"/></cell>
 </row>
 
 <row bottom="minor" >
 <cell><m>\{ \emptyset, A \}</m></cell>
-<cell><image source="pdfs/2venn-A.svg"/></cell>
-<cell><image source="pdfs/2euler-A.svg"/></cell>
+<cell><image source="pdfs/2venn-A" width="20%"/></cell>
+<cell><image source="pdfs/2euler-A" width="20%"/></cell>
 </row>
 
 <row bottom="minor" >
 <cell><m>\{ \emptyset \}</m></cell>
-<cell><image source="pdfs/2venn.svg"/></cell>
-<cell><image source="pdfs/2euler.svg"/></cell>
+<cell><image source="pdfs/2venn" width="20%"/></cell>
+<cell><!-- image source="pdfs/2euler" width="20%"/ --></cell>
 </row>
 </tabular>
 </table>

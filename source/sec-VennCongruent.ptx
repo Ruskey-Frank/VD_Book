@@ -63,13 +63,13 @@ Note that the number of regions colored with a given color corresponds to
 
 <sidebyside width="25%">
 <figure xml:id="fig-5ellipse">
-<image source="gifs/5-VD-ellipses-labelled.gif"></image>
+<image source="gifs/5-VD-ellipses-labelled"></image>
 </figure>
 <figure xml:id="fig-5ellipse-coloured">
-<image source="gifs/5-VD-ellipses-colour.gif"></image>
+<image source="gifs/5-VD-ellipses-colour"></image>
 </figure>
 <figure xml:id="fig-5ellipse-irreducible">
-<image source="pngs/irreduce.png"></image>
+<image source="pngs/irreduce"></image>
 </figure>
 </sidebyside>
 

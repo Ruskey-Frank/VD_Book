@@ -89,6 +89,13 @@ The following subsection contains illustrations of some
   Venn duals.
 </p>
 
+<figure width="70%">
+<caption>
+A maximal planar spanning subgraph of <m>Q_4</m> that is not the dual of a Venn diagram.
+</caption>
+<image source="pdfs/MaxHyperNoVenn" width="70%"/>
+</figure>
+
 <subsection xml:id="subsec-Duals">
 
 <title>The Venn Duals of Venn's Construction</title>
@@ -170,6 +177,56 @@ Note that the blue, green, and thick black edges of the middle image are the pri
 </p>
 
 </subsection>
+
+<section xml:id="sec-DirectedDual">
+<title>The directed dual</title>
+
+<p>
+It is sometimes convenient to assign a direction to each edge of the Venn dual, where the direction indicates whether the
+  endpoints of the edge are in the interior or the exterior of the curve.
+</p>
+
+<definition>
+<statement>
+<p>
+The directed dual <m>\vec{D}(\mathbf{C})</m> is the directed graph obtained from <m>D(\mathbf{C})</m> by assigning a direction
+  to each of it's edges.  
+Each edge is directed from the interior of the corresponding curve to it's exterior.
+</p>
+</statement>
+</definition>
+
+<p>
+Thus the dual vertex corresponding to the interior of all the curves is a <term>source</term> (all edges are directed away from it),
+  and the dual vertex corresponding to the exterior of all the curves (the unbounded outer region) is a <term>sink</term> (all
+  edges are directed into it).
+</p>
+
+<observation>
+<statement>
+<p>
+The directed dual contains no directed circuits.
+</p>
+</statement>
+</observation>
+</section>
+
+<theorem xml:id="thm-FISC_in_out">
+<statement>
+<p>
+For every FISC <m>\mathcal{F}</m>, there is a directed path in the directed dual graph from any vertex interior to 
+  all the curves to the unique dual vertex exterior to all the curves.
+</p>
+</statement>
+<proof>
+<p>
+Let <m>v</m> be a dual vertex interior to all the curves of <m>\mathcal{F}</m> and assume that not all dual vertices are
+  reachable from <m>v</m> via a directed path.
+Let <m>R</m> be the set that are reachable.  By our assumption <m>(R,S)</m> is a cut where <m>S</m> is non-empty.
+ETC, ETC.
+</p>
+</proof>
+</theorem>
 
 </section>
 
@@ -274,15 +331,17 @@ There is only one Venn diagram in class 6, the three circle Venn diagram:
 </p>
 </subsection>
 
+<!--
 <subsection>
 <title>The radual graph construction</title>
 
 <figure xml:id="img-radual">
 <caption>Illustration of the proof of Theorem <xref ref="thm-extendible"/>.</caption>
-<image source="gifs/radual.gif"></image>
+<image source="gifs/radual"></image>
 </figure>
 
 </subsection>
+-->
 
 <subsection>
 <title>Minimum Venn diagram for <m>n = 5</m> curves</title>
@@ -296,7 +355,7 @@ This diagram has 8 vertices.  It was discovered by Bette Bultena.
 </figure>
 <figure xml:id="img-min5c">
 <caption>A minimum 5-Venn diagram, with regions coloured by size.</caption>
-<image source="pngs/colorBetteMin5.png"></image>
+<image source="pngs/colorBetteMin5"></image>
 </figure>
 </sidebyside>
 

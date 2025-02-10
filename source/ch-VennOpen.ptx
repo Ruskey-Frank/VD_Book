@@ -4,16 +4,32 @@
 <section>
 <title>Combinatorial and existential problems</title>
 
+<ol>
+<li>
+<p>
+There are 11 3-Venn diagrams and 6 3-Venn classes.  How many 4-Venn diagrams and 4-Venn classes are there?
+</p>
+</li>
+<li>
 <p>
 Find a simple symmetric 17-Venn diagram.  More generally, prove that <em>simple</em> symmetric <m>n</m>-Venn diagrams
   exist for all prime <m>n</m>.
 </p>
+</li>
 
+<li>
+<p>
+Verify that there are 33 simple symmetric non-monotone 7-Venn diagrams.
+</p>
+</li>
+
+<li>
 <p>
 Prove Winkler's conjecture that every <em>simple</em> <m>n</m>-Venn diagram is extendible to at simple <m>(n+1)</m>-Venn diagram.
 Equivalently: Is every planar dual graph of a simple Venn diagram Hamiltonian?
 Or find a counter example.  The conjecture is know to be true for all <m>n \le 5</m>.
 </p>
+</li>
 
 <!-- -->
 <p>
@@ -23,50 +39,66 @@ simple Venn diagrams are Hamiltonian; see
 </p>
 <!-- -->
 
+<li>
 <p>
 The dual of a simple Venn diagram is a maximal planar spanning
   subgraph of the hypercube. 
 Does every maximal spanning subgraph of the hypercube occur as the
   Venn graph of some Venn diagram?
 It seems likely that the answer is no.
+Note that the hypercube <m>Q_n</m> is planar for <m>1 \le n \le 3</m>, so a
+  counter-example must have <m>n \ge 4</m>.
+COUNTER EXAMPLE PROVIDED ALREADY?
 </p>
-
+</li>
+<li>
 <p>
 Determine the exact number of simple symmetric non-monotone 7-Venn diagrams.  It is suspected that the number is 33, but the problem is to 
   provide a proof, either by exhaustive computer search or by mathematical arguments; see <xref ref="sec-nonmono7"/>.
 </p>
-
+</li>
+<li>
 <p>
 Find a minimum vertex <m>n</m>-Venn diagram for <m>n=8</m>; such a diagram would have 37 vertices.
 </p>
-
+</li>
+<li>
 <p>
 What is the least number of intersection points (vertices) in a <em>rigid</em> Venn diagram?  There is only one rigid <m>3</m>-Venn diagram,
 the classic simple 3 circle diagram.
 </p>
+</li>
+</ol>
 
-<p>
-Over all <m>n</m>-Venn diagrams, which requires the greatest number of
-  straight line segments to draw it?  ELABORATE.
-</p>
 
 </section>
 
 <section>
 <title>Geometric problems</title>
 
+<ol>
+<li>
 <p>
 For every <m>n</m>, is there a convex Venn diagram made from congruent
   curves?
 If we drop the condition of curves being finitely intersecting, then the answer is yes; see <xref ref="sec-inf"/>.
 </p>
-
+</li>
+<li>
 <p>
 There is a rotationally symmetric simple 7-Venn diagram constructed with congruent convex quadrilaterals, as shown in <xref ref="fig-7quad"/>.
 It is equivalent to the diagram "Victoria".  Can any of the other 23 symmetric simple 7-Venn diagram be constructed with congruent convex 
   quadrilaterals?  
 If not, what about congruent <em>non-convex</em> quadrilaterals?
 </p>
+</li>
+<li>
+<p>
+Over all <m>n</m>-Venn diagrams, which requires the greatest number of
+  straight line segments to draw it?  ELABORATE.
+</p>
+</li>
+</ol>
 
 <subsection>
 <title>polyVenn diagrams</title>
@@ -87,8 +119,10 @@ cease to exist.
 </li>
 <li>
 <p>
+<idx>Mersenne prime</idx>
 Find examples of <m>n</m>-polyVenn diagrams with no cell representing the empty set, and existing in a rectangular <m>h \times w</m> grid.  
-Thus <m>2^n -1 = h \cdot w</m>.  These diagrams are known generally for <m>(2^{n/2}+1) \cdot (2^{n/2}-1)</m> for <m>n \ge 2</m> but not otherwise.
+Thus <m>2^n -1 = h \cdot w</m> and <m>h,w \ge 3</m>, so <m>2^n-1</m> can't be a Mersenne prime.  
+These diagrams are known to exist for <m>(2^{n/2}+1) \cdot (2^{n/2}-1)</m> if <m>n \ge 2</m>, but not otherwise.
 The first few open cases are
 <me>
 63 = 3 \times 21\text{, }

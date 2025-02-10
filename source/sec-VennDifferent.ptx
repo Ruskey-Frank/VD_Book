@@ -10,18 +10,22 @@ or not, and so on.
 <definition xml:id="def-isomorphic">
 <idx><h>Venn diagram</h><h>isomorphic</h></idx>
 <statement>
+<p>
 Two Venn diagrams are <term>isomorphic</term> if, by a continuous
   transformation of the plane, one of them can be changed into
   the other or its mirror image.
+</p>
 </statement>
 </definition>
 
 <definition xml:id="def-equivalent">
 <idx><h>Venn diagram</h><h>equivalent</h></idx>
 <statement>
+<p>
 Two Venn diagrams are <term>equivalent</term> if they are isomorphic
   as plane graphs, ignoring the edge colors
   (that is, isomorphic as planar graphs embedded in the plane).
+</p>
 </statement>
 </definition>
 
@@ -39,14 +43,16 @@ On the other hand, a Venn diagram may be embedded on the surface of a sphere
   other two, gives Edwards' general construction for <m>n=4</m>.)
 Sometimes it is more natural to look at Venn diagrams
   as being embedded on the sphere. 
-This topic is explored in <xref ref="subsec-Spherical"/>.
+This topic is explored in <xref ref="sec-Spherical"/>.
 </p>
 
 <definition xml:id="def-class">
 <idx><h>Venn diagram</h><h>class of</h></idx>
 <statement>
+<p>
 Two Venn diagrams are <term>in the same class</term> if they can be
   projected to the same spherical Venn diagram.
+</p>
 </statement>
 </definition>
 
@@ -60,6 +66,7 @@ When considering non-simple Venn diagrams there is another elementary
 <idx><h>Venn diagram</h><h>rigid</h></idx>
 <idx><h>Venn diagram</h><h>seperable vertex in</h></idx>
 <statement>
+<p>
 A <term>vertex traversal</term> of a
   vertex <m>v</m> in a Venn diagram is a circular
   sequence <m>C_0, C_1, \ldots, C_m</m> of
@@ -78,17 +85,18 @@ and <m>\mathbf{B}</m> are <m>\mathbf{A}</m> = { red, green, black, red, green} a
 A Venn diagram is said to be <term>rigid</term> if it has no separable vertices.
 The figures below illustrate the operation of <term>splitting</term>
 a separable vertex; <term>unsplitting</term> (or <term>joining</term>)is defined as the inverse operation.
+</p>
 </statement>
 </definition>
 
 <sidebyside widths="35% 45%">
 <figure xml:id="fig-seperable">
 <caption>A seperable vertex</caption>
-<image source="pdfs/separable.svg"></image>
+<image source="pdfs/separable"></image>
 </figure>
 <figure xml:id="fig-splitting">
 <caption>Splitting that vertex</caption>
-<image source="pdfs/nonrigid.svg"></image>
+<image source="pdfs/nonrigid"></image>
 </figure>
 </sidebyside>
 
@@ -104,7 +112,7 @@ Rigid Venn diagrams are interesting because in the equivalence class
 
 <!-- ==================================================================================== -->
 
-<subsection>
+<subsection xml:id="sec-VertexSplitting">
 <title>An extended example of vertex splitting.</title>
 
 <p>

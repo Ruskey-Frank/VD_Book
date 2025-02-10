@@ -21,7 +21,7 @@ Diagram #3.1 (shown in <xref ref="img-Class1"/>)
 <title>Symmetric diagrams with <m>n = 5</m> curves</title>
 
 <sidebyside width="40%">
-<image source="gifs/5-VD-ellipses-colour.gif"></image>
+<image source="gifs/5-VD-ellipses-colour"></image>
 <p>
 The simple ellipse diagram shown to the left is from 
 <xref ref="ref-Gr75">[Gr75]</xref>, and has a 5-fold rotational symmetry.
@@ -77,7 +77,7 @@ The one shown here is a play
   that is no longer true if the three words in quotation marks 
   are removed.  
 </p>
-<image source="pdfs/howcirc-cropped.svg"></image>
+<image source="pdfs/howcirc-cropped"></image>
 </sidebyside>
 
 <p>
@@ -94,7 +94,7 @@ Thus we are particularly interested in rigid diagrams,
   of which there are <m>12+13+2+4 = 31</m>.
 </p>
 
-<table>
+<table xml:id="tbl-5vennClassification">
 <title>Classification of symmetric 5-Venn diagrams</title>
 <tabular halign="right">
 <row header="yes" bottom="minor" >
@@ -166,14 +166,14 @@ Three others may be seen in
   <xref ref="img-minsymm5c"/>.
 </p>
 
-<image source="gifs/min5b.gif" width="60%"></image>
+<image source="pdfs/5-VD-minVertB" width="60%"></image>
 
 <p>
 The following table shows the number of symmetric diagrams classified according
   to the number of vertices and rigidity.
 </p>
 
-<table>
+<table xml:id="tbl-4vennCounts">
 <title>Counts of symmetric 5-Venn diagrams</title>
 <tabular row-headers="yes" halign="right">
 <row header="yes" bottom="minor" >

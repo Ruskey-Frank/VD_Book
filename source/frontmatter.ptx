@@ -4,7 +4,8 @@
 <!-- works. -->
 
 <frontmatter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="frontmatter">
-  <titlepage>
+  
+  <bibinfo>
     <author>
       <personname>Frank Ruskey (and Mark Weston?)</personname>
       <department>Computer Science</department>
@@ -12,24 +13,31 @@
     </author>
     <date>
       <today />
-    </date>
-  </titlepage>
-
-  <colophon>
-
-    <website>
+    </date> 
+        <website>
       <url href="http://webhome.cs.uvic.ca/~ruskey/">Frank Ruskey's Homepage.</url>
     </website>
-
     <copyright>
-      <year>20??<ndash />2024</year>
+      <year>20??<ndash />2025</year>
       <holder>Frank Ruskey (and Mark Weston?)</holder>
       <shortlicense> This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit <url href="http://creativecommons.org/licenses/by-sa/4.0/" visual="creativecommons.org/licenses/by-sa/4.0"> CreativeCommons.org</url>
       </shortlicense>
     </copyright>
+  </bibinfo>
+
+  <titlepage>
+  <titlepage-items/>
+  <!-- NOTHING SHOWS UP.....
+     <image source="pdfs/Venn12" width="1%"/>
+  -->
+  </titlepage>
+  
+  <colophon>
+  <colophon-items/>
   </colophon>
   
-    <preface>
+  <preface>
+  
   <p>
   Almost everyone has been exposed to Venn diagrams as part of their schooling.
   It is less well-known are that Venn diagrams exist for more than 3 categories or that
@@ -37,18 +45,78 @@
   </p>
   <p>
   Venn introduced his diagrams around 1880, but it wasn't until the pioneering papers
-  of Branko Grunbaum, starting in 1975, that the mathematical study of Venn diagrams
+  of Branko Grünbaum, starting in 1975, that the mathematical study of Venn diagrams
   really took off.  
   </p>
   <p>
-  Much of the material in this book first appeared in the "Survey of Venn Diagrams" that was
-  published as a "Dynamic Survey", in the Electronic Journal of Combintorics as the fifth
+  I was first exposed to Branko's work much later.  Although I wasn't a geometer, I received the
+  announcements from the University of Washington of their geometry/combinatorics seminars, and
+  of course, had heard of Branko and Victor Klee, who were prominent mathematicians at U of W.
+  Victoria is geographically close to Seattle, and there were some mathematical meetings that were
+    organized in the geographic region.
+  At the time I was keenly interesting in combinatorial Gray codes, and when an announcement
+    came around about a professor from Cambridge University giving a talk about Venn Diagrams,
+    in which the abstract mentioned Gray codes, I was intrigued even though I couldn't travel 
+    to Seattle then because of teaching commitments.  
+  So I called Branko and asked him whether his speaker might be willing to travel to Victoria 
+    and give the talk at the University of Victoria.
+  </p>
+  <p>
+  The speaker was Anthony Edwards and his talk was about his results about Venn diagrams, which
+    included his general construction and it's shifted cousin (which is where the Gray codes came
+    in), and about his search for seven curve rotationally symmetric Venn diagrams with an additional mirror-image
+    symmetry, of which there were five.
+  He also mentioned the open problem of finding an eleven curve rotationally symmetric Venn diagram,
+    then next one possible, since such diagrams required a number of curves that is prime.
+  </p>
+  <p>
+  His search technique in some sense amounted to a interative exhaustive search through certain sets of 
+    constrained combinations.
+  I was an expert in exhaustively listing combinations and brazenly thought that I would be able to
+    solve his open problem without much effort.  How wrong I was!
+  I was able to show that his list of five diagrams was short; i.e., that there was a missing sixth
+    diagram.
+  But it was not until many years later, in 20??, that my grad student Khalegh Mamakani, was able to 
+    solve the problem for eleven curves.
+  </p>
+  <p>
+  Much of the material in this book first appeared in the <q>Survey of Venn Diagrams</q> that was
+  published as a <q>Dynamic Survey</q>, in the Electronic Journal of Combintorics as the fifth
   dynamic survey and the only one that was a collection of html pages and not a pdf document.
   The original survey was first published in 1997 and had updates in 2001 and 2005.  The
   last update was co-authored with my former Ph.D. student, Mark Weston.  
   </p>
+  <p>
+  The purpose of this book is to put together much of what is known about Venn diagrams from a
+  mathematical perspective into one place that researchers and students can reference.
+  It is hoped that it will spur further research into the area.  With that in mind, there is
+  an extensive collection of open problems at the end of the book.
+  </p>
+  <p>
+  Acknowledgements: Branko Grünbaum, Carla Savage, Peter Winkler, Rick Mabry, Don Knuth, Wendy Myrvold, Matthew Klimesh, Jeremy Carroll, Peter Rogers,
+  Moshe Rosenfeld.
+  Students: Mark Weston, Bette Bultena, Stirling Chow.
+  </p>
   
   </preface>
+  
+  <biography>
+    <image source="pdfs/Venn12" width="5%"/>
+    <p>
+    Frank is a retired professor of Computer Science at the University of Victoria (UVic).  He completed his Ph.D. at the
+    University of California at San Diego under the supervision of T.C. Hu in the department of Applied
+    Physics and Information Science in 1978.  His first appointment at UVic was also in 1978 in the Department of
+    Mathematics, teaching various Computer Science courses.  After a couple of years, the Department of Computer Science
+    was established and he was one of the founding six members.  
+    </p>
+    <p>
+    His research interests fall into the area of combinatorial algorithms and mathematics, with particular interest in
+    combinatorial Gray codes, Venn diagrams, Tatami tilings, nested recurrence relations, and enumerative combinatorics.
+    In his spare times he likes to play basketball, spend time at his off-grid cabin pretending to be a hunter-gatherer,
+    and spend time with his children and grand child.
+    </p>
+  </biography>
+
 
 </frontmatter>
 

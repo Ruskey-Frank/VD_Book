@@ -7,10 +7,13 @@ than <m>n</m> curves.
 </p>
 
 <definition>
-<statement><idx><h>reducible</h><h>Venn diagram</h></idx>
+<idx><h>reducible</h><h>Venn diagram</h></idx>
+<statement>
+<p>
 A <m>n</m>-Venn diagram is <term>reducible</term> if the removal of one of its
   <m>n</m> curves results in a Venn diagram with <m>n-1</m> curves.
 A Venn diagram that is not reducible is <term>irreducible</term>.
+</p>
 </statement>
 </definition>
 
@@ -32,11 +35,14 @@ For a long time it was not known whether a reducible Venn diagram
 </p>
 
 <definition>
-<statement><idx><h>extendible</h><h>Venn diagram</h></idx>
+<idx><h>extendible</h><h>Venn diagram</h></idx>
+<statement>
+<p>
 A <m>n</m>-Venn diagram <m>\mathbf{C}</m> is <term>extendible</term> if
   there is a curve that can be added to it to make an <m>(n+1)</m>-Venn diagram,
   <m>\mathbf{C}'</m>.
 Diagram <m>\mathbf{C}'</m> is said to be an <term>extension</term> of <m>\mathbf{C}</m>.
+</p>
 </statement>
 </definition>
 
@@ -47,17 +53,21 @@ Winkler <xref ref="ref-Wi">[Wi]</xref> makes the following two
 
 <theorem xml:id="thm-A">
 <statement>
+<p>
 For <m>n &gt; 1</m>, a simple <m>n</m>-Venn
   diagram <m>\mathbf{C}</m> is extendible to a simple <m>(n+1)</m>-Venn diagram if
   and only if its Venn dual <m>D(\mathbf{C})</m> is Hamiltonian.
+</p>
 </statement>
 </theorem>
 
 <theorem xml:id="thm-B">
 <statement>
+<p>
 If the <m>n</m>-Venn diagram <m>\mathbf{C}</m> is an extension
   of an <m>(n-1)</m>-Venn diagram, then <m>\mathbf{C}</m> is extendible to an
   <m>(n+1)</m>-Venn diagram.
+</p>
 </statement>
 </theorem>
 
@@ -97,7 +107,7 @@ Grünbaum's version was proven by Chilakamarri, Hamburger, and Pippert
   conjecture remains unsettled.
 </p>
 
-<figure>
+<figure xml:id="fig-radual">
 <caption>Extending a Venn diagram by using the radual graph.</caption>
 <tabular align="center" width="90%">
 <row>
@@ -127,7 +137,7 @@ The proof of
   <xref ref="ref-Or">[Or]</xref> has more information on
   the radial and dual graphs).
 A simple example, using Venn diagram #3.4, is shown
-  in Figure <xref ref="img-radual"/>.
+  in Figure <xref ref="fig-radual"/>.
 In that figure, the dual graph is shown in (b) with magenta edges.
 The vertex set of the radial graph is the union of the vertex sets of the
   primal graph and its dual, and the edge set consist of all possible edges
@@ -149,9 +159,11 @@ This sufficient condition is also necessary as stated in this
 
 <theorem xml:id="thm-extendible">
 <statement>
+<p>
 For <m>n &gt; 1</m>, a <m>n</m>-Venn
   diagram <m>\mathbf{C}</m> is extendible to a <m>(n+1)</m>-Venn diagram if
   and only if its radual graph <m>R(\mathbf{C})</m> is Hamiltonian.
+</p>
 </statement>
 </theorem>
 

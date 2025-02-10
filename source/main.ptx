@@ -10,32 +10,24 @@
 
     <!-- Include frontmatter -->
     <xi:include href="./frontmatter.ptx" />
-
   
     <!-- Include chapters -->
     <xi:include href="./ch-WhoVenn.ptx" />
 
-    <!-- Include chapters -->
     <xi:include href="./ch-VennWhatIs.ptx" />
 
-    <!-- Include chapters -->
     <xi:include href="./ch-VennGraphs.ptx" />
 
-    <!-- Include chapters -->
     <xi:include href="./ch-VennSymmetric.ptx" />
     
-    <!-- Include chapters -->
     <xi:include href="./ch-VennGeometric.ptx" />
     
     <xi:include href="./ch-VennExtension.ptx" />    
 
-    <!-- Include chapters -->
     <xi:include href="./ch-VennOpen.ptx" />
 
-    <!-- Include chapters -->
     <xi:include href="./ch-VennRefs.ptx" />
 
-    <!-- Include backmatter -->
     <xi:include href="./backmatter.ptx" />
 
   </book>

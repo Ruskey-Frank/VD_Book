@@ -25,8 +25,8 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="2.1640342"
-     inkscape:cx="332.24984"
-     inkscape:cy="319.07999"
+     inkscape:cx="332.24983"
+     inkscape:cy="319.07998"
      inkscape:window-width="3840"
      inkscape:window-height="1577"
      inkscape:window-x="-8"
@@ -41,7 +41,10 @@
        width="664.79999"
        height="638.15997"
        margin="0"
-       bleed="0" />
+       bleed="0"
+       inkscape:export-filename="5vennDual.pdf"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
   </sodipodi:namedview>
   <g
      id="g1"

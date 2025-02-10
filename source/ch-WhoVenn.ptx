@@ -4,7 +4,7 @@
   <title>Who was John Venn?</title>
 
   <introduction>
-    <image source="gifs/littleJohnVenn.gif" width="10%"/>
+    <image source="gifs/littleJohnVenn" width="10%"/>
     <p>This chapter gives a short biography of John Venn.</p>
   </introduction>
 
@@ -13,8 +13,8 @@
 
 <p>
 Venn diagrams were introduced in 1880 by
-  John Venn (1834-1923), "M.A. Fellow and Lecturer in 
-  Moral Science, Caius College, Cambridge University",
+  John Venn (1834-1923), <q>M.A. Fellow and Lecturer in 
+  Moral Science, Caius College, Cambridge University</q>,
   in a paper entitled
 <em>On the Diagrammatic and Mechanical
 Representation of Propositions and Reasonings
@@ -55,8 +55,8 @@ He completed three volumes of the biographical history, and others continued the
   Images courtesy of Anthony W.F. Edwards.
 </caption>
 <sidebyside width="40%">
-<image source="gifs/VennStain.gif" width="30%"></image>
-<image source="gifs/VennStain2.gif" width="30%"></image>
+<image source="gifs/VennStain" width="30%"></image>
+<image source="gifs/VennStain2" width="30%"></image>
 </sidebyside>
 </figure>
 
@@ -91,7 +91,7 @@ For more comprehensive bibliographic information, the thesis
   Hamilton-Kerr Institute, University of Cambridge. Reproduced by kind permission of the 
   Master and Fellows of Gonville and Caius College.
   </caption> 
-  <image source="/gifs/VennPaint.gif" width="50%">
+  <image source="/gifs/VennPaint" width="50%">
     <shortdescription>A painting of John Venn</shortdescription>
   </image>
 </figure>

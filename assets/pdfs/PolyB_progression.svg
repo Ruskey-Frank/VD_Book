@@ -25,7 +25,7 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="4.0132122"
-     inkscape:cx="299.01235"
+     inkscape:cx="299.13694"
      inkscape:cy="158.85031"
      inkscape:window-width="3840"
      inkscape:window-height="1577"
@@ -41,7 +41,10 @@
        width="597.86664"
        height="290.668"
        margin="0"
-       bleed="0" />
+       bleed="0"
+       inkscape:export-filename="PolyB_progression.pdf"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
   </sodipodi:namedview>
   <g
      id="g1"

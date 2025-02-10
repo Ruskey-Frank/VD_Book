@@ -78,10 +78,10 @@
   <p xml:id="ref-Ch">
   [Ch] S. Chow, Generating and Drawing Area-Proportional Euler and Venn Diagrams, Ph.D. Thesis, University of Victoria, 2007.
   </p>
-  <p>
+  <p xml:id="ref-CR98">
   [CR98] S. Chow and F. Ruskey, Searching for symmetric Venn diagrams, extended abstract, (1998).
   </p>
-  <p>
+  <p xml:id="ref-CR03">
   [CR03] S. Chow and F. Ruskey, Drawing Area-Proportional Venn and Euler Diagrams, 11th International Symposium on Graph Drawing, Perugia, Italy, Lecture Notes in Computer Science, 2912 (2003) 466-477.
   </p>
   <p xml:id="ref-CR05">
@@ -97,7 +97,7 @@
   [Ci04] Barry Cipra, Venn Meets Boole in Symmetric Proof, SIAM News, 37 no. 1 (January/February 2004).
   </p>
   <p xml:id="ref-Cl">
-  Clewlow, Michelle, Intersecting Sets: John Venn, Church and University, 1834-1923. PhD thesis, 2007, The Open University.
+  [Cl] Clewlow, Michelle, Intersecting Sets: John Venn, Church and University, 1834-1923. PhD thesis, 2007, The Open University.
   </p>
   <p xml:id="ref-Ed89a">
   [Ed89a] Anthony W. F. Edwards, Venn diagrams for many sets, Bulletin of the International Statistical Institute, 47th Session, Paris (1989). Contributed papers, Book 1, 311-312.
@@ -223,14 +223,14 @@
   <p>
   [MC] Arnaud Maes and Corinne Cerf, A family of Brunnian links based on Edwards' construction of Venn diagrams, J. Knot Theory Ramifications, 10 no. 1, (2001) 97-107.
   </p>
-  <p>
+  <p xml:id="ref-MMR11">
   [MMR11] K. Mamakani, W. Myrvold and F. Ruskey, Generating all Simple Convexly-drawable Polar Symmetric 6-Venn Diagrams, 
   International Workshop on Combinatorial Algorithms, Victoria, 2011. LNCS, 7056, 275-286.
   </p>
-  <p>
+  <p xml:id="ref-MMR12">
   [MMR12] K. Mamakani, W. Myrvold and F. Ruskey, Generating Simple Convex Venn Diagrams, Journal of Discrete Algorithms, 16 (2012) 270-286. 
   </p>
-  <p>
+  <p xml:id="ref-MR12">
   [MR12] K. Mamakani and F. Ruskey, Simple Spherical Venn diagrams with Isometry Groups of Order Eight, 2012, manuscript. 
   </p>
   <p xml:id="ref-MR14">
@@ -266,7 +266,8 @@
   ed. P. Ferragina and R. Grossi, Tuscany, Italy, (2004), 235-246. [To appear in Theory of Computing Systems]
   </p>
   <p xml:id="ref-RW11">
-  [RW11] F. Ruskey and M. Weston, Spherical Venn Diagrams with Involutory Isometries, Electronic Journal of Combinatorics, 18 (2011) #P191, 14 pages.
+  [RW11] F. Ruskey and M. Weston, Spherical Venn Diagrams with Involutory Isometries, Electronic Journal of Combinatorics, 18 (2011) #P191, 14 pages
+  (<url href="https://www.combinatorics.org/ojs/index.php/eljc/article/view/v18i1p191">url</url>).
   </p>
   <p xml:id="ref-RSW">
   [RSW] F. Ruskey, Carla D. Savage, and Stan Wagon, The Search for Simple Symmetric Venn Diagrams, Notices of the American Mathematical Society, December 2006, pages 1304-1311. 
@@ -304,6 +305,10 @@
 <section>
 <title>Other References (not about Venn diagrams per se)</title>
 
+  <p xml:id="ref-BTK">
+  [BTK] N.G. de Bruijn, C. van Ebbenhorst Tengbergen, and D. Kruyswijk,
+  On the set of divisors of a number, Nieuw Arch. Wisk. (2) 23 191-193 (1952).
+  </p>
   <p xml:id="ref-Kn">
   [Kn] D. Knuth, The Art of Computer Programming: Volume 4A, Combinatorial Algorithms, Addison-Wesley, 2011.
   </p>
@@ -318,6 +323,11 @@
   </p>
   <p xml:id="ref-Or">
   [Or] O. Ore, The Four-Color Problem, Academic Press, New York, London, 1967.
+  </p>
+  <p xml:id="ref-Si">
+  [Si] D. Singmaster, Divisibility of binomial and multinomial coefficients by primes and prime
+     powers. In A collection of manuscripts related to the Fibonacci sequence, pages 98–113.
+     Fibonacci Assoc., Santa Clara, Calif., 1980.
   </p>
   <p xml:id="ref-St">
   [St] Ian Stewart, Game, Set, and Math, Basil Blackwell, 1989.

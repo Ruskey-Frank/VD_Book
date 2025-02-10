@@ -89,30 +89,44 @@ and thus by the above result there is a monotone one as well.
 
 </section>
 
+<!-- =========================================================================================== -->
+
 <section>
 <title>Diagrams made from convex <m>k</m>-gons</title>
+
+<introduction>
+<p>
+Introduction BLAH BLAH BLAH.
+</p>
+</introduction>
+
+<subsection>
+<title>Bounds on <m>k</m> as a function of <m>n</m></title>
 
 <p>
 Let the term <term><m>k</m>-gon</term> designate any convex polygon with at most <m>k</m>
   sides.  Observe that two <m>k</m>-gons can (finitely) intersect with
-  each other in at most <m>2k</m> points; for the purposes of this
-  discussion we can treat a circle as a 1-gon and an ellipse as a
-  2-gon.  
+  each other in at most <m>2k</m> points; this is not true for non-convex polygons.
+  For the purposes of this discussion we can treat a circle as a 1-gon and an ellipse as a 2-gon.  
   We start off with a lemma first observed by Grünbaum
   <xref ref="ref-Gr75">[Gr75]</xref>, and discuss its consequences.
   RELATE THIS TO EARLIER THEOREM.
- </p>
+</p>
 
 <theorem>
 <statement>
+<p>
 For a simple <m>n</m>-Venn diagram of <m>k</m>-gons to exist,
-<m>k \ge \lceil (2^{n-1}-1) / {n \choose 2} \rceil </m>.
+<me>
+k \ge \lceil (2^{n-1}-1) / {n \choose 2} \rceil 
+</me>.
+</p>
 </statement>
 <proof>
 <p>
 Given a diagram of <m>k</m>-gons, the number of
 vertices contributed by any two of them can be at most 2<m>k</m>, so the
-number of vertices must be at most <m>2 k {n \choose 2}</m>.  Since
+number of vertices is at most <m>2 k {n \choose 2}</m>.  Since
 the number of vertices in a simple diagram is <m>2^n - 2</m>, the inequality follows.
 </p>
 </proof>
@@ -124,18 +138,23 @@ A slight improvement to this theorem was obtained in <xref ref="ref-CRW">[CRW]</
 
 <theorem xml:id="thm-CRW">
 <statement>
+<p>
 For a simple <m>n</m>-Venn diagram of <m>k</m>-gons to exist,
-<m>k \ge \lceil (2^n-2-n) / n(n-2) \rceil </m>.
+<me>
+k \ge \lceil (2^n-2-n) / (n(n-2)) \rceil 
+</me>.
+</p>
 </statement>
 </theorem>
 
 <p>
 The following table lists implications of <xref ref="thm-CRW"/> as the column
   with header <m>k \ge</m>. 
-The column with header <m>k \le</m> is from a known construction. 
+The entries with <m>k \le</m> are from a known construction.  GRÜNBAUM??
 </p>
 
 <table xml:id="tbl-kgons">
+<idx>congruent</idx>
 <title>
 Bounds on the least <m>k</m> for which a simple <m>n</m>-Venn diagram can be
 drawn with <m>k</m>-gons.
@@ -168,7 +187,7 @@ Conjectured to not be possible for squares by Grünbaum <xref ref="ref-Gr92b">[G
 <cell>6</cell><cell>3</cell>
 <cell>
   <p>Solved for triangles by Carroll <xref ref="ref-Ca00">[Ca00]</xref>.
-    No congruent examples known.<idx>congruent</idx>
+    No congruent examples known.
   </p>
 </cell>
 </row>
@@ -190,6 +209,8 @@ No diagram of 7 triangles is possible.
 </row>
 </tabular>
 </table>
+
+</subsection>
 
 <subsection>
 <title>Triangles</title>
@@ -215,7 +236,7 @@ He subsequently discovered that there are exactly
   each curve is a triangle.
 </p>
 
-<image source="gifs/CarrollTriangleHuge.gif" width="70%" />
+<image source="gifs/CarrollTriangleHuge" width="70%" />
 
 <p>
 Below is a table of coordinates for the vertices of the six triangles.
@@ -268,12 +289,12 @@ Jeremy Carroll).
 examples like this.
 -->
 
-<image source="jpgs/forFrank.jpg" width="70%" />
+<image source="jpgs/forFrank" width="70%" />
 
 <!--
 <UL>
 <LI>
-First example with <A HREF="gifs/CarrollTriColor.gif">coloured triangles</A>.
+First example with <A HREF="gifs/CarrollTriColor">coloured triangles</A>.
 <LI>
 Larger version of first example with
 <A HREF="gifs/CarrollTriangleBigRed.gif">bipartite colouring</A>.
@@ -298,7 +319,9 @@ is no simple 7-Venn diagram whose curves are triangles.
 
 <theorem>
 <statement>
+<p>
 A simple Venn diagram of 7 triangles is impossible.
+</p>
 </statement>
 <proof>
 <p>
@@ -395,8 +418,10 @@ DOES THIS SECTION BELONG ELSEWHERE?
 <definition xml:id="def-exposed">
 <idx><h>Venn diagram</h><h>exposed</h></idx>
 <statement>
+<p>
 A Venn diagram is <term>exposed</term> if each of its curves touches the
   outer face at some point of non-intersection.
+</p>
 </statement>
 </definition>
 
@@ -414,8 +439,10 @@ Also, every convex Venn diagram must be exposed
 <definition xml:id="def-hidden">
 <idx><h>curve</h><h>hidden</h></idx>
 <statement>
+<p>
 A curve in a non-exposed Venn diagram is <em>hidden</em> if it 
   does not touch the outer region.
+</p>
 </statement>
 </definition>
 
@@ -429,7 +456,7 @@ Chilakamarri, Hamburger, and Pippert
 The hidden curve is the dotted green one.
 </p>
 
-<image source="gifs/hidden6.gif"/>
+<image source="gifs/hidden6"/>
 
 <p>
 All simple Venn diagrams with five or less curves are exposed, but with
@@ -440,9 +467,74 @@ All simple Venn diagrams with five or less curves are exposed, but with
 
 </section>
 
+<!-- ======================================================================== -->
 <section>
 <title>Area-Proportional Diagrams</title>
+<p>
+Consider the problem of drawing Venn or Euler diagrams so that each
+region's area is proportional to some weight (<i>e.g.,</i> population
+or percentage) assigned to that region; these have been referred to
+as <i>area-proportional</i> diagrams.  Such diagrams have an enhanced
+ability over traditional Venn diagrams to visually convey information
+about data sets with interacting characteristics.
+</p>
+<p>
+Frank Ruskey and Stirling Chow, in [<a href="VennRefs.html#CR03">CR03</a>], first investigated 
+such diagrams after receiving many requests from readers of the original version of this survey for diagrams with
+added abilities to represent data sets of different sizes.  
+</p>
+<p>
+The examples below show a) a traditional Venn diagram representing a weighted data set
+versus b) its corresponding weighted area-proportional version.
+
+
+<image source="pngs/areaprop"/>
+
+</p>
+
+<p>
+For data sets involving two parameters, any data set can be represented by two intersecting
+  circles.  
+That is, but judiciously setting the centers and radii of two circles, the relative areas
+  of the regions can be set to have any set of relative proportions.
+The only caveat, which holds throughout this section, is that the unbounded region is not
+  taken into consideration.
+</p>
+
+<p>
+For three parameters, however, circles do not always suffice, and 
+  examples can be constructed fairly easily that cannot be represented by three
+  intersecting circles.  
+The basic problem is that the centers of three circles are determined by three real numbers;
+  center one circle at <m>(0,0)</m>, one at <m>(0,x)</m>, and the third at <m>(y,z)</m>.
+And the radii are also determined by three numbers, giving a total of 6 numbers.
+However, there are 7 non-infinite regions in a Venn diagram, so that there are more
+  equations than variables; the system is over-determined.
+</p>
+<p>  
+An alternative is ellipses, but for simplicity of calculation
+  the authors of <xref ref="ref-CR03">[CR03]</xref> chose to use axis-aligned rectangles 
+  to produce orthogonal drawings (in which every edge is either vertical or horizontal).  
+Their algorithm works for all data sets, but sometimes the resulting curves are not convex: it becomes
+  necessary at times to "bite" a corner out of a rectangle.  
+</p>
+
+<p>
+Stirling Chow has a working
+  implementation of this algorithm, and others, online ([<a href="VennRefs.html#DE">DE</a>]).
+For <i>n</i> > 3, the software DrawEuler [<a href="VennRefs.html#DE">DE</a>] uses 
+  arbitrarily non-convex curves to represent data sets.  The problem is still 
+  uninvestigated for specific curves.
+</p>
+
+<p>
+STIRLING RESULT ABOUT AREA_PROPORTIONAL FISCS
+</p>
+
 </section>
+
+<!-- ======================================================================== -->
+
 
 <section xml:id="sec-MinArea">
 <title>Minimum Area Diagrams</title>
@@ -483,8 +575,10 @@ The final "shape" of the polyVenn diagram is a rectangle as per the definition b
   
 <definition>
 <statement>
+<p>
 A <term><m>(r,c)</m>-polyVenn diagram</term> is a polyVenn diagram with <m>n = r+c</m> curves, each of which is the 
   perimeter of a polyomino, all existing in a <m>2^r \times 2^c</m> rectangular <term>base</term> grid.
+</p>
 </statement>
 </definition>  
 
@@ -591,7 +685,7 @@ For example, the get the two polyominoes in the second row of <xref ref="fig-Lpo
 <p>
 Note that the collection of 8 polyominoes in <xref ref="fig-PolyBette"/> or <xref ref="fig-PolyMatt"/> together
   with the <m>(1,1)</m>-polyVenn of <xref ref="fig-LpolySmall"/> form
-  <m>(5,5)</m>-polyVenn diagrams after each is expanded enough times to make the base grid <m>32 \time 32</m>.
+  <m>(5,5)</m>-polyVenn diagrams after each is expanded enough times to make the base grid <m>32 \times 32</m>.
 </p>
 
 <figure xml:id="fig-PolyBette" width="80%">

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-Spherical">
+<title>Spherical Venn Diagrams</title>
+
+<p>
+<idx><h>group</h><h>Klein 4-group</h></idx>
+There is a much richer set of symmetries of the sphere than there on the plane, and it is natural to 
+  investigate whether these additional symmetries can be possessed by Venn diagrams.
+As the reader works their way through this subsection, it can be useful to have actual
+  spheres to hold and view.
+The author once bought a gross of white ping pong balls to draw on while investigating
+  spherical Venn diagrams with his grad students!
+</p>
+
+<p>
+Let's consider a few examples of <m>n</m>-Venn diagrams for small <m>n</m>.  
+The case of <m>n=1</m> is rather uninteresting since a circle in the plane has infintely many symmetries,
+  both reflections and rotations.
+For <m>n=2</m> things are rather more interesting. 
+In the plane, the standard two circle diagram has 4 symmetries,  based on reflections about a line through
+  the centers of the circles, and about a line through the 2 points of intersection.
+See <xref ref="fig-2vennSphere"/>.
+It is interesting that reflection about the horizontal axis leaves the colors of the circles fixed,
+  whereas the vertical reflection necessitates a color swap.
+Here the group of symmetries is Known as the Klein <m>4</m>-group.
+However, on the sphere, the diagram can be drawn as 2 great circles, which intersect perpendicularly at
+  two antipodal points (the poles), as in <xref ref="fig-2vennSphere"/>.
+</p>
+
+<sidebyside valign="bottom" widths="40%, 55%">
+<figure xml:id="fig-2vennAxes">
+<caption>A 2-Venn diagram embedded in the plane.</caption>
+<image source="pdfs/2vennAxes"/>
+</figure>
+<figure xml:id="fig-2vennSphere">
+<caption>A 2-Venn diagram embedded on a sphere.</caption>
+<image source="pdfs/2vennSphere"/>
+</figure>
+</sidebyside>
+
+<p>
+<idx>fundamental domain</idx>
+On the sphere there a clearly many more symmetries for the 2-Venn diagram, but how many exactly?
+Symmetries are obtained by rotating and reflecting.   
+Rotations occur in increments of <m>\pi/4</m> radians about the polar axis, and by
+  rotating <m>\pi/2</m> about axes that intersect the equator at antipodal points; these points are
+  located where the equator intersects a curve (two axes) and at the half-way points between two points of intersection with
+  the equator (another two axes).
+Reflections can be about a plane through the equator, and planes through the poles and one of the eight points along
+  the equator mentioned before.
+The effect of these rotations/reflections and their compositions is that the light blue region, which makes up 1/16 of the sphere
+  (a seqment of the curve is included with this region) can be mapped to any
+  of the 16 such regions, which makes up the entire sphere.
+The light blue region of the sphere is known as a <term>fundamental domain</term>. 
+Thus we get a much richer set of symmetries for the 2-Venn diagram on the sphere, 4 on the plane versus 16 of them
+  on the sphere.
+</p>
+
+<sidebyside valign="bottom" widths="40%, 55%">
+<figure xml:id="fig-3vennAxes">
+<caption>A 3-Venn diagram embedded in the plane.  Symmetry preserving reflective axes shown.</caption>
+<image source="pdfs/3vennAxes"/>
+</figure>
+<figure xml:id="fig-3vennSphere">
+<caption>A 3-Venn diagram embedded on a sphere.</caption>
+<image source="pdfs/3vennSphere"/>
+</figure>
+</sidebyside>
+
+<p>
+<idx>octahedron</idx>
+<idx>cube</idx>
+Moving on to <m>n=3</m>, first, what is the set of symmetries in the plane?
+It is not hard to see that there are 6 of them, using rotations by <m>2\pi/3</m> and reflection about lines through the
+  centers of the circles and the center of the diagram as a whole.
+See <xref ref="fig-3vennAxes"/>.
+To move things into 3 dimensions, we make the equator in <xref ref="fig-2vennSphere"/> into a blue curve,
+  as shown in <xref ref="fig-3vennSphere"/>.
+Now what is the group of symmetries?
+If we join the 6 points of intersection in <xref ref="fig-3vennSphere"/> with straight lines instead of
+  circular arcs, then we obtain an octahedron.
+The dual of an octahedron is a 3-cube.
+Thus the symmetries are those of the cube, and so there are 48 of them!
+Another way to see this is to consider the fundamental domain, shown as a lightly shaded triangle like area in
+  <xref ref="fig-3vennSphere"/> including the blue circular arc at the bottom of the triangle.
+The entire sphere can be covered with 48 of these areas, modulo a recoloring of the curve.
+To make it clearer that the fundamental domain covers <m>1/6</m> of a Venn diagram region, it is also
+  shown in <xref ref="fig-3vennAxes"/>.
+Again, there is a much richer set of symmetries when a Venn diagram is embedded on the sphere instead of the plane.
+</p>
+
+<p>
+For <m>n=4</m> there is only one simple Venn diagram, and it's most symmetric rendering is from the 
+  Edwards construction, as in <xref ref="fig-EdwardsBipartite"/>.
+On the sphere, we are adding a new curve that intersects the equator in 4 places.
+</p>
+
+<p>
+<idx>involution</idx>
+<idx>antipodal</idx>
+The systematic mathematical study of symmetries of Venn diagrams on the sphere was initiated in Mark Weston's PhD thesis,
+   <href ref="ref-We09">[We09]</href>.
+Some results of the thesis are reported in <href ref="ref-RW11">[RW11]</href>.  
+An <term>involution</term> is a self-inverse mapping.
+Amongst isometric mappings of the sphere onto itself, the involutory mappings fall into three categories:
+  reflections about a plane through a great circle, reflections about a line through the center of the
+  sphere, and reflections through the center of the sphere.
+We will refer to the symmetry of reflections through the center of the sphere as <term>antipodal symmetry</term>, since
+  antipodal points are mapped to each other.
+</p>
+
+<theorem>
+<statement>
+<p>
+For every <m>n \ge 1</m> there is an <m>n</m>-Venn diagram with antipodal symmetry.
+</p>
+</statement>
+</theorem>
+
+<p>
+
+In this paper we give a construction, for any n, of an n-Venn diagram on the sphere that has antipodal symmetry; 
+that is, the diagram is fixed by the map that takes a point on the sphere to the corresponding antipodal point. 
+Thus, along with certain diagrams due to Anthony Edwards which can be drawn with rotational and reflective symmetry, 
+for any isometry of the sphere that is an involution, there exists an n-Venn diagram on the sphere invariant under that involution. 
+Our construction uses a recursively defined chain decomposition of the Boolean lattice.
+</p>
+
+<p>
+Mathematicians have studies the possible symmetries of the sphere in great detail and it turns out that there
+  are 14 of them.
+</p>
+
+</section>

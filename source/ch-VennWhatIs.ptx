@@ -8,7 +8,7 @@
     We then show a couple of inductive constructions of Venn diagrams with <m>n</m> curves, for any integer <m>n</m>.
     There also is a small section on the Borromean Rings.</p>
 
-  <image source="/gifs/VictoriaIcon.gif">
+  <image source="/gifs/VictoriaRain" width="70%">
   </image>
 
   </introduction>
@@ -31,6 +31,7 @@ The Jordan curve theorem states that such a curve <m>C</m> partitions the plane 
 <definition xml:id="def-IndependentFamily">
 <idx>independent family</idx>
 <statement>
+<p>
 Let <m>\mathbf{C} = \{ C_1, C_2, \cdots, C_n \}</m>
   be a collection of simple closed curves drawn in the plane.
 The collection <m>\mathbf{C}</m> is said to be an <term>independent family</term>
@@ -41,6 +42,7 @@ If, in addition, each such intersection region is connected and there are only
   finitely many points of intersection between curves, then <B>C</B> is a <term>Venn diagram</term>,
   or an <m>n</m>-Venn diagram if we wish to
   emphasize the number of curves in the diagram.
+</p>
 </statement>
 </definition>
 
@@ -76,7 +78,7 @@ We refer to a region enclosed by exactly <m>k</m> curves as a <m>k</m>-region or
   </image>
   </figure>
   <figure xml:id="fig-V3-bitstring">
-  <caption>Regions labeled by inclusion.</caption>
+  <caption>Regions labeled by bitstrings.</caption>
   <image source="/pdfs/3venn-bitstring">
   </image>
   </figure>
@@ -106,14 +108,16 @@ The 3 circle Venn diagram also occurs as a minimal projection of the
 
 <observation xml:id="obs-binomial">
 <statement>
+<p>
 For <m>0 \le k \le n</m>, the number of <m>k</m>-regions in a Venn diagram is <m>{n \choose k}</m>.
+</p>
 </statement>
 </observation>
   
 <sidebyside widths="35% 55%">
 <figure xml:id="fig-4-IF">
 <caption>An independent family that is not a Venn diagram</caption>
-  <image source="/pdfs/4-IF-triangles.svg" width="20%"></image>
+  <image source="/pdfs/4-IF-triangles" width="20%"></image>
 </figure>
   <p>
   <idx>independent family</idx>
@@ -137,19 +141,21 @@ For <m>0 \le k \le n</m>, the number of <m>k</m>-regions in a Venn diagram is <m
 
 <figure xml:id="fig-4Venn_ellipses">
 <caption>A simple 4-Venn diagram.</caption>
-  <image source="pdfs/4-ellipses.svg" width="50%"></image>
+  <image source="pdfs/4-ellipses" width="50%"></image>
 </figure>
 
 <definition>
 <idx><h>Venn diagram</h><h>simple</h></idx>
 <statement>
+<p>
 A <term>simple</term> Venn diagram is one in which
 no more than two curves intersect at a common point.
+</p>
 </statement>
 </definition>
 
 <p>
-Simple diagrams are in some sense the "nicest" as they are easiest to draw and understand.
+Simple diagrams are in some sense the <q>nicest</q> as they are easiest to draw and understand.
 All of the figures in this chapter are simple, but we will see many examples
 in other chapters of non-simple diagrams.  Unless stated otherwise, we assume that Venn diagrams are simple.
 </p>
@@ -172,10 +178,12 @@ Suppose two curves intersect at a point <m>x</m>.  The curves can cross at <m>x<
 
 <observation xml:id="obs-transverse">
 <statement>
+<p>
 In a simple Venn diagram, at every point of intersection, the two curves meet transversally.
-I.e., the two curves cross and do not meerly "kiss" each other.
+I.e., the two curves cross and do not meerly <q>kiss</q> each other.
 More generally, at any point of intersection in a Venn diagram,
   there must be at least two curves that meet transversally.
+</p>
 </statement>
 <proof>
 <p>
@@ -196,7 +204,9 @@ they are not connected.  The more general statement may be proven by essentially
 
 <observation xml:id="obs-maxn">
 <statement>
+<p>
 At most <m>n</m> curves pass through any point of intersection in a <m>n</m>-Venn diagram.
+</p>
 </statement>
 <proof>
 <p>
@@ -240,6 +250,34 @@ the context of illustrating simple logical arguments.  Readers interested in the
 diagrams to logical arguments are referred to the excellent introductory article by Glassner <xref ref="ref-Gl">[Gl]</xref>, 
 the book by Shin <xref ref="ref-Sh">[Sh]</xref>, and many standard logic textbooks.
 </p>
+
+<subsection>
+<title>Families of Intersecting Simple Curves</title>
+
+<p>
+It is sometimes convenient to consider wider families of curves when proving results about Venn diagrams, such as
+  independent families.
+We define another such family below.
+</p>
+
+<definition>
+<idx>FISC</idx>
+<idx><h>FISC</h><h>simple</h></idx>
+<idx><h>FISC</h><h>convex</h></idx>
+<statement>
+A <term>family of simple curves</term> (or a <term>FISC</term>) is a collection of finitely-intersecting simple closed
+  curves in the plane, with the property that there is some open region common to the interior of all the curves.
+A FISC is <term>simple</term> if at every point of intersection exactly two curves meet, and they cross each other
+  transversally.
+A FISC is <term>convex</term> if each curve is convex.
+</statement>
+</definition>
+
+<p>
+Clearly, every independent family is a FISC, but not every Euler diagram.
+</p>
+
+</subsection>
   
 </section>
 
@@ -278,7 +316,7 @@ between two parallel tangential lines, then the lines are equidistant, no mater 
 of the parallel lines.  This property is why they are used in the design of drill bits for drilling
 rounded square holes; e.g., H.J. Watts' 1917 US patent 1,241,176.  
 (There is a widespread misconception that the piston of Wankel engine
-is a Reuleaux triangle; they look similar but are not identical.)
+is a Reuleaux triangle; they look similar but are not mathematically identical.)
 </p>
 
 </subsection>
@@ -294,7 +332,7 @@ There have been
   <xref ref="ref-FGK">[FGK]</xref>, for a sampling in chronological order); we explain two of them
   below.  
 They both have the nice property that they produce simple diagrams and have easy to explain inductive constructions.
-In both cases, a new curve is added by drawing a new curve <m>C_n</m> that "follows" an existing curve <m>C_i</m>; in one case, 
+In both cases, a new curve is added by drawing a new curve <m>C_n</m> that <q>follows</q> an existing curve <m>C_i</m>; in one case, 
   <m>i=1</m> and in the other case <m>i=n-1</m>.
 </p>
 
@@ -424,7 +462,8 @@ Also, Edwards' diagrams have an interesting "phase-shifted" variant that we will
 <title>Venn Diagrams and Knots</title>
 
 <p>
-Every simple Venn diagram can be "woven" in to a
+<idx>link</idx>
+Every simple Venn diagram can be <q>woven</q> in to a
   link<fn><idx>link</idx>A <term>link</term> is a finite collection of non-intersecting knots 
   (where a <em>knot</em> is a closed, non-self-intersecting curve that is embedded in three dimensions.</fn>;
   as one traverses any curve, the other curves
@@ -440,7 +479,7 @@ This is clearly the same as the link that arises from
   the constructions give different links for <m>n \ge 5</m>.
 </p>
 
-<image source="gifs/knot/Venn4.jpg" width="50%"/>
+<image source="jpgs/knot/Venn4" width="50%"/>
 
 </subsection>
 
@@ -466,7 +505,7 @@ By <term>minimal</term> projection of a knot or link onto the plane
   intersections.
 </p>
 
-<image source="gifs/BorRings.gif"></image>
+<image source="gifs/BorRings"></image>
 
 <p>
 Below are two other illustrations of the Borromean rings.
@@ -477,8 +516,8 @@ On the right is a rendering that has a great deal of symmetry as
 </p>
 
 <sidebyside width="40%">
-<image source="gifs/brunnian3.gif"></image>
-<image source="gifs/Rings.gif"></image>
+<image source="gifs/brunnian3"></image>
+<image source="gifs/Rings"></image>
 </sidebyside>
 
 <p>
@@ -506,8 +545,8 @@ The diagram was found in picture-stones on Gotland, an island
 These are dated around the ninth century and are thought to
   tell tales from the Norse myths.
 To the Norse people of Scandinavia, a drawing of the Borromean
-  rings using triangles is known as "Odin's triangle" of the
-  "Walknot" (or "valknut" -- the knot of the slain).
+  rings using triangles is known as <q>Odin's triangle</q> of the
+  <q>Walknot</q> (or <q>valknut</q> -- the knot of the slain).
 The symbol was also carved on the bedposts used in their burials
   at sea.
 </p>
@@ -533,16 +572,20 @@ The online reader is encouraged to simply ignore this section; in printed book f
 </p>
 
 <figure xml:id="img-ellipses">
-<caption>A 4-Venn diagram drawn with ellipses.  Image created by Stuart Anderson.</caption>
+<caption>A 4-Venn diagram drawn with ellipses.  Image created by Stuart Anderson.  It is noticable that there are two sets of two
+ellipses whose centers form rectangles that are congruent and rotated by 90 degrees relative to each other.</caption>
 <image source="jpgs/venn4-bw.jpg" width="50%">
 </image>
 </figure>
 
 <figure xml:id="img-Tutte4">
+<idx>Tutte embedding</idx>
 <caption>The Tutte embedding of the 4-Venn diagram.  Created by Stuart Anderson.</caption>
 <image source="jpgs/venn4-tutte.jpg" width="50%">
 </image>
 </figure>
+
+<!--
 
 <sidebyside width="25%">
 <figure xml:id="img-n2c">
@@ -583,6 +626,8 @@ The online reader is encouraged to simply ignore this section; in printed book f
 </image>
 </figure>
 </sidebyside>
+
+-->
 
 
 

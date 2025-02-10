@@ -86,7 +86,7 @@ Drawings of these two are shown in Figures 4 (a) and (b) in
   <xref ref="ref-Gr92a">[Gr92a,p.7]</xref>, and are redrawn here:
 </p>
 
-<image source="pdfs/4-VDs-simple.svg" width="80%"></image>
+<image source="pdfs/4-VDs-simple" width="80%"></image>
 
 </subsection>
 
@@ -114,7 +114,9 @@ In proving these results several theorems of independent interest were proven:
 
 <theorem>
 <statement>
+<p>
 A simple Venn diagram for <m>n &gt; 2</m> is 3-connected.
+</p>
 </statement>
 </theorem>
 
@@ -130,13 +132,17 @@ Thus, to determine whether two Venn diagrams are in the same class, we need
 
 <theorem>
 <statement>
+<p>
 A simple Venn dual for <m>n &gt; 2</m> is 3-connected.
+</p>
 </statement>
 </theorem>
 
 <theorem>
 <statement>
+<p>
 No two edges in a face in a Venn diagram belong to the same curve.
+</p>
 </statement>
 </theorem>
 
@@ -146,13 +152,31 @@ No two edges in a face in a Venn diagram belong to the same curve.
 <title>Diagrams with <m>n = 6</m> curves</title>
 
 <p>
-The total number of Venn diagrams for <m>n = 6</m> is not known.
+The total number of Venn diagrams for <m>n = 6</m> is not known, but several partial
+  results are known for restricted types of Venn diagrams.
 As part of his search for 6-Venn triangles, Carroll
   <xref ref="ref-Ca99">[Ca99]</xref> reports that
   there are 1833 non-isomorphic simple monotone 6-Venn diagrams with the
   additional property that there are no more than 6 crossings
   between any pair of curves.
+Mamakani, Myrvold and Ruskey (<xref ref="ref-MMR11">[MMR11]</xref>,<xref ref="ref-MMR11">[MMR11]</xref>)
+  determined that there are 39,020 simple monotone Venn diagrams; of these, 375 are polar symmetric.
+One of those polar symmetric diagrams and its cylindrical representation are shown in 
+  <xref ref="fig-SixVenn_00210"/>.
+They also looked for other types of symmetry, and found it; these results are reported in the
+  section on Spherical Venn diagrams.
 </p>
+
+<figure xml:id="fig-SixVenn_00210">
+<idx><h>Venn diagram</h><h>polar symmetry</h></idx>
+<caption>
+  A simple monotone 6-Venn diagram and its cylindrical representation. 
+  The diagram is polar symmetric and the black dots show where the equatorial axis intersects the surface of the sphere. 
+  A flip by <m>\pi</m> radians about that axis leaves the diagram fixed, up to a relabeling of the curves.
+</caption>
+<image source="pdfs/SixVenn_00210" width="60%"/>
+<image source="pdfs/Cylindrical_00210"/>
+</figure>
 
 </subsection>
 

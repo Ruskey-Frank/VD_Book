@@ -1,43 +1,324 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="sec-SymmGeneral">
-<title>Symmetric Diagrams for all <m>n</m></title>
+<title>Symmetric Diagrams for all prime <m>n</m></title>
 
 <introduction>
-This chapter is about the construction of Griggs, Killian, and Savage.
+<p>
+The highlight of this section is the construction symmetric <m>n</m>-Venn diagrams for all prime <m>n</m>, due to Griggs, Killian, and Savage
+  <xref ref="ref-GKS">[GKS]</xref>.  
+The presentation borrows extensively from the expository article of Ruskey, Savage, and Wagon 
+  <xref ref="ref-RSW">[RSW]</xref>.
+Not all proofs are given but the presentation is rigourous and the careful reader should be able to construct
+  symmetric Venn diagrams of their own after digesting it. 
+The diagrams constructed are all non-simple and it remains an interesting challenge to find a construction that
+  produces simple symmetric Venn diagrams when <m>n</m> is prime. 
+We begin by discussing chain decompositions of the Boolean lattice, a useful tool in the construction of
+  various kinds of Venn diagrams.
+</p>
 </introduction>
+
+<subsection xml:id="subsec-SymmChains">
+<title>Chain decompositions of the Boolean lattice</title>
+
+<p>
+In this sub-section we introduce symmetric chain decompositions of the Boolean lattice and explain how they can be
+  useful in the construction of Venn diagrams, particulary symmetric Venn diagrams.
+Recall that the dual of any <m>n</m>-Venn diagram is a spanning plane subgraph of the hypercube <m>Q_n</m>.  
+There is a partial order, closely related to the hypercube, call the Boolean lattice.
+</p>
+
+<definition>
+<idx>Boolean lattice</idx>
+<idx>symmetric chain decomposition</idx>
+<statement>
+<p>
+The <term>Boolean lattice</term>, <m>B_n</m>, is the partial order whose elements are the subsets of <m>[n]</m>, ordered by inclusion.
+A <term>chain</term> in <m>B_n</m> is a sequence <m>S_1 \subseteq S_2 \subseteq \cdots \subseteq S_t</m> of elements of <m>B_n</m> such that
+<m>|S_i|=|S_{i-1}|+1</m>. The chain is <term>symmetric</term> if
+<m>|S_1|+|S_t| = n</m>.  A <term>symmetric chain decomposition</term> (or SCD) of <m>B_n</m>
+is a partition of the elements of <m>B_n</m> into symmetric chains.
+</p>
+</statement>
+</definition>
+
+<p>
+<idx>Hasse diagram</idx>
+Note that the Hasse diagram of <m>B_n</m>, regarded as a graph, is isomorphic to <m>Q_n</m>.
+It is a well-known result of order theory that <m>B_n</m> has a SCD for every 
+  natural number <m>n</m>, and that the number of chains in the SCD is <m>{n \choose \lfloor n/2 \rfloor}</m>.
+Regard each of the elements of <m>B_n</m> as a bitstring of length <m>n</m>.  
+We will outline two methods of obtaining a symmetric chain decomposition.
+The first is a recursive construction starting with the chain <m>0 -  1</m> for <m>B_1</m>.
+Let <m>\sigma_1 \sigma_2 \cdots \sigma_s</m> be a chain in the SCD of <m>B_n</m>.  
+Then the substitution shown below gives two new chains in the SCD of <m>B_{n+1}</m>; however, if <m>s=1</m>,
+  then there is only one new chain.
+</p>
+  
+<me>
+\sigma_1\ \sigma_2\ \cdots\ \sigma_s\ \longrightarrow 
+\substack{0\sigma_2\ \cdots\ 0\sigma_s \\ 0\sigma_1\ 1\sigma_1\ 1\sigma_2\ \cdots\ 1\sigma_s}
+</me>
+
+<p>
+If we do these substitutions simultaneously for each <m>n</m> for <m>n=1,2,3</m>, then we obtain the following sequence of SCDs,
+  culminating in an SCD for <m>B_4</m>.
+</p>
+
+<men xml:id="eqn-recursiveSCDexample">
+ 0\ 1 \longrightarrow \substack{01 \\ 00 \ 10 \ 11 } \longrightarrow
+\substack{001\ 101 \\ 010 \ 011 \\ 000\ 100 \ 110 \ 111} \longrightarrow
+\substack{0101 \\ 0001\ 1001\ 1101 \\ 0011 \\  0010 \ 1010 \ 1011 \\ 0100 \ 0110 \ 0111 \\ 0000\ 1000\ 1100 \ 1110 \ 1111}
+</men> 
+
+<p>
+The recursive method described above is due to de Bruijn, van Ebbenhorst Tengbergen, and Kruyswijk
+  <xref ref="ref-BTK">[BTK]</xref>, and the method of stacking the recursive expansions one atop the other is
+  called the "Christmas tree pattern" by Knuth <xref ref="ref-Kn">[Kn,pg.457]</xref>.
+Another construction, due to Greene and Kleitman <xref ref="ref-GK">[GK]</xref> will be described now.
+In the end, the SCDs described by both constructions are the same.
+The <xref ref="ref-BTK">[BTK]</xref> method can be thought of as a global recursive method, 
+  but the <xref ref="ref-GK">[GK]</xref> method is entirely local;
+  given an element of a chain it tells you how to get the element above it in the SCD.
+</p>
+
+<p>
+Think of 1 bits as right parentheses and 0 bits as left parentheses.  
+Now match pairs of bits in the usual way parenthese are matched, as much as possible.
+It may happen that there are unmatched 0s or unmatched 1s, or both.  For example, consider
+1001011100010.  Matching, in a slight abuse of notation, we obtain 1(()())100()0.  
+Observe that all the unmatched 1s precede all the unmatched 0s, a property that holds in general.
+</p>
+
+<p>
+In a binary string, regard each `1' as a right parenthesis and each `0' as a left parenthesis and
+then match parentheses in the usual way as much as possible.  For example, in the string 
+
+<tabular>
+<row>
+<cell><m>x = </m></cell>
+<cell>1</cell><cell>0</cell><cell>0</cell><cell>1</cell><cell>0</cell><cell>0</cell><cell>1</cell>
+<cell>1</cell><cell>1</cell><cell>1</cell><cell>0</cell><cell>0</cell><cell>1</cell><cell>0</cell>
+</row>
+<row valign="top">
+<cell></cell>
+<cell><m>\underline{{)}}</m></cell>
+<cell><m>\color{red}(</m></cell>
+<cell><m>\color{red}(</m></cell>
+<cell><m>\color{green})</m></cell>
+<cell><m>\color{red}(</m></cell>
+<cell><m>\color{red}(</m></cell>
+<cell><m>\color{green})</m></cell>
+<cell><m>\color{green})</m></cell>
+<cell><m>\color{green}(</m></cell>
+<cell><m>\underline{)}</m></cell>
+<cell><m>\underline{(}</m></cell>
+<cell><m>\color{red}(</m></cell>
+<cell><m>\color{green})</m></cell>
+<cell><m>\underline{(}</m></cell>
+</row>
+<row valign="top">
+<cell></cell>
+<cell><m>\underline{{)}}</m></cell>
+<cell><m>\color{red}(</m></cell>
+<cell><m>\color{red}(</m></cell>
+<cell><m>\color{green})</m></cell>
+<cell><m>\color{red}(</m></cell>
+<cell><m>\color{red}(</m></cell>
+<cell><m>\color{green})</m></cell>
+<cell><m>\color{green})</m></cell>
+<cell><m>\color{green}(</m></cell>
+<cell><m>\underline{(}</m></cell>
+<cell><m>\underline{(}</m></cell>
+<cell><m>\color{red}(</m></cell>
+<cell><m>\color{green})</m></cell>
+<cell><m>\underline{(}</m></cell>
+</row>
+<row>
+<cell><m>y = </m></cell>
+<cell>1</cell><cell>0</cell><cell>0</cell><cell>1</cell><cell>0</cell><cell>0</cell><cell>1</cell>
+<cell>1</cell><cell>1</cell><cell>1</cell><cell>1</cell><cell>0</cell><cell>1</cell><cell>0</cell>
+</row>
+</tabular>
+
+
+the parentheses in green are matched with the parentheses in red. 
+The black underlined <m>\underline{)}</m> 0s and <m>\underline{(}</m> 1s are unmatched.   
+Then chains of strings can be formed by using the <em>Greene-Kleitman successor rule</em>: 
+</p>
+
+
+<blockquote>
+<p>
+Given a bitstring <m>x</m>, change the first unmatched 0 in <m>x</m> to a 1 to 
+get its successor <m>y</m>.
+</p>
+</blockquote>
+
+<p>
+In the example above, the string <m>x = 10010011110010</m> becomes <m>y = 1001001111\underline{1}010</m>.
+The rule could be applied twice more, and then there are no more unmatched 0s.  
+Note that the matched bits remained fixed throughout the entire chain.
+</p>
+
+<p>
+<idx>colex order</idx>
+Greene and Kleitman showed in <xref ref="ref-GK">[GK]</xref> that, if the strings chosen 
+to start the chains are exactly those with no unmatched 1, then the resulting chains (formed by
+applying the above rule successively to each chain starter until there are no unmatched 0s) form a
+symmetric chain decomposition of the Boolean lattice.  That is, every <m>n</m>-bit string will occur
+exactly once in the resulting chains.  The reader is encourage to check that the SCD produced 
+recursively above (<xref ref="eqn-recursiveSCDexample"/>) adheres to the successor rule, and that the initial element of every chain is
+a chain starter.
+It it worth noting that the rightmost elements of the chains appear in colex order (in colex order is
+  like lexicographic if the strings are scanned from right-to-left instead of left-to-right).
+</p>
+
+<p>
+The chains in <xref ref="fig-4chains"/> are laid out as in the recursive construction.
+And then, in <xref ref="fig-4cover"/>, additional thin edges are added, each of which corresponds to
+  a cover relation in the Hasse diagram of the lattice; that is, a change of a 0 to a 1 when moving upward along that relation.
+Each relation, including those of the SCD, are labelled according to the index of the bit that changes.
+The added edges form a pair of trees, one of which is a reflection (and relabelling) of the other.
+The upper tree can be formed, in general, by obtaining the parent of an element by changing its
+  leftmost 0 into a 1.
+The lower tree can be formed, in general, by the slightly more complicated rule of obtaining the parent by changing the righmost
+  matched 1 to a 0.
+One still needs to prove that the edges so formed in the two trees do correspond to one another.
+This is not difficult, but is left to the reader.
+Call the resulting diagram <m>D</m>; we will show that it is the dual of a Venn diagram.
+</p>
+
+<sidebyside width="45%">
+<figure xml:id="fig-4chains" width="50%">
+<caption>A symmetric chain decomposition of <m>B_4</m>.  
+</caption>
+<image source="pdfs/4venn_chains" width="40%"/>
+</figure>
+<figure xml:id="fig-4cover" width="50%">
+<caption>
+  Embedding with cover edges, with each edge colored.
+</caption>
+<image source="pdfs/4venn_coverC2" width="40%"/>
+</figure>
+</sidebyside>
+
+<!--
+<p>
+The chains are grown bottom-up by starting with a string <m>x</m> with no unmatched 1.
+Change the first unmatched 0 in <m>x</m> to 1 to get its successor, <m>y</m>.
+Change the first unmatched 0 in <m>y</m> (if any) to 1 to get its successor.
+Continue until a string with no unmatched 0 is encountered.
+The chains shown in Figure <xref ref="fig-4chains"/>, built using this rule,
+  give a symmetric chain decomposition of <m>B_4</m>.
+</p>
+-->
+
+<sidebyside width="45%">
+<figure xml:id="fig-4chainsOverlay">
+<caption>The curves of the diagram overlaid on the dual.  
+</caption>
+<image source="pdfs/4venn_overlay" width="40%"/>
+</figure>
+
+<figure xml:id="fig-4chainsVenn" width="45%">
+<caption>The curves of the diagram, regions labelled with bitstrings.
+</caption>
+<image source="pdfs/4venn_curves" width="40%"/>
+</figure>
+</sidebyside>
+
+</subsection>
 
 <subsection xml:id="sec-necklace">
 <title>Symmetric Diagrams, Necklaces, and Chains</title>
 
 <p>
 The Venn diagram, discovered by Stirling Chow and the author
-  in 1996, and shown below <image source="pdfs/howcirc-cropped.svg" width="50%"></image> 
+  in 1996, and shown in <xref ref="fig-howcirc"/> 
   has a number of remarkable properties.
 First, it has the least number of vertices among all monotone
   5-Venn diagrams by a result of 
   <xref ref="ref-BR">[BR]</xref>.
-Secondly, two cut-vertices delimit a <m>1/n</m> sector which can
+Secondly, two cut-vertices delimit a <m>1/n</m> circular sector which can
   be rotated to get the full diagram.
-Of course, the labels on the curves must also be "rotated."
+Of course, the colors of the curves must also be "rotated."
 The same principles used to discover this diagram can 
-  be used to obtain similar 7-Venn diagrams, such as the
-  discovered by the author in 1997 and shown below;
+  be used to obtain similar 7-Venn diagrams, such as the one
+  discovered by the author in 1997 and explained below;
   the same ideas were used by Hamburger in discovering (see <xref ref="sssec-Hamburger"/>) his diagram
   for <m>n=11</m> and by Griggs, Killian and Savage in their amazing
-  construction for symmetric diagrams for all prime <m>n</m>, discussed later in this section.
+  construction for symmetric diagrams for all prime <m>n</m>, discussed later in the next subsection.
 </p>
 
+<figure xml:id="fig-howcirc">
+<caption>The <q>trick-or-treat</q> Venn diagram.  It had this fanciful name because it is a Venn diagram
+  that appears at first glance to be constructed from circles, but this is only possible if <m>n \le 3</m> (
+  and it was discovered around Haloween 1996???).
+</caption>
+<image source="pdfs/howcirc-cropped" width="50%"></image> 
+</figure>
+
 <p>
+We will explain how this Venn diagram was obtained.
 Recall that a necklace is an equivalence class of strings under
   rotation.
-Here the strings are binary; i.e., taken over the two letter alphabet <m>\{0,1\}</m>.
-Since <m>n</m> is prime each of the <m>n</m> rotations is
+Here the strings are binary (bitstrings); i.e., taken over the two letter alphabet <m>\{0,1\}</m>.
+Since <m>n</m> is prime, each of the <m>n</m> rotations is
   distinct (if the string is not either all 0s or all 1s).
+When <m>n=5</m> the necklaces are 00000, 00001, 00011, 00101, 00111, 01011, 01111, 11111, where we
+  have taken the lexicographically least necklace in each equivalence class, and then listed them in
+  lexicographic order.
 </p>
 
 <p>
-Below we show a lattice of necklaces, the ranks of the lattice giving
+Now form symmetric chains that include one representative from each necklace equivalence class, 
+   omitting the all 0s and all 1s necklaces.
+For example if one takes, the two chains <m>10000- 11000- 11100- 11110</m> and <m>10100-10110</m> then
+   all equivalence classes are represented.
+Notice how these two chains occur in the bottom <q>hexagon</q> of <xref ref="fig-5venn_dualchain"/>.
+</p>
+
+<sidebyside width="45%">
+<figure xml:id="fig-5venn_dualchain">
+<caption>The dual graph. Certain symmetric chains are highlighted. 
+</caption>
+<image source="pdfs/5venn_dualchain" width="40%"/>
+</figure>
+
+<figure xml:id="fig-5venn_slice" width="45%">
+<caption>The curves corresponding to 1/5 of the dual.
+</caption>
+<image source="pdfs/5venn_slice" width="40%"/>
+</figure>
+</sidebyside>
+
+<sidebyside width="45%">
+<figure xml:id="fig-5venn_overlay">
+<caption>Repeating in each sector. 
+</caption>
+<image source="pdfs/5venn_overlay" width="40%"/>
+</figure>
+
+<figure xml:id="fig-5venn_curves" width="45%">
+<caption>The final Venn diagram.
+</caption>
+<image source="pdfs/5venn_curves" width="40%"/>
+</figure>
+</sidebyside>
+
+<p>
+The astute reader will have noticed that the diagram of <xref ref="fig-howcirc"/> is different than
+  that of <xref ref="fig-5venn_curves"/> even if the curves are relabelled.
+However, it was obtained by the same basic technique.  Different diagrams could arise depending
+  on which set of necklace representatives are chosen for that sector, which symmetric chains
+  are formed from those representatives, and how they are laid out in the plane.
+Furthermore, any fixed circular permutation can be used in relabelling from sector to sector.
+</p>
+
+<p>
+We will now give a somewhat larger example, with <m>n=7</m>.
+Below in <xref ref="fig-NeckLattice7"/> we show a lattice of necklaces, the ranks of the lattice giving
   the number of black beads (the all yellow and all black necklaces
   have been omitted).
 The relation is subset inclusion on the black bead numbers.
@@ -69,6 +350,29 @@ When will the resulting diagram have the least number of
 Exactly when the middle two levels of the lattice diagram
   form a perfect matching, as they do here.
 </p>
+
+<sidebyside valign="middle" widths="65% 35%">
+<figure xml:id="fig-NeckLattice7">
+<caption>
+The lattice of necklaces forming the dual of <m>1/n</m>th of a 7-Venn diagram.
+</caption>
+<image source="pdfs/NeckLattice7"/>
+</figure>
+
+<figure xml:id="fig-NeckSector7">
+<caption>
+The corresponding sector of the diagram.  Curve 2 is shown in red.
+</caption>
+<image source="pdfs/NeckSector7"/>
+</figure>
+</sidebyside>
+
+<figure xml:id="fig-Ellipse7green" width="70%">
+<caption>
+The entire diagram, in its entirety, formed by rotating the sector.  The green curve is curve 1.
+</caption>
+<image source="pdfs/Ellipse7green" width="70%"/>
+</figure>
 </subsection>
 
 <subsection>
@@ -82,67 +386,14 @@ The difficult part is constructing a plane embedding of a lattice of necklaces
   once by a necklace.  We start by illustrating how to build chains of <m>n</m>-bit strings, and then show how
   to link them up to form a dual graph like the one above.  
 </p>
-
-<p>
-In a binary string, regard each `1' as a right parenthesis and each `0' as a left parenthesis and
-then match parentheses in the usual way as much as possible.  For example, in the string 
-
-<tabular>
-<row>
-<cell>1</cell><cell>0</cell><cell>0</cell><cell>1</cell><cell>0</cell><cell>0</cell><cell>1</cell>
-<cell>1</cell><cell>1</cell><cell>1</cell><cell>0</cell><cell>0</cell><cell>1</cell><cell>0</cell>
-</row>
-<row>
-<cell><m>\overline{)}</m></cell>
-<cell><m>\color{red}(</m></cell>
-<cell><m>\color{red}(</m></cell>
-<cell><m>\color{green})</m></cell>
-<cell><m>\color{red}(</m></cell>
-<cell><m>\color{red}(</m></cell>
-<cell><m>\color{green})</m></cell>
-<cell><m>\color{green})</m></cell>
-<cell><m>\color{green}(</m></cell>
-<cell><m>\overline{)}</m></cell>
-<cell><m>\overline{(}</m></cell>
-<cell><m>\color{red}(</m></cell>
-<cell><m>\color{green})</m></cell>
-<cell><m>\overline{(}</m></cell>
-</row>
-</tabular>
-
-
-the parentheses in green are matched with the parentheses in red. 
-The black underlined <m>\underline{)}</m> 1s and <m>\underline{(}</m> 0s are unmatched.   Then chains of strings can be formed by using the 
-<em>Greene-Kleitman successor rule</em>: 
-</p>
-
-
-<blockquote>
-<p>
-Starting with a string <m>x</m>, change the first unmatched 0 in <m>x</m> to a 1 to 
-get its successor <m>y</m>.
-</p>
-</blockquote>
-
-<p>
-In the example above, the string 10010011110010 becomes 1001001111<b>1</b>010.
-</p>
-
-<p>
-Greene and Kleitman showed in <xref ref="ref-GK">[GK]</xref> that, if the strings chosen 
-to start the chains are exactly those with no unmatched 1, then the resulting chains (formed by
-applying the above rule successively to each chain starter until there are no unmatched 0s) form a
-symmetric chain decomposition of the Boolean lattice.  That is, every <m>n</m>-bit string will occur
-exactly once in the resulting chains. 
-</p>
  
 <p>
-Griggs, Killian, and Savage use this rule to construct a symmetric chain decomposition of only <m>1/n</m>th of the strings to 
-form a necklace diagram like that above.  They build a set <m>R_n</m> with size <m>(2^n-2)/n</m>,
-consisting of necklace representatives.  
+Griggs, Killian, and Savage used a variant of the Greene-Kleitman rule to construct a symmetric chain decomposition 
+  of only <m>1/n</m>th of the strings to form a necklace diagram like that above.  
+They build a set <m>R_n</m> with size <m>(2^n-2)/n</m>, consisting of necklace representatives.  
 To choose the appropriate representatives, they use the notion of 
 a <term>block code</term> for an <m>n</m>-bit string: let <m>x</m> be an <m>n</m>-bit string.  If <m>x</m> begins
-with 0 or ends with 1, the block code is infinity.  Otherwise, <m>x</m> consists of some number of
+with 0 or ends with 1, the block code is infinity (<m>\infty</m>).  Otherwise, <m>x</m> consists of some number of disjoint
 blocks of the form <m>111 \ldots 1000 \ldots 0</m>, and the block code is simply the sequence of the lengths of these blocks.
 </p>
 
@@ -186,10 +437,71 @@ For example, the block codes of the string 1100100 and all of its 7 rotations ar
 </p>
 
 <p>
+Another example is given below but the <m>\infty</m> block codes have been omitted.
+Note that the block codes are rotations of each other, a property that clearly holds in general.
+</p>
+
+<tabular halign="center">
+<row header="yes" bottom="minor" >
+<cell>bitstring</cell>
+<cell>block code</cell>
+<cell>bitstring</cell>
+<cell>block code</cell>
+</row>
+<row>
+<cell><m>1110101100010</m></cell>
+<cell><m>(4,2,5,2)</m></cell>
+<cell><m>1100010111010</m></cell>
+<cell><m>(5,2,4,2)</m></cell>
+</row>
+<!--
+<row>
+<cell><m>0111010110001</m></cell> 
+<cell><m>(\infty)</m></cell>
+<cell><m>0110001011101</m></cell>
+<cell><m>(\infty)</m></cell>
+</row>
+-->
+<row>
+<cell><m>1011101011000</m></cell>
+<cell><m>(2,4,2,5)</m></cell>
+<cell><m>1011000101110</m></cell>
+<cell><m>(2,5,2,4)</m></cell>
+</row>
+<!--
+<row>
+<cell><m>0101110101100</m></cell>
+<cell><m>(\infty)</m></cell>
+<cell><m>0101100010111</m></cell>
+<cell><m>(\infty)</m></cell>
+</row>
+<row>
+<cell><m>0010111010110</m></cell>
+<cell><m>(\infty)</m></cell>
+<cell><m>1010110001011</m></cell>
+<cell><m>(\infty)</m></cell>
+</row>
+<row>
+<cell><m>0001011101011</m></cell>
+<cell><m>(\infty)</m></cell>
+<cell><m>1101011000101</m></cell>
+<cell><m>(\infty)</m></cell>
+</row>
+<row>
+<cell><m>1000101110101</m></cell>
+<cell><m>(\infty)</m></cell>
+<cell><m></m></cell>
+<cell><m></m></cell>
+</row>
+-->
+</tabular>
+
+<p>
 For each <m>n</m>-bit string, the rotation chosen as the representative 
   in <m>R_n</m> is that which has the lexicographically-least block code.  
 For example, for the string above, the rotation
-  1001100 is the choice to be in <m>R_n</m>.  
+  1001100 is the choice to be in <m>R_n</m> since (3,4) is lexicographically
+  smaller than (4,3); similarly, 1011101011000 is the representative in the second example.  
 The authors of <xref ref="ref-GKS">[GKS]</xref> show
   that this rule results in exactly one necklace representative for 
   each equivalence class of strings under rotation, 
@@ -220,45 +532,103 @@ The chains so constructed are illustrated below as vertical
 <p>
 The dual of the Venn diagram is formed by imposing a tree structure 
   on the set of chains.
-Identify each chain with its <term>chain starter</term> 
-  (i.e., the string with exactly one unmatched 1).
-The root of the tree is <m>10^{n-1}</m>, from the unique
+Identify each chain with its <term>chain starter</term>, which is defined to be a 
+  string with exactly one unmatched 1.
+For <m>n = 7</m> the chain starters are 1000000, 1001000, 1001100, 1010000, 1010100.
+In general, the root of the tree is <m>10^{n-1}</m>, the lowest element in the unique
   chain with <m>n-1</m> elements.
 The parent of other chain starters is obtained by changing the
   rightmost 1 into a 0.
-For <m>n=7</m> the tree so constructed is illustrated below
+For <m>n=7</m> the tree so constructed is illustrated below in <xref ref="fig-7GKS"/>
   with the green edges.
-To obtain the dual a symmetric tree is formed from the final elements 
+</p>
+
+<p>
+To finish obtaining the dual a symmetric tree is formed from the final elements 
   in the chains (strings with one unmatched 0).
-These edges of this symmetric tree are shown in blue below
-  for <m>n=7</m>. 
+These edges of this symmetric tree are shown in blue in <xref ref="fig-7GKS"/>. 
 The dual graph of a sector like those above can now be created by 
   embedding in the plane the tree as defined, embedding
   each chain vertically starting from the nodes in the tree, 
   and then embedding the tree attached to the
   final elements in the chains.  
-The figure below (minus the red edges) shows the plane graph that
-  results from the construction for <m>n=7</m>.  
+<xref ref="fig-11venn_quaddual"/> below shows a plane graph that
+  results from the construction for <m>n=11</m> (ignore the red edges for now).
+There are 42 chain starters for <m>n = 11</m>.  
+Finally, in <xref ref="fig-11-VD-rainbowNAMS"/> we show a beautiful rendering of
+  the GKS 11-Venn diagram with regions colored according to cardinality.
+Because the diagram is not simple, it is not possible to recover an individual
+  curve from this figure, but it is sure nice to look at!
 </p>
 
-<image source="pngs/survey7quad.png" width="60%"/>
+<!--
+<image source="pdfs/7quad" width="60%"/>
+-->
 
 <p>
-This partial order can be turned into a symmetric 7-Venn diagram by the process illustrated in the first section on this page.
+This partial order can be turned into a symmetric 7-Venn diagram by the process illustrated at the end of
+  <xref ref="subsec-SymmChains"/>.
 </p>
 
+<figure xml:id="fig-7GKS">
+<caption>The dual of a 1/7th of a 7-Venn diagram, as constructed by the GKS method.</caption>
+<image source="pdfs/7quadNoRed" width="70%"/>
+</figure>
+
+<figure xml:id="fig-11venn_quaddual">
+<caption>The dual of 1/11th of the GKS 11-Venn diagram.</caption>
+<image source="pdfs/11venn_quaddualY"/>
+</figure>
+
+<figure xml:id="fig-11-VD-rainbowNAMS">
+<caption>The GKS 11-Venn diagram with regions colored.</caption>
+<image source="pdfs/11-VD-rainbowNAMS"/>
+</figure>
+
+</subsection>
+
+<subsection>
+<title>Half-simple Venn diagrams</title>
+
 <p>
+<idx><h>Venn diagram</h><h>half-simple</h></idx>
 In <xref ref="ref-KRSW">[KRSW]</xref> the authors showed that
-more edges can be added to add vertices to the resulting Venn diagram.
-In the graph constructed above, the face formed between each chain
+more edges, and hence regions, can be added in the dual, which has the effect of adding vertices to 
+  the the Venn diagram.
+In <xref ref="sec-VertexSplitting"/> we showed how vertices can be split, adding one edge to the dual.
+Equivalently, we can add edges to the dual, which we do here.
+These additional edges are shown in red in <xref ref="fig-7GKS"/>; notice that each
+  red edge corresponds to a bit changing from a 0 to a 1 as we move up the edge.
+In <xref ref="fig-11venn_quaddual"/> the red edges are also added edges for the
+  GKS 11-Venn diagram.
+In the general graph constructed above, the face formed between each chain
 and the child chain embedded immediately beside it can have edges added; the number of extra edges 
 is equal to one less than the number of elements in the shorter chain.
-In the figure above, the red edges
-are extra edges that can be added between adjacent chains.
-<!-- Over the entire resulting Venn diagram, it can be proven that the number of
-vertices increases to be asympotically 2<sup><i>n</i>-1</sup>, though in practise
-the number of vertices seems to be higher. -->
+Over the entire resulting Venn diagram, it can be proven that the number of
+  vertices increases to asympotically exceed <m>2^{n-1}</m>, which is more that half the number
+  of vertices in a simple Venn diagram.
+For this reason, that authors of <xref ref="ref-KRSW">[KRSW]</xref> call them
+  "half-simple" Venn diagrams.
 </p>
+
+<figure xml:id="fig-7GKSquad">
+<caption>Quadrangulating edges added to the partial dual in <xref ref="fig-7GKS"/>.</caption>
+<image source="pdfs/7quad" width="70%"/>
+</figure>
+
+<p>
+<xref ref="fig-11wagon"/> is an interesting overlay of a half-simple 11-Venn diagram, due to Stan Wagon,
+  that appeared on the cover of the Notices of the American Mathematical Society in December 2006.
+The back ground is the dual of the Venn diagram, with the various faces properly colored with
+  4 differing shades of gray.
+The foreground shows one of the 11 curves in black, and the interior of that curve contains half of the
+  Venn diagram, 1024 regions, each region colored differently according to its cardinality.
+</p>
+
+<figure xml:id="fig-11wagon">
+<caption>Stan Wagon's primal/dual overlay rendering of a half-simple 11-Venn diagram.</caption>
+<image source="pdfs/NAMSvennCoverArt"/>
+</figure>
 
 </subsection>
 

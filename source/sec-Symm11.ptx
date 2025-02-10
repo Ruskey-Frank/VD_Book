@@ -32,7 +32,7 @@ Successive sectors may be obtained from this one by
   A <m>1/11</m> sector of the cylindrical representation of Hamburger's symmetric 11-Venn diagram.
   All 11 curves intersect at the left and a the right boundaries of this diagram.
 </caption>
-<image source="gifs/sector1big.gif"></image>
+<image source="gifs/sector1big"></image>
 </figure>
 
 <p>
@@ -57,6 +57,10 @@ He and other co-authors have used similar techniques to create other diagrams; s
 
 <subsubsection>
 <title>Mamakani's simple symmetric 11-Venn diagram</title>
+
+<p>
+Although Hamburger found a non-simple symmetric 11-Venn diagram, there seemed little hope of extending
+his ad-hoc methodology or diagrams to get a simple symmetric 11-Venn diagram; some new insights were needed.
 
 </subsubsection>
 
