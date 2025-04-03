@@ -24,9 +24,9 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     inkscape:zoom="8.6561368"
-     inkscape:cx="318.27131"
-     inkscape:cy="97.214268"
+     inkscape:zoom="1.5302033"
+     inkscape:cx="318.25837"
+     inkscape:cy="300.2869"
      inkscape:window-width="3840"
      inkscape:window-height="1577"
      inkscape:window-x="-8"
@@ -41,7 +41,10 @@
        width="664.79999"
        height="638.15997"
        margin="0"
-       bleed="0" />
+       bleed="0"
+       inkscape:export-filename="5vennDualOverlay.pdf"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
   </sodipodi:namedview>
   <g
      id="g1"

@@ -34,7 +34,7 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="1.9406919"
-     inkscape:cx="342.14601"
+     inkscape:cx="342.40366"
      inkscape:cy="441.33744"
      inkscape:window-width="3840"
      inkscape:window-height="1577"
@@ -51,7 +51,10 @@
        width="615.84003"
        height="679.42383"
        margin="0"
-       bleed="0" />
+       bleed="0"
+       inkscape:export-filename="LpolyVennExpandColumn.pdf"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <inkscape:grid
        id="grid1"
        units="px"
