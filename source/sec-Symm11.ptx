@@ -5,10 +5,6 @@
 
 <!-- ========================================================================================= -->
 
-<subsection>
-<title>Symmetric diagrams with <m>n = 11</m> curves</title>
-</subsection>
-
 <subsubsection xml:id="sssec-Hamburger">
 <title>Hamburger's non-simple symmetric 11-Venn diagram</title>
 
@@ -30,16 +26,31 @@ Successive sectors may be obtained from this one by
 <figure xml:id="fig-Hamburger11">
 <caption>
   A <m>1/11</m> sector of the cylindrical representation of Hamburger's symmetric 11-Venn diagram.
-  All 11 curves intersect at the left and a the right boundaries of this diagram.
+  All 11 curves intersect at the left and at the right boundaries of this diagram.
 </caption>
 <image source="gifs/sector1big"></image>
+</figure>
+
+<figure xml:id="fig-Hamburger11withDual">
+<caption>
+  A <m>1/11</m> sector of the cylindrical representation of Hamburger's symmetric 11-Venn diagram,
+  with the dual superimposed.
+</caption>
+<image source="gifs/sector1lattice"></image>
+</figure>
+
+<figure xml:id="fig-Hamburger11dualOnly">
+<caption>
+  The dual of <m>1/11</m> sector of the cylindrical representation of Hamburger's symmetric 11-Venn diagram.
+</caption>
+<image source="gifs/sector1latticeOnly"></image>
 </figure>
 
 <p>
 The construction method for this diagram uses a partition of the set of all bitstrings of
 length 11.  Recall that the Venn dual can be labelled with bitstrings corresponding
-to regions, as we discussed on the page <a href="VennGraphEJC.html#dual">Graphs Associated
-with Venn Diagrams</a>.
+to regions, as we discussed <xref ref="ch-VennGraphs"/>, Graphs Associated
+with Venn Diagrams.
 The construction then uses chains of bitstrings connected together to build the large dual
 graph of the sector, which then is repeated to give the entire diagram.
 </p>
@@ -51,7 +62,22 @@ the diagram with vertex sets from 462 up to 1001 by increments of 11 in <xref re
 He and other co-authors have used similar techniques to create other diagrams; see the sub-sections below.
 </p>
 
+<p>
+For <m>n = 11</m>, the minimum possible number of vertices is <m>\lceil (2^{11} - 2) / 10 \rceil = 205</m>.  
+This is not divisible by 11, so the smallest number of vertices possible in a symmetric 11-Venn diagram is at least <m>209 = 11 \cdot 19</m>.  
+In <xref ref="ref-HS03">[HS03]</xref> Hamburger and Sali extended the above method to 
+  produce a diagram with <m>231 = 11 \cdot 21</m> vertices, quite close to the minimum possible, and then later found a diagram with
+  <m>220 = 11 \cdot 20</m> vertices (as yet unpublished - thanks to Peter Hamburger for showing us the diagram).  
+Of course, the resulting diagrams are highly non-monotone, since a monotone 11-Venn diagram has at least
+   <m>{11 \choose 5} = 462 = 11 \cdot 42</m> vertices by <xref ref="thm-MinVertMonotone"/>.
+</p>
 
+<p>
+Many of the symmetric 11-Venn diagrams mentioned here, in papers by Peter Hamburger and his
+co-authors, have been turned into works of art by the artist Edit Hepp, Hamburger's spouse.  
+Readers are encouraged to seek out the papers in print to view the diagrams.  The processes used to create 
+the artwork are explained in <xref ref="ref-HH">[HH]</xref>.
+</p>
 
 </subsubsection>
 
@@ -60,7 +86,123 @@ He and other co-authors have used similar techniques to create other diagrams; s
 
 <p>
 Although Hamburger found a non-simple symmetric 11-Venn diagram, there seemed little hope of extending
-his ad-hoc methodology or diagrams to get a simple symmetric 11-Venn diagram; some new insights were needed.
+  his ad-hoc methodology or diagrams to get a <em>simple</em> symmetric 11-Venn diagram; some significant new insights were needed.
+Some people had attempted algorithmic solutions, but had met with failure because the potential solution space is
+  so huge.
+In this sub-subsection we will give an outline of an approach that succeeded along with some relevant figures, some of
+  which are rather attractive.
+</p>
+
+<p>
+One strategy is to reduce the size of the potential solution space by imposing additional constraints on the diagrams, but one has
+  to be careful; too much constraint and there may be no such diagram, too little and the solution space can still be to large.
+Mamakani's approach was to look for additional properties in subsets of the set of symmetric 7-Venn diagrams.
+To that end, we define a <q>crosscut</q> in a Venn diagram.
+</p> 
+
+<definition xml:id="def-crosscut">
+<idx>Crosscut</idx>
+<statement>
+<p>
+A <emph>crosscut</emph> in a simple monotone <m>n</m>-Venn diagram is a segment of a curve that extends from the innermost face
+  to the (unbounded) outermost face, and intersects each of the other <m>n-1</m> curves exactly once.
+</p>
+</statement>
+</definition>
+
+<p>
+Imagine a curve <m>C</m> in a Venn diagram.  By <xref ref="thm-NoTwoEdges"/> the <m>C</m> can touch the outer face at most once, and the
+  inner face at most once.
+Hence, it is impossible for <m>C</m> to have 3 or more crosscuts in a Venn diagram.
+For a curve in a <m>n</m>-Venn diagram to have 2 crosscuts, that curve must have exactly <m>2(n-1)</m> intersections with other
+  curves in the diagram; that is, such a curve must intersect all <m>n-1</m> curves as it extends from the unbounded exterior
+  to the interior of all the curves, and then hit all <m>n-1</m> curves again as it returns to the unbounded exterior; let us
+  call such a curve a <term>mint</term> curve, since it has the <em>m</em>inimum number of <em>int</em>ersections possible in a Venn diagram.<idx><h>curve</h><h>mint</h></idx>
+</p>
+<p>  
+For each <m>n</m> there is an <m>n</m>-Venn diagram in which two distinct curves have two crosscuts; that is, the Venn diagram contains
+  two mint curves.
+For example consider the cylindrical projection of Edwards 8-Venn diagram shown in <xref ref="fig-Edwards_Cylinder"/>.
+Observe that the red and black curves are mint curves; each part of the curve drawn as a straight line intersects 6 curves, and the 7th intersection is a red-black intersection.
+For <m>n > 5</m> it is not known whether there exists an <m>n</m>-Venn diagram with 3 or more mint curves.
+</p>
+
+<figure xml:id="fig-Edwards_Cylinder">
+<caption>
+Cylindrical drawing of Edwards 8-Venn diagram.  The black and red curves are mint curves.
+</caption>
+<image source="pdfs/edwards-cylind"></image>
+</figure>
+
+<theorem>
+<statement>
+<p>
+If <m>n \gt 3</m>, then a simple symmetric <m>n</m>-Venn diagram has a most one crosscut per curve.
+</p>
+</statement>
+<proof>
+<p>
+We argued above that a curve in a Venn diagram can not have three or more crosscuts.
+Suppose that there is a mint curve in a symmetric <m>n</m>-Venn diagram.
+Since the diagram is symmetric, every curve must be a mint curve, and thus the total number
+  of intersections (vertices) in the diagram is <m>n(n-1)</m>.  
+On the other hand, a simple <m>n</m>-Venn diagram has exactly <m>2^n-2</m> vertices.  
+The equation <m>n(n-1) = 2^n-2</m> has a solution for <m>n = 1,2,3</m>, but not for any <m>n > 3</m>.
+</p>
+</proof>
+</theorem>
+
+<p>
+The <m>7</m>-Venn diagrams with a crosscut are Hamilton (P2), Manawatu (P6), Victoria (P4), M4, M5, M11, M12, and M15.
+This is easily verified examining the drawings in <xref ref="fig-polar7"/> and <xref ref="fig-all17"/>, or by looking
+for subsequences in the Grunbaum encodings of the form <m>1 \ c_2 c_3 c_4 c_5 c_6</m>, where <m>c_2 c_3 c_4 c_5 c_6</m> is
+a permutation of <m>2,3,4,5,6</m>.  For example, in <xref ref="fig-all17">M11</xref>, and referring to 
+<xref ref="tbl-all17"/>, the subsequence is <m>142356</m>.
+</p>
+
+<figure xml:id="fig-VD7cluster">
+<caption>
+A cluster in the symmetric Venn diagram M4.
+</caption>
+<image source="pdfs/VD_7"></image>
+</figure>
+
+<p>
+However, restricting the search to only diagrams with a crosscut still took too long, and so the search was further 
+  refined by looking for some symmetric substructures within the diagrams possessing a crosscut. 
+Consider <xref ref="fig-VD7cluster"/>.  The colored part of the diagram is called a <term>cluster</term>; it is an
+  edge-connected collection of regions, that, when rotated <m>n</m> times, uniquely accounts for each face of the Venn diagram,
+  except for the innermost and outermost faces.
+The particular cluster shown has a symmetric substructure when reflected about the crosscut, as shown in 
+  <xref ref="fig-VD7clusterCyl"/>.
+</p>
+
+<figure xml:id="fig-VD7clusterCyl">
+<caption>
+A cluster in the symmetric Venn diagram M4, cylindrical representation.
+</caption>
+<image source="pdfs/VD_7_Cluster2"></image>
+</figure>
+
+<p>
+We can formalize the symmetry that we observe in <xref ref="fig-VD7clusterCyl"/> by considering lists of curve intersections.
+Assume that the curves have been labelled <m>1,2,\ldots,n,</m> in clockwise order where the crosscut is <m>C_1</m>.
+</p>
+
+<figure xml:id="fig-Newroz">
+<image source="pdfs/VD_11_Filled_2"/>
+<caption>Newroz, the first simple symmetric 11-Venn diagram.</caption>
+</figure>
+
+<theorem>
+<idx><h>Venn diagram</h><h>polar symmetric</h></idx>
+<statement>
+<p>
+There is no monotone simple symmetric <m>n</m>-Venn diagram with crosscut and polar symmetry for <m>n \gt 7</m>.
+</p>
+</statement>
+</theorem>
+
 
 </subsubsection>
 
@@ -69,5 +211,26 @@ his ad-hoc methodology or diagrams to get a simple symmetric 11-Venn diagram; so
 <subsection>
 <title>Symmetric diagrams with <m>n = 13</m> curves</title>
 </subsection>
+
+<p>
+When the same approach used in the previous section is applied to try and find a symmetric 13-Venn diagram, the seach space seemed to be too large 
+  and no solution was produced.
+However, by refining the idea of a crosscut, many solutions were eventually found.
+Let us re-examine a diagram the has crosscut symmetry, 
+
+</p>
+
+<sidebyside>
+<figure xml:id="fig-HamiltonCurves">
+<caption>The crosscut symmetric diagram <q>Hamilton</q>.
+</caption>
+<image source="pdfs/HamiltonCurves"/>
+</figure>
+<figure xml:id="fig-HamiltonCluster">
+<caption>A cluster of <q>Hamilton</q>.
+</caption>
+<image source="pdfs/HamiltonCluster"/>
+</figure>
+</sidebyside>
 
 </section>

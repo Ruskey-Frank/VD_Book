@@ -181,7 +181,8 @@
   [Ha02b] Peter Hamburger, Pretty drawings. More doodles and doilies, symmetric Venn diagrams, manuscript, (2002). [A shorter version (33 pages) will appear in Utilitas Mathematica]
   </p>
   <p xml:id="ref-HH">
-  [HH] Peter Hamburger and Edit Hepp, Symmetric Venn diagrams in the Plane: The Art of Assigning a Binary Bit String Code to Planar Regions Using Curves, Leonardo, MIT Press, accepted for publication, (2005).
+  [HH] Peter Hamburger and Edit Hepp, Symmetric Venn diagrams in the Plane: The Art of Assigning a Binary Bit String Code to Planar Regions Using Curves, 
+    Leonardo, MIT Press, (2005) 38 (2): 125-132.
   </p>
   <p xml:id="ref-HPS">
   [HPS] P. Hamburger, Gy. Petruska, and A. Sali, Saturated chain partitions in ranked partially ordered sets, and non-monotone symmetric 11-Venn diagrams, Studia Sci. Math. Hungar. 41 (2004) 147-191.
@@ -260,6 +261,10 @@
   Some erroneous statements made in this paper are corrected in <xref ref="ref-Gr75">[Gr75]</xref>.
   </p>
   </instructions>
+  </p>
+  <p xml:id="ref-RW97">
+  [RW97] Frank Ruskey and Mark Weston, A Survey of Venn Diagrams, Electronic Journal of Combinatorics, DS#5, 1997, revised 2001 and 2005,
+  (<url href="https://www.combinatorics.org/files/Surveys/ds5/VennEJC.html">url</url>).
   </p>
   <p xml:id="ref-RW04">
   [RW04] Frank Ruskey and Mark Weston, More fun with symmetric Venn diagrams, in Proceedings of Third International Conference on FUN with Algorithms, 

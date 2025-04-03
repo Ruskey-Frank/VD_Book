@@ -112,10 +112,22 @@ Thus, in total, there are 19 simple Venn classes
 In proving these results several theorems of independent interest were proven:
 </p>
 
-<theorem>
+<theorem><idx><h>graph</h><h>3-connected</h></idx>
 <statement>
 <p>
-A simple Venn diagram for <m>n &gt; 2</m> is 3-connected.
+A simple <m>n</m>-Venn diagram for <m>n &gt; 2</m> is 3-connected.
+</p>
+</statement>
+</theorem>
+
+<p>
+This was later extended by Pruesse and Ruskey (<xref ref="ref-PR">[PR]</xref>).
+</p>
+
+<theorem><idx><h>graph</h><h>4-connected</h></idx>
+<statement>
+<p>
+A simple <m>n</m>-Venn diagram for <m>n &gt; 3</m> is 4-connected.
 </p>
 </statement>
 </theorem>
@@ -138,10 +150,10 @@ A simple Venn dual for <m>n &gt; 2</m> is 3-connected.
 </statement>
 </theorem>
 
-<theorem>
+<theorem xml:id="thm-NoTwoEdges">
 <statement>
 <p>
-No two edges in a face in a Venn diagram belong to the same curve.
+No two edges in a face of a Venn diagram belong to the same curve.
 </p>
 </statement>
 </theorem>

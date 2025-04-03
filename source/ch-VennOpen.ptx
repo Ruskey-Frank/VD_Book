@@ -19,6 +19,13 @@ Find a simple symmetric 17-Venn diagram.  More generally, prove that <em>simple<
 
 <li>
 <p>
+Find a simple polar symmetric 11-Venn diagram.   The only known simple symmetric 11-Venn diagrams have crosscut symmetry, but 
+there can not exist such a diagram that is also polar symmetric.
+</p>
+</li>
+
+<li>
+<p>
 Verify that there are 33 simple symmetric non-monotone 7-Venn diagrams.
 </p>
 </li>

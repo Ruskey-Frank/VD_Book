@@ -14,6 +14,7 @@ For <m>n=3</m> diagrams #3.1 and #3.2 achieve this lower bound.
 These are the Venn diagrams of Class 1 (see <xref ref="img-Class1"/>).
 For <m>n=4</m> the diagram shown here (discovered in collaboration with
 Peter Hamburger) achieves the lower bound.
+<em>WHAT ABOUT <m>n=6</m>????</em>
 See <xref ref="img-min5"/> and <xref ref="img-min5c"/> for an example when <m>n=5</m> (from <xref ref="ref-BR">[BR]</xref>),
 and <xref ref="img-min7a"/>, <xref ref="img-min7aC"/>, <xref ref="img-min7b"/> and <xref ref="img-min7bC"/>
   for examples when examples for <m>n=7</m> (discovered in collaboration with Stirling Chow).
@@ -77,7 +78,7 @@ Bultena and Ruskey   <xref ref="ref-BR">[BR]</xref>
   the least number of vertices in a monotone <m>n</m>-Venn diagram.
 </p>
 
-<theorem>
+<theorem xml:id="thm-MinVertMonotone">
 <statement>
 <p>
 For all <m>n \ge 1</m>,
@@ -91,8 +92,13 @@ M_n = {n \choose \lfloor n/2 \rfloor}.
 <p>
 As part of their proof they gave an inductive construction to show
   that monotone Venn diagrams that achieve this bound exist for all <m>n &gt; 1</m>.
+<em>TIE IN WITH CHRISTMAS TREE PATTERN???</em>
 A constructive proof with a different motivation is given in <xref ref="ref-GKS">[GKS]</xref>
   for the case where <m>n</m> is a prime number.
+</p>
+
+<p><idx>crossing sequence</idx>
+<em>MONOTONE VENN DIAGRAMS CAN BE REPRESENTED WITH A CROSSING SEQUENCE...</em>
 </p>
 
 </section>

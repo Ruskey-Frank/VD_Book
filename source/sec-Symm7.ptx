@@ -12,7 +12,7 @@ However, Grünbaum himself later found examples of such diagrams
   <xref ref="ref-Gr92b">[Gr92b]</xref> and
   in 1992 additional examples were also discovered by Anthony 
   Edwards and independently by Carla Savage and Peter Winkler.
-In this section we summarize what is know about symmetric 7-Venn diagrams.
+In this section we summarize what is known about symmetric 7-Venn diagrams.
 They can be classified in various ways depending on whether they are
   monotone or non-monotone, and simple or non-simple, and we will have
   a sub-section on each of those 4 possibilities.
@@ -23,16 +23,18 @@ They can be classified in various ways depending on whether they are
 <title>The Grünbaum encoding</title>
 
 <p>
-The Grünbaum encoding of a simple symmetric Venn diagram consists of four
+The Grünbaum encoding of a simple symmetric <m>n</m>-Venn diagram consists of four
   <m>n</m>-ary strings, call them <m>\mathbf{w}</m>, <m>\mathbf{x}</m>,
   <m>\mathbf{y}</m>, <m>\mathbf{z}</m>, each of length 
   <m>(2^{n+1}-4)/n</m>.   
 String <m>\mathbf{w}</m> is obtained by first numbering the curves clockwise as
-  they appear on the outer face, and then following curve <m>n</m>,
+  they appear on the outer face, and then following curve <m>n</m>, also in a clockwise direction,
   recording its intersections with each of the other curves.
 The other strings are obtained by going counter-clockwise and/or  
   starting with one of the innermost curves; in each case the curves
-  must be re-numbered first.
+  must be re-numbered first so the direction of traversing the curve is the same
+  as the direction of numbering the curves on the outer/inner face.
+Thus each string starts with a <quote>1</quote>.
 For the 3 circle diagram <m>\mathbf{w}=\mathbf{x}=\mathbf{y}=\mathbf{z} = 1212</m>.
 For the 5 ellipse diagram at the top of this page, the strings of the 
   Grünbaum encoding are
@@ -286,7 +288,7 @@ An exhaustive computer search by Frank Ruskey uncovered another,
 -->
 
 <p>
-<figure>
+<figure xml:id="fig-polar7">
 <caption>The polar symmetric simple 7-Venn diagrams</caption>
 <tabular align="center" width="80%">
 <row>
@@ -311,7 +313,8 @@ An exhaustive computer search by Frank Ruskey uncovered another,
 
 <p>
 Below is a list of the lexicographically least of the 4 Grünbaum encoding strings for each
-of the 6 polar symmetric 7-Venn diagrams.
+of the 6 polar symmetric 7-Venn diagrams.  The <quote>P</quote> numbers is the numbering used
+in <xref ref="ref-RW97">[RW97]</xref>.
 </p>
 
 
@@ -320,9 +323,11 @@ of the 6 polar symmetric 7-Venn diagrams.
 <tabular>
 <row>
 <cell>Adelaide</cell><cell>P1</cell>
-<cell>1 2 3 4 3 2 5 6 4 1 2 1 4 3 1 3 5 6 4 3 4 6 1 3 2 4 1 3 5 2 1 2 5 6 1 3</cell>
+<cell>x = 
+1 4 6 3 6 4 2 5 3 1 4 1 3 6 1 6 2 5 3 6 3 5 1 6 4 3 1 6 2 4 1 4 2 5 1 6 
+</cell>
 </row>
-<!--
+<!-- G-encoding:
  A:  1 2 3 4 3 2 5 6 4 1 2 1 4 3 1 3 5 6 4 3 4 6 1 3 2 4 1 3 5 2 1 2 5 6 1 3
  D:  1 2 3 4 3 2 5 6 4 1 2 1 4 3 1 3 5 6 4 3 4 6 1 3 2 4 1 3 5 2 1 2 5 6 1 3
  C:  1 2 3 4 5 2 5 4 1 2 6 5 1 2 3 6 1 6 3 4 1 2 1 6 2 5 2 6 3 4 5 1 6 1 5 2
@@ -330,7 +335,9 @@ of the 6 polar symmetric 7-Venn diagrams.
 -->
 <row>
 <cell>Hamilton</cell><cell>P2</cell>
-<cell>1 2 3 4 5 4 3 2 1 4 2 6 2 4 1 2 5 1 3 1 5 2 1 6 5 4 5 6 1 2 1 4 3 6 5 2</cell>
+<cell>x = 
+1 5 4 3 2 6 1 6 4 5 2 5 4 6 1 5 6 3 6 5 1 6 2 1 4 1 2 6 1 3 2 5 2 3 1 6 
+</cell>
 </row>
 <!--
  A:  1 2 3 4 5 4 3 2 1 4 2 6 2 4 1 2 5 1 3 1 5 2 1 6 5 4 5 6 1 2 1 4 3 6 5 2
@@ -340,7 +347,9 @@ of the 6 polar symmetric 7-Venn diagrams.
 --> 
 <row>
 <cell>Massey</cell><cell>P3</cell>
-<cell>1 2 3 2 4 2 5 2 4 3 1 6 1 3 1 4 1 2 1 6 2 4 5 6 4 1 4 3 2 3 5 6 3 1 5 2</cell>
+<cell>w =
+1 5 6 3 2 5 3 1 3 4 6 4 2 5 4 1 2 6 1 6 4 6 3 6 2 6 3 4 1 5 1 4 1 3 1 6 
+</cell>
 </row>
 <!--
  A:  1 2 3 2 4 2 5 2 4 3 1 6 1 3 1 4 1 2 1 6 2 4 5 6 4 1 4 3 2 3 5 6 3 1 5 2
@@ -350,7 +359,9 @@ of the 6 polar symmetric 7-Venn diagrams.
 -->
 <row>
 <cell>Victoria</cell><cell>P4</cell>
-<cell>1 2 3 4 3 2 5 4 1 2 1 4 3 2 5 4 1 6 5 2 1 2 5 4 1 6 5 6 1 2 1 6 5 4 3 2</cell>
+<cell>x = 
+1 4 2 5 3 6 1 6 3 5 3 6 2 5 1 6 1 5 3 6 2 5 1 4 2 6 1 6 2 5 1 4 2 4 1 6
+</cell>
 </row>
 <!-- 
  A:  1 2 3 4 3 2 5 4 1 2 1 4 3 2 5 4 1 6 5 2 1 2 5 4 1 6 5 6 1 2 1 6 5 4 3 2
@@ -360,7 +371,9 @@ of the 6 polar symmetric 7-Venn diagrams.
 -->
 <row>
 <cell>Palmerston</cell><cell>P5</cell>
-<cell>1 2 3 2 4 5 3 2 3 6 1 6 2 5 2 4 3 6 3 4 1 6 3 2 1 6 5 2 1 2 5 3 4 3 1 6</cell>
+<cell>w =
+1 4 3 4 5 2 3 4 3 6 1 6 4 2 4 5 3 6 3 5 1 6 3 4 1 6 2 4 1 4 2 3 5 3 1 6
+</cell>
 </row>
 <!--
  A:  1 2 3 2 4 5 3 2 3 6 1 6 2 5 2 4 3 6 3 4 1 6 3 2 1 6 5 2 1 2 5 3 4 3 1 6
@@ -370,7 +383,9 @@ of the 6 polar symmetric 7-Venn diagrams.
 -->
 <row>
 <cell>Manawatu</cell><cell>P6</cell>
-<cell>1 2 3 4 5 4 3 4 2 4 1 4 6 4 2 1 5 3 5 2 5 1 5 6 5 4 5 6 1 2 1 4 6 3 5 2</cell>
+<cell>x =
+1 5 3 4 2 6 1 6 4 5 2 5 4 5 6 5 1 5 3 5 6 1 2 4 2 6 2 1 2 3 2 5 2 3 1 6
+</cell>
 </row>
 <!-- 
  A:  1 2 3 4 5 4 3 4 2 4 1 4 6 4 2 1 5 3 5 2 5 1 5 6 5 4 5 6 1 2 1 4 6 3 5 2
@@ -390,6 +405,14 @@ of the 6 polar symmetric 7-Venn diagrams.
 There are in total 23 monotone symmetric Venn diagrams and 17 of
   these do not have polar symmetry.
 This was proven in <xref ref="ref-CMR">[CMR]</xref>.
+Drawings of all 17 may be found in <xref ref="fig-all17"/> and their Grünbaum encodings
+  in <xref ref="tbl-all17"/>.
+The M numbers are from <xref ref="ref-RW97">[RW97]</xref> and are just a convenient scheme for
+  referring to the individual diagrams.
+Prior to their appearance in <xref ref="ref-RW97">[RW97]</xref> only M1 and M2 were known.
+M1 has the zig-zag middle-two-levels and the rather nice property that each curve intersects each other exactly 6 times. It was discovered by Carla Savage and Peter Winkler.
+It was never published, but is referred to in <xref ref="ref-Gr92b">[Gr92b]</xref>.
+M2 was discovered by Branko Grünbaum (Figure 6 of <xref ref="ref-Gr92b">[Gr92b]</xref>). 
 </p>
 
 <ul>
@@ -403,21 +426,21 @@ This was proven in <xref ref="ref-CMR">[CMR]</xref>.
   curves are 5-gons.  This diagram is from
   <xref ref="ref-Gr92b">[Gr92b]</xref> and is M2 on our list.
   </li>
-  <li>
-  <!-- A HREF="nonsymm7.html" -->
-  TO DO A list of all 23 monotone
-  Venn diagrams (includes the six with polar symmetry).
-  </li>
 </ul>
 
 <p>
-<figure>
-<caption>The non-polar symmetric simple 7-Venn diagrams</caption>
+<figure xml:id="fig-all17">
+<caption>The non-polar symmetric simple 7-Venn diagrams, listed in lexicographic order
+of their Grünbaum encodings.
+</caption>
 <tabular align="center"  width="60%">
 <row align="center">
 <cell><image source="pdfs/SSM_7Venn_01"></image></cell>
 <cell><image source="pdfs/SSM_7Venn_02"></image></cell>
 <cell><image source="pdfs/SSM_7Venn_03"></image></cell>
+</row>
+<row>
+<cell>M1</cell><cell>M17</cell><cell>M12</cell>
 </row>
 </tabular>
 <tabular align="center" width="80%">
@@ -427,12 +450,18 @@ This was proven in <xref ref="ref-CMR">[CMR]</xref>.
 <cell><image source="pdfs/SSM_7Venn_06"></image></cell>
 <cell><image source="pdfs/SSM_7Venn_07"></image></cell>
 </row>
+<row>
+<cell>M13</cell><cell>M14</cell><cell>M5</cell><cell>M7</cell>
+</row>
 </tabular>
 <tabular align="center" width="60%">
 <row align="center">
 <cell><image source="pdfs/SSM_7Venn_08"></image></cell>
 <cell><image source="pdfs/SSM_7Venn_09"></image></cell>
 <cell><image source="pdfs/SSM_7Venn_10"></image></cell>
+</row>
+<row>
+<cell>M15</cell><cell>M6</cell><cell>M10</cell>
 </row>
 </tabular>
 <tabular align="center" width="80%">
@@ -442,6 +471,9 @@ This was proven in <xref ref="ref-CMR">[CMR]</xref>.
 <cell><image source="pdfs/SSM_7Venn_15"></image></cell>
 <cell><image source="pdfs/SSM_7Venn_16"></image></cell>
 </row>
+<row>
+<cell>M11</cell><cell>M16</cell><cell>M9</cell><cell>M4</cell>
+</row>
 </tabular>
 <tabular align="center"  width="60%">
 <row align="center">
@@ -449,80 +481,85 @@ This was proven in <xref ref="ref-CMR">[CMR]</xref>.
 <cell><image source="pdfs/SSM_7Venn_18"></image></cell>
 <cell><image source="pdfs/SSM_7Venn_20"></image></cell>
 </row>
-</tabular>
+<row>
+<cell>M2</cell><cell>M3</cell><cell>M8</cell>
+</row>
+3</tabular>
 </figure>
 </p>
 
-<table>
-<title>Grünbaum encodings of the seventeen symmetric 7-Venn diagrams without polar symmetry.</title>
+<table xml:id="tbl-all17">
+<title>Grünbaum encodings of the seventeen symmetric 7-Venn diagrams without polar symmetry.  
+Listed in lexicographic order of the encoding.  
+</title>
 <tabular>
 <row>
 <cell>M1</cell>
-<cell>1 2 3 4 2 4 5 4 2 6 1 2 5 6 5 2 5 4 3 6 1 3 4 3 6 2 1 6 5 1 3 5 3 4 1 6</cell>
-</row>
-<row>
-<cell>M2</cell>
-<cell>1 2 3 4 3 2 3 4 1 5 1 4 6 2 1 2 6 5 3 5 6 2 1 2 6 2 1 5 3 5 1 4 1 5 3 2</cell>
-</row>
-<row>
-<cell>M3</cell>
-<cell>1 2 3 4 2 4 5 3 1 6 3 1 4 2 1 2 6 4 5 6 4 2 1 2 3 4 3 2 1 5 1 3 1 6 5 2</cell>
-</row>
-<row>
-<cell>M4</cell>
-<cell>1 2 3 2 4 2 3 2 1 5 1 2 6 2 1 5 1 2 1 3 1 2 1 6 4 5 4 6 1 2 1 3 6 5 4 2</cell>
-</row>
-<row>
-<cell>M5</cell>
-<cell>1 2 3 2 4 2 5 3 5 2 1 5 1 6 1 5 1 2 3 4 2 4 1 6 4 5 4 1 6 2 1 6 3 5 4 2</cell>
-</row>
-<row>
-<cell>M6</cell>
-<cell>1 2 3 2 4 5 2 6 1 6 5 4 3 5 3 6 1 6 2 6 1 6 5 4 5 6 1 5 1 4 1 2 1 3 2 6</cell>
-</row>
-<row>
-<cell>M7</cell>
-<cell>1 2 3 2 4 2 5 6 1 5 6 4 3 5 3 6 3 1 3 2 1 6 5 4 5 6 5 4 1 4 2 4 1 3 2 6</cell>
-</row>
-<row>
-<cell>M8</cell>
-<cell>1 2 3 4 3 5 3 2 1 5 6 5 4 6 3 2 6 1 3 4 1 4 6 5 3 4 5 2 6 2 1 2 6 5 1 4</cell>
-</row>
-<row>
-<cell>M9</cell>
-<cell>1 2 3 2 4 2 5 6 1 6 2 5 2 4 3 6 3 4 1 4 3 4 6 2 1 6 5 1 5 3 5 4 5 3 1 6</cell>
-</row>
-<row>
-<cell>M10</cell>
-<cell>1 2 3 2 4 3 5 3 2 6 1 6 5 4 3 5 4 6 4 3 1 6 1 2 5 4 5 6 1 5 4 2 1 3 2 6</cell>
-</row>
-<row>
-<cell>M11</cell>
-<cell>1 2 3 2 4 3 5 6 5 3 2 6 1 4 3 5 4 6 1 6 4 3 1 2 5 4 5 2 1 6 1 5 4 3 2 6</cell>
-</row>
-<row>
-<cell>M12</cell>
-<cell>1 2 3 2 4 2 3 5 2 1 5 6 5 1 3 5 2 1 4 3 6 4 6 5 6 4 1 6 4 3 1 6 4 5 2 3</cell>
-</row>
-<row>
-<cell>M13</cell>
-<cell>1 2 3 2 4 2 3 5 2 1 5 6 5 1 2 3 1 5 4 3 6 4 6 5 6 4 1 6 3 6 4 1 4 5 2 3</cell>
-</row>
-<row>
-<cell>M14</cell>
-<cell>1 2 3 4 2 3 2 5 2 1 5 6 1 5 2 3 1 5 4 3 6 4 5 6 4 6 1 6 3 6 4 1 5 4 2 3</cell>
-</row>
-<row>
-<cell>M15</cell>
-<cell>1 2 3 4 2 3 2 5 2 1 5 6 1 5 3 5 2 1 4 3 6 4 5 6 4 6 1 6 4 3 1 6 5 4 2 3</cell>
-</row>
-<row>
-<cell>M16</cell>
-<cell>1 2 3 2 4 2 5 2 6 1 6 5 4 2 4 6 4 2 1 2 4 5 1 3 5 6 4 5 4 3 4 1 3 2 1 5</cell>
+<cell>1 3 2 5 2 3 2 4 3 6 1 6 2 4 5 4 6 5 1 6 3 1 4 2 4 6 1 4 2 5 3 5 1 5 3 6</cell>
 </row>
 <row>
 <cell>M17</cell>
-<cell>1 2 3 2 4 2 5 6 1 2 5 6 4 2 4 5 4 2 1 2 6 3 4 1 6 5 4 6 4 3 4 1 3 2 1 6</cell>
+<cell>1 3 2 5 2 4 2 6 1 6 2 4 6 5 4 5 1 5 3 1 6 5 4 1 2 6 2 5 3 5 2 5 1 3 2 6</cell>
+</row>
+<row>
+<cell>M12</cell>
+<cell>1 3 2 5 4 6 1 4 6 4 2 4 6 5 4 1 5 3 5 1 6 5 4 1 2 6 3 2 3 5 3 2 1 3 2 6</cell>
+</row>
+<row>
+<cell>M13</cell>
+<cell>1 3 2 5 6 5 4 1 4 6 5 4 2 4 5 4 1 5 2 6 1 3 6 2 4 2 6 3 2 1 3 5 3 1 3 6</cell>
+</row>
+<row>
+<cell>M14</cell>
+<cell>1 3 2 6 4 2 6 3 2 3 1 3 5 1 3 6 1 3 5 2 6 5 4 1 4 6 4 5 4 2 5 4 1 5 2 6</cell>
+</row>
+<row>
+<cell>M5</cell>
+<cell>1 3 4 5 2 6 1 6 4 6 2 6 5 4 5 6 1 5 1 3 1 5 1 6 4 2 6 2 1 3 2 5 2 1 3 6</cell>
+</row>
+<row>
+<cell>M7</cell>
+<cell>1 3 4 5 4 2 4 6 1 4 2 6 5 4 5 6 5 3 1 3 5 3 1 6 4 2 6 2 1 2 3 2 5 1 3 6</cell>
+</row>
+<row>
+<cell>M15</cell>
+<cell>1 3 5 2 4 6 1 4 6 2 4 6 4 5 4 1 5 3 1 5 6 5 4 1 2 6 3 2 5 3 2 3 1 3 2 6</cell>
+</row>
+<row>
+<cell>M6</cell>
+<cell>1 3 5 3 2 4 3 6 1 6 4 2 5 4 5 6 1 6 3 6 1 6 4 2 4 6 1 4 1 2 1 3 1 5 3 6</cell>
+</row>
+<row>
+<cell>M10</cell>
+<cell>1 3 5 3 2 5 4 5 3 6 1 6 4 2 5 4 2 6 2 5 1 6 1 3 4 2 4 6 1 4 2 3 1 5 3 6</cell>
+</row>
+<row>
+<cell>M11</cell>
+<cell>1 3 5 3 2 5 4 6 4 5 3 6 1 2 5 4 2 6 1 6 2 5 1 3 4 2 4 3 1 6 1 4 2 5 3 6</cell>
+</row>
+<row>
+<cell>M16</cell>
+<cell>1 3 6 4 2 6 2 3 2 1 3 5 1 6 1 5 3 5 2 5 6 5 4 1 4 6 2 5 2 4 2 5 1 5 2 6</cell>
+</row>
+<row>
+<cell>M9</cell>
+<cell>1 4 3 4 5 4 2 6 1 6 4 2 4 5 3 6 3 5 1 5 3 5 6 4 1 6 2 1 2 3 2 5 2 3 1 6</cell>
+</row>
+<row>
+<cell>M4</cell>
+<cell>1 4 3 5 2 6 1 6 4 6 2 6 4 6 1 5 1 6 3 6 1 5 1 6 1 4 1 6 1 3 2 5 2 3 1 6</cell>
+</row>
+<row>
+<cell>M2</cell>
+<cell>1 4 3 6 2 6 3 5 1 5 3 5 1 6 1 5 2 6 3 6 2 5 2 6 1 4 1 6 1 4 2 5 2 4 1 6</cell>
+</row>
+<row>
+<cell>M3</cell>
+<cell>1 4 6 3 2 6 3 5 4 1 4 3 1 6 1 5 2 6 3 6 5 6 1 3 4 3 1 6 1 4 2 5 4 2 1 6</cell>
+</row>
+<row>
+<cell>M8</cell>
+<cell>1 5 2 6 2 3 2 5 1 3 4 3 6 4 2 5 4 1 2 6 1 6 4 3 2 6 3 5 4 5 1 5 4 3 1 6</cell>
 </row>
 </tabular>
 </table>

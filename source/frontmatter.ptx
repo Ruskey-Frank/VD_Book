@@ -95,25 +95,25 @@
   <p>
   Acknowledgements: Branko Grünbaum, Carla Savage, Peter Winkler, Rick Mabry, Don Knuth, Wendy Myrvold, Matthew Klimesh, Jeremy Carroll, Peter Rogers,
   Moshe Rosenfeld.
-  Students: Mark Weston, Bette Bultena, Stirling Chow.
+  Students: Stirling Chow, Mark Weston, Bette Bultena, Khalegh Mamakani.
   </p>
   
   </preface>
   
   <biography>
-    <image source="pdfs/Venn12" width="5%"/>
+    <image source="pdfs/Venn12" width="20%"/>
     <p>
     Frank is a retired professor of Computer Science at the University of Victoria (UVic).  He completed his Ph.D. at the
     University of California at San Diego under the supervision of T.C. Hu in the department of Applied
     Physics and Information Science in 1978.  His first appointment at UVic was also in 1978 in the Department of
     Mathematics, teaching various Computer Science courses.  After a couple of years, the Department of Computer Science
-    was established and he was one of the founding six members.  
+    was established and he was one of the founding six members.  He remained with the department until his retirement in 2019.
     </p>
     <p>
     His research interests fall into the area of combinatorial algorithms and mathematics, with particular interest in
     combinatorial Gray codes, Venn diagrams, Tatami tilings, nested recurrence relations, and enumerative combinatorics.
     In his spare times he likes to play basketball, spend time at his off-grid cabin pretending to be a hunter-gatherer,
-    and spend time with his children and grand child.
+    and to spend time with his children and grand child.
     </p>
   </biography>
 
